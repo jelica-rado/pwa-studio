@@ -15,8 +15,8 @@
     "@magento/peregrine": "~13.2.1",
     "@magento/pwa-buildpack": "~11.4.3",
     "@magento/venia-ui": "~10.3.0",
-    "react": "~17.0.1",
-    "react-intl": "~5.20.0",
+    "react": "^18.2.0",
+    "react-intl": "^6.6.2",
     "react-router-dom": "~5.2.0"
   },
   "pwa-studio": {
