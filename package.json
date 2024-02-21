@@ -1,7 +1,7 @@
 {
-  "name": "@magento/pwa-studio",
+  "name": "@baici/pwa-studio",
   "version": "13.3.0",
-  "private": true,
+  "private": false,
   "workspaces": [
     "packages/babel-preset-peregrine",
     "packages/create-pwa",
