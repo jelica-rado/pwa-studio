@@ -1,5 +1,5 @@
 const path = require('path');
-const chalk = require('chalk');
+import chalk from 'chalk';
 const execa = require('execa');
 const firstRun = require('first-run');
 

@@ -1,6 +1,6 @@
 {
   "name": "@jelica-rado/create-pwa",
-  "version": "2.4.5",
+  "version": "2.4.6",
   "publishConfig": {
     "access": "public"
   },
@@ -40,6 +40,6 @@
     "is-invalid-path": "^1.0.2",
     "is-valid-npm-name": "^0.0.4",
     "node-fetch": "~2.6.1",
-    "webpack": "^5.3.10"
+    "webpack": "5.90.3"
   }
 }

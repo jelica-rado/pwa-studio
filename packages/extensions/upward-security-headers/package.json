@@ -1,6 +1,6 @@
 {
   "name": "@jelica-rado/upward-security-headers",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "publishConfig": {
     "access": "public"
   },
@@ -15,7 +15,7 @@
   "peerDependencies": {
     "@jelica-rado/pwa-buildpack": "~11.4.3",
     "@jelica-rado/venia-ui": "~10.3.0",
-    "webpack": "^5.3.10"
+    "webpack": "5.90.3"
   },
   "pwa-studio": {
     "targets": {
