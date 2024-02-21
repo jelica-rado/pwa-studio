@@ -1,5 +1,5 @@
 import { ApolloLink } from '@apollo/client';
-import { BrowserPersistence } from '@magento/peregrine/lib/util';
+import { BrowserPersistence } from '@jelica-rado/peregrine/lib/util';
 
 // The name of the header to exchange with the server.
 const CACHE_ID_HEADER = 'x-magento-cache-id';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { shape, string } from 'prop-types';
-import { transparentPlaceholder } from '@magento/peregrine/lib/util/images';
+import { transparentPlaceholder } from '@jelica-rado/peregrine/lib/util/images';
 import { useStyle } from '../../classify';
 
 import Shimmer from '../Shimmer';

@@ -1,15 +1,15 @@
 import React from 'react';
 
-import { useToasts } from '@magento/peregrine';
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
-import { useResetPassword } from '@magento/peregrine/lib/talons/MyAccount/useResetPassword';
+import { useToasts } from '@jelica-rado/peregrine';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
+import { useResetPassword } from '@jelica-rado/peregrine/lib/talons/MyAccount/useResetPassword';
 
 import ResetPassword from '../resetPassword';
 
-jest.mock('@magento/peregrine', () => ({
+jest.mock('@jelica-rado/peregrine', () => ({
     useToasts: jest.fn().mockReturnValue([{}, { addToast: jest.fn() }])
 }));
-jest.mock('@magento/peregrine/lib/talons/MyAccount/useResetPassword', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/MyAccount/useResetPassword', () => ({
     useResetPassword: jest.fn().mockReturnValue({
         hasCompleted: false,
         loading: false,

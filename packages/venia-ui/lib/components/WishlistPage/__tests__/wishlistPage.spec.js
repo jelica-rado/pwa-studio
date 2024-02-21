@@ -1,10 +1,10 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useWishlistPage } from '@magento/peregrine/lib/talons/WishlistPage/useWishlistPage';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useWishlistPage } from '@jelica-rado/peregrine/lib/talons/WishlistPage/useWishlistPage';
 
 import WishlistPage from '../wishlistPage';
 
-jest.mock('@magento/peregrine/lib/talons/WishlistPage/useWishlistPage');
+jest.mock('@jelica-rado/peregrine/lib/talons/WishlistPage/useWishlistPage');
 jest.mock('../../../classify');
 jest.mock('../wishlist', () => 'Wishlist');
 jest.mock('../createWishlist', () => 'CreateWishlist');

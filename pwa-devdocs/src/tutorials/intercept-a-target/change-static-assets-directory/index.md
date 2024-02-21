@@ -23,7 +23,7 @@ In this tutorial, you will:
 In your storefront project's root directory, run the following command to copy the `venia-static` directory from the `venia-ui` dependency into a new directory called `my-static-assets`:
 
 ``` sh
-cp -r node_modules/@magento/venia-ui/venia-static my-static-assets
+cp -r node_modules/@jelica-rado/venia-ui/venia-static my-static-assets
 ```
 
 **NOTE:**
@@ -183,7 +183,7 @@ Open your project's `local-intercept.js` file and replace the content with the f
 
 ```js
 function localIntercept(targets) {
-    targets.of('@magento/pwa-buildpack').transformUpward.tap(def => {
+    targets.of('@jelica-rado/pwa-buildpack').transformUpward.tap(def => {
         def.staticFromRoot.inline.body.file.template.inline =
             './my-static-assets/{{ filename }}';
     });

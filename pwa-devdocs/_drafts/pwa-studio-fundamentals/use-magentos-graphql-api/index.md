@@ -42,11 +42,11 @@ _src/components/Foo/productLink.js_
 
 ```javascript
 import React, { Component } from 'react';
-import { Link } from '@magento/venia-ui/lib/drivers';
+import { Link } from '@jelica-rado/venia-ui/lib/drivers';
 
 import { useQuery } from '@apollo/client';
 import GET_PRODUCT_DATA from '../../queries/getProductData.graphql';  // import the query you created above
-import LoadingIndicator from '@magento/venia-ui/lib/components/LoadingIndicator';
+import LoadingIndicator from '@jelica-rado/venia-ui/lib/components/LoadingIndicator';
 
 const productLink = props => {
   const { loading, error, data } = useQuery(GET_PRODUCT_DATA, {

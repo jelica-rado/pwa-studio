@@ -9,7 +9,7 @@ import { useState } from 'react';
  * @return {EditModalTalonProps}
  *
  * @example <caption>Importing into your project</caption>
- * import { useEditModal } from '@magento/peregrine/lib/talons/CartPage/ProductListing/EditModal/useEditModal';
+ * import { useEditModal } from '@jelica-rado/peregrine/lib/talons/CartPage/ProductListing/EditModal/useEditModal';
  */
 export const useEditModal = () => {
     const [variantPrice, setVariantPrice] = useState(null);

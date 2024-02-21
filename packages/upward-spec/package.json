@@ -1,5 +1,5 @@
 {
-  "name": "@magento/upward-spec",
+  "name": "@jelica-rado/upward-spec",
   "version": "5.2.1",
   "publishConfig": {
     "access": "public"

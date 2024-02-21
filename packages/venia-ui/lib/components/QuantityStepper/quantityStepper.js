@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { useIntl } from 'react-intl';
 import { Minus as MinusIcon, Plus as PlusIcon } from 'react-feather';
-import { useQuantityStepper } from '@magento/peregrine/lib/talons/QuantityStepper/useQuantityStepper';
+import { useQuantityStepper } from '@jelica-rado/peregrine/lib/talons/QuantityStepper/useQuantityStepper';
 
 import { useStyle } from '../../classify';
 import Icon from '../Icon';

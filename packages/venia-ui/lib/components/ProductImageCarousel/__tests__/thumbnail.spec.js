@@ -2,7 +2,7 @@ import React from 'react';
 import {
     WindowSizeContextProvider,
     createTestInstance
-} from '@magento/peregrine';
+} from '@jelica-rado/peregrine';
 import Thumbnail from '../thumbnail';
 
 jest.mock('../../../classify');

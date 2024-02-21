@@ -3,7 +3,7 @@ import { InMemoryCache } from '@apollo/client';
 import { MockedProvider } from '@apollo/client/testing';
 import { renderHook } from '@testing-library/react-hooks';
 
-import typePolicies from '@magento/peregrine/lib/Apollo/policies';
+import typePolicies from '@jelica-rado/peregrine/lib/Apollo/policies';
 import {
     mockGetStoreConfigMOS,
     mockGetStoreConfigAC
@@ -16,7 +16,7 @@ import mosOperations from '../carousel.gql.ce';
 import acOperations from '../carousel.gql.ee';
 
 jest.mock(
-    '@magento/peregrine/lib/hooks/useCustomerWishlistSkus/useCustomerWishlistSkus',
+    '@jelica-rado/peregrine/lib/hooks/useCustomerWishlistSkus/useCustomerWishlistSkus',
     () => ({
         useCustomerWishlistSkus: jest.fn()
     })

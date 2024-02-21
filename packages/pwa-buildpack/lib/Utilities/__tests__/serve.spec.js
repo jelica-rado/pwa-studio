@@ -1,7 +1,7 @@
 jest.mock('fs');
 const { existsSync, readFileSync } = require('fs');
 
-const { createUpwardServer } = require('@magento/upward-js');
+const { createUpwardServer } = require('@jelica-rado/upward-js');
 const compression = require('compression');
 const serve = require('../serve');
 const addImgOptMiddleware = require('../addImgOptMiddleware');
@@ -40,7 +40,7 @@ jest.mock('../configureHost', () =>
         })
 );
 
-jest.mock('@magento/upward-js', () => ({
+jest.mock('@jelica-rado/upward-js', () => ({
     createUpwardServer: jest
         .fn()
         .mockName('Create Upward Server')

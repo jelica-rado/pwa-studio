@@ -1,8 +1,8 @@
 import React, { Fragment, useMemo } from 'react';
 import { array, func, number, shape, string } from 'prop-types';
 import { useIntl } from 'react-intl';
-import setValidator from '@magento/peregrine/lib/validators/set';
-import { useFilterList } from '@magento/peregrine/lib/talons/FilterModal';
+import setValidator from '@jelica-rado/peregrine/lib/validators/set';
+import { useFilterList } from '@jelica-rado/peregrine/lib/talons/FilterModal';
 
 import { useStyle } from '../../../classify';
 import FilterItem from './filterItem';

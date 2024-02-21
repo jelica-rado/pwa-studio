@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-import { useIsInViewport } from '@magento/peregrine/lib/hooks/useIsInViewport';
-import { useMegaMenu } from '@magento/peregrine/lib/talons/MegaMenu/useMegaMenu';
-import { useStyle } from '@magento/venia-ui/lib/classify';
+import { useIsInViewport } from '@jelica-rado/peregrine/lib/hooks/useIsInViewport';
+import { useMegaMenu } from '@jelica-rado/peregrine/lib/talons/MegaMenu/useMegaMenu';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
 
 import MegaMenuItem from './megaMenuItem';
 import defaultClasses from './megaMenu.module.css';

@@ -2,9 +2,9 @@ import React from 'react';
 import defaultClasses from './image.module.css';
 import { arrayOf, bool, oneOf, shape, string, number } from 'prop-types';
 import { Link } from 'react-router-dom';
-import resolveLinkProps from '@magento/peregrine/lib/util/resolveLinkProps';
-import { useStyle } from '@magento/venia-ui/lib/classify';
-import resourceUrl from '@magento/peregrine/lib/util/makeUrl';
+import resolveLinkProps from '@jelica-rado/peregrine/lib/util/resolveLinkProps';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
+import resourceUrl from '@jelica-rado/peregrine/lib/util/makeUrl';
 
 /**
  * Page Builder Image component.

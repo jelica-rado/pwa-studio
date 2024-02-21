@@ -6,7 +6,7 @@ const {
         getAvailableStoresConfigData
     },
     Utilities: { loadEnvironment }
-} = require('@magento/pwa-buildpack');
+} = require('@jelica-rado/pwa-buildpack');
 const baseWebpackConfig = require('../../webpack.config');
 const { DefinePlugin, EnvironmentPlugin } = require('webpack');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');

@@ -2,12 +2,12 @@ import React, { useMemo } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { PlusSquare } from 'react-feather';
 
-import { useAddressBookPage } from '@magento/peregrine/lib/talons/AddressBookPage/useAddressBookPage';
-import { useStyle } from '@magento/venia-ui/lib/classify';
-import { StoreTitle } from '@magento/venia-ui/lib/components/Head';
-import Icon from '@magento/venia-ui/lib/components/Icon';
-import LinkButton from '@magento/venia-ui/lib/components/LinkButton';
-import { fullPageLoadingIndicator } from '@magento/venia-ui/lib/components/LoadingIndicator';
+import { useAddressBookPage } from '@jelica-rado/peregrine/lib/talons/AddressBookPage/useAddressBookPage';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
+import { StoreTitle } from '@jelica-rado/venia-ui/lib/components/Head';
+import Icon from '@jelica-rado/venia-ui/lib/components/Icon';
+import LinkButton from '@jelica-rado/venia-ui/lib/components/LinkButton';
+import { fullPageLoadingIndicator } from '@jelica-rado/venia-ui/lib/components/LoadingIndicator';
 
 import AddressCard from './addressCard';
 import AddEditDialog from './addEditDialog';

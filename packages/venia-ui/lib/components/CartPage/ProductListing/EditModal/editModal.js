@@ -1,5 +1,5 @@
 import React from 'react';
-import { useEditModal } from '@magento/peregrine/lib/talons/CartPage/ProductListing/EditModal/useEditModal';
+import { useEditModal } from '@jelica-rado/peregrine/lib/talons/CartPage/ProductListing/EditModal/useEditModal';
 
 import ProductForm from './productForm';
 
@@ -20,7 +20,7 @@ import ProductForm from './productForm';
  * @returns {React.Element}
  *
  * @example <caption>Importing into your project</caption>
- * import EditModal from "@magento/venia-ui/lib/components/CartPage/ProductListing/EditModal";
+ * import EditModal from "@jelica-rado/venia-ui/lib/components/CartPage/ProductListing/EditModal";
  */
 const EditModal = props => {
     const { item, setActiveEditItem, setIsCartUpdating } = props;

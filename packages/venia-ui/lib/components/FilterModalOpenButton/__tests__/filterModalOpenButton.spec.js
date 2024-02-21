@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import Button from '../../Button';
 import FilterModalOpenButton from '../filterModalOpenButton';
@@ -9,7 +9,7 @@ const mockHandleOpen = jest.fn();
 
 jest.mock('../../Button', () => props => <mock-Button {...props} />);
 
-jest.mock('@magento/peregrine/lib/talons/FilterModal', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/FilterModal', () => ({
     useFilterModal: jest.fn(() => {
         return {
             handleOpen: mockHandleOpen

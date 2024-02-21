@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { arrayOf, bool, func, shape, string } from 'prop-types';
-import { useSuggestions } from '@magento/peregrine/lib/talons/SearchBar';
+import { useSuggestions } from '@jelica-rado/peregrine/lib/talons/SearchBar';
 
 import { useStyle } from '../../classify';
 import SuggestedCategories from './suggestedCategories';

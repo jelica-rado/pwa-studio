@@ -1,7 +1,7 @@
 import React from 'react';
 import { array, bool, func, object, oneOf, shape, string } from 'prop-types';
 
-import { useEditableForm } from '@magento/peregrine/lib/talons/Checkout/useEditableForm';
+import { useEditableForm } from '@jelica-rado/peregrine/lib/talons/Checkout/useEditableForm';
 
 import AddressForm from './addressForm';
 import PaymentsForm from './paymentsForm';

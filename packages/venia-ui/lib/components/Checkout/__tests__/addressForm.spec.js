@@ -1,7 +1,7 @@
 import React from 'react';
 import AddressForm from '../addressForm';
-import { createTestInstance } from '@magento/peregrine';
-import { useAddressForm } from '@magento/peregrine/lib/talons/Checkout/useAddressForm';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useAddressForm } from '@jelica-rado/peregrine/lib/talons/Checkout/useAddressForm';
 import Button from '../../Button';
 import { Form } from 'informed';
 
@@ -16,7 +16,7 @@ jest.mock('@apollo/client', () => {
             .mockImplementation(() => [jest.fn().mockResolvedValue()])
     };
 });
-jest.mock('@magento/peregrine/lib/context/checkout', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/checkout', () => {
     const state = {
         shippingAddress: {},
         shippingAddressError: null
@@ -29,7 +29,7 @@ jest.mock('@magento/peregrine/lib/context/checkout', () => {
     return { useCheckoutContext };
 });
 
-jest.mock('@magento/peregrine/lib/context/user', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/user', () => {
     const state = {
         isSignedIn: false
     };
@@ -39,7 +39,7 @@ jest.mock('@magento/peregrine/lib/context/user', () => {
     return { useUserContext };
 });
 
-jest.mock('@magento/peregrine/lib/talons/Checkout/useAddressForm', () => {
+jest.mock('@jelica-rado/peregrine/lib/talons/Checkout/useAddressForm', () => {
     const useAddressForm = jest.fn(props => ({
         error: '',
         handleCancel: jest.fn(() => {

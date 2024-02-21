@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useQuery } from '@apollo/client';
 import { useHistory, useLocation } from 'react-router-dom';
 
-import { useAppContext } from '@magento/peregrine/lib/context/app';
+import { useAppContext } from '@jelica-rado/peregrine/lib/context/app';
 
 import mergeOperations from '../../util/shallowMerge';
 import { useFilterState } from '../FilterModal';

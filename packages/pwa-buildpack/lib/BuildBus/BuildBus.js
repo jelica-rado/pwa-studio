@@ -1,5 +1,5 @@
 /**
- * @module @magento/pwa-buildpack
+ * @module @jelica-rado/pwa-buildpack
  */
 
 const path = require('path');

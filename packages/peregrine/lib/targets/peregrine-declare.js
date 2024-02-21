@@ -1,5 +1,5 @@
 /**
- * These targets are available for interception to modules which depend on `@magento/peregrine`.
+ * These targets are available for interception to modules which depend on `@jelica-rado/peregrine`.
  *
  * Their implementations are found in `./peregrine-intercept.js`.
  *
@@ -23,7 +23,7 @@ module.exports = targets => {
          * @see [Intercept function signature]{@link hookInterceptFunction}
          *
          * @example <caption>Access the tapable object</caption>
-         * const peregrineTargets = targets.of('@magento/peregrine');
+         * const peregrineTargets = targets.of('@jelica-rado/peregrine');
          * const hooksTarget = peregrineTargets.hooks;
          *
          * @example <caption>Wrap the `useAwaitQuery()` hook  with a logging extension</caption>
@@ -50,7 +50,7 @@ module.exports = targets => {
          * @see [Intercept function signature]{@link hookInterceptFunction}
          *
          * @example <caption>Access the tapable object</caption>
-         * const peregrineTargets = targets.of('@magento/peregrine');
+         * const peregrineTargets = targets.of('@jelica-rado/peregrine');
          * const talonsTarget = peregrineTargets.talons;
          *
          * @example <caption>Wrap the `useApp()` hook  with a logging extension</caption>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { UNCONSTRAINED_SIZE_KEY } from '@magento/peregrine/lib/talons/Image/useImage';
+import { UNCONSTRAINED_SIZE_KEY } from '@jelica-rado/peregrine/lib/talons/Image/useImage';
 
 import Image from '../image';
 import classes from './image.module.css';

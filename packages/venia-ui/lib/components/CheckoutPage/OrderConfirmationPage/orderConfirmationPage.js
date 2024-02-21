@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { object, shape, string } from 'prop-types';
-import { useOrderConfirmationPage } from '@magento/peregrine/lib/talons/CheckoutPage/OrderConfirmationPage/useOrderConfirmationPage';
+import { useOrderConfirmationPage } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/OrderConfirmationPage/useOrderConfirmationPage';
 
 import { useStyle } from '../../../classify';
 import { StoreTitle } from '../../../components/Head';

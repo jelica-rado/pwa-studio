@@ -1,19 +1,19 @@
 import React, { useCallback, useMemo } from 'react';
-import { useStyle } from '@magento/venia-ui/lib/classify';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
 import { shape, string, func, bool } from 'prop-types';
 import { useIntl } from 'react-intl';
-import Country from '@magento/venia-ui/lib/components/Country';
-import Region from '@magento/venia-ui/lib/components/Region';
-import Postcode from '@magento/venia-ui/lib/components/Postcode';
-import Checkbox from '@magento/venia-ui/lib/components/Checkbox';
-import Field from '@magento/venia-ui/lib/components/Field';
-import TextInput from '@magento/venia-ui/lib/components/TextInput';
-import FormError from '@magento/venia-ui/lib/components/FormError';
-import { isRequired } from '@magento/venia-ui/lib/util/formValidators';
+import Country from '@jelica-rado/venia-ui/lib/components/Country';
+import Region from '@jelica-rado/venia-ui/lib/components/Region';
+import Postcode from '@jelica-rado/venia-ui/lib/components/Postcode';
+import Checkbox from '@jelica-rado/venia-ui/lib/components/Checkbox';
+import Field from '@jelica-rado/venia-ui/lib/components/Field';
+import TextInput from '@jelica-rado/venia-ui/lib/components/TextInput';
+import FormError from '@jelica-rado/venia-ui/lib/components/FormError';
+import { isRequired } from '@jelica-rado/venia-ui/lib/util/formValidators';
 
 import defaultClasses from './billingAddress.module.css';
 
-import { useBillingAddress } from '@magento/peregrine/lib/talons/CheckoutPage/BillingAddress/useBillingAddress';
+import { useBillingAddress } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/BillingAddress/useBillingAddress';
 
 const BillingAddress = props => {
     const classes = useStyle(defaultClasses, props.classes);

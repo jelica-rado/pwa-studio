@@ -7,7 +7,7 @@ Object {
   "dependencies": Object {
     "left-pad": "1.0.0",
   },
-  "description": "A new project based on @magento/venia-concept",
+  "description": "A new project based on @jelica-rado/venia-concept",
   "license": "UNLICENSED",
   "name": "whee",
   "private": true,
@@ -27,7 +27,7 @@ Object {
   "dependencies": Object {
     "left-pad": "1.0.0",
   },
-  "description": "A new project based on @magento/venia-concept",
+  "description": "A new project based on @jelica-rado/venia-concept",
   "license": "UNLICENSED",
   "name": "whee",
   "private": true,

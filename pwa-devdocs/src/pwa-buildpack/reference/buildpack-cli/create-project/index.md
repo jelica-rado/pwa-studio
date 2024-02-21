@@ -5,7 +5,7 @@ adobeio: /api/buildpack/cli/create-project/
 
 The `create-project` sub-command of the [`pwa-buildpack`][] CLI is a [scaffolding][] tool used to create a fresh PWA Studio app in a new project directory.
 
-Normally this command is used indirectly through the `@magento/pwa` scaffolding tool.
+Normally this command is used indirectly through the `@jelica-rado/pwa` scaffolding tool.
 The tool collects the parameter values through its interactive prompt and passes them on to the command as options.
 
 This tool is also available for developers or third-party automation tools to use directly.
@@ -13,7 +13,7 @@ This tool is also available for developers or third-party automation tools to us
 **Example:** Using the command with `npx`:
 
 ```sh
-npx @magento/pwa-buildpack create-project ./new-pwa \
+npx @jelica-rado/pwa-buildpack create-project ./new-pwa \
   --name @magezilla/new-pwa \
   --template venia-concept \
   --backend-url https://local.magento \
@@ -31,7 +31,7 @@ After creating the project, it installs the package dependencies, including the 
 Use the `npx` tool to download the current version and execute the command:
 
 ```sh
-npx @magento/pwa-buildpack create-project <directory> [<options> ...]
+npx @jelica-rado/pwa-buildpack create-project <directory> [<options> ...]
 ```
 
 The first argument in the command is the directory for the new project.
@@ -46,7 +46,7 @@ This can cause incompatible versions between a product version and the global ve
 
 ### Command options
 
-Run `npx @magento/pwa-buildpack create-project --help` to see the list of command options.
+Run `npx @jelica-rado/pwa-buildpack create-project --help` to see the list of command options.
 
 You can specify these options in any order after `buildpack create-project <directory>`.
 

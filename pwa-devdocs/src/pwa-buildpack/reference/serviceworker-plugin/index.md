@@ -48,7 +48,7 @@ In `webpack.config.js`:
 
 ``` js
 const path = require('path');
-const buildpack = require('@magento/pwa-buildpack');
+const buildpack = require('@jelica-rado/pwa-buildpack');
 const ServiceWorkerPlugin = buildpack.Webpack.ServiceWorkerPlugin;
 
 module.exports = async env => {

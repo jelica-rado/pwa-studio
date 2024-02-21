@@ -1,16 +1,16 @@
 import React from 'react';
 import { MockedProvider } from '@apollo/client/testing';
 import { act, renderHook } from '@testing-library/react-hooks';
-import { useEventingContext } from '@magento/peregrine/lib/context/eventing';
+import { useEventingContext } from '@jelica-rado/peregrine/lib/context/eventing';
 
 import { useCmsPage } from '../useCmsPage';
 import defaultOperations from '../cmsPage.gql';
 
-jest.mock('@magento/peregrine/lib/context/eventing', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/eventing', () => ({
     useEventingContext: jest.fn().mockReturnValue([{}, { dispatch: jest.fn() }])
 }));
 
-jest.mock('@magento/peregrine/lib/context/app', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/app', () => {
     const state = {};
     const api = { actions: { setPageLoading: jest.fn() } };
     const useAppContext = jest.fn(() => [state, api]);

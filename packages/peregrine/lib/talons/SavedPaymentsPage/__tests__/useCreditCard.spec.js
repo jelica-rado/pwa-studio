@@ -2,7 +2,7 @@ import React from 'react';
 import { act } from 'react-test-renderer';
 import { useMutation } from '@apollo/client';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import { useCreditCard } from '../useCreditCard';
 
 jest.mock('@apollo/client', () => {

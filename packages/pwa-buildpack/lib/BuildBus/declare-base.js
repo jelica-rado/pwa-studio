@@ -9,7 +9,7 @@
  *
  * @namespace {Object} BuiltinTargets
  *
- * @memberof @magento/pwa-buildpack
+ * @memberof @jelica-rado/pwa-buildpack
  */
 const { SOURCE_SEP } = require('./Target');
 module.exports = targets => {
@@ -34,7 +34,7 @@ module.exports = targets => {
          * Modify in place.
          * @member {tapable.SyncHook}
          * @example <caption>Add config fields for your extension</caption>
-         * targets.of('@magento/pwa-buildpack').envVarDefinitions.tap(defs => {
+         * targets.of('@jelica-rado/pwa-buildpack').envVarDefinitions.tap(defs => {
          *   defs.sections.push({
          *     name: 'My Extension Settings',
          *     variables: [
@@ -70,7 +70,7 @@ module.exports = targets => {
          * @member {tapable.AsyncSeriesHook}
          *
          * @example <caption>Strip unnecessary Lodash code from a specific JS module.</caption>
-         * targets.of('@magento/pwa-buildpack').transformModules.tap(addTransform => addTransform({
+         * targets.of('@jelica-rado/pwa-buildpack').transformModules.tap(addTransform => addTransform({
          *   type: 'babel',
          *   fileToTransform: './lib/uses-pipeline-syntax.js',
          *   transformModule: 'babel-plugin-lodash',
@@ -90,7 +90,7 @@ module.exports = targets => {
          * @member {tapable.SyncHook}
          *
          * @example <caption>Tap the compiler's `watchRun` hook.</caption>
-         * targets.of('@magento/pwa-buildpack').webpackCompiler.tap(compiler => {
+         * targets.of('@jelica-rado/pwa-buildpack').webpackCompiler.tap(compiler => {
          *   compiler.hooks.watchRun.tapPromise(async () => {
          *      compiler.getInfrastructureLogger('my-extension')
          *        .info('I do something special in the dev server!');
@@ -116,7 +116,7 @@ module.exports = targets => {
          * @member {tapable.SyncHook}
          *
          * @example <caption>Declare that your extension contains CSS modules.</caption>
-         * targets.of('@magento/pwa-buildpack').specialFeatures.tap(featuresByModule => {
+         * targets.of('@jelica-rado/pwa-buildpack').specialFeatures.tap(featuresByModule => {
          *   featuresByModule['my-module'] = { cssModules: true };
          * })
          */
@@ -131,7 +131,7 @@ module.exports = targets => {
          * definition.
          *
          * @example <caption>Send empty responses in maintenance mode.</caption>
-         * targets.of('@magento/pwa-buildpack').transformUpward.tap(def => {
+         * targets.of('@jelica-rado/pwa-buildpack').transformUpward.tap(def => {
          *   const guardMaintenanceMode = (prop, inline) => {
          *     def[prop] = {
          *       when: [
@@ -167,7 +167,7 @@ module.exports = targets => {
          * displayed on the console at the end of the process.
          *
          * @example
-         * targets.of('@magento/pwa-buildpack').validateEnv.tapPromise(validateBackendUrl);
+         * targets.of('@jelica-rado/pwa-buildpack').validateEnv.tapPromise(validateBackendUrl);
          *
          * @member {tapable.AsyncParallelHook}
          * @param {envValidationInterceptor} validator

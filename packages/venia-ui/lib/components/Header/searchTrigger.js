@@ -7,7 +7,7 @@ import Icon from '../Icon';
 
 import { useStyle } from '../../classify';
 import defaultClasses from './searchTrigger.module.css';
-import { useSearchTrigger } from '@magento/peregrine/lib/talons/Header/useSearchTrigger';
+import { useSearchTrigger } from '@jelica-rado/peregrine/lib/talons/Header/useSearchTrigger';
 
 const SearchTrigger = React.forwardRef((props, ref) => {
     const { active, onClick } = props;

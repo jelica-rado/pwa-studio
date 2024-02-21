@@ -1,12 +1,12 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useCommunicationsPage } from '@magento/peregrine/lib/talons/CommunicationsPage/useCommunicationsPage';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useCommunicationsPage } from '@jelica-rado/peregrine/lib/talons/CommunicationsPage/useCommunicationsPage';
 
 import CommunicationsPage from '../communicationsPage';
 import LoadingIndicator from '../../LoadingIndicator';
 
 jest.mock(
-    '@magento/peregrine/lib/talons/CommunicationsPage/useCommunicationsPage'
+    '@jelica-rado/peregrine/lib/talons/CommunicationsPage/useCommunicationsPage'
 );
 jest.mock('../../../classify');
 
@@ -19,14 +19,14 @@ const emptyFormProps = {
     isDisabled: false
 };
 
-jest.mock('@magento/peregrine', () => {
+jest.mock('@jelica-rado/peregrine', () => {
     const useToasts = jest.fn(() => [
         { toasts: new Map() },
         { addToast: jest.fn() }
     ]);
 
     return {
-        ...jest.requireActual('@magento/peregrine'),
+        ...jest.requireActual('@jelica-rado/peregrine'),
         useToasts
     };
 });

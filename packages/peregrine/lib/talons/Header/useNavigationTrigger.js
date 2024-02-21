@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import { useAppContext } from '@magento/peregrine/lib/context/app';
+import { useAppContext } from '@jelica-rado/peregrine/lib/context/app';
 
 export const useNavigationTrigger = () => {
     const [, { toggleDrawer }] = useAppContext();

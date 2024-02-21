@@ -1,6 +1,6 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { usePriceSummary } from '@magento/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { usePriceSummary } from '@jelica-rado/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary';
 import PriceSummary from '../priceSummary';
 
 jest.mock('../../../../classify');
@@ -84,7 +84,7 @@ const defaultTalonProps = {
 };
 
 jest.mock(
-    '@magento/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary',
+    '@jelica-rado/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary',
     () => ({
         usePriceSummary: jest.fn().mockReturnValue({
             hasError: false,
@@ -104,7 +104,7 @@ jest.mock(
     })
 );
 
-jest.mock('@magento/peregrine/lib/context/cart', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/cart', () => {
     const state = { cartId: 'cart123' };
     const api = {};
     const useCartContext = jest.fn(() => [state, api]);

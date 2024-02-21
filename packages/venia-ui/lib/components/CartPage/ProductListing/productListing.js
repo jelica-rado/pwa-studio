@@ -1,6 +1,6 @@
 import React, { Fragment, Suspense } from 'react';
 import { FormattedMessage } from 'react-intl';
-import { useProductListing } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useProductListing';
+import { useProductListing } from '@jelica-rado/peregrine/lib/talons/CartPage/ProductListing/useProductListing';
 
 import { useStyle } from '../../../classify';
 import LoadingIndicator from '../../LoadingIndicator';
@@ -22,7 +22,7 @@ const EditModal = React.lazy(() => import('./EditModal'));
  * @returns {React.Element}
  *
  * @example <caption>Importing into your project</caption>
- * import ProductListing from "@magento/venia-ui/lib/components/CartPage/ProductListing";
+ * import ProductListing from "@jelica-rado/venia-ui/lib/components/CartPage/ProductListing";
  */
 const ProductListing = props => {
     const {

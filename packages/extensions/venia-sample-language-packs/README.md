@@ -10,4 +10,4 @@ project:
 
 Example:
 
-`yarn workspace @magento/venia-concept add @magento/venia-sample-language-packs -D`
+`yarn workspace @jelica-rado/venia-concept add @jelica-rado/venia-sample-language-packs -D`

@@ -2,7 +2,7 @@ jest.mock('pertain', () => (_, subject) => {
     const phase = subject.split('.').pop();
     return [
         {
-            name: '@magento/pwa-buildpack',
+            name: '@jelica-rado/pwa-buildpack',
             path: `./${phase}-base`,
             subject
         }
@@ -15,7 +15,7 @@ test('binds and calls phases', () => {
     BuildBus.enableTracking();
     const bus = BuildBus.for('./').init();
     const compilerTap = jest.fn();
-    bus.getTargetsOf('@magento/pwa-buildpack').webpackCompiler.tap(c =>
+    bus.getTargetsOf('@jelica-rado/pwa-buildpack').webpackCompiler.tap(c =>
         compilerTap(c)
     );
 

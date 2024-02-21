@@ -1,6 +1,6 @@
 /*
-    @deprecated - Moved to @magento/peregrine/lib/talons/Header/cartTriggerFragments.gql
+    @deprecated - Moved to @jelica-rado/peregrine/lib/talons/Header/cartTriggerFragments.gql
  */
 export {
     CartTriggerFragment
-} from '@magento/peregrine/lib/talons/Header/cartTriggerFragments.gql';
+} from '@jelica-rado/peregrine/lib/talons/Header/cartTriggerFragments.gql';

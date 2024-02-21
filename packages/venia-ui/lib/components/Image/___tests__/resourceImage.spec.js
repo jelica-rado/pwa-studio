@@ -1,12 +1,12 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useResourceImage } from '@magento/peregrine/lib/talons/Image/useResourceImage';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useResourceImage } from '@jelica-rado/peregrine/lib/talons/Image/useResourceImage';
 
 import ResourceImage from '../resourceImage';
 
-jest.mock('@magento/peregrine/lib/talons/Image/useResourceImage', () => {
+jest.mock('@jelica-rado/peregrine/lib/talons/Image/useResourceImage', () => {
     const useResourceImageTalon = jest.requireActual(
-        '@magento/peregrine/lib/talons/Image/useResourceImage'
+        '@jelica-rado/peregrine/lib/talons/Image/useResourceImage'
     );
     const spy = jest.spyOn(useResourceImageTalon, 'useResourceImage');
 

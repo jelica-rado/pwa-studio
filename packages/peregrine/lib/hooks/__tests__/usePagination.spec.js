@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { push, replace } from 'react-router-dom';
 import { act } from 'react-test-renderer';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import { usePagination } from '../usePagination';
 import { getSearchParam } from '../useSearchParam';

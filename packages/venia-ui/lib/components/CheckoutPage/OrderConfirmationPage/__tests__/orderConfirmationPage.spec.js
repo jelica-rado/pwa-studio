@@ -1,12 +1,12 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
-import { useOrderConfirmationPage } from '@magento/peregrine/lib/talons/CheckoutPage/OrderConfirmationPage/useOrderConfirmationPage';
+import { useOrderConfirmationPage } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/OrderConfirmationPage/useOrderConfirmationPage';
 import OrderConfirmationPage from '../orderConfirmationPage';
 import CreateAccount from '../createAccount';
 
-jest.mock('@magento/peregrine', () => {
-    const actual = jest.requireActual('@magento/peregrine');
+jest.mock('@jelica-rado/peregrine', () => {
+    const actual = jest.requireActual('@jelica-rado/peregrine');
     const useToasts = jest.fn().mockReturnValue([{}, { addToast: jest.fn() }]);
 
     return {
@@ -16,7 +16,7 @@ jest.mock('@magento/peregrine', () => {
 });
 
 jest.mock(
-    '@magento/peregrine/lib/talons/CheckoutPage/OrderConfirmationPage/useOrderConfirmationPage',
+    '@jelica-rado/peregrine/lib/talons/CheckoutPage/OrderConfirmationPage/useOrderConfirmationPage',
     () => {
         return {
             useOrderConfirmationPage: jest.fn()

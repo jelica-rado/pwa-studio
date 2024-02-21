@@ -3,7 +3,7 @@ import { InMemoryCache } from '@apollo/client';
 import { MockedProvider } from '@apollo/client/testing';
 import { renderHook } from '@testing-library/react-hooks';
 
-import typePolicies from '@magento/peregrine/lib/Apollo/policies';
+import typePolicies from '@jelica-rado/peregrine/lib/Apollo/policies';
 
 import DEFAULT_OPERATIONS from '../cmsDynamicBlock.gql';
 import { useCmsDynamicBlock } from '../useCmsDynamicBlock';
@@ -19,7 +19,7 @@ jest.mock('react-router-dom', () => ({
     useLocation: jest.fn(() => ({ pathname: 'product-url.html' }))
 }));
 
-jest.mock('@magento/peregrine/lib/context/cart', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/cart', () => ({
     useCartContext: jest.fn().mockReturnValue([{ cartId: 'cart123' }])
 }));
 

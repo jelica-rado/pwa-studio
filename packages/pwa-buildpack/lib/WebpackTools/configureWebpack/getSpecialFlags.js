@@ -37,7 +37,7 @@ const pkgDir = require('pkg-dir');
  * @returns {hasSpecialFlags}
  */
 async function getSpecialFlags(special = {}, bus, resolver) {
-    bus.getTargetsOf('@magento/pwa-buildpack').specialFeatures.call(special);
+    bus.getTargetsOf('@jelica-rado/pwa-buildpack').specialFeatures.call(special);
 
     // Resolve every module listed in the `special` object into an absolute
     // filesystem path. Will be used as a test for the loader rules for each

@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import CreateAccountPage from '../createAccountPage';
 
 jest.mock(
-    '@magento/peregrine/lib/talons/CreateAccountPage/useCreateAccountPage',
+    '@jelica-rado/peregrine/lib/talons/CreateAccountPage/useCreateAccountPage',
     () => ({
         useCreateAccountPage: jest.fn(() => ({
             createAccountProps: {}
@@ -13,11 +13,11 @@ jest.mock(
     })
 );
 
-jest.mock('@magento/venia-ui/lib/components/CreateAccount', () => props => (
+jest.mock('@jelica-rado/venia-ui/lib/components/CreateAccount', () => props => (
     <mock-CreateAccount {...props} />
 ));
 
-jest.mock('@magento/venia-ui/lib/components/Head', () => ({
+jest.mock('@jelica-rado/venia-ui/lib/components/Head', () => ({
     StoreTitle: () => 'Title'
 }));
 

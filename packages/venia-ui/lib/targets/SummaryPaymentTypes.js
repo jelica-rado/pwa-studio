@@ -14,7 +14,7 @@ class SummaryPaymentTypes {
         const registry = this;
         this._methods = venia.esModuleObject({
             module:
-                '@magento/venia-ui/lib/components/CheckoutPage/PaymentInformation/summaryPaymentCollection.js',
+                '@jelica-rado/venia-ui/lib/components/CheckoutPage/PaymentInformation/summaryPaymentCollection.js',
             publish(targets) {
                 targets.summaryPagePaymentTypes.call(registry);
             }

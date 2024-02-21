@@ -1,6 +1,6 @@
 import React from 'react';
 import { useFormApi } from 'informed';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import Trigger from '../../Trigger';
 import ResetButton from '../resetButton';

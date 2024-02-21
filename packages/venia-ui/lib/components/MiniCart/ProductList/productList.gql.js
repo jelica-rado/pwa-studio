@@ -1,6 +1,6 @@
 /**
- * @deprecated - Moved to @magento/peregrine/lib/talons/MiniCart/ProductList/productListFragments.gql
+ * @deprecated - Moved to @jelica-rado/peregrine/lib/talons/MiniCart/ProductList/productListFragments.gql
  */
 export {
     ProductListFragment
-} from '@magento/peregrine/lib/talons/MiniCart/ProductList/productListFragments.gql';
+} from '@jelica-rado/peregrine/lib/talons/MiniCart/ProductList/productListFragments.gql';

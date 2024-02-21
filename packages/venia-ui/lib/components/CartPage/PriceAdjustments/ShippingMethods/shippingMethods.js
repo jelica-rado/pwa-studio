@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { Form } from 'informed';
-import { useShippingMethods } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/useShippingMethods';
+import { useShippingMethods } from '@jelica-rado/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/useShippingMethods';
 
 import { useStyle } from '../../../../classify';
 import Button from '../../../Button';
@@ -22,7 +22,7 @@ import ShippingRadios from './shippingRadios';
  * @returns {React.Element}
  *
  * @example <caption>Importing into your project</caption>
- * import ShippingMethods from "@magento/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods";
+ * import ShippingMethods from "@jelica-rado/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods";
  */
 const ShippingMethods = props => {
     const { setIsCartUpdating } = props;

@@ -6,7 +6,7 @@ import { Form } from 'informed';
 import {
     displayStates,
     useShippingMethod
-} from '@magento/peregrine/lib/talons/CheckoutPage/ShippingMethod/useShippingMethod';
+} from '@jelica-rado/peregrine/lib/talons/CheckoutPage/ShippingMethod/useShippingMethod';
 
 import { useStyle } from '../../../classify';
 import Button from '../../Button';

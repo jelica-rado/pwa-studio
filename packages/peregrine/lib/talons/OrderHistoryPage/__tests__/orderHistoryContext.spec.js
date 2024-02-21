@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
 import OrderHistoryContextProvider, {
     useOrderHistoryContext
 } from '../orderHistoryContext';

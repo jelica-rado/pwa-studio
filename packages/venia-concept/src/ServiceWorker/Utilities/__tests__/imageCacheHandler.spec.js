@@ -2,7 +2,7 @@ jest.mock('../networkUtils');
 import { CacheableResponsePlugin } from 'workbox-cacheable-response';
 import { CacheFirst } from 'workbox-strategies';
 import { ExpirationPlugin } from 'workbox-expiration';
-import { MESSAGE_TYPES } from '@magento/peregrine/lib/util/swUtils';
+import { MESSAGE_TYPES } from '@jelica-rado/peregrine/lib/util/swUtils';
 import { THIRTY_DAYS, IMAGES_CACHE_NAME } from '../../defaults';
 import {
     isResizedImage,

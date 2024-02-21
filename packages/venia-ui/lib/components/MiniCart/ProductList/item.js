@@ -4,15 +4,15 @@ import { string, number, shape, func, arrayOf, oneOf } from 'prop-types';
 import { Trash2 as DeleteIcon } from 'react-feather';
 import { Link } from 'react-router-dom';
 
-import Price from '@magento/venia-ui/lib/components/Price';
-import { useItem } from '@magento/peregrine/lib/talons/MiniCart/useItem';
-import resourceUrl from '@magento/peregrine/lib/util/makeUrl';
+import Price from '@jelica-rado/venia-ui/lib/components/Price';
+import { useItem } from '@jelica-rado/peregrine/lib/talons/MiniCart/useItem';
+import resourceUrl from '@jelica-rado/peregrine/lib/util/makeUrl';
 
 import ProductOptions from '../../LegacyMiniCart/productOptions';
 import Image from '../../Image';
 import Icon from '../../Icon';
 import { useStyle } from '../../../classify';
-import configuredVariant from '@magento/peregrine/lib/util/configuredVariant';
+import configuredVariant from '@jelica-rado/peregrine/lib/util/configuredVariant';
 
 import defaultClasses from './item.module.css';
 

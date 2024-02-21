@@ -1,5 +1,5 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import Item from '../item';
 import PlaceholderImage from '../../../Image/placeholderImage';
@@ -9,7 +9,7 @@ jest.mock('react-router-dom', () => ({
 }));
 
 jest.mock(
-    '@magento/peregrine/lib/talons/OrderHistoryPage/orderHistoryContext',
+    '@jelica-rado/peregrine/lib/talons/OrderHistoryPage/orderHistoryContext',
     () => ({
         useOrderHistoryContext: jest
             .fn()

@@ -1,6 +1,6 @@
 import React from 'react';
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
-import { useCreditCard } from '@magento/peregrine/lib/talons/CheckoutPage/PaymentInformation/useCreditCard';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
+import { useCreditCard } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/PaymentInformation/useCreditCard';
 
 import CreditCard from '../creditCard';
 import LoadingIndicator from '../../../LoadingIndicator';
@@ -11,7 +11,7 @@ import classes from '../creditCard.module.css';
 jest.mock('../../../../classify');
 
 jest.mock(
-    '@magento/peregrine/lib/talons/CheckoutPage/PaymentInformation/useCreditCard',
+    '@jelica-rado/peregrine/lib/talons/CheckoutPage/PaymentInformation/useCreditCard',
     () => {
         return {
             useCreditCard: jest.fn().mockReturnValue({

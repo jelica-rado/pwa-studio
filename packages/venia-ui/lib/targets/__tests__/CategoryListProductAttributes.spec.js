@@ -1,15 +1,15 @@
 const {
     mockTargetProvider
-} = require('@magento/pwa-buildpack/lib/TestHelpers');
-const TargetableSet = require('@magento/pwa-buildpack/lib/WebpackTools/targetables/TargetableSet');
+} = require('@jelica-rado/pwa-buildpack/lib/TestHelpers');
+const TargetableSet = require('@jelica-rado/pwa-buildpack/lib/WebpackTools/targetables/TargetableSet');
 
 const CategoryListProductAttributes = require('../CategoryListProductAttributes');
 
 const targets = mockTargetProvider(
-    '@magento/venia-ui',
+    '@jelica-rado/venia-ui',
     (_, dep) =>
         ({
-            '@magento/pwa-buildpack': {
+            '@jelica-rado/pwa-buildpack': {
                 specialFeatures: {
                     tap: jest.fn()
                 },

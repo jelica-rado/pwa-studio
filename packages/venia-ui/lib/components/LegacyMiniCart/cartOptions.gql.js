@@ -1,5 +1,5 @@
 import { gql } from '@apollo/client';
-import { CartPageFragment } from '@magento/peregrine/lib/talons/CartPage/cartPageFragments.gql.js';
+import { CartPageFragment } from '@jelica-rado/peregrine/lib/talons/CartPage/cartPageFragments.gql.js';
 
 export const REMOVE_ITEM_MUTATION = gql`
     mutation RemoveItemForOptions($cartId: String!, $itemId: ID!) {

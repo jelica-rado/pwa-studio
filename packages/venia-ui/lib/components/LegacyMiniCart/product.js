@@ -1,9 +1,9 @@
 import React, { useMemo } from 'react';
 import { array, func, number, shape, string } from 'prop-types';
 
-import Price from '@magento/venia-ui/lib/components/Price';
-import { useProduct } from '@magento/peregrine/lib/talons/LegacyMiniCart/useProduct';
-import { transparentPlaceholder } from '@magento/peregrine/lib/util/images';
+import Price from '@jelica-rado/venia-ui/lib/components/Price';
+import { useProduct } from '@jelica-rado/peregrine/lib/talons/LegacyMiniCart/useProduct';
+import { transparentPlaceholder } from '@jelica-rado/peregrine/lib/util/images';
 
 import { useStyle } from '../../classify';
 import Image from '../Image';

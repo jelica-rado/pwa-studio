@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { useSubMenu } from '@magento/peregrine/lib/talons/MegaMenu/useSubMenu';
+import { useSubMenu } from '@jelica-rado/peregrine/lib/talons/MegaMenu/useSubMenu';
 
 import { useStyle } from '../../classify';
 import defaultClasses from './submenu.module.css';

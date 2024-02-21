@@ -2,7 +2,7 @@ import React from 'react';
 import { bool, shape, string } from 'prop-types';
 import { Form } from 'informed';
 import { useIntl } from 'react-intl';
-import { useSearchBar } from '@magento/peregrine/lib/talons/SearchBar';
+import { useSearchBar } from '@jelica-rado/peregrine/lib/talons/SearchBar';
 
 import { useStyle } from '../../classify';
 import Autocomplete from './autocomplete';

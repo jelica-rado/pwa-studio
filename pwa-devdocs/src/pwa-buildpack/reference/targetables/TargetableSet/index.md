@@ -16,11 +16,11 @@ Code examples for using the `TargetableSet` class.
 
 ### Import the class
 
-This class is available as a named import from `@magento/pwa-buildpack`.
+This class is available as a named import from `@jelica-rado/pwa-buildpack`.
 
 ```js
-// The `TargetableSet` class is exported from `@magento/pwa-buildpack` as `Targetables`
-const { Targetables } = require('@magento/pwa-buildpack')
+// The `TargetableSet` class is exported from `@jelica-rado/pwa-buildpack` as `Targetables`
+const { Targetables } = require('@jelica-rado/pwa-buildpack')
 ```
 
 ### Create a bound instance
@@ -28,8 +28,8 @@ const { Targetables } = require('@magento/pwa-buildpack')
 Use the `TargetProvider` instance passed to your intercept function to create a `TargetableSet` instance bound to that `TargetProvider`.
 
 ```js
-// The `TargetableSet` class is exported from `@magento/pwa-buildpack` as `Targetables`
-const { Targetables } = require('@magento/pwa-buildpack')
+// The `TargetableSet` class is exported from `@jelica-rado/pwa-buildpack` as `Targetables`
+const { Targetables } = require('@jelica-rado/pwa-buildpack')
 
 module.exports = targets => {
     const targetables = Targetables.using(targets);
@@ -39,19 +39,19 @@ module.exports = targets => {
 ### Create a Targetable object
 
 Use a bound `TargetableSet` instance to create a Targetable object given the module path (`modulePath`).
-This path can be module-resolveable (e.g. `"@magento/venia-ui/lib/components/Button"`) or module-root-relative (e.g. `"lib/components/Button"`).
+This path can be module-resolveable (e.g. `"@jelica-rado/venia-ui/lib/components/Button"`) or module-root-relative (e.g. `"lib/components/Button"`).
 
 **NOTE:**
 If the value is module-root-relative, the current module name is added automatically.
 
 ```js
-const { Targetables } = require('@magento/pwa-buildpack')
+const { Targetables } = require('@jelica-rado/pwa-buildpack')
 
 module.exports = targets => {
     const targetables = Targetables.using(targets);
 
     const MainComponent = targetables.module(
-        '@magento/venia-ui/lib/components/Main/main.js'
+        '@jelica-rado/venia-ui/lib/components/Main/main.js'
     );
 ```
 
@@ -61,7 +61,7 @@ Extensions with special files, like ES Modules, CSS Modules, GraphQL queries, an
 To do this, they can tap the builtin `specialFeatures` target.
 
 ```js
-targets.of('@magento/pwa-buildpack').specialFeatures.tap(features => {
+targets.of('@jelica-rado/pwa-buildpack').specialFeatures.tap(features => {
   features[targets.name] = {
     esModules: true,
     graphqlQueries: true,
@@ -82,7 +82,7 @@ Extensions can add custom environment configuration settings to a storefront.
 To do this, they can tap the builtin `envVarDefinitions` target.
 
 ```js
-targets.of('@magento/pwa-buildpack').envVarDefinitions.tap(defs => {
+targets.of('@jelica-rado/pwa-buildpack').envVarDefinitions.tap(defs => {
   defs.sections.push({
     name: 'Support Chat',
     variables: [

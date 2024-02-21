@@ -17,7 +17,7 @@ To update this section, update the doc blocks in the source code
 ```jsx
 import React from 'react'
 
-import useGiftOptions from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/GiftOptions/useGiftOptions';
+import useGiftOptions from '@jelica-rado/peregrine/lib/talons/CartPage/PriceAdjustments/GiftOptions/useGiftOptions';
 import MyGiftOptionsOperations from './myGiftOptions.gql';
 
 const MyGiftOptions = props => {

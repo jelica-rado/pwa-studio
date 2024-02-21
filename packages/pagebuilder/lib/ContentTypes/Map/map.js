@@ -3,7 +3,7 @@ import { arrayOf, string, bool, number, object, shape } from 'prop-types';
 import loadGoogleMapsApi from 'load-google-maps-api';
 import defaultClasses from './map.module.css';
 import escape from 'lodash.escape';
-import { useStyle } from '@magento/venia-ui/lib/classify';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
 import { mapDefaultProps } from './configAggregator';
 
 const getLocationFormattedAsHtml = location => {

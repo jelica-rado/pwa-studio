@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import Multiselect from '../multiselect';
 
-jest.mock('@magento/venia-ui/lib/components/RichContent', () => {
+jest.mock('@jelica-rado/venia-ui/lib/components/RichContent', () => {
     return props => <mock-RichContent {...props} />;
 });
 

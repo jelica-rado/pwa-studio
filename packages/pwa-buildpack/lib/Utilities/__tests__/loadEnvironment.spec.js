@@ -449,14 +449,14 @@ test('augments with interceptors of envVarDefinitions target', async () => {
     );
     pertain.mockReturnValueOnce([
         {
-            name: '@magento/pwa-buildpack',
+            name: '@jelica-rado/pwa-buildpack',
             path: './declare-base',
             subject: 'pwa-studio.targets.declare'
         }
     ]);
     pertain.mockReturnValueOnce([
         {
-            name: '@magento/fake-test',
+            name: '@jelica-rado/fake-test',
             path: './fake-intercept',
             subject: 'pwa-studio.targets.intercept'
         }
@@ -465,7 +465,7 @@ test('augments with interceptors of envVarDefinitions target', async () => {
     jest.doMock(
         '../../BuildBus/fake-intercept',
         () => targets =>
-            targets.of('@magento/pwa-buildpack').envVarDefinitions.tap(defs =>
+            targets.of('@jelica-rado/pwa-buildpack').envVarDefinitions.tap(defs =>
                 defs.sections.push({
                     name: 'whatsits',
                     variables: [

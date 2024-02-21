@@ -3,7 +3,7 @@ import {
     PeregrineContextProvider as Peregrine,
     ToastContextProvider,
     WindowSizeContextProvider
-} from '@magento/peregrine';
+} from '@jelica-rado/peregrine';
 import LocaleProvider from './localeProvider';
 
 /**

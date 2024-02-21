@@ -1,7 +1,7 @@
 const path = require('path');
 const packageRoot = path.resolve(__dirname, '../..');
 const glob = require('fast-glob');
-const Trackable = require('@magento/pwa-buildpack/lib/BuildBus/Trackable');
+const Trackable = require('@jelica-rado/pwa-buildpack/lib/BuildBus/Trackable');
 const TargetableHook = require('./TargetableHook');
 
 /**
@@ -72,7 +72,7 @@ class HookInterceptorSet extends Trackable {
             const hookName = path.basename(hookPath, path.extname(hookPath));
             const targetedHook = new TargetableHook(
                 path.join(
-                    '@magento/peregrine',
+                    '@jelica-rado/peregrine',
                     path.relative(
                         packageRoot,
                         path.resolve(this._hookDir, hookPath)

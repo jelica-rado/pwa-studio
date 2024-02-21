@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import { useIntersectionObserver } from '../useIntersectionObserver';
 
 const log = jest.fn();

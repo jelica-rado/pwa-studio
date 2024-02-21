@@ -2,7 +2,7 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import { func, shape, string } from 'prop-types';
 import { Link } from 'react-router-dom';
-import { useSuggestedCategory } from '@magento/peregrine/lib/talons/SearchBar';
+import { useSuggestedCategory } from '@jelica-rado/peregrine/lib/talons/SearchBar';
 
 import { useStyle } from '../../classify';
 import defaultClasses from './suggestedCategory.module.css';

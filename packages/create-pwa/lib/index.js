@@ -9,7 +9,7 @@ const gitUserInfo = require('git-user-info');
 const isInvalidPath = require('is-invalid-path');
 const isValidNpmName = require('is-valid-npm-name');
 const pkg = require('../package.json');
-const defaultSampleBackends = require('@magento/pwa-buildpack/sampleBackends.json');
+const defaultSampleBackends = require('@jelica-rado/pwa-buildpack/sampleBackends.json');
 
 const uniqBy = (array, property) => {
     const map = new Map();
@@ -99,8 +99,8 @@ module.exports = async () => {
         {
             name: 'template',
             message: ({ name }) =>
-                `Which template would you like to use to bootstrap ${name}? Defaults to "@magento/venia-concept".`,
-            default: '@magento/venia-concept'
+                `Which template would you like to use to bootstrap ${name}? Defaults to "@jelica-rado/venia-concept".`,
+            default: '@jelica-rado/venia-concept'
         },
         {
             name: 'backendUrl',
@@ -192,7 +192,7 @@ module.exports = async () => {
         );
 
         const buildpackBinLoc = resolve(
-            require.resolve('@magento/pwa-buildpack'),
+            require.resolve('@jelica-rado/pwa-buildpack'),
             '../../bin/buildpack'
         ).replace(/([ '"])/g, '\\$1');
         await execa.shell(`${buildpackBinLoc} ${argsString}`, {

@@ -1,6 +1,6 @@
 module.exports = api => {
     const config = {
-        presets: ['@magento/peregrine'],
+        presets: ['@jelica-rado/peregrine'],
         exclude: [/packages\/babel\-preset\-peregrine\//]
     };
     if (api.env() === 'development') {

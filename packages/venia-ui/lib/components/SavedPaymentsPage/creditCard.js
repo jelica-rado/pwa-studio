@@ -6,10 +6,10 @@ import {
     Trash2 as DeleteIcon
 } from 'react-feather';
 
-import { useToasts } from '@magento/peregrine';
-import { useCreditCard } from '@magento/peregrine/lib/talons/SavedPaymentsPage/useCreditCard';
+import { useToasts } from '@jelica-rado/peregrine';
+import { useCreditCard } from '@jelica-rado/peregrine/lib/talons/SavedPaymentsPage/useCreditCard';
 
-import { useStyle } from '@magento/venia-ui/lib/classify';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
 import Button from '../Button';
 import Icon from '../Icon';
 import LinkButton from '../LinkButton';

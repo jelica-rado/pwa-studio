@@ -1,8 +1,8 @@
 import React from 'react';
 import { verticalAlignmentToFlex } from '../../utils';
-import resourceUrl from '@magento/peregrine/lib/util/makeUrl';
-import { useMediaQuery } from '@magento/peregrine/lib/hooks/useMediaQuery';
-import { useStyle } from '@magento/venia-ui/lib/classify';
+import resourceUrl from '@jelica-rado/peregrine/lib/util/makeUrl';
+import { useMediaQuery } from '@jelica-rado/peregrine/lib/hooks/useMediaQuery';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
 import defaultClasses from './tabItem.module.css';
 import { arrayOf, oneOf, shape, string, object } from 'prop-types';
 

@@ -108,7 +108,7 @@ Inside the `src/targets/local-intercept.js` file, write the following content:
 
 ```js
 module.exports = targets => {
-  targets.of("@magento/venia-ui").routes.tap(routes => {
+  targets.of("@jelica-rado/venia-ui").routes.tap(routes => {
     routes.push({
       name: "MyGreetingRoute",
       pattern: "/greeting/:who?",
@@ -119,7 +119,7 @@ module.exports = targets => {
 };
 ```
 
-The code in this file accesses the [routes target][] of `@magento/venia-ui` and adds a new entry to the list.
+The code in this file accesses the [routes target][] of `@jelica-rado/venia-ui` and adds a new entry to the list.
 It adds a new route definition object that specifies the pattern for a new route and which page component renders that route.
 
 ### Register the intercept file

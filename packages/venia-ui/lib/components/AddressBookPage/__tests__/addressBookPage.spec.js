@@ -1,15 +1,15 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useAddressBookPage } from '@magento/peregrine/lib/talons/AddressBookPage/useAddressBookPage';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useAddressBookPage } from '@jelica-rado/peregrine/lib/talons/AddressBookPage/useAddressBookPage';
 
 import AddressBookPage from '../addressBookPage';
 
-jest.mock('@magento/venia-ui/lib/classify');
+jest.mock('@jelica-rado/venia-ui/lib/classify');
 
 jest.mock('../../Head', () => ({ StoreTitle: () => 'Title' }));
 jest.mock('../../Icon', () => 'Icon');
 jest.mock(
-    '@magento/peregrine/lib/talons/AddressBookPage/useAddressBookPage',
+    '@jelica-rado/peregrine/lib/talons/AddressBookPage/useAddressBookPage',
     () => {
         return {
             useAddressBookPage: jest.fn()

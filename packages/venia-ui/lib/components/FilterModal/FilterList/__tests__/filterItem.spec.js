@@ -1,5 +1,5 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import { mockFilterDefault } from '../filterDefault';
 import FilterItem from '../filterItem';
 

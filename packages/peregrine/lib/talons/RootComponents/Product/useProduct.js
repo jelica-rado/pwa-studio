@@ -1,7 +1,7 @@
 import { useQuery } from '@apollo/client';
 import { useEffect, useMemo } from 'react';
 import { useLocation } from 'react-router-dom';
-import { useAppContext } from '@magento/peregrine/lib/context/app';
+import { useAppContext } from '@jelica-rado/peregrine/lib/context/app';
 
 import mergeOperations from '../../../util/shallowMerge';
 import DEFAULT_OPERATIONS from './product.gql';

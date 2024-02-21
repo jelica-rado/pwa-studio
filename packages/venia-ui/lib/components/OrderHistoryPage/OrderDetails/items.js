@@ -1,7 +1,7 @@
 import React from 'react';
 import { shape, arrayOf, string, number } from 'prop-types';
 
-import { useStyle } from '@magento/venia-ui/lib/classify';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
 
 import Item from './item';
 

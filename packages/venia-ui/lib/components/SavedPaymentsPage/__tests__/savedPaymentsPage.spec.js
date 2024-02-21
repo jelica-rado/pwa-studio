@@ -1,14 +1,14 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useSavedPaymentsPage } from '@magento/peregrine/lib/talons/SavedPaymentsPage/useSavedPaymentsPage';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useSavedPaymentsPage } from '@jelica-rado/peregrine/lib/talons/SavedPaymentsPage/useSavedPaymentsPage';
 
 import SavedPaymentsPage from '../savedPaymentsPage';
 
-jest.mock('@magento/venia-ui/lib/classify');
+jest.mock('@jelica-rado/venia-ui/lib/classify');
 
 jest.mock('../../Head', () => ({ StoreTitle: () => 'Title' }));
 jest.mock(
-    '@magento/peregrine/lib/talons/SavedPaymentsPage/useSavedPaymentsPage',
+    '@jelica-rado/peregrine/lib/talons/SavedPaymentsPage/useSavedPaymentsPage',
     () => {
         return {
             useSavedPaymentsPage: jest.fn()

@@ -3,12 +3,12 @@ import { MockedProvider } from '@apollo/client/testing';
 import { InMemoryCache } from '@apollo/client';
 import { act, renderHook } from '@testing-library/react-hooks';
 
-import typePolicies from '@magento/peregrine/lib/Apollo/policies';
-import { useUserContext } from '@magento/peregrine/lib/context/user';
+import typePolicies from '@jelica-rado/peregrine/lib/Apollo/policies';
+import { useUserContext } from '@jelica-rado/peregrine/lib/context/user';
 import operations from '../../addToListButton.gql';
 import { useSingleWishlist } from '../useSingleWishlist';
 
-jest.mock('@magento/peregrine/lib/context/user', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/user', () => ({
     useUserContext: jest.fn().mockReturnValue([{ isSignedIn: true }])
 }));
 

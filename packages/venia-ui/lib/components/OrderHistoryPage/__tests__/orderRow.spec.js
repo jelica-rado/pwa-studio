@@ -1,10 +1,10 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useOrderRow } from '@magento/peregrine/lib/talons/OrderHistoryPage/useOrderRow';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useOrderRow } from '@jelica-rado/peregrine/lib/talons/OrderHistoryPage/useOrderRow';
 
 import OrderRow from '../orderRow';
 
-jest.mock('@magento/peregrine/lib/talons/OrderHistoryPage/useOrderRow');
+jest.mock('@jelica-rado/peregrine/lib/talons/OrderHistoryPage/useOrderRow');
 
 jest.mock('../../../classify');
 jest.mock('../collapsedImageGallery', () => props => (

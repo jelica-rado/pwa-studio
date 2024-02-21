@@ -3,14 +3,14 @@ const path = require('path');
 const {
     mockBuildBus,
     buildModuleWith
-} = require('@magento/pwa-buildpack/lib/TestHelpers');
-const { createTestInstance } = require('@magento/peregrine');
+} = require('@jelica-rado/pwa-buildpack/lib/TestHelpers');
+const { createTestInstance } = require('@jelica-rado/peregrine');
 const declare = require('../venia-ui-declare');
 const intercept = require('../venia-ui-intercept');
 const { DefinePlugin } = require('webpack');
 
 const thisDep = {
-    name: '@magento/venia-ui',
+    name: '@jelica-rado/venia-ui',
     declare,
     intercept
 };
@@ -39,7 +39,7 @@ test('declares targets richContentRenderers and routes', async () => {
     });
     bus.runPhase('declare');
     const { richContentRenderers, routes } = bus.getTargetsOf(
-        '@magento/venia-ui'
+        '@jelica-rado/venia-ui'
     );
     expect(richContentRenderers.tap).toBeDefined();
     expect(routes.tap).toBeDefined();
@@ -60,7 +60,7 @@ test('uses RichContentRenderers to inject a default strategy into RichContent', 
 
     const built = await buildModuleWith('../../components/RichContent', {
         context: __dirname,
-        dependencies: ['@magento/peregrine', thisDep],
+        dependencies: ['@jelica-rado/peregrine', thisDep],
         plugins: [
             new DefinePlugin({
                 STORE_VIEW_CODE: '"default"',
@@ -102,7 +102,7 @@ test('uses routes to inject client-routed pages', async () => {
     const routesModule = '../../components/Routes/routes';
     const built = await buildModuleWith(routesModule, {
         context: path.dirname(require.resolve(routesModule)),
-        dependencies: ['@magento/peregrine', thisDep],
+        dependencies: ['@jelica-rado/peregrine', thisDep],
         mockFiles: {
             '../../RootComponents/Search/index.js': mockDefault('Search'),
             '../LoadingIndicator/index.js':
@@ -132,7 +132,7 @@ test('declares checkoutPagePaymentTypes target', async () => {
         dependencies: [thisDep]
     });
     bus.runPhase('declare');
-    const { checkoutPagePaymentTypes } = bus.getTargetsOf('@magento/venia-ui');
+    const { checkoutPagePaymentTypes } = bus.getTargetsOf('@jelica-rado/venia-ui');
 
     const interceptor = jest.fn();
     // no implementation testing in declare phase
@@ -148,7 +148,7 @@ test('uses RichContentRenderers to default strategy Payment Method', async () =>
         '../../components/CheckoutPage/PaymentInformation/paymentMethodCollection.js',
         {
             context: __dirname,
-            dependencies: ['@magento/peregrine', thisDep]
+            dependencies: ['@jelica-rado/peregrine', thisDep]
         }
     );
 
@@ -162,7 +162,7 @@ test('declares savedPaymentTypes target', async () => {
         dependencies: [thisDep]
     });
     bus.runPhase('declare');
-    const { savedPaymentTypes } = bus.getTargetsOf('@magento/venia-ui');
+    const { savedPaymentTypes } = bus.getTargetsOf('@jelica-rado/venia-ui');
 
     const interceptor = jest.fn();
     // no implementation testing in declare phase

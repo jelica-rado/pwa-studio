@@ -24,7 +24,7 @@ import { useCartContext } from '../../../../context/cart';
  * @return {ShippingRadiosTalonProps}
  *
  * @example <caption>Importing into your project</caption>
- * import { useShippingRadios } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/useShippingRadios';
+ * import { useShippingRadios } from '@jelica-rado/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/useShippingRadios';
  */
 export const useShippingRadios = props => {
     const {

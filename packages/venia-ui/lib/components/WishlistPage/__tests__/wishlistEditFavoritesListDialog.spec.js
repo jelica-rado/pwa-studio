@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form } from 'informed';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import WishlistEditFavoritesListDialog from '../wishlistEditFavoritesListDialog';
 

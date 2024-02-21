@@ -3,11 +3,11 @@
 import React from 'react';
 import { useIntl } from 'react-intl';
 import { string, shape } from 'prop-types';
-import { useCategoryList } from '@magento/peregrine/lib/talons/CategoryList/useCategoryList';
+import { useCategoryList } from '@jelica-rado/peregrine/lib/talons/CategoryList/useCategoryList';
 
 import { useStyle } from '../../classify';
 import { fullPageLoadingIndicator } from '../LoadingIndicator';
-import ErrorView from '@magento/venia-ui/lib/components/ErrorView';
+import ErrorView from '@jelica-rado/venia-ui/lib/components/ErrorView';
 import defaultClasses from './categoryList.module.css';
 import CategoryTile from './categoryTile';
 

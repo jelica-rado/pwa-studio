@@ -1,8 +1,8 @@
 import { renderHook } from '@testing-library/react-hooks';
 import { useCommonToasts } from '../useCommonToasts';
-import { useToasts } from '@magento/peregrine';
+import { useToasts } from '@jelica-rado/peregrine';
 
-jest.mock('@magento/peregrine', () => ({
+jest.mock('@jelica-rado/peregrine', () => ({
     useToasts: jest.fn().mockReturnValue([{}, { addToast: jest.fn() }])
 }));
 

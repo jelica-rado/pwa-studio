@@ -1,4 +1,4 @@
-const { configureWebpack, graphQL } = require('@magento/pwa-buildpack');
+const { configureWebpack, graphQL } = require('@jelica-rado/pwa-buildpack');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const fs = require('fs');

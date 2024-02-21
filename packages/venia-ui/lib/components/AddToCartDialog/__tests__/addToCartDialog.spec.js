@@ -1,11 +1,11 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useAddToCartDialog } from '@magento/peregrine/lib/talons/AddToCartDialog/useAddToCartDialog';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useAddToCartDialog } from '@jelica-rado/peregrine/lib/talons/AddToCartDialog/useAddToCartDialog';
 
 import AddToCartDialog from '../addToCartDialog';
 
 jest.mock(
-    '@magento/peregrine/lib/talons/AddToCartDialog/useAddToCartDialog',
+    '@jelica-rado/peregrine/lib/talons/AddToCartDialog/useAddToCartDialog',
     () => ({
         useAddToCartDialog: jest.fn()
     })

@@ -100,7 +100,7 @@ module.exports.builder = yargs =>
         .options({
             template: {
                 describe:
-                    'Name of a "template" to clone and customize. Currently only the "@magento/venia-concept" template is supported. Version labels are supported. For instance: @magento/venia-concept@8.0.0'
+                    'Name of a "template" to clone and customize. Currently only the "@jelica-rado/venia-concept" template is supported. Version labels are supported. For instance: @jelica-rado/venia-concept@8.0.0'
             },
             backendUrl: {
                 alias: 'b',

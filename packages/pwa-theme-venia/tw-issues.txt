@@ -13,7 +13,7 @@ When published, "tailwind.config.js" points to the Node modules version of
 "tailwind.preset.js".
 
 See: node_modules/magento/pwa-studio/packages/pwa-theme-venia/tailwind.preset.js
-Path: @magento/pwa-theme-venia
+Path: @jelica-rado/pwa-theme-venia
 
 For core devs + contributors, you will need to edit the "preset" while working.
 Obviously you can't edit inside "node_modules".

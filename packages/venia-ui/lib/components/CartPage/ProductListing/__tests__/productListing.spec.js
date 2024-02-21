@@ -1,12 +1,12 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import LoadingIndicator from '../../../LoadingIndicator';
 import ProductListing from '../productListing';
-import { useProductListing } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useProductListing';
+import { useProductListing } from '@jelica-rado/peregrine/lib/talons/CartPage/ProductListing/useProductListing';
 
 jest.mock(
-    '@magento/peregrine/lib/talons/CartPage/ProductListing/useProductListing'
+    '@jelica-rado/peregrine/lib/talons/CartPage/ProductListing/useProductListing'
 );
 jest.mock('../../../../classify');
 jest.mock('@apollo/client', () => {
@@ -16,7 +16,7 @@ jest.mock('@apollo/client', () => {
     };
 });
 
-jest.mock('@magento/peregrine/lib/context/cart', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/cart', () => {
     const state = { cartId: 'cart123' };
     const api = {};
     const useCartContext = jest.fn(() => [state, api]);
@@ -26,7 +26,7 @@ jest.mock('@magento/peregrine/lib/context/cart', () => {
 jest.mock('react-router-dom', () => ({
     Link: ({ children, ...rest }) => <div {...rest}>{children}</div>
 }));
-jest.mock('@magento/peregrine/lib/util/makeUrl');
+jest.mock('@jelica-rado/peregrine/lib/util/makeUrl');
 jest.mock('../product', () => 'Product');
 jest.mock('../EditModal', () => 'EditModal');
 

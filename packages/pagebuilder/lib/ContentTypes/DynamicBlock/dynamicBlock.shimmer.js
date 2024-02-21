@@ -1,8 +1,8 @@
 import React from 'react';
 import { arrayOf, shape, string, object } from 'prop-types';
 import defaultClasses from './dynamicBlock.shimmer.module.css';
-import { useStyle } from '@magento/venia-ui/lib/classify';
-import Shimmer from '@magento/venia-ui/lib/components/Shimmer';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
+import Shimmer from '@jelica-rado/venia-ui/lib/components/Shimmer';
 
 /**
  * Page Builder Dynamic Block Shimmer component.

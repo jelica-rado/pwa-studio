@@ -1,7 +1,7 @@
 import React, { useMemo, useCallback } from 'react';
 import { useIntl } from 'react-intl';
 import { bool, func, shape, string } from 'prop-types';
-import { useCreditCard } from '@magento/peregrine/lib/talons/CheckoutPage/PaymentInformation/useCreditCard';
+import { useCreditCard } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/PaymentInformation/useCreditCard';
 
 import { isRequired } from '../../../util/formValidators';
 import Country from '../../Country';

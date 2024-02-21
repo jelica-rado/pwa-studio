@@ -1,13 +1,13 @@
 import React from 'react';
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
-import { useSummary } from '@magento/peregrine/lib/talons/CheckoutPage/PaymentInformation/useSummary';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
+import { useSummary } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/PaymentInformation/useSummary';
 
 import Summary from '../summary';
 
 jest.mock('../../../../classify');
 
 jest.mock(
-    '@magento/peregrine/lib/talons/CheckoutPage/PaymentInformation/useSummary',
+    '@jelica-rado/peregrine/lib/talons/CheckoutPage/PaymentInformation/useSummary',
     () => {
         return {
             useSummary: jest.fn().mockReturnValue({

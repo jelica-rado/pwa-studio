@@ -1,6 +1,6 @@
 import React from 'react';
 import defaultClasses from './divider.module.css';
-import { useStyle } from '@magento/venia-ui/lib/classify';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
 import { arrayOf, shape, string } from 'prop-types';
 
 /**

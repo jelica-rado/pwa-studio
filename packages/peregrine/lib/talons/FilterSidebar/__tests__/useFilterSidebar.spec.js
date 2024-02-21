@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { act } from 'react-test-renderer';
 import { useHistory, useLocation } from 'react-router-dom';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import { useFilterSidebar } from '../useFilterSidebar';
 
 jest.mock('../../FilterModal/helpers', () => ({
@@ -12,7 +12,7 @@ jest.mock('../../FilterModal/helpers', () => ({
     stripHtml: jest.fn(() => 'strippedHtml')
 }));
 
-jest.mock('@magento/peregrine/lib/context/app', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/app', () => {
     const api = {
         closeDrawer: jest.fn()
     };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import AuthModal from '../authModal';
 
@@ -13,7 +13,7 @@ jest.mock('../../ForgotPassword', () => props => (
 jest.mock('../../MyAccount', () => props => <mock-MyAccount {...props} />);
 jest.mock('../../SignIn', () => props => <mock-SignIn {...props} />);
 
-jest.mock('@magento/peregrine/lib/talons/AuthModal/useAuthModal', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/AuthModal/useAuthModal', () => ({
     useAuthModal: jest.fn().mockReturnValue({
         handleCancel: jest.fn(),
         handleCreateAccount: jest.fn(),

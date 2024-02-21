@@ -1,11 +1,11 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useProductForm } from '@magento/peregrine/lib/talons/CartPage/ProductListing/EditModal/useProductForm';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useProductForm } from '@jelica-rado/peregrine/lib/talons/CartPage/ProductListing/EditModal/useProductForm';
 
 import ProductForm from '../productForm';
 
 jest.mock(
-    '@magento/peregrine/lib/talons/CartPage/ProductListing/EditModal/useProductForm'
+    '@jelica-rado/peregrine/lib/talons/CartPage/ProductListing/EditModal/useProductForm'
 );
 jest.mock('../../../../../classify');
 jest.mock('../../../../LoadingIndicator', () => 'LoadingIndicator');

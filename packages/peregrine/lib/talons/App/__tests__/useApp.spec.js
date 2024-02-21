@@ -1,12 +1,12 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { createTestInstance } from '@magento/peregrine';
-import errorRecord from '@magento/peregrine/lib/util/createErrorRecord';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import errorRecord from '@jelica-rado/peregrine/lib/util/createErrorRecord';
 import { act } from 'react-test-renderer';
 
 import { useApp } from '../useApp';
 
-import { useAppContext } from '@magento/peregrine/lib/context/app';
+import { useAppContext } from '@jelica-rado/peregrine/lib/context/app';
 
 jest.mock('react-router-dom', () => ({
     useHistory: jest.fn()
@@ -16,7 +16,7 @@ useHistory.mockImplementation(() => ({
     go: reload
 }));
 
-jest.mock('@magento/peregrine/lib/context/app', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/app', () => {
     const state = {
         drawerClosed: false,
         isOnline: true,

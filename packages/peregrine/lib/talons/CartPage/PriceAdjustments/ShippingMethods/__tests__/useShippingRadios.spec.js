@@ -2,7 +2,7 @@ import React from 'react';
 import { useMutation } from '@apollo/client';
 import { useFieldApi } from 'informed';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import { useShippingRadios } from '../useShippingRadios';
 import { act } from 'react-test-renderer';
 

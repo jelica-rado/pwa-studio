@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import { arrayOf, bool, shape, string } from 'prop-types';
 
-import { useStyle } from '@magento/venia-ui/lib/classify';
-import RichContent from '@magento/venia-ui/lib/components/RichContent';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
+import RichContent from '@jelica-rado/venia-ui/lib/components/RichContent';
 
 import defaultClasses from './select.module.css';
 

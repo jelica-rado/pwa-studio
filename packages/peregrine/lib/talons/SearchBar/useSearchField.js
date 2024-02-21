@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useRef } from 'react';
 import { useFormApi } from 'informed';
-import useFieldState from '@magento/peregrine/lib/hooks/hook-wrappers/useInformedFieldStateWrapper';
+import useFieldState from '@jelica-rado/peregrine/lib/hooks/hook-wrappers/useInformedFieldStateWrapper';
 
-import { getSearchParam } from '@magento/peregrine/lib/hooks/useSearchParam';
+import { getSearchParam } from '@jelica-rado/peregrine/lib/hooks/useSearchParam';
 
 /**
  * Returns props necessary to render a SearchField component.

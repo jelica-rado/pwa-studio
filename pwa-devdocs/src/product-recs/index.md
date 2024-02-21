@@ -23,7 +23,7 @@ Product Recommendations support on PWA requires installing the `venia-product-re
 1. You can install the PWA `venia-product-recommendations` package from the NPM registry:
 
    ```sh
-   npm install @magento/venia-product-recommendations
+   npm install @jelica-rado/venia-product-recommendations
    ```
 
    {:.bs-callout-info}
@@ -32,7 +32,7 @@ Product Recommendations support on PWA requires installing the `venia-product-re
    These two packages contain storefront functionality to collect required behavioral data and render the recommendations. If you need to install the `venia-data-collector` package separately, run:
 
    ```sh
-   npm install @magento/venia-data-collector
+   npm install @jelica-rado/venia-data-collector
    ```
 
    Some recommendation types use behavioral data from your shoppers to train machine learning models that build personalized recommendations.
@@ -69,7 +69,7 @@ It contains React components that do the following:
 
 ```jsx
 //Render recommendations using visual component
-import { VeniaProductRecommendations, PageTypes } from "@magento/venia-product-recommendations"
+import { VeniaProductRecommendations, PageTypes } from "@jelica-rado/venia-product-recommendations"
 return <VeniaProductRecommendations pageType={PageTypes.CMS} />
 ```
 ### Fetch data only
@@ -78,7 +78,7 @@ If you are not using the `venia-product-recommendations` package, you can call t
 #### Example
 
 ```js
-import { Pagetypes, useRecsData, VeniaProductRecommendations } from "@magento/venia-product-recommendations"
+import { Pagetypes, useRecsData, VeniaProductRecommendations } from "@jelica-rado/venia-product-recommendations"
 const {data, error, isLoading} = useRecsData({pagetype: Pagetypes.CMS})
 ```
 

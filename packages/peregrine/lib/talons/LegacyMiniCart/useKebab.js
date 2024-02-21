@@ -1,5 +1,5 @@
 import { useCallback, useRef, useState } from 'react';
-import { useEventListener } from '@magento/peregrine';
+import { useEventListener } from '@jelica-rado/peregrine';
 
 // TODO: Compare with `useDropdown` and consolidate if possible.
 export const useKebab = () => {

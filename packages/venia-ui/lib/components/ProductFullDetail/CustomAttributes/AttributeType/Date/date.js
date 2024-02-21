@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { shape, string } from 'prop-types';
 import { FormattedDate } from 'react-intl';
 
-import { useStyle } from '@magento/venia-ui/lib/classify';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
 
 import defaultClasses from './date.module.css';
 

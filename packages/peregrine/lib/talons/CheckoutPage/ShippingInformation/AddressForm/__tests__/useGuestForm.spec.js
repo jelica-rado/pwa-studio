@@ -2,7 +2,7 @@ import React from 'react';
 import { act } from 'react-test-renderer';
 import { useLazyQuery, useMutation } from '@apollo/client';
 import createTestInstance from '../../../../../util/createTestInstance';
-import { useEventingContext } from '@magento/peregrine/lib/context/eventing';
+import { useEventingContext } from '@jelica-rado/peregrine/lib/context/eventing';
 import { useGuestForm } from '../useGuestForm';
 
 jest.mock('@apollo/client', () => ({
@@ -31,7 +31,7 @@ jest.mock('../guestForm.gql', () => ({
     setGuestShippingMutation: 'setGuestShippingMutation'
 }));
 
-jest.mock('@magento/peregrine/lib/context/eventing', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/eventing', () => ({
     useEventingContext: jest.fn().mockReturnValue([{}, { dispatch: jest.fn() }])
 }));
 

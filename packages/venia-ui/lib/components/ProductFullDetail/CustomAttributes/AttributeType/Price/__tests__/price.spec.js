@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import Price from '../price';
 
-jest.mock('@magento/venia-ui/lib/components/Price', () => {
+jest.mock('@jelica-rado/venia-ui/lib/components/Price', () => {
     return props => <mock-Price {...props} />;
 });
 

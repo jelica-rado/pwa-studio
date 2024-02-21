@@ -1,4 +1,4 @@
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import ContentTypeFactory from '../factory';
 import * as config from '../config';
 import React from 'react';
@@ -6,7 +6,7 @@ import React from 'react';
 jest.mock('react-router-dom', () => ({
     withRouter: jest.fn(arg => arg)
 }));
-jest.mock('@magento/peregrine/lib/util/makeUrl');
+jest.mock('@jelica-rado/peregrine/lib/util/makeUrl');
 
 test('factory should render instance of content type', () => {
     const props = {

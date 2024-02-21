@@ -1,5 +1,5 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import RichContent from '../richContent';
 
 // mock the part of the build where venia-ui/targets/intercept.js adds

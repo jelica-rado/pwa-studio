@@ -26,7 +26,7 @@ The `Items` component is used as a direct child of the [`List`] component.
 ## Example
 
 ``` jsx
-import Items from '@magento/peregrine';
+import Items from '@jelica-rado/peregrine';
 
 const data = {
     s: { id: 's', value: 'Small' },

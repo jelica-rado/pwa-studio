@@ -1,7 +1,7 @@
 import React from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
-import Price from '@magento/venia-ui/lib/components/Price';
-import { usePriceSummary } from '@magento/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary';
+import Price from '@jelica-rado/venia-ui/lib/components/Price';
+import { usePriceSummary } from '@jelica-rado/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary';
 import Button from '../../Button';
 import { useStyle } from '../../../classify';
 import defaultClasses from './priceSummary.module.css';
@@ -24,7 +24,7 @@ import TaxSummary from './taxSummary';
  * @returns {React.Element}
  *
  * @example <caption>Importing into your project</caption>
- * import PriceSummary from "@magento/venia-ui/lib/components/CartPage/PriceSummary";
+ * import PriceSummary from "@jelica-rado/venia-ui/lib/components/CartPage/PriceSummary";
  */
 const PriceSummary = props => {
     const { isUpdating } = props;

@@ -5,7 +5,7 @@ The `List` component maps a collection of data objects into an array of elements
 ## Usage
 
 ```jsx
-import { List } from '@magento/peregrine';
+import { List } from '@jelica-rado/peregrine';
 
 const simpleData = new Map()
     .set('s', 'Small')

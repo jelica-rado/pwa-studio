@@ -1,8 +1,8 @@
 import { useCallback } from 'react';
 import { useHistory, useRouteMatch } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
-import { useCartContext } from '@magento/peregrine/lib/context/cart';
-import mergeOperations from '@magento/peregrine/lib/util/shallowMerge';
+import { useCartContext } from '@jelica-rado/peregrine/lib/context/cart';
+import mergeOperations from '@jelica-rado/peregrine/lib/util/shallowMerge';
 import DEFAULT_OPERATIONS from './priceSummary.gql';
 
 /**
@@ -43,7 +43,7 @@ const flattenData = data => {
  * @returns {PriceSummaryTalonProps}
  *
  * @example <caption>Importing into your project</caption>
- * import { usePriceSummary } from '@magento/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary';
+ * import { usePriceSummary } from '@jelica-rado/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary';
  */
 export const usePriceSummary = (props = {}) => {
     const operations = mergeOperations(DEFAULT_OPERATIONS, props.operations);

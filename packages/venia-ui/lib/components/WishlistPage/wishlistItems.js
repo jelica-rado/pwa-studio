@@ -1,5 +1,5 @@
 import React, { Fragment, useMemo } from 'react';
-import { useWishlistItems } from '@magento/peregrine/lib/talons/WishlistPage/useWishlistItems';
+import { useWishlistItems } from '@jelica-rado/peregrine/lib/talons/WishlistPage/useWishlistItems';
 
 import { useStyle } from '../../classify';
 import defaultClasses from './wishlistItems.module.css';

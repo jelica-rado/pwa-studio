@@ -1,7 +1,7 @@
 import React from 'react';
 
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
-import { useItemsReview } from '@magento/peregrine/lib/talons/CheckoutPage/ItemsReview/useItemsReview';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
+import { useItemsReview } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/ItemsReview/useItemsReview';
 
 import ItemsReview from '../itemsReview';
 import Item from '../item';
@@ -10,7 +10,7 @@ import ShowAllButton from '../showAllButton';
 import cartItems from '../__fixtures__/cartItems';
 
 jest.mock(
-    '@magento/peregrine/lib/talons/CheckoutPage/ItemsReview/useItemsReview',
+    '@jelica-rado/peregrine/lib/talons/CheckoutPage/ItemsReview/useItemsReview',
     () => ({
         useItemsReview: jest.fn().mockReturnValue({})
     })

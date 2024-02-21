@@ -1,5 +1,5 @@
 /**
- * @deprecated Moved to @magento/peregrine/lib/util/swUtils
+ * @deprecated Moved to @jelica-rado/peregrine/lib/util/swUtils
  */
 export {
     VALID_SERVICE_WORKER_ENVIRONMENT,
@@ -7,4 +7,4 @@ export {
     registerMessageHandler,
     sendMessageToSW,
     unRegisterMessageHandler
-} from '@magento/peregrine/lib/util/swUtils';
+} from '@jelica-rado/peregrine/lib/util/swUtils';

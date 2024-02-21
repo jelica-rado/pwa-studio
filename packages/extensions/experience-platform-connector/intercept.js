@@ -1,6 +1,6 @@
 module.exports = targets => {
-    const { talons } = targets.of('@magento/peregrine');
-    const { specialFeatures } = targets.of('@magento/pwa-buildpack');
+    const { talons } = targets.of('@jelica-rado/peregrine');
+    const { specialFeatures } = targets.of('@jelica-rado/pwa-buildpack');
 
     specialFeatures.tap(flags => {
         /**
@@ -13,12 +13,12 @@ module.exports = targets => {
     });
 
     talons.tap(({ App, Header, SearchBar }) => {
-        App.useApp.wrapWith('@magento/experience-platform-connector');
+        App.useApp.wrapWith('@jelica-rado/experience-platform-connector');
         Header.useAccountMenu.wrapWith(
-            '@magento/experience-platform-connector/src/wrappers/wrapUseAccountMenu'
+            '@jelica-rado/experience-platform-connector/src/wrappers/wrapUseAccountMenu'
         );
         SearchBar.useAutocomplete.wrapWith(
-            '@magento/experience-platform-connector/src/wrappers/wrapUseAutocomplete'
+            '@jelica-rado/experience-platform-connector/src/wrappers/wrapUseAutocomplete'
         );
     });
 };

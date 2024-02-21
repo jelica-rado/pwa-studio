@@ -72,7 +72,7 @@ The following example uses `combineReducers()` to combine the default Peregrine 
 // Example src/store.js file
 
 import { combineReducers, createStore } from 'redux';
-import { enhancer, reducers } from '@magento/peregrine';
+import { enhancer, reducers } from '@jelica-rado/peregrine';
 
 import myReducers from './lib/reducers';
 
@@ -126,8 +126,8 @@ Wrapping an application with the `PeregrineContextProvider` lets its components 
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { Adapter } from '@magento/venia-drivers';
-import { PeregrineContextProvider } from '@magento/peregrine';
+import { Adapter } from '@jelica-rado/venia-drivers';
+import { PeregrineContextProvider } from '@jelica-rado/peregrine';
 
 import store from './store'; // This was defined in the previous example
 import MyApplication from `./src/components/MyApplication`;
@@ -165,7 +165,7 @@ The decomposed array yields the state data and an API object to update that stat
 ```jsx
 // Example src/components/MyWelcomeMessage/myWelcomeMessage.js
 
-import { useUserContext } from '@magento/peregrine/lib/context/user';
+import { useUserContext } from '@jelica-rado/peregrine/lib/context/user';
 
 const MyWelcomeMessage = () => {
     const [userContext, userContextApi] = useUserContext();

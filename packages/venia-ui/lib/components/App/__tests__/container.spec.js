@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import App from '../app';
 import AppContainer from '../container';
 import { useErrorBoundary } from '../useErrorBoundary';
 
-jest.mock('@magento/peregrine/lib/context/unhandledErrors', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/unhandledErrors', () => ({
     useErrorContext: jest.fn().mockReturnValue([
         'unhandledErrors',
         {

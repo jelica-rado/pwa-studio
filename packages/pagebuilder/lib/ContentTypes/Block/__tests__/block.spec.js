@@ -1,22 +1,22 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import Block from '../block';
 import * as config from '../../../config';
 
 jest.mock('react-router-dom', () => ({
     withRouter: jest.fn(arg => arg)
 }));
-jest.mock('@magento/peregrine/lib/util/makeUrl');
+jest.mock('@jelica-rado/peregrine/lib/util/makeUrl');
 
 jest.mock(
-    '@magento/venia-ui/lib/components/RichContent/richContentRenderers',
+    '@jelica-rado/venia-ui/lib/components/RichContent/richContentRenderers',
     () => [
-        require('@magento/pagebuilder/lib'),
-        require('@magento/venia-ui/lib/components/RichContent/plainHtmlRenderer')
+        require('@jelica-rado/pagebuilder/lib'),
+        require('@jelica-rado/venia-ui/lib/components/RichContent/plainHtmlRenderer')
     ]
 );
 
-jest.mock('@magento/venia-ui/lib/classify');
+jest.mock('@jelica-rado/venia-ui/lib/classify');
 
 test('renders a Block component', () => {
     const blockProps = {

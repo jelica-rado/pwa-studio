@@ -27,7 +27,7 @@ The `--core-dev-mode` flag tells `buildpack` to run `buildpack create-env-file -
 
 ## Programmatic API
 
-Adding the `@magento/pwa-buildpack` dependency to your project gives you access to the programmatic API for loading the `.env` file.
+Adding the `@jelica-rado/pwa-buildpack` dependency to your project gives you access to the programmatic API for loading the `.env` file.
 
 ### `loadEnvironment(dirOrEnv, [logger])`
 
@@ -36,7 +36,7 @@ Loads a given directory's `.env` file and provides a [configuration object][].
 #### Example
 
 ```js
-const { loadEnvironment } = require('@magento/pwa-buildpack');
+const { loadEnvironment } = require('@jelica-rado/pwa-buildpack');
 
 const configuration = await loadEnvironment(process.cwd());
 ```
@@ -88,7 +88,7 @@ The namespaces are assigned to different camelCased properties named after the s
 The following example is a script that starts an [UPWARD][] server using configuration values loaded from the environment and `.env` file in the project path.
 
 ```js
-import { loadEnvironment } from '@magento/pwa-buildpack';
+import { loadEnvironment } from '@jelica-rado/pwa-buildpack';
 
 // Give `loadEnvironment` the path to the project root.
 // If the current file is in project root, use the Node builtin `__dirname`.

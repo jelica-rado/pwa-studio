@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import { useCartTrigger } from '../useCartTrigger';
 
@@ -20,19 +20,19 @@ jest.mock('react-router-dom', () => {
         })
     };
 });
-jest.mock('@magento/peregrine/lib/context/cart', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/cart', () => {
     const state = { cartId: 'cart123' };
     const api = { getCartDetails: jest.fn() };
     const useCartContext = jest.fn(() => [state, api]);
 
     return { useCartContext };
 });
-jest.mock('@magento/peregrine/lib/hooks/useAwaitQuery', () => {
+jest.mock('@jelica-rado/peregrine/lib/hooks/useAwaitQuery', () => {
     return {
         useAwaitQuery: jest.fn(jest.fn())
     };
 });
-jest.mock('@magento/peregrine/lib/hooks/useDropdown', () => {
+jest.mock('@jelica-rado/peregrine/lib/hooks/useDropdown', () => {
     return {
         useDropdown: jest.fn(() => ({
             elementRef: { current: {} },

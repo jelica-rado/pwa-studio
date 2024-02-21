@@ -1,22 +1,22 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useGuestSignIn } from '@magento/peregrine/lib/talons/CheckoutPage/GuestSignIn/useGuestSignIn';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useGuestSignIn } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/GuestSignIn/useGuestSignIn';
 
 import GuestSignIn from '../guestSignIn';
 
 jest.mock(
-    '@magento/peregrine/lib/talons/CheckoutPage/GuestSignIn/useGuestSignIn'
+    '@jelica-rado/peregrine/lib/talons/CheckoutPage/GuestSignIn/useGuestSignIn'
 );
-jest.mock('@magento/venia-ui/lib/classify');
+jest.mock('@jelica-rado/venia-ui/lib/classify');
 jest.mock(
-    '@magento/venia-ui/lib/components/CreateAccount',
+    '@jelica-rado/venia-ui/lib/components/CreateAccount',
     () => 'CreateAccount'
 );
 jest.mock(
-    '@magento/venia-ui/lib/components/ForgotPassword',
+    '@jelica-rado/venia-ui/lib/components/ForgotPassword',
     () => 'ForgotPassword'
 );
-jest.mock('@magento/venia-ui/lib/components/SignIn', () => 'SignIn');
+jest.mock('@jelica-rado/venia-ui/lib/components/SignIn', () => 'SignIn');
 
 const defaultProps = {
     isActive: true,

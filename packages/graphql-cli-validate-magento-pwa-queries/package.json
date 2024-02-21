@@ -1,5 +1,5 @@
 {
-  "name": "graphql-cli-validate-magento-pwa-queries",
+  "name": "@jelica-rado/graphql-cli-validate-magento-pwa-queries",
   "version": "1.4.0",
   "publishConfig": {
     "access": "public"

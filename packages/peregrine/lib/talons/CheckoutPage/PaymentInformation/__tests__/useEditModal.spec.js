@@ -1,7 +1,7 @@
 import React from 'react';
 
 import createTestInstance from '../../../../util/createTestInstance';
-import { useEventingContext } from '@magento/peregrine/lib/context/eventing';
+import { useEventingContext } from '@jelica-rado/peregrine/lib/context/eventing';
 
 import { useEditModal } from '../useEditModal';
 
@@ -27,7 +27,7 @@ jest.mock('../editModal.gql.js', () => ({
     getSelectedPaymentMethodQuery: 'getSelectedPaymentMethodQuery'
 }));
 
-jest.mock('@magento/peregrine/lib/context/eventing', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/eventing', () => ({
     useEventingContext: jest.fn().mockReturnValue([{}, { dispatch: jest.fn() }])
 }));
 

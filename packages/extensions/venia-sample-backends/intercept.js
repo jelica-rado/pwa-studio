@@ -94,7 +94,7 @@ const validateSampleBackend = async config => {
 
 module.exports = targets => {
     targets
-        .of('@magento/pwa-buildpack')
+        .of('@jelica-rado/pwa-buildpack')
         .validateEnv.tapPromise(validateSampleBackend);
 };
 

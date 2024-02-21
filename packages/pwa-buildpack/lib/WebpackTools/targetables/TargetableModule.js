@@ -106,7 +106,7 @@ class TargetableModule extends Trackable {
     spliceSource(instruction) {
         return this.addTransform(
             'source',
-            '@magento/pwa-buildpack/lib/WebpackTools/loaders/splice-source-loader',
+            '@jelica-rado/pwa-buildpack/lib/WebpackTools/loaders/splice-source-loader',
             instruction
         );
     }

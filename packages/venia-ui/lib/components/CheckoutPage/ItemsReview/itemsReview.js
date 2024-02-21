@@ -1,7 +1,7 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 
-import { useItemsReview } from '@magento/peregrine/lib/talons/CheckoutPage/ItemsReview/useItemsReview';
+import { useItemsReview } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/ItemsReview/useItemsReview';
 
 import Item from './item';
 import ShowAllButton from './showAllButton';

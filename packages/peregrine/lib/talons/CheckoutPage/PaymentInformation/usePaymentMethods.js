@@ -1,8 +1,8 @@
 import { useCallback } from 'react';
 import { useMutation, useQuery } from '@apollo/client';
-import useFieldState from '@magento/peregrine/lib/hooks/hook-wrappers/useInformedFieldStateWrapper';
+import useFieldState from '@jelica-rado/peregrine/lib/hooks/hook-wrappers/useInformedFieldStateWrapper';
 import DEFAULT_OPERATIONS from './paymentMethods.gql';
-import mergeOperations from '@magento/peregrine/lib/util/shallowMerge';
+import mergeOperations from '@jelica-rado/peregrine/lib/util/shallowMerge';
 
 import { useCartContext } from '../../../context/cart';
 

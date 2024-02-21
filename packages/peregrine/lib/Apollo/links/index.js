@@ -1,12 +1,12 @@
 import { createHttpLink } from '@apollo/client';
 
-import createAuthLink from '@magento/peregrine/lib/Apollo/links/authLink';
-import createErrorLink from '@magento/peregrine/lib/Apollo/links/errorLink';
-import createGqlCacheLink from '@magento/peregrine/lib/Apollo/links/gqlCacheLink';
-import createMutationQueueLink from '@magento/peregrine/lib/Apollo/links/mutationQueueLink';
-import createRetryLink from '@magento/peregrine/lib/Apollo/links/retryLink';
-import createStoreLink from '@magento/peregrine/lib/Apollo/links/storeLink';
-import shrinkQuery from '@magento/peregrine/lib/util/shrinkQuery';
+import createAuthLink from '@jelica-rado/peregrine/lib/Apollo/links/authLink';
+import createErrorLink from '@jelica-rado/peregrine/lib/Apollo/links/errorLink';
+import createGqlCacheLink from '@jelica-rado/peregrine/lib/Apollo/links/gqlCacheLink';
+import createMutationQueueLink from '@jelica-rado/peregrine/lib/Apollo/links/mutationQueueLink';
+import createRetryLink from '@jelica-rado/peregrine/lib/Apollo/links/retryLink';
+import createStoreLink from '@jelica-rado/peregrine/lib/Apollo/links/storeLink';
+import shrinkQuery from '@jelica-rado/peregrine/lib/util/shrinkQuery';
 
 /**
  * Intercept and shrink URLs from GET queries.

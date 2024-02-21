@@ -2,7 +2,7 @@ const TargetableESModule = require('./TargetableESModule');
 
 const lazyImportString = `{ lazy as reactLazy } from 'react';\n`;
 const babelPluginPath =
-    '@magento/pwa-buildpack/lib/WebpackTools/targetables/BabelModifyJSXPlugin/index.js';
+    '@jelica-rado/pwa-buildpack/lib/WebpackTools/targetables/BabelModifyJSXPlugin/index.js';
 
 /**
  * An ECMAScript module containing a React component with JSX to render it.

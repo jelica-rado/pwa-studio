@@ -1,12 +1,12 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useStockStatusMessage } from '@magento/peregrine/lib/talons/StockStatusMessage/useStockStatusMessage';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useStockStatusMessage } from '@jelica-rado/peregrine/lib/talons/StockStatusMessage/useStockStatusMessage';
 
 import StockStatusMessage from '../stockStatusMessage';
 
 jest.mock('../../../classify');
 jest.mock(
-    '@magento/peregrine/lib/talons/StockStatusMessage/useStockStatusMessage'
+    '@jelica-rado/peregrine/lib/talons/StockStatusMessage/useStockStatusMessage'
 );
 
 test('renders cart message', () => {

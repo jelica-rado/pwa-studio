@@ -1,7 +1,7 @@
 import React from 'react';
 import { useIntl } from 'react-intl';
 import { bool, func, shape, string } from 'prop-types';
-import { useFilterFooter } from '@magento/peregrine/lib/talons/FilterModal';
+import { useFilterFooter } from '@jelica-rado/peregrine/lib/talons/FilterModal';
 
 import { useStyle } from '../../classify';
 import Button from '../Button';

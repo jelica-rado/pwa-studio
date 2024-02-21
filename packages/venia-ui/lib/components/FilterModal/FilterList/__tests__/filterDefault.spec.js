@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { createTestInstance } from '@magento/peregrine';
-import { useCurrencySwitcher } from '@magento/peregrine/lib/talons/Header/useCurrencySwitcher';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useCurrencySwitcher } from '@jelica-rado/peregrine/lib/talons/Header/useCurrencySwitcher';
 import Checkbox from '../../../Checkbox';
 import FilterDefault from '../filterDefault';
 
 jest.mock('../../../Checkbox', () => props => <mock-Checkbox {...props} />);
 
-jest.mock('@magento/peregrine/lib/talons/Header/useCurrencySwitcher', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/Header/useCurrencySwitcher', () => ({
     useCurrencySwitcher: jest.fn()
 }));
 

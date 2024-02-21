@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useMutation, useQuery } from '@apollo/client';
 
-import mergeOperations from '@magento/peregrine/lib/util/shallowMerge';
+import mergeOperations from '@jelica-rado/peregrine/lib/util/shallowMerge';
 import { useCartContext } from '../../../../context/cart';
 import { findMatchingVariant } from '../../../../util/findMatchingProductVariant';
 import DEFAULT_OPERATIONS from './productForm.gql';
@@ -31,7 +31,7 @@ import { getOutOfStockVariantsWithInitialSelection } from '../../../../util/getO
  * @return {ProductFormTalonProps}
  *
  * @example <caption>Importing into your project</caption>
- * import { useProductForm } from '@magento/peregrine/lib/talons/CartPage/ProductListing/EditModal/useProductForm';
+ * import { useProductForm } from '@jelica-rado/peregrine/lib/talons/CartPage/ProductListing/EditModal/useProductForm';
  */
 
 // Get initial selections

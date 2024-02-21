@@ -8,8 +8,8 @@ import CartTrigger from './cartTrigger';
 import NavTrigger from './navTrigger';
 import SearchTrigger from './searchTrigger';
 import OnlineIndicator from './onlineIndicator';
-import { useHeader } from '@magento/peregrine/lib/talons/Header/useHeader';
-import resourceUrl from '@magento/peregrine/lib/util/makeUrl';
+import { useHeader } from '@jelica-rado/peregrine/lib/talons/Header/useHeader';
+import resourceUrl from '@jelica-rado/peregrine/lib/util/makeUrl';
 
 import { useStyle } from '../../classify';
 import defaultClasses from './header.module.css';

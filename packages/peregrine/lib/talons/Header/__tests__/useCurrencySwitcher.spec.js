@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
 import { useCurrencySwitcher } from '../useCurrencySwitcher';
 import { mockSetItem } from '../../../util/simplePersistence';
 
@@ -39,7 +39,7 @@ jest.mock('@apollo/client', () => {
     };
 });
 
-jest.mock('@magento/peregrine/lib/hooks/useDropdown', () => ({
+jest.mock('@jelica-rado/peregrine/lib/hooks/useDropdown', () => ({
     useDropdown: jest.fn().mockReturnValue({
         elementRef: 'elementRef',
         expanded: false,

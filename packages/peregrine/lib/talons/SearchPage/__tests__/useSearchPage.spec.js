@@ -6,7 +6,7 @@ import { getFiltersFromSearch } from '../../FilterModal/helpers';
 import { useSearchPage } from '../useSearchPage';
 import { getSearchParam } from '../../../hooks/useSearchParam';
 import { useEventingContext } from '../../../context/eventing';
-import { useStoreSwitcher } from '@magento/peregrine/lib/talons/Header/useStoreSwitcher';
+import { useStoreSwitcher } from '@jelica-rado/peregrine/lib/talons/Header/useStoreSwitcher';
 
 const log = jest.fn();
 const Component = props => {
@@ -29,7 +29,7 @@ const mockUseSort = jest
     .mockName('mockUseSort');
 const mockSetCurrentPage = jest.fn().mockName('mockSetCurrentPage');
 
-jest.mock('@magento/peregrine/lib/talons/Header/useStoreSwitcher', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/Header/useStoreSwitcher', () => ({
     useStoreSwitcher: jest.fn()
 }));
 
@@ -57,7 +57,7 @@ jest.mock('../../../hooks/useSearchParam', () => {
         getSearchParam: jest.fn(() => '')
     };
 });
-jest.mock('@magento/peregrine/lib/hooks/useScrollTopOnChange');
+jest.mock('@jelica-rado/peregrine/lib/hooks/useScrollTopOnChange');
 jest.mock('../../../context/app', () => {
     const state = {};
     const api = {

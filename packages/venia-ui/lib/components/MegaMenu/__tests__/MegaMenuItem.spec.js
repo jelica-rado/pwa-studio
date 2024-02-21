@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { act } from 'react-test-renderer';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import MegaMenuItem from '../megaMenuItem';
 
@@ -24,7 +24,7 @@ jest.mock('react-router-dom', () => ({
     Link: jest.fn(() => props => <mock-Link {...props} />)
 }));
 
-jest.mock('@magento/peregrine/lib/talons/MegaMenu/useMegaMenuItem', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/MegaMenu/useMegaMenuItem', () => ({
     useMegaMenuItem: jest.fn(() => {
         return {
             isFocused: false,

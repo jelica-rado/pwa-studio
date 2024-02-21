@@ -1,11 +1,11 @@
 import React from 'react';
 import { useLazyQuery } from '@apollo/client';
-import { createTestInstance } from '@magento/peregrine';
-import { useCartContext } from '@magento/peregrine/lib/context/cart';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useCartContext } from '@jelica-rado/peregrine/lib/context/cart';
 
 import { useProductListing } from '../useProductListing';
 
-jest.mock('@magento/peregrine/lib/context/cart', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/cart', () => {
     const state = {
         cartId: 'cart123'
     };

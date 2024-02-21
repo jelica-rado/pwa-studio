@@ -1,9 +1,9 @@
 import React, { Fragment, useEffect } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { AlertCircle as AlertCircleIcon } from 'react-feather';
-import { useToasts } from '@magento/peregrine';
-import { deriveErrorMessage } from '@magento/peregrine/lib/util/deriveErrorMessage';
-import { useCouponCode } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/CouponCode/useCouponCode';
+import { useToasts } from '@jelica-rado/peregrine';
+import { deriveErrorMessage } from '@jelica-rado/peregrine/lib/util/deriveErrorMessage';
+import { useCouponCode } from '@jelica-rado/peregrine/lib/talons/CartPage/PriceAdjustments/CouponCode/useCouponCode';
 
 import { useStyle } from '../../../../classify';
 
@@ -38,7 +38,7 @@ const errorIcon = (
  * @returns {React.Element}
  *
  * @example <caption>Importing into your project</caption>
- * import CouponCode from "@magento/venia-ui/lib/components/CartPage/PriceAdjustments/CouponCode";
+ * import CouponCode from "@jelica-rado/venia-ui/lib/components/CartPage/PriceAdjustments/CouponCode";
  */
 const CouponCode = props => {
     const classes = useStyle(defaultClasses, props.classes);

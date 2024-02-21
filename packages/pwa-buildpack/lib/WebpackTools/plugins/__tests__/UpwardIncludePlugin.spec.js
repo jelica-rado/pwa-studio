@@ -40,7 +40,7 @@ const compile = config =>
 test('merges upward files and resources', async () => {
     const bus = mockBuildBus({
         context: __dirname,
-        dependencies: [{ name: '@magento/pwa-buildpack' }]
+        dependencies: [{ name: '@jelica-rado/pwa-buildpack' }]
     });
     bus.runPhase('declare');
 
@@ -126,7 +126,7 @@ test('handles bad upward file', async () => {
 test('only uses override value for static assets', async () => {
     const bus = mockBuildBus({
         context: __dirname,
-        dependencies: [{ name: '@magento/pwa-buildpack' }]
+        dependencies: [{ name: '@jelica-rado/pwa-buildpack' }]
     });
     bus.runPhase('declare');
 

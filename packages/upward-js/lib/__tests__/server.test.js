@@ -1,7 +1,7 @@
 jest.mock('morgan', () => () => (_, __, next) => next());
 const { Server } = require('http');
 const supertest = require('supertest');
-const { getScenarios } = require('@magento/upward-spec');
+const { getScenarios } = require('@jelica-rado/upward-spec');
 const createUpwardServer = require('../createUpwardServer');
 
 let upwardPath;

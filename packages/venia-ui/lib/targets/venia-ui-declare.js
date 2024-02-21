@@ -1,5 +1,5 @@
 /**
- * These targets are available for interception to modules which depend on `@magento/venia-ui`.
+ * These targets are available for interception to modules which depend on `@jelica-rado/venia-ui`.
  *
  * Their implementations are found in `./venia-ui-intercept.js`.
  *
@@ -26,7 +26,7 @@ module.exports = targets => {
          * @see [RichContentRenderer]{@link RichContentRenderer}
          *
          * @example <caption>Add a renderer</caption>
-         * targets.of('@magento/venia-ui').richContentRenderers.tap(
+         * targets.of('@jelica-rado/venia-ui').richContentRenderers.tap(
          *   renderers => renderers.add({
          *     componentName: 'AdobeXM',
          *     importPath: '@adobe/xm-components/xm-renderer'
@@ -51,7 +51,7 @@ module.exports = targets => {
          * @see [Route definition object]{@link RouteDefinition}
          *
          * @example <caption>Add a custom route for a blog module</caption>
-         * const veniaTargets = targets.of('@magento/venia-ui')
+         * const veniaTargets = targets.of('@jelica-rado/venia-ui')
          * const routes = veniaTargets.routes
          * routes.tap(
          *   routesArray => {
@@ -77,10 +77,10 @@ module.exports = targets => {
          * @see [CheckoutPayment definition object]{@link CheckoutPaymentDefinition}
          *
          * @example <caption>Add a payment</caption>
-         * targets.of('@magento/venia-ui').checkoutPagePaymentTypes.tap(
+         * targets.of('@jelica-rado/venia-ui').checkoutPagePaymentTypes.tap(
          *   checkoutPagePaymentTypes => checkoutPagePaymentTypes.add({
          *     paymentCode: 'braintree',
-         *     importPath: '@magento/braintree_payment'
+         *     importPath: '@jelica-rado/braintree_payment'
          *   })
          * );
          */
@@ -100,10 +100,10 @@ module.exports = targets => {
          * @see [SavedPayment definition object]{@link SavedPaymentDefinition}
          *
          * @example <caption>Add a payment</caption>
-         * targets.of('@magento/venia-ui').savedPaymentTypes.tap(
+         * targets.of('@jelica-rado/venia-ui').savedPaymentTypes.tap(
          *   savedPaymentTypes => savedPaymentTypes.add({
          *     paymentCode: 'braintree',
-         *     importPath: '@magento/braintree_payment'
+         *     importPath: '@jelica-rado/braintree_payment'
          *   })
          * );
          */
@@ -121,10 +121,10 @@ module.exports = targets => {
          * @see [EditablePayment definition object]{@link EditablePaymentDefinition}
          *
          * @example <caption>Add a payment</caption>
-         * targets.of('@magento/venia-ui').editablePaymentTypes.tap(
+         * targets.of('@jelica-rado/venia-ui').editablePaymentTypes.tap(
          *   editablePaymentTypes => editablePaymentTypes.add({
          *     paymentCode: 'braintree',
-         *     importPath: '@magento/braintree_payment'
+         *     importPath: '@jelica-rado/braintree_payment'
          *   })
          * );
          */
@@ -142,10 +142,10 @@ module.exports = targets => {
          * @see [EditablePayment definition object]{@link SavedPaymentDefinition}
          *
          * @example <caption>Add a payment</caption>
-         * targets.of('@magento/venia-ui').editablePaymentTypes.tap(
+         * targets.of('@jelica-rado/venia-ui').editablePaymentTypes.tap(
          *   editablePaymentTypes => editablePaymentTypes.add({
          *     paymentCode: 'braintree',
-         *     importPath: '@magento/braintree_payment'
+         *     importPath: '@jelica-rado/braintree_payment'
          *   })
          * );
          */
@@ -190,7 +190,7 @@ module.exports = targets => {
  * @example <caption>A renderer that can render any content containing the string "honk"</caption>
  * ```jsx
  * import React from 'react';
- * import PlainHtmlRenderer from '@magento/venia-ui/components/richContent/plainHtmlRenderer';
+ * import PlainHtmlRenderer from '@jelica-rado/venia-ui/components/richContent/plainHtmlRenderer';
  *
  * function GooseRenderer(props) {
  *   const html = props.html.replace(/honk/gim, '<strong>HONK!🦢</strong>');

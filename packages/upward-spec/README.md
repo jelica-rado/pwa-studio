@@ -83,7 +83,7 @@ This repository is a test suite for UPWARD compliance, testing several scenarios
 2. Use `npx` to run `upward-spec` on your shell script
 
     ```sh
-    npx @magento/upward-spec ./test_upward_server.sh
+    npx @jelica-rado/upward-spec ./test_upward_server.sh
     ```
 
 3. The shell script will run for each test suite with the environment variable `UPWARD_YAML` set to the path of a fixture YAML file for configuring a server instance. The script should launch a server (on a local port or a remote port, but resolvable to the local system) and print its host to standard out, staying in the foreground.

@@ -3,7 +3,7 @@ import { InMemoryCache } from '@apollo/client';
 import { MockedProvider } from '@apollo/client/testing';
 import { act, renderHook } from '@testing-library/react-hooks';
 
-import typePolicies from '@magento/peregrine/lib/Apollo/policies';
+import typePolicies from '@jelica-rado/peregrine/lib/Apollo/policies';
 
 import DEFAULT_OPERATIONS from '../giftOptions.gql';
 import { useGiftOptions } from '../useGiftOptions';
@@ -13,7 +13,7 @@ jest.mock('lodash.debounce', () => {
     return callback => args => callback(args);
 });
 
-jest.mock('@magento/peregrine/lib/context/cart', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/cart', () => ({
     useCartContext: jest.fn().mockReturnValue([{ cartId: '123' }])
 }));
 

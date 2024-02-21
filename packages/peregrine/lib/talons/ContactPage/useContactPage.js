@@ -1,6 +1,6 @@
 import { useCallback, useRef, useMemo } from 'react';
 import { useMutation, useQuery } from '@apollo/client';
-import mergeOperations from '@magento/peregrine/lib/util/shallowMerge';
+import mergeOperations from '@jelica-rado/peregrine/lib/util/shallowMerge';
 import DEFAULT_OPERATIONS from './contactUs.gql';
 
 export const useContactPage = props => {

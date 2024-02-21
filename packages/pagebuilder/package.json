@@ -1,13 +1,13 @@
 {
-  "name": "@baici/pagebuilder",
-  "version": "8.2.1",
+  "name": "@jelica-rado/pagebuilder",
+  "version": "8.2.2",
   "publishConfig": {
     "access": "public"
   },
   "description": "PageBuilder extension for PWA Studio",
   "main": "lib/index.js",
   "browser": {
-    "@magento/venia-drivers": "@magento/venia-ui/lib/drivers"
+    "@jelica-rado/venia-drivers": "@jelica-rado/venia-ui/lib/drivers"
   },
   "files": [
     "lib/*",
@@ -34,9 +34,9 @@
   "homepage": "https://github.com/magento/pwa-studio/tree/main/packages/pagebuilder#readme",
   "dependencies": {},
   "devDependencies": {
-    "@magento/peregrine": "~13.2.1",
-    "@magento/pwa-buildpack": "~11.4.3",
-    "@magento/venia-ui": "~10.3.0",
+    "@jelica-rado/peregrine": "~13.2.1",
+    "@jelica-rado/pwa-buildpack": "~11.4.3",
+    "@jelica-rado/venia-ui": "~10.3.0",
     "@storybook/react": "^7.6.12",
     "jarallax": "~1.11.1",
     "load-google-maps-api": "~2.0.1",
@@ -49,10 +49,10 @@
   },
   "peerDependencies": {
     "@apollo/client": "^3.8.8",
-    "@magento/babel-preset-peregrine": "~1.2.3",
-    "@magento/peregrine": "~13.2.1",
-    "@magento/pwa-buildpack": "~11.4.3",
-    "@magento/venia-ui": "~10.3.0",
+    "@jelica-rado/babel-preset-peregrine": "~1.2.3",
+    "@jelica-rado/peregrine": "~13.2.1",
+    "@jelica-rado/pwa-buildpack": "~11.4.3",
+    "@jelica-rado/venia-ui": "~10.3.0",
     "jarallax": "~1.11.1",
     "load-google-maps-api": "~2.0.1",
     "lodash.escape": "~4.0.1",

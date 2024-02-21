@@ -7,7 +7,7 @@ import { useProductFullDetail } from '../useProductFullDetail';
 import { useUserContext } from '../../../context/user';
 import { useEventingContext } from '../../../context/eventing';
 
-import { getOutOfStockVariants } from '@magento/peregrine/lib/util/getOutOfStockVariants';
+import { getOutOfStockVariants } from '@jelica-rado/peregrine/lib/util/getOutOfStockVariants';
 
 jest.mock('@apollo/client', () => ({
     gql: jest.fn(),
@@ -28,7 +28,7 @@ jest.mock('@apollo/client', () => ({
     }))
 }));
 
-jest.mock('@magento/peregrine/lib/context/user', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/user', () => {
     const userState = { isSignedIn: false };
     const userApi = {};
     const useUserContext = jest.fn(() => [userState, userApi]);
@@ -36,7 +36,7 @@ jest.mock('@magento/peregrine/lib/context/user', () => {
     return { useUserContext };
 });
 
-jest.mock('@magento/peregrine/lib/context/cart', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/cart', () => {
     const cartState = { cartId: 'ThisIsMyCart' };
     const cartApi = {};
     const useCartContext = jest.fn(() => [cartState, cartApi]);
@@ -48,7 +48,7 @@ jest.mock('../../../context/eventing', () => ({
     useEventingContext: jest.fn().mockReturnValue([{}, { dispatch: jest.fn() }])
 }));
 
-jest.mock('@magento/peregrine/lib/util/getOutOfStockVariants', () => ({
+jest.mock('@jelica-rado/peregrine/lib/util/getOutOfStockVariants', () => ({
     getOutOfStockVariants: jest.fn().mockReturnValue([])
 }));
 

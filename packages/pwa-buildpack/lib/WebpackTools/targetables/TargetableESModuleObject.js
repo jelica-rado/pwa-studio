@@ -19,7 +19,7 @@ class TargetableESModuleObject extends TargetableESModule {
             this._queuedTransforms.push(
                 this._createTransform(
                     'source',
-                    '@magento/pwa-buildpack/lib/WebpackTools/loaders/export-esm-collection-loader',
+                    '@jelica-rado/pwa-buildpack/lib/WebpackTools/loaders/export-esm-collection-loader',
                     {
                         type: 'object',
                         bindings: [...this._bindings.keys()],

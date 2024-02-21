@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import defaultClasses from './row.module.css';
 import { verticalAlignmentToFlex } from '../../utils';
-import { useStyle } from '@magento/venia-ui/lib/classify';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
 import {
     arrayOf,
     oneOf,
@@ -11,9 +11,9 @@ import {
     number,
     object
 } from 'prop-types';
-import resourceUrl from '@magento/peregrine/lib/util/makeUrl';
-import { useDetectScrollWidth } from '@magento/peregrine/lib/hooks/useDetectScrollWidth';
-import { useMediaQuery } from '@magento/peregrine/lib/hooks/useMediaQuery';
+import resourceUrl from '@jelica-rado/peregrine/lib/util/makeUrl';
+import { useDetectScrollWidth } from '@jelica-rado/peregrine/lib/hooks/useDetectScrollWidth';
+import { useMediaQuery } from '@jelica-rado/peregrine/lib/hooks/useMediaQuery';
 
 const { matchMedia } = globalThis;
 

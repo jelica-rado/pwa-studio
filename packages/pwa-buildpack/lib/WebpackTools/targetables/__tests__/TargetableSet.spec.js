@@ -10,7 +10,7 @@ describe('TargetableSet is a target helper library', () => {
             context: __dirname,
             dependencies: [
                 {
-                    name: '@magento/fakedep',
+                    name: '@jelica-rado/fakedep',
                     declare(targets) {
                         targets.declare({
                             fakeTarget: new targets.types.Sync(['x'])
@@ -18,7 +18,7 @@ describe('TargetableSet is a target helper library', () => {
                     },
                     intercept(targets) {
                         targetable = Targetables.using(targets);
-                        builtins = bus.getTargetsOf('@magento/pwa-buildpack');
+                        builtins = bus.getTargetsOf('@jelica-rado/pwa-buildpack');
                         done();
                     }
                 }
@@ -33,26 +33,26 @@ describe('TargetableSet is a target helper library', () => {
         it('with a string module path as first argument, or a config object with a "module" property as first argument', () => {
             expect(
                 targetable.module({
-                    module: '@magento/fakedep/module1'
+                    module: '@jelica-rado/fakedep/module1'
                 })
             ).toBeInstanceOf(Targetables.Module);
             expect(
-                targetable.esModule('@magento/fakedep/esModule1')
+                targetable.esModule('@jelica-rado/fakedep/esModule1')
             ).toBeInstanceOf(Targetables.ESModule);
         });
         it('of all types', () => {
             expect(
-                targetable.esModuleArray('@magento/fakedep/esModuleArray1')
+                targetable.esModuleArray('@jelica-rado/fakedep/esModuleArray1')
             ).toBeInstanceOf(Targetables.ESModuleArray);
             expect(
-                targetable.esModuleObject('@magento/fakedep/esModuleObject1')
+                targetable.esModuleObject('@jelica-rado/fakedep/esModuleObject1')
             ).toBeInstanceOf(Targetables.ESModuleObject);
             expect(
-                targetable.reactComponent('@magento/fakedep/reactComponent1')
+                targetable.reactComponent('@jelica-rado/fakedep/reactComponent1')
             ).toBeInstanceOf(Targetables.ReactComponent);
         });
         it('caches and polymorphically reuses only one module of one type per file', () => {
-            const file = '@magento/fakedep/esModule1';
+            const file = '@jelica-rado/fakedep/esModule1';
             const esModule1 = targetable.esModule(file);
             expect(targetable.esModule(file)).toBe(esModule1);
             expect(targetable.module(file)).toBe(esModule1);
@@ -76,34 +76,34 @@ describe('TargetableSet is a target helper library', () => {
                 mockPublish.mockReset();
             });
             it('as a second arg callback', async () => {
-                targetable.esModule('@magento/fake-dep/esModule1', publish);
+                targetable.esModule('@jelica-rado/fake-dep/esModule1', publish);
                 await collectRequests();
                 expect(mockPublish).toHaveBeenCalledTimes(1);
             });
             it('as a method on the config object', async () => {
                 targetable.esModule({
-                    module: '@magento/fake-dep/esModule2',
+                    module: '@jelica-rado/fake-dep/esModule2',
                     publish
                 });
                 await collectRequests();
                 expect(mockPublish).toHaveBeenCalledTimes(1);
             });
             it('as a method on an optional options object', async () => {
-                targetable.esModule('@magento/fake-dep/esModule3', { publish });
+                targetable.esModule('@jelica-rado/fake-dep/esModule3', { publish });
                 await collectRequests();
                 expect(mockPublish).toHaveBeenCalledTimes(1);
             });
             it('runs the publisher and then adds the transforms of the connected module', async () => {
                 const component = targetable.reactComponent(
-                    '@magento/fake-dep/component',
+                    '@jelica-rado/fake-dep/component',
                     publish
                 );
                 const arrayModule = targetable.esModuleArray(
-                    '@magento/fake-dep/someArray',
+                    '@jelica-rado/fake-dep/someArray',
                     publish
                 );
                 const noPublishMethod = targetable.esModule(
-                    '@magento/fake-dep/something-else'
+                    '@jelica-rado/fake-dep/something-else'
                 );
                 jest.spyOn(noPublishMethod, 'flush');
                 component.appendJSX('form', '<input />');
@@ -125,7 +125,7 @@ describe('TargetableSet is a target helper library', () => {
             const featuresTargetResult = () => {
                 const features = {};
                 builtins.specialFeatures.call(features);
-                return features['@magento/fakedep'];
+                return features['@jelica-rado/fakedep'];
             };
             it('can take flag names as arguments, sets them to true', () => {
                 targetable.setSpecialFeatures('graphqlQueries', 'upward');

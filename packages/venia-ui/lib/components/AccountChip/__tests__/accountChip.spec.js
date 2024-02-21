@@ -1,15 +1,15 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
-import { useAccountChip } from '@magento/peregrine/lib/talons/AccountChip/useAccountChip';
+import { useAccountChip } from '@jelica-rado/peregrine/lib/talons/AccountChip/useAccountChip';
 
 import AccountChip from '../accountChip';
 
 jest.mock('../../../classify');
 
-jest.mock('@magento/peregrine/lib/talons/AccountChip/useAccountChip', () => {
+jest.mock('@jelica-rado/peregrine/lib/talons/AccountChip/useAccountChip', () => {
     const useAccountChipTalon = jest.requireActual(
-        '@magento/peregrine/lib/talons/AccountChip/useAccountChip'
+        '@jelica-rado/peregrine/lib/talons/AccountChip/useAccountChip'
     );
     const spy = jest.spyOn(useAccountChipTalon, 'useAccountChip');
 

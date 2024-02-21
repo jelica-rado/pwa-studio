@@ -123,7 +123,7 @@ Under `src/component/Countries`, create a `countries.js` file with the following
 ```jsx
 import React from 'react';
 import { useQuery } from '@apollo/client';
-import { Link } from '@magento/venia-drivers';
+import { Link } from '@jelica-rado/venia-drivers';
 import path from 'path';
 
 import countriesOperations from './countries.gql';
@@ -189,7 +189,7 @@ Under `src/components/Country`, create a `country.js` file with the following co
 ```jsx
 import React from 'react';
 import { useQuery } from '@apollo/client';
-import { useParams } from '@magento/venia-ui/lib/drivers';
+import { useParams } from '@jelica-rado/venia-ui/lib/drivers';
 
 import countryOperations from './country.gql';
 

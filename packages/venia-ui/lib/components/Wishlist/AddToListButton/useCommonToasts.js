@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { AlertCircle, Check, Info } from 'react-feather';
-import { useToasts } from '@magento/peregrine';
+import { useToasts } from '@jelica-rado/peregrine';
 
 import Icon from '../../Icon';
 

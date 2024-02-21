@@ -14,7 +14,7 @@ It must export a default function that accepts a `TargetProvider` parameter.
 ```js
 module.exports = targets => {
     // Set buildpack features
-  const builtins = targets.of("@magento/pwa-buildpack");
+  const builtins = targets.of("@jelica-rado/pwa-buildpack");
   builtins.specialFeatures.tap((featuresByModule) => {
     featuresByModule["my-extension"] = {
       // Tells buildpack that this extension uses ES Modules
@@ -42,7 +42,7 @@ For example, the following entry registers `src/targets/intercept.js` as this pr
 ## How interception works
 
 Target interception happens during the build process.
-The `@magento/pwa-buildpack` module creates a `BuildBus` process to execute intercept files in the storefront project or its dependencies.
+The `@jelica-rado/pwa-buildpack` module creates a `BuildBus` process to execute intercept files in the storefront project or its dependencies.
 
 The `BuildBus` process executes intercept files in **named direct dependencies** in a project.
 This means that modules listed under `dependencies` and `devDependencies` in a project's `package.json` file have the ability to intercept Targets in the project.

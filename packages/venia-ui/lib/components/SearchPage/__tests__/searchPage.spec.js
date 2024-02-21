@@ -1,9 +1,9 @@
 import React from 'react';
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
-import { useSearchPage } from '@magento/peregrine/lib/talons/SearchPage/useSearchPage';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
+import { useSearchPage } from '@jelica-rado/peregrine/lib/talons/SearchPage/useSearchPage';
 import SearchPage from '../searchPage';
 
-jest.mock('@magento/peregrine/lib/talons/SearchPage/useSearchPage', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/SearchPage/useSearchPage', () => ({
     useSearchPage: jest.fn()
 }));
 
@@ -20,7 +20,7 @@ jest.mock('../../ProductSort', () => ({
 }));
 jest.mock('../../Pagination', () => 'Pagination');
 jest.mock('../../Shimmer', () => 'Shimmer');
-jest.mock('@magento/venia-ui/lib/classify');
+jest.mock('@jelica-rado/venia-ui/lib/classify');
 jest.mock('../../SortedByContainer', () => ({
     __esModule: true,
     default: 'SortedByContainer',

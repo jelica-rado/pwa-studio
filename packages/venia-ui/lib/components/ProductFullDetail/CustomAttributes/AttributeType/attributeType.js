@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useAttributeType } from '@magento/peregrine/lib/talons/ProductFullDetail/CustomAttributes/AttributeType/useAttributeType';
+import { useAttributeType } from '@jelica-rado/peregrine/lib/talons/ProductFullDetail/CustomAttributes/AttributeType/useAttributeType';
 
 import Boolean from './Boolean';
 import Date from './Date';

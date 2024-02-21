@@ -2,8 +2,8 @@ import React from 'react';
 import { string, bool, shape, func } from 'prop-types';
 import { Eye, EyeOff } from 'react-feather';
 import { useIntl } from 'react-intl';
-import { useStyle } from '@magento/venia-ui/lib/classify';
-import { usePassword } from '@magento/peregrine/lib/talons/Password/usePassword';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
+import { usePassword } from '@jelica-rado/peregrine/lib/talons/Password/usePassword';
 
 import Button from '../Button';
 import Field from '../Field';

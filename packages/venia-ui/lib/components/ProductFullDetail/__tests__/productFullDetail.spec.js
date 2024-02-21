@@ -1,14 +1,14 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import ProductFullDetail from '../productFullDetail';
-import { useProductFullDetail } from '@magento/peregrine/lib/talons/ProductFullDetail/useProductFullDetail';
+import { useProductFullDetail } from '@jelica-rado/peregrine/lib/talons/ProductFullDetail/useProductFullDetail';
 
 jest.mock(
-    '@magento/peregrine/lib/talons/ProductFullDetail/useProductFullDetail',
+    '@jelica-rado/peregrine/lib/talons/ProductFullDetail/useProductFullDetail',
     () => {
         const useProductFullDetailTalon = jest.requireActual(
-            '@magento/peregrine/lib/talons/ProductFullDetail/useProductFullDetail'
+            '@jelica-rado/peregrine/lib/talons/ProductFullDetail/useProductFullDetail'
         );
 
         const spy = jest.spyOn(

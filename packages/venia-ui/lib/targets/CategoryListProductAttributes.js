@@ -16,7 +16,7 @@ class CategoryListProductAttributes {
     constructor(venia) {
         const registry = this;
         this._component = venia.reactComponent({
-            module: '@magento/venia-ui/lib/components/Gallery/item.js',
+            module: '@jelica-rado/venia-ui/lib/components/Gallery/item.js',
             publish(targets) {
                 targets.categoryListProductAttributes.call(registry);
             }

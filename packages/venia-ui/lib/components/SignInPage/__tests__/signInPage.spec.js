@@ -1,20 +1,20 @@
 import React from 'react';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import SignInPage from '../signInPage';
 
-jest.mock('@magento/peregrine/lib/talons/SignInPage/useSignInPage', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/SignInPage/useSignInPage', () => ({
     useSignInPage: jest.fn(() => ({
         signInProps: {}
     }))
 }));
 
-jest.mock('@magento/venia-ui/lib/components/Head', () => ({
+jest.mock('@jelica-rado/venia-ui/lib/components/Head', () => ({
     StoreTitle: () => 'Title'
 }));
 
-jest.mock('@magento/venia-ui/lib/components/SignIn', () => props => (
+jest.mock('@jelica-rado/venia-ui/lib/components/SignIn', () => props => (
     <mock-SignIn {...props} />
 ));
 

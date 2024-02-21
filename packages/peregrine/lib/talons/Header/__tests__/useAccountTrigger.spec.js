@@ -3,7 +3,7 @@ import React from 'react';
 import { useAccountTrigger } from '../useAccountTrigger';
 import createTestInstance from '../../../util/createTestInstance';
 
-jest.mock('@magento/peregrine/lib/hooks/useDropdown', () => ({
+jest.mock('@jelica-rado/peregrine/lib/hooks/useDropdown', () => ({
     useDropdown: jest.fn().mockReturnValue({
         elementRef: 'elementRef',
         expanded: false,
@@ -12,7 +12,7 @@ jest.mock('@magento/peregrine/lib/hooks/useDropdown', () => ({
     })
 }));
 
-jest.mock('@magento/peregrine/lib/context/user', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/user', () => {
     const state = {
         isSignedIn: true
     };

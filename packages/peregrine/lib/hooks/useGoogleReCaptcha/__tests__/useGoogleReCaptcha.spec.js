@@ -3,12 +3,12 @@ import { InMemoryCache } from '@apollo/client';
 import { MockedProvider } from '@apollo/client/testing';
 import { act, renderHook } from '@testing-library/react-hooks';
 
-import typePolicies from '@magento/peregrine/lib/Apollo/policies';
+import typePolicies from '@jelica-rado/peregrine/lib/Apollo/policies';
 
 import DEFAULT_OPERATIONS from '../googleReCaptchaConfig.gql';
 import { useGoogleReCaptcha } from '../useGoogleReCaptcha';
 
-jest.mock('@magento/peregrine/lib/hooks/useScript', () => {
+jest.mock('@jelica-rado/peregrine/lib/hooks/useScript', () => {
     return {
         __esModule: true,
         useScript: jest.fn().mockImplementation(() => {

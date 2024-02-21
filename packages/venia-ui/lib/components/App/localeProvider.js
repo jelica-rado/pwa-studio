@@ -30,7 +30,7 @@ const LocaleProvider = props => {
      * At build time, `__fetchLocaleData__` is injected as a global. Depending on the environment, this global will be
      * either an ES module with a `default` property, or a plain CJS module.
      *
-     * Please see {LocalizationPlugin} at @magento/pwa-buildpack/WebpackTools/plugins/LocalizationPlugin.js
+     * Please see {LocalizationPlugin} at @jelica-rado/pwa-buildpack/WebpackTools/plugins/LocalizationPlugin.js
      */
     const fetchLocale =
         'default' in __fetchLocaleData__

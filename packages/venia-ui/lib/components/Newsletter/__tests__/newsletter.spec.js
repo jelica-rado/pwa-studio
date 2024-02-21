@@ -1,11 +1,11 @@
 import React from 'react';
 import { act } from 'react-test-renderer';
 import { Form } from 'informed';
-import { createTestInstance, useToasts } from '@magento/peregrine';
+import { createTestInstance, useToasts } from '@jelica-rado/peregrine';
 import LoadingIndicator from '../../LoadingIndicator';
 import Newsletter from '../newsletter';
 import { useMutation } from '@apollo/client';
-import { useNewsletter } from '@magento/peregrine/lib/talons/Newsletter/useNewsletter';
+import { useNewsletter } from '@jelica-rado/peregrine/lib/talons/Newsletter/useNewsletter';
 
 jest.mock('@apollo/client', () => ({
     gql: jest.fn(),
@@ -24,20 +24,20 @@ jest.mock('../../FormError/formError', () => 'FormError');
 jest.mock('../../LoadingIndicator', () => () => <i />);
 jest.mock('../newsletter.shimmer', () => 'NewsletterShimmer');
 
-jest.mock('@magento/peregrine', () => {
-    const actual = jest.requireActual('@magento/peregrine');
+jest.mock('@jelica-rado/peregrine', () => {
+    const actual = jest.requireActual('@jelica-rado/peregrine');
     const useToasts = jest.fn().mockReturnValue([{}, { addToast: jest.fn() }]);
     return {
         createTestInstance: actual.createTestInstance,
         useToasts
     };
 });
-jest.mock('@magento/peregrine/lib/talons/Newsletter/useNewsletter', () => {
+jest.mock('@jelica-rado/peregrine/lib/talons/Newsletter/useNewsletter', () => {
     return {
         useNewsletter: jest.fn()
     };
 });
-jest.mock('@magento/peregrine/lib/hooks/useAwaitQuery', () => {
+jest.mock('@jelica-rado/peregrine/lib/hooks/useAwaitQuery', () => {
     const useAwaitQuery = jest
         .fn()
         .mockResolvedValue({ data: { subscribeEmailToNewsletter: {} } });

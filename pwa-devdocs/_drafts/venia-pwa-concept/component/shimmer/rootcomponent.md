@@ -57,7 +57,7 @@ The root shimmer types are tapable, so we can easily add new root component shim
 ```jsx
 /** local-intercept.js **/
 
-const { rootShimmerTypes } = targets.of('@magento/venia-ui');
+const { rootShimmerTypes } = targets.of('@jelica-rado/venia-ui');
 rootShimmerTypes.tap(target => {
     target.add({
         shimmerType: 'EXAMPLE_PAGE_SHIMMER',
@@ -79,7 +79,7 @@ care of setting the value in the app context state. This state value automatical
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import useInternalLink from '@magento/peregrine/lib/hooks/useInternalLink';
+import useInternalLink from '@jelica-rado/peregrine/lib/hooks/useInternalLink';
 
 export default () => {
     // We will be navigating to our custom example page, so we pass in example_page.

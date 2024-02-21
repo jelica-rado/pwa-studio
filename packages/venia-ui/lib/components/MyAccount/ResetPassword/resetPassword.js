@@ -3,8 +3,8 @@ import { FormattedMessage, useIntl } from 'react-intl';
 import { shape, string } from 'prop-types';
 import { Form } from 'informed';
 
-import { useToasts } from '@magento/peregrine';
-import { useResetPassword } from '@magento/peregrine/lib/talons/MyAccount/useResetPassword';
+import { useToasts } from '@jelica-rado/peregrine';
+import { useResetPassword } from '@jelica-rado/peregrine/lib/talons/MyAccount/useResetPassword';
 
 import { useStyle } from '../../../classify';
 import { isRequired } from '../../../util/formValidators';

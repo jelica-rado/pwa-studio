@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import { act } from 'react-test-renderer';
 
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
 
 import { useResetPassword } from '../useResetPassword';
 
@@ -18,7 +18,7 @@ jest.mock('react-router-dom', () => ({
     })
 }));
 
-jest.mock('@magento/peregrine/lib/hooks/useGoogleReCaptcha', () => ({
+jest.mock('@jelica-rado/peregrine/lib/hooks/useGoogleReCaptcha', () => ({
     useGoogleReCaptcha: jest.fn().mockReturnValue({
         recaptchaLoading: false,
         generateReCaptchaData: jest.fn(() => {}),

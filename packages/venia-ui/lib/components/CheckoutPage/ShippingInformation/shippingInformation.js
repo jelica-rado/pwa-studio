@@ -2,7 +2,7 @@ import React, { Fragment, Suspense } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { func, string, shape } from 'prop-types';
 import { Edit2 as EditIcon } from 'react-feather';
-import { useShippingInformation } from '@magento/peregrine/lib/talons/CheckoutPage/ShippingInformation/useShippingInformation';
+import { useShippingInformation } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/ShippingInformation/useShippingInformation';
 
 import { useStyle } from '../../../classify';
 import Icon from '../../Icon';

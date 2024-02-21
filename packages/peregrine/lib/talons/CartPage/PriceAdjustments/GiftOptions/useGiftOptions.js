@@ -2,9 +2,9 @@ import { useCallback, useMemo, useRef, useState } from 'react';
 import { useMutation, useQuery } from '@apollo/client';
 import debounce from 'lodash.debounce';
 
-import { useCartContext } from '@magento/peregrine/lib/context/cart';
-import mergeOperations from '@magento/peregrine/lib/util/shallowMerge';
-import { isRequired } from '@magento/venia-ui/lib/util/formValidators';
+import { useCartContext } from '@jelica-rado/peregrine/lib/context/cart';
+import mergeOperations from '@jelica-rado/peregrine/lib/util/shallowMerge';
+import { isRequired } from '@jelica-rado/venia-ui/lib/util/formValidators';
 
 import DEFAULT_OPERATIONS from './giftOptions.gql';
 
@@ -25,7 +25,7 @@ import DEFAULT_OPERATIONS from './giftOptions.gql';
  * @returns {GiftOptionsTalonProps}
  *
  * @example <caption>Importing into your project</caption>
- * import { useGiftOptions } from '@magento/peregrine/lib/talons/CartPage/GiftOptions/useGiftOptions';
+ * import { useGiftOptions } from '@jelica-rado/peregrine/lib/talons/CartPage/GiftOptions/useGiftOptions';
  */
 export const useGiftOptions = (props = {}) => {
     const operations = mergeOperations(DEFAULT_OPERATIONS, props.operations);

@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef } from 'react';
 import { useLazyQuery, useQuery } from '@apollo/client';
 import { useLocation } from 'react-router-dom';
-import { useStoreSwitcher } from '@magento/peregrine/lib/talons/Header/useStoreSwitcher';
+import { useStoreSwitcher } from '@jelica-rado/peregrine/lib/talons/Header/useStoreSwitcher';
 import mergeOperations from '../../util/shallowMerge';
 import { useAppContext } from '../../context/app';
 import { usePagination } from '../../hooks/usePagination';

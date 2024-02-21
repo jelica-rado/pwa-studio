@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { createTestInstance } from '@magento/peregrine';
-import { useCmsDynamicBlock } from '@magento/peregrine/lib/talons/CmsDynamicBlock/useCmsDynamicBlock';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useCmsDynamicBlock } from '@jelica-rado/peregrine/lib/talons/CmsDynamicBlock/useCmsDynamicBlock';
 
 import {
     DISPLAY_MODE_FIXED_TYPE,
@@ -12,8 +12,8 @@ import CmsDynamicBlock from '../cmsDynamicBlock.ee';
 
 const mockUids = 'uids';
 
-jest.mock('@magento/peregrine/lib/talons/CmsDynamicBlock/useCmsDynamicBlock');
-jest.mock('@magento/venia-ui/lib/components/ErrorView', () => props => (
+jest.mock('@jelica-rado/peregrine/lib/talons/CmsDynamicBlock/useCmsDynamicBlock');
+jest.mock('@jelica-rado/venia-ui/lib/components/ErrorView', () => props => (
     <mock-ErrorView {...props} />
 ));
 jest.mock('../dynamicBlock', () => props => <mock-DynamicBlock {...props} />);

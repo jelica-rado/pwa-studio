@@ -1,8 +1,8 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import Column from '../column';
 
-jest.mock('@magento/peregrine/lib/util/makeUrl');
+jest.mock('@jelica-rado/peregrine/lib/util/makeUrl');
 
 test('renders a Column component', () => {
     const component = createTestInstance(<Column />);

@@ -23,7 +23,7 @@ This component is used as a direct child of the [`Items`] fragment.
 
 ``` jsx
 {% raw %}
-import Item from '@magento/peregrine';
+import Item from '@jelica-rado/peregrine';
 
 <Item
     classes={{ root: 'foo' }}

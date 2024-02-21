@@ -1,6 +1,6 @@
 module.exports = targets => {
-    const { talons } = targets.of('@magento/peregrine');
-    const { specialFeatures } = targets.of('@magento/pwa-buildpack');
+    const { talons } = targets.of('@jelica-rado/peregrine');
+    const { specialFeatures } = targets.of('@jelica-rado/pwa-buildpack');
 
     specialFeatures.tap(flags => {
         /**
@@ -13,6 +13,6 @@ module.exports = targets => {
     });
 
     talons.tap(({ App }) => {
-        App.useApp.wrapWith('@magento/venia-sample-eventing');
+        App.useApp.wrapWith('@jelica-rado/venia-sample-eventing');
     });
 };

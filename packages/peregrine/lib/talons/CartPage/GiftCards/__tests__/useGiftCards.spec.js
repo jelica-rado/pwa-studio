@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import { useGiftCards } from '../useGiftCards';
 import { act } from 'react-test-renderer';
 import { useLazyQuery, useMutation, useQuery } from '@apollo/client';
@@ -15,7 +15,7 @@ jest.mock('@apollo/client', () => {
     return { useLazyQuery, useMutation, useQuery };
 });
 
-jest.mock('@magento/peregrine/lib/context/cart', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/cart', () => {
     const state = {
         cartId: 'cart123'
     };

@@ -28,7 +28,7 @@ function getEnvVarDefinitions(context) {
         }
         const bus = BuildBus.for(context);
         bus.init();
-        bus.getTargetsOf('@magento/pwa-buildpack').envVarDefinitions.call(
+        bus.getTargetsOf('@jelica-rado/pwa-buildpack').envVarDefinitions.call(
             definitions
         );
         debug(

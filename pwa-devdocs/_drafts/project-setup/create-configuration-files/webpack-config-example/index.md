@@ -15,7 +15,7 @@ const {
         MagentoResolver,
         PWADevServer
     }
-} = require('@magento/pwa-buildpack');
+} = require('@jelica-rado/pwa-buildpack');
 
 const path = require('path');
 

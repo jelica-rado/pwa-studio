@@ -14,7 +14,7 @@ If you followed the instructions for [Setting up Venia][], it automatically sets
 Use the following command to install upward-js in your project:
 
 ```sh
-yarn add @magento/upward-js
+yarn add @jelica-rado/upward-js
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ Use the command line, server API, or middleware API to launch the upward-js serv
 You can make this project available to the command line by installing it globally:
 
 ```sh
-yarn global add @magento/upward-js
+yarn global add @jelica-rado/upward-js
 ```
 
 Launch the server in the foreground using the following command:
@@ -47,12 +47,12 @@ Instead, it uses the following environment variables for configuration:
 
 ### Server API
 
-Require `server` from `@magento/upward-js` in your Node script to import the server into your project.
+Require `server` from `@jelica-rado/upward-js` in your Node script to import the server into your project.
 
 Example:
 
 ``` js
-const { server } = require('@magento/upward-js');
+const { server } = require('@jelica-rado/upward-js');
 
 const { app } = upward({
   upwardPath: './my-upward-server.yml'
@@ -63,7 +63,7 @@ app.listen(8000);
 
 ### Middleware API
 
-Use `middleware` from `@magento/upward-js` to use the middleware into your project.
+Use `middleware` from `@jelica-rado/upward-js` to use the middleware into your project.
 This middleware is compatible with Express 4, Connect, and other frameworks that use this common pattern.
 It returns a Promise for a function which handles request/response pairs.
 
@@ -71,7 +71,7 @@ Example:
 
 ``` js
 const express = require('express');
-const { middleware } = require('@magento/upward-js');
+const { middleware } = require('@jelica-rado/upward-js');
 
 const app = express();
 

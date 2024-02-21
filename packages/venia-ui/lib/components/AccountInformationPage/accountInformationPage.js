@@ -1,6 +1,6 @@
 import React, { Fragment, Suspense } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
-import { useAccountInformationPage } from '@magento/peregrine/lib/talons/AccountInformationPage/useAccountInformationPage';
+import { useAccountInformationPage } from '@jelica-rado/peregrine/lib/talons/AccountInformationPage/useAccountInformationPage';
 
 import { useStyle } from '../../classify';
 import Button from '../Button';

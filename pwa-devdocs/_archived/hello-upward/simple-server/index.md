@@ -29,10 +29,10 @@ This tutorial teaches the basics of reading and writing an UPWARD specification 
     The `-y` parameter is used in this tutorial to skip the interactive session.
     Omit this parameter if you want to fill out information about your project during initialization.
 
-1. Install the `@magento/upward-js` and `express` packages:
+1. Install the `@jelica-rado/upward-js` and `express` packages:
 
     ```sh
-    yarn add @magento/upward-js express
+    yarn add @jelica-rado/upward-js express
     ```
 
     The [`upward-js`][] package contains modules for deploying an UPWARD-compliant server.
@@ -80,7 +80,7 @@ When passed to an UPWARD server, this file instructs the server to respond with 
 Create a `server.js` file with logic for starting the Node implementation of an UPWARD server.
 
 ```js
-const { createUpwardServer } = require('@magento/upward-js');
+const { createUpwardServer } = require('@jelica-rado/upward-js');
 
 createUpwardServer({
     upwardPath: 'spec.yml',
@@ -90,7 +90,7 @@ createUpwardServer({
 });
 ```
 
-This file imports the `createUpwardServer` module from the `@magento/upward-js` package and uses it to start a web server.
+This file imports the `createUpwardServer` module from the `@jelica-rado/upward-js` package and uses it to start a web server.
 
 The script specifies the location of the UPWARD specification file through the `upwardPath` configuration and sets the port number of the server to `8080`.  
 The `logUrl` configuration tells the script to display the URL of the server and `bindLocal` tells it to create and bind to local HTTP server.

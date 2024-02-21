@@ -119,7 +119,7 @@ module.exports = async function serve(dirname) {
         }
     }
 
-    const { createUpwardServer } = require('@magento/upward-js');
+    const { createUpwardServer } = require('@jelica-rado/upward-js');
     prettyLogger.info('Launching UPWARD server\n');
     const server = await createUpwardServer(upwardServerOptions);
     prettyLogger.success('\nUPWARD server running.');

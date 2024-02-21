@@ -3,8 +3,8 @@ import { FormattedMessage, useIntl } from 'react-intl';
 import { Form } from 'informed';
 import { AlertCircle as AlertCircleIcon } from 'react-feather';
 
-import { useGiftCards } from '@magento/peregrine/lib/talons/CartPage/GiftCards/useGiftCards';
-import { Price, useToasts } from '@magento/peregrine';
+import { useGiftCards } from '@jelica-rado/peregrine/lib/talons/CartPage/GiftCards/useGiftCards';
+import { Price, useToasts } from '@jelica-rado/peregrine';
 
 import { useStyle } from '../../../classify';
 import { isRequired } from '../../../util/formValidators';
@@ -40,7 +40,7 @@ const errorIcon = (
  * @returns {React.Element}
  *
  * @example <caption>Importing into your project</caption>
- * import GiftCards from '@magento/venia-ui/lib/components/CartPage/GiftCards';
+ * import GiftCards from '@jelica-rado/venia-ui/lib/components/CartPage/GiftCards';
  */
 const GiftCards = props => {
     const talonProps = useGiftCards({

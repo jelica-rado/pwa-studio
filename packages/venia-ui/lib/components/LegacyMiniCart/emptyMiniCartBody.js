@@ -4,7 +4,7 @@ import { func, string, shape } from 'prop-types';
 import { useStyle } from '../../classify';
 
 import defaultClasses from './emptyMiniCartBody.module.css';
-import { useEmptyMiniCart } from '@magento/peregrine/lib/talons/LegacyMiniCart/useEmptyMiniCart';
+import { useEmptyMiniCart } from '@jelica-rado/peregrine/lib/talons/LegacyMiniCart/useEmptyMiniCart';
 import Button from '../Button';
 
 const EMPTY_TITLE = 'There are no items in your shopping cart';

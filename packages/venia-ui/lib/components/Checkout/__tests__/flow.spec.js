@@ -25,7 +25,7 @@ jest.mock('@apollo/client', () => {
     };
 });
 
-jest.mock('@magento/peregrine', () => {
+jest.mock('@jelica-rado/peregrine', () => {
     const state = {};
     const api = {
         addToast: jest.fn()
@@ -37,7 +37,7 @@ jest.mock('@magento/peregrine', () => {
     };
 });
 
-jest.mock('@magento/peregrine/lib/context/cart', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/cart', () => {
     const state = {};
     const api = {};
 
@@ -45,7 +45,7 @@ jest.mock('@magento/peregrine/lib/context/cart', () => {
 
     return { useCartContext };
 });
-jest.mock('@magento/peregrine/lib/context/checkout', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/checkout', () => {
     const state = {};
 
     const api = {
@@ -61,7 +61,7 @@ jest.mock('@magento/peregrine/lib/context/checkout', () => {
 
     return { useCheckoutContext };
 });
-jest.mock('@magento/peregrine/lib/context/user', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/user', () => {
     const state = {};
 
     const api = {};

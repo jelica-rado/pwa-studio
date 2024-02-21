@@ -2,9 +2,9 @@ import React, { Suspense } from 'react';
 import { array, bool, func, number, shape, string } from 'prop-types';
 import { Form } from 'informed';
 
-import Price from '@magento/venia-ui/lib/components/Price';
-import { isProductConfigurable } from '@magento/peregrine/lib/util/isProductConfigurable';
-import { useCartOptions } from '@magento/peregrine/lib/talons/LegacyMiniCart/useCartOptions';
+import Price from '@jelica-rado/venia-ui/lib/components/Price';
+import { isProductConfigurable } from '@jelica-rado/peregrine/lib/util/isProductConfigurable';
+import { useCartOptions } from '@jelica-rado/peregrine/lib/talons/LegacyMiniCart/useCartOptions';
 
 import { useStyle } from '../../classify';
 import LoadingIndicator from '../LoadingIndicator';

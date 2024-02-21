@@ -3,7 +3,7 @@ import { FormattedMessage, useIntl } from 'react-intl';
 import { FocusScope } from 'react-aria';
 import { array, arrayOf, shape, string } from 'prop-types';
 import { X as CloseIcon } from 'react-feather';
-import { useFilterModal } from '@magento/peregrine/lib/talons/FilterModal';
+import { useFilterModal } from '@jelica-rado/peregrine/lib/talons/FilterModal';
 
 import { useStyle } from '../../classify';
 import Icon from '../Icon';

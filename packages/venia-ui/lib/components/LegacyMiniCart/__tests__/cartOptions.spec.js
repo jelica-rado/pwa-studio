@@ -15,7 +15,7 @@ jest.mock('@apollo/client', () => ({
     ])
 }));
 
-jest.mock('@magento/peregrine/lib/context/cart', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/cart', () => {
     const state = {
         details: {}
     };
@@ -25,7 +25,7 @@ jest.mock('@magento/peregrine/lib/context/cart', () => {
     return { useCartContext };
 });
 
-jest.mock('@magento/peregrine/lib/hooks/useAwaitQuery', () => {
+jest.mock('@jelica-rado/peregrine/lib/hooks/useAwaitQuery', () => {
     const useAwaitQuery = jest.fn().mockResolvedValue({ data: { cart: {} } });
 
     return { useAwaitQuery };

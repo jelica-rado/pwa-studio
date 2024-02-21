@@ -37,7 +37,7 @@ class UpwardIncludePlugin {
                 to: './upward.yml',
                 transform: async () => {
                     await this.bus
-                        .getTargetsOf('@magento/pwa-buildpack')
+                        .getTargetsOf('@jelica-rado/pwa-buildpack')
                         .transformUpward.promise(this.definition);
                     return jsYaml.safeDump(this.definition);
                 }

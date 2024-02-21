@@ -8,7 +8,7 @@ The `create-custom-origin` is a [`buildpack`][] CLI subcommand which creates a u
 Usage example with `npx`:
 
 ```sh
-npx @magento/pwa-buildpack create-custom-origin <dir>
+npx @jelica-rado/pwa-buildpack create-custom-origin <dir>
 ```
 
 This feature requires administrative access, so
@@ -61,7 +61,7 @@ Set these variables permanently in your `.env` file, or argue them at the comman
 
 ```sh
 CUSTOM_ORIGIN_EXACT_DOMAIN="my.pwa" \
-npx @magento/pwa-buildpack create-custom-origin .
+npx @jelica-rado/pwa-buildpack create-custom-origin .
 ```
 
 ### Unique hash

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import resourceUrl from '@magento/peregrine/lib/util/makeUrl';
+import resourceUrl from '@jelica-rado/peregrine/lib/util/makeUrl';
 
 import { useStyle } from '../../classify';
 import defaultClasses from './submenuColumn.module.css';

@@ -4,8 +4,8 @@ import { useIntl } from 'react-intl';
 import { ChevronDown as ArrowDown, ChevronUp as ArrowUp } from 'react-feather';
 import { Form } from 'informed';
 
-import { useFilterBlock } from '@magento/peregrine/lib/talons/FilterModal';
-import setValidator from '@magento/peregrine/lib/validators/set';
+import { useFilterBlock } from '@jelica-rado/peregrine/lib/talons/FilterModal';
+import setValidator from '@jelica-rado/peregrine/lib/validators/set';
 
 import { useStyle } from '../../classify';
 import Icon from '../Icon';

@@ -1,6 +1,6 @@
 import React from 'react';
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
-import { usePaymentInformation } from '@magento/peregrine/lib/talons/CheckoutPage/PaymentInformation/usePaymentInformation';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
+import { usePaymentInformation } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/PaymentInformation/usePaymentInformation';
 
 import PaymentMethods from '../paymentMethods';
 import Summary from '../summary';
@@ -14,7 +14,7 @@ jest.mock('../../PriceAdjustments', () => props => (
 ));
 
 jest.mock(
-    '@magento/peregrine/lib/talons/CheckoutPage/PaymentInformation/usePaymentInformation',
+    '@jelica-rado/peregrine/lib/talons/CheckoutPage/PaymentInformation/usePaymentInformation',
     () => ({
         usePaymentInformation: jest.fn().mockReturnValue({
             doneEditing: false,

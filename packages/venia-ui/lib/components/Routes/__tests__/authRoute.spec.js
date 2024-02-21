@@ -1,8 +1,8 @@
 import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 
-import { useUserContext } from '@magento/peregrine/lib/context/user';
-import { createTestInstance } from '@magento/peregrine';
+import { useUserContext } from '@jelica-rado/peregrine/lib/context/user';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import AuthRoute from '../authRoute';
 
@@ -12,7 +12,7 @@ jest.mock('react-router-dom', () => ({
     useLocation: jest.fn(() => ({ from: '/from' }))
 }));
 
-jest.mock('@magento/peregrine/lib/context/user', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/user', () => ({
     useUserContext: jest.fn(() => [{ isSignedIn: false }])
 }));
 

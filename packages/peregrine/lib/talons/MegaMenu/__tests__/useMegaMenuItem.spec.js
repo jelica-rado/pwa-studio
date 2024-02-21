@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { useMegaMenuItem } from '../useMegaMenuItem';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 const Component = props => {
     const talonProps = useMegaMenuItem(props);

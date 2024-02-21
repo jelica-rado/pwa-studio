@@ -2,7 +2,7 @@ import React from 'react';
 import { useMutation } from '@apollo/client';
 import { act } from 'react-test-renderer';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import { useForgotPassword } from '../useForgotPassword';
 
@@ -16,7 +16,7 @@ jest.mock('@apollo/client', () => ({
     ])
 }));
 
-jest.mock('@magento/peregrine/lib/hooks/useGoogleReCaptcha', () => ({
+jest.mock('@jelica-rado/peregrine/lib/hooks/useGoogleReCaptcha', () => ({
     useGoogleReCaptcha: jest.fn().mockReturnValue({
         recaptchaLoading: false,
         generateReCaptchaData: jest.fn(() => {}),

@@ -3,8 +3,8 @@ import { useIntl } from 'react-intl';
 import { bool, shape, string } from 'prop-types';
 import { Loader, User as AccountIcon } from 'react-feather';
 
-import { useAccountChip } from '@magento/peregrine/lib/talons/AccountChip/useAccountChip';
-import { useStyle } from '@magento/venia-ui/lib/classify';
+import { useAccountChip } from '@jelica-rado/peregrine/lib/talons/AccountChip/useAccountChip';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
 
 import Icon from '../Icon';
 import defaultClasses from './accountChip.module.css';

@@ -1,6 +1,6 @@
 import React from 'react';
 import defaultClasses from './html.module.css';
-import { useStyle } from '@magento/venia-ui/lib/classify';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
 import { arrayOf, shape, string } from 'prop-types';
 import { useHistory } from 'react-router-dom';
 import handleHtmlContentClick from '../../handleHtmlContentClick';

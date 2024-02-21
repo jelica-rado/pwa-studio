@@ -98,7 +98,7 @@ const {
         MagentoResolver,
         PWADevServer
     }
-} = require('@magento/pwa-buildpack');
+} = require('@jelica-rado/pwa-buildpack');
 ```
 
 ### Define paths to theme resources

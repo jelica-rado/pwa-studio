@@ -9,7 +9,7 @@ import { connect } from 'react-redux';
 import { useMutation } from '@apollo/client';
 import gql from 'graphql-tag';
 
-import { useAwaitQuery } from '@magento/peregrine/lib/hooks/useAwaitQuery';
+import { useAwaitQuery } from '@jelica-rado/peregrine/lib/hooks/useAwaitQuery';
 import actions from '../store/actions/cart/actions';
 import * as asyncActions from '../store/actions/cart/asyncActions';
 import bindActionCreators from '../util/bindActionCreators';

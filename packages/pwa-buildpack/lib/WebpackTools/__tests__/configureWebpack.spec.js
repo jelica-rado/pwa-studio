@@ -23,7 +23,7 @@ const BuildBus = require('../../BuildBus');
 
 pertain.mockImplementation((_, subject) => [
     {
-        name: '@magento/pwa-buildpack',
+        name: '@jelica-rado/pwa-buildpack',
         path: `./${subject.split('.').pop()}-base`
     }
 ]);

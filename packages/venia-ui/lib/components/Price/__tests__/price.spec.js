@@ -3,7 +3,7 @@ import IntlPolyfill from 'intl';
 import areIntlLocalesSupported from 'intl-locales-supported';
 import { useIntl } from 'react-intl';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import Price from '../price';
 
 if (global.Intl.NumberFormat.prototype.formatToParts) {

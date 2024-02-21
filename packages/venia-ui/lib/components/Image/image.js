@@ -8,8 +8,8 @@ import PropTypes, {
     shape,
     string
 } from 'prop-types';
-import { useImage } from '@magento/peregrine/lib/talons/Image/useImage';
-import { DEFAULT_WIDTH_TO_HEIGHT_RATIO } from '@magento/peregrine/lib/util/imageUtils';
+import { useImage } from '@jelica-rado/peregrine/lib/talons/Image/useImage';
+import { DEFAULT_WIDTH_TO_HEIGHT_RATIO } from '@jelica-rado/peregrine/lib/util/imageUtils';
 
 import PlaceholderImage from './placeholderImage';
 import ResourceImage from './resourceImage';

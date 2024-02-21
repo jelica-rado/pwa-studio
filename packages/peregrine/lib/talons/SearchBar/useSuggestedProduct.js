@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useEffect } from 'react';
-import { useEventingContext } from '@magento/peregrine/lib/context/eventing';
+import { useEventingContext } from '@jelica-rado/peregrine/lib/context/eventing';
 import resourceUrl from '../../util/makeUrl';
 
 /**

@@ -1,9 +1,9 @@
 import React from 'react';
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
 import WishlistLineItem from '../wishlistLineItem';
 import { act } from 'react-test-renderer';
 
-jest.mock('@magento/venia-ui/lib/classify');
+jest.mock('@jelica-rado/venia-ui/lib/classify');
 
 const onClickMock = jest.fn();
 const defaultProps = {

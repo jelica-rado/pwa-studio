@@ -2,8 +2,8 @@ import React, { Fragment, useEffect, useMemo, Suspense } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { shape, string, func } from 'prop-types';
 import { PlusSquare, AlertCircle as AlertCircleIcon } from 'react-feather';
-import { useToasts } from '@magento/peregrine';
-import { useAddressBook } from '@magento/peregrine/lib/talons/CheckoutPage/AddressBook/useAddressBook';
+import { useToasts } from '@jelica-rado/peregrine';
+import { useAddressBook } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/AddressBook/useAddressBook';
 
 import { useStyle } from '../../../classify';
 import Button from '../../Button';

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { replace, useLocation } from 'react-router-dom';
 import { act, create } from 'react-test-renderer';
 import { useLazyQuery } from '@apollo/client';
-import { useRootComponents } from '@magento/peregrine/lib/context/rootComponents';
+import { useRootComponents } from '@jelica-rado/peregrine/lib/context/rootComponents';
 import { useAppContext } from '../../../context/app';
 
 import { getRootComponent } from '../helpers';
@@ -57,7 +57,7 @@ jest.mock('react-router-dom', () => {
     };
 });
 
-jest.mock('@magento/peregrine/lib/context/rootComponents', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/rootComponents', () => ({
     useRootComponents: jest.fn()
 }));
 useRootComponents.mockImplementation(() => useState(new Map()));

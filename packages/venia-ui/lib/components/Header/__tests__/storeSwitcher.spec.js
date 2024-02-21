@@ -1,13 +1,13 @@
 import React from 'react';
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
 import StoreSwitcher from '../storeSwitcher';
-import { useStoreSwitcher } from '@magento/peregrine/lib/talons/Header/useStoreSwitcher';
+import { useStoreSwitcher } from '@jelica-rado/peregrine/lib/talons/Header/useStoreSwitcher';
 
-jest.mock('@magento/peregrine/lib/talons/Header/useStoreSwitcher', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/Header/useStoreSwitcher', () => ({
     useStoreSwitcher: jest.fn()
 }));
 
-jest.mock('@magento/venia-ui/lib/classify');
+jest.mock('@jelica-rado/venia-ui/lib/classify');
 
 const talonProps = {
     handleSwitchStore: jest.fn(),

@@ -10,8 +10,8 @@ import {
 } from 'prop-types';
 import SlickSlider from 'react-slick';
 import defaultClasses from './slider.module.css';
-import { useStyle } from '@magento/venia-ui/lib/classify';
-import { useMediaQuery } from '@magento/peregrine/lib/hooks/useMediaQuery';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
+import { useMediaQuery } from '@jelica-rado/peregrine/lib/hooks/useMediaQuery';
 import { jarallax } from 'jarallax';
 
 /**

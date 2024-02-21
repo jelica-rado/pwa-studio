@@ -2,9 +2,9 @@ import { MagentoGQLCacheLink } from '../gqlCacheLink';
 import {
     mockGetItem,
     mockSetItem
-} from '@magento/peregrine/lib/util/simplePersistence';
+} from '@jelica-rado/peregrine/lib/util/simplePersistence';
 
-jest.mock('@magento/peregrine/lib/util/simplePersistence');
+jest.mock('@jelica-rado/peregrine/lib/util/simplePersistence');
 
 test('it sets the correct context + headers on outgoing requests', () => {
     // Arrange.

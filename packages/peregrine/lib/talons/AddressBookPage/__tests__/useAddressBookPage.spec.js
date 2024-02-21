@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { renderHook, act } from '@testing-library/react-hooks';
 import { useQuery } from '@apollo/client';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import { useAddressBookPage } from '../useAddressBookPage';
 import { useEventingContext } from '../../../context/eventing';
@@ -40,7 +40,7 @@ jest.mock('react-router-dom', () => {
     };
 });
 
-jest.mock('@magento/peregrine/lib/context/app', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/app', () => {
     const state = {};
     const api = { actions: { setPageLoading: jest.fn() } };
     const useAppContext = jest.fn(() => [state, api]);
@@ -48,7 +48,7 @@ jest.mock('@magento/peregrine/lib/context/app', () => {
     return { useAppContext };
 });
 
-jest.mock('@magento/peregrine/lib/context/user', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/user', () => {
     const state = {
         isSignedIn: false,
         currentUser: {
@@ -76,7 +76,7 @@ const Component = props => {
     return null;
 };
 
-jest.mock('@magento/peregrine/lib/context/eventing', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/eventing', () => ({
     useEventingContext: jest.fn().mockReturnValue([{}, { dispatch: jest.fn() }])
 }));
 

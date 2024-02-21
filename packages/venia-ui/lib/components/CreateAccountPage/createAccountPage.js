@@ -2,10 +2,10 @@ import React from 'react';
 import { shape, string } from 'prop-types';
 import { FormattedMessage, useIntl } from 'react-intl';
 
-import { useCreateAccountPage } from '@magento/peregrine/lib/talons/CreateAccountPage/useCreateAccountPage';
-import { useStyle } from '@magento/venia-ui/lib/classify';
-import CreateAccount from '@magento/venia-ui/lib/components/CreateAccount';
-import { StoreTitle } from '@magento/venia-ui/lib/components/Head';
+import { useCreateAccountPage } from '@jelica-rado/peregrine/lib/talons/CreateAccountPage/useCreateAccountPage';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
+import CreateAccount from '@jelica-rado/venia-ui/lib/components/CreateAccount';
+import { StoreTitle } from '@jelica-rado/venia-ui/lib/components/Head';
 
 import defaultClasses from './createAccountPage.module.css';
 

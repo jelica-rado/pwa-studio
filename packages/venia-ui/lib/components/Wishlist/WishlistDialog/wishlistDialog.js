@@ -2,11 +2,11 @@ import React, { Fragment, useCallback, useMemo } from 'react';
 import { useIntl } from 'react-intl';
 import { Relevant } from 'informed';
 
-import { useWishlistDialog } from '@magento/peregrine/lib/talons/Wishlist/WishlistDialog/useWishlistDialog';
+import { useWishlistDialog } from '@jelica-rado/peregrine/lib/talons/Wishlist/WishlistDialog/useWishlistDialog';
 
-import Dialog from '@magento/venia-ui/lib/components/Dialog';
-import { useStyle } from '@magento/venia-ui/lib/classify';
-import FormError from '@magento/venia-ui/lib/components/FormError';
+import Dialog from '@jelica-rado/venia-ui/lib/components/Dialog';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
+import FormError from '@jelica-rado/venia-ui/lib/components/FormError';
 
 import CreateWishlistForm from './CreateWishlistForm';
 import WishlistLineItem from './WishlistLineItem';

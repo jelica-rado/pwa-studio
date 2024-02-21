@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { act } from 'react-test-renderer';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import { useLazyQuery } from '@apollo/client';
-import { useEventingContext } from '@magento/peregrine/lib/context/eventing';
+import { useEventingContext } from '@jelica-rado/peregrine/lib/context/eventing';
 
 import { useCartPage } from '../useCartPage';
 
@@ -33,7 +33,7 @@ jest.mock('@apollo/client', () => {
     };
 });
 
-jest.mock('@magento/peregrine/lib/context/cart', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/cart', () => {
     const state = {
         cartId: 'cart123'
     };
@@ -43,7 +43,7 @@ jest.mock('@magento/peregrine/lib/context/cart', () => {
     return { useCartContext };
 });
 
-jest.mock('@magento/peregrine/lib/context/eventing', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/eventing', () => ({
     useEventingContext: jest.fn().mockReturnValue([{}, { dispatch: jest.fn() }])
 }));
 

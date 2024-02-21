@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import defaultClasses from './banner.module.css';
-import { useStyle } from '@magento/venia-ui/lib/classify';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
 import { arrayOf, bool, oneOf, shape, string, func, object } from 'prop-types';
-import Button from '@magento/venia-ui/lib/components/Button/button';
-import resolveLinkProps from '@magento/peregrine/lib/util/resolveLinkProps';
+import Button from '@jelica-rado/venia-ui/lib/components/Button/button';
+import resolveLinkProps from '@jelica-rado/peregrine/lib/util/resolveLinkProps';
 import { Link, useHistory } from 'react-router-dom';
-import resourceUrl from '@magento/peregrine/lib/util/makeUrl';
-import { useIntersectionObserver } from '@magento/peregrine/lib/hooks/useIntersectionObserver';
-import { useMediaQuery } from '@magento/peregrine/lib/hooks/useMediaQuery';
+import resourceUrl from '@jelica-rado/peregrine/lib/util/makeUrl';
+import { useIntersectionObserver } from '@jelica-rado/peregrine/lib/hooks/useIntersectionObserver';
+import { useMediaQuery } from '@jelica-rado/peregrine/lib/hooks/useMediaQuery';
 import handleHtmlContentClick from '../../handleHtmlContentClick';
 
 const { matchMedia } = globalThis;

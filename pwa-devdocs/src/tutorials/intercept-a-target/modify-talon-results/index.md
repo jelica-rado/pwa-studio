@@ -49,9 +49,9 @@ Edit the `packages.json` file so it looks like the following:
   "repository": "",
   "dependencies": {},
   "peerDependencies": {
-    "@magento/peregrine": "~7.0.0",
-    "@magento/pwa-buildpack": "~6.0.0",
-    "@magento/venia-ui": "~4.0.0",
+    "@jelica-rado/peregrine": "~7.0.0",
+    "@jelica-rado/pwa-buildpack": "~6.0.0",
+    "@jelica-rado/venia-ui": "~4.0.0",
     "@apollo/client": "~3.1.2",
     "graphql-tag": "~2.10.1",
     "react": "~17.0.1",
@@ -92,7 +92,7 @@ In your intercept file, add the following content:
 ```js
 module.exports = (targets) => {
   // Wrap the useProductFullDetail talon with this extension
-  const peregrineTargets = targets.of("@magento/peregrine");
+  const peregrineTargets = targets.of("@jelica-rado/peregrine");
   const talonsTarget = peregrineTargets.talons;
 
   talonsTarget.tap((talonWrapperConfig) => {
@@ -102,7 +102,7 @@ module.exports = (targets) => {
   });
 
   // Set the buildpack features required by this extension
-  const builtins = targets.of("@magento/pwa-buildpack");
+  const builtins = targets.of("@jelica-rado/pwa-buildpack");
   builtins.specialFeatures.tap((featuresByModule) => {
     featuresByModule["@my-extension/my-product-page"] = {
       // Wrapper modules must be ES Modules
@@ -112,9 +112,9 @@ module.exports = (targets) => {
 };
 ```
 
-When this file runs, it taps into the `talonsTarget` from the available targets in `@magento/peregrine` and wraps the `useProductFullDetail()` function call with your extension.
+When this file runs, it taps into the `talonsTarget` from the available targets in `@jelica-rado/peregrine` and wraps the `useProductFullDetail()` function call with your extension.
 
-Since talon wrappers must be ES modules, this file also taps into the `specialFeatures` target from `@magento/pwa-buildpack` to set the `esModules` flag to `true`.
+Since talon wrappers must be ES modules, this file also taps into the `specialFeatures` target from `@jelica-rado/pwa-buildpack` to set the `esModules` flag to `true`.
 
 ## Make a data fetch hook
 

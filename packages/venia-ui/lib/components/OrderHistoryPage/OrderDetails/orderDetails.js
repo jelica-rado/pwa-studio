@@ -3,7 +3,7 @@ import { arrayOf, number, shape, string } from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 
 import { Printer } from 'react-feather';
-import { useStyle } from '@magento/venia-ui/lib/classify';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
 
 import BillingInformation from './billingInformation';
 import Items from './items';

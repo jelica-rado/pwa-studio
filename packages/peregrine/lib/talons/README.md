@@ -38,7 +38,7 @@ const MyComponent = props => {
 
 ```js
 import React from 'react';
-import { useMyComponent } from '@magento/peregrine/lib/talons/MyComponent';
+import { useMyComponent } from '@jelica-rado/peregrine/lib/talons/MyComponent';
 
 const MyComponent = props => {
     const { data, message } = useMyComponent(props);

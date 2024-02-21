@@ -10,7 +10,7 @@ The `create-env-file` subcommand for the [`buildpack`][] CLI command automatical
 Usage example with `npx`:
 
 ```sh
-npx @magento/pwa-buildpack create-env-file <dir>
+npx @jelica-rado/pwa-buildpack create-env-file <dir>
 ```
 
 This command generates a `.env` file in the specified directory.
@@ -44,7 +44,7 @@ MAGENTO_BACKEND_URL=
 
 ## Programmatic API
 
-Adding the `@magento/pwa-buildpack` dependency to your project gives you access to the programmatic API for creating the `.env` file.
+Adding the `@jelica-rado/pwa-buildpack` dependency to your project gives you access to the programmatic API for creating the `.env` file.
 
 ### `createDotEnvFile(directory, options)`
 
@@ -53,7 +53,7 @@ Uses the current environment variables and [`envVarDefinitions.json`][] file to 
 #### Example
 
 ```js
-const { createDotEnvFile } = require('@magento/pwa-buildpack');
+const { createDotEnvFile } = require('@jelica-rado/pwa-buildpack');
 
 const fileContents = createDotEnvFile(process.cwd());
 ```

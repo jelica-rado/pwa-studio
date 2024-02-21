@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useForm } from '@magento/peregrine/lib/talons/Checkout/useForm';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useForm } from '@jelica-rado/peregrine/lib/talons/Checkout/useForm';
 
 import Form from '../form';
 
@@ -11,9 +11,9 @@ jest.mock('react', () => {
     return Object.assign(React, { useState: stateSpy });
 });
 
-jest.mock('@magento/peregrine/lib/talons/Checkout/useForm', () => {
+jest.mock('@jelica-rado/peregrine/lib/talons/Checkout/useForm', () => {
     const useFormTalon = jest.requireActual(
-        '@magento/peregrine/lib/talons/Checkout/useForm'
+        '@jelica-rado/peregrine/lib/talons/Checkout/useForm'
     );
 
     const spy = jest.spyOn(useFormTalon, 'useForm');
@@ -22,14 +22,14 @@ jest.mock('@magento/peregrine/lib/talons/Checkout/useForm', () => {
 });
 
 const mockAddToast = jest.fn();
-jest.mock('@magento/peregrine', () => {
+jest.mock('@jelica-rado/peregrine', () => {
     const useToasts = jest.fn(() => [
         { toasts: new Map() },
         { addToast: mockAddToast }
     ]);
 
     return {
-        ...jest.requireActual('@magento/peregrine'),
+        ...jest.requireActual('@jelica-rado/peregrine'),
         useToasts
     };
 });

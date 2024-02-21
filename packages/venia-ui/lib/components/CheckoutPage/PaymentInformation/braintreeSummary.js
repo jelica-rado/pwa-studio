@@ -7,7 +7,7 @@ import Icon from '../../Icon';
 import LinkButton from '../../LinkButton';
 import LoadingIndicator from '../../LoadingIndicator';
 
-import { useBraintreeSummary } from '@magento/peregrine/lib/talons/CheckoutPage/PaymentInformation/useBraintreeSummary';
+import { useBraintreeSummary } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/PaymentInformation/useBraintreeSummary';
 import defaultClasses from './braintreeSummary.module.css';
 
 const BraintreeSummary = props => {

@@ -1,10 +1,10 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useFormError } from '@magento/peregrine/lib/talons/FormError/useFormError';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useFormError } from '@jelica-rado/peregrine/lib/talons/FormError/useFormError';
 
 import FormError from '../formError';
 
-jest.mock('@magento/peregrine/lib/talons/FormError/useFormError');
+jest.mock('@jelica-rado/peregrine/lib/talons/FormError/useFormError');
 jest.mock('../../../classify');
 
 test('renders null without errors', () => {

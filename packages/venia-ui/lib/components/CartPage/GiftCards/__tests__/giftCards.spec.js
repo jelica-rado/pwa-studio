@@ -1,6 +1,6 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useGiftCards } from '@magento/peregrine/lib/talons/CartPage/GiftCards/useGiftCards';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useGiftCards } from '@jelica-rado/peregrine/lib/talons/CartPage/GiftCards/useGiftCards';
 import { IntlProvider } from 'react-intl';
 import GiftCards from '../giftCards';
 
@@ -10,10 +10,10 @@ jest.mock('../../../../classify');
  *  Mock talon.
  */
 jest.mock(
-    '@magento/peregrine/lib/talons/CartPage/GiftCards/useGiftCards',
+    '@jelica-rado/peregrine/lib/talons/CartPage/GiftCards/useGiftCards',
     () => {
         const useGiftCardsTalon = jest.requireActual(
-            '@magento/peregrine/lib/talons/CartPage/GiftCards/useGiftCards'
+            '@jelica-rado/peregrine/lib/talons/CartPage/GiftCards/useGiftCards'
         );
         const spy = jest.spyOn(useGiftCardsTalon, 'useGiftCards');
 
@@ -22,7 +22,7 @@ jest.mock(
 );
 
 jest.mock(
-    '@magento/peregrine/lib/talons/CartPage/GiftCards/giftCardQueries.gql.ee.js',
+    '@jelica-rado/peregrine/lib/talons/CartPage/GiftCards/giftCardQueries.gql.ee.js',
     () => ({
         getAppliedGiftCardsQuery: 'mock cart',
         getGiftCardBalanceQuery: 'mock balance',
@@ -31,14 +31,14 @@ jest.mock(
     })
 );
 
-jest.mock('@magento/peregrine', () => {
+jest.mock('@jelica-rado/peregrine', () => {
     const useToasts = jest.fn(() => [
         { toasts: new Map() },
         { addToast: jest.fn() }
     ]);
 
     return {
-        ...jest.requireActual('@magento/peregrine'),
+        ...jest.requireActual('@jelica-rado/peregrine'),
         useToasts
     };
 });

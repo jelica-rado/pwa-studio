@@ -79,7 +79,7 @@ class TargetableESModuleArray extends TargetableESModule {
             this._queuedTransforms.unshift(
                 this._createTransform(
                     'source',
-                    '@magento/pwa-buildpack/lib/WebpackTools/loaders/export-esm-collection-loader',
+                    '@jelica-rado/pwa-buildpack/lib/WebpackTools/loaders/export-esm-collection-loader',
                     {
                         type: 'array',
                         bindings: this._orderedBindings

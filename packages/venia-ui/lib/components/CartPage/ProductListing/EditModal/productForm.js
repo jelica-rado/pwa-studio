@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
-import { useProductForm } from '@magento/peregrine/lib/talons/CartPage/ProductListing/EditModal/useProductForm';
+import { useProductForm } from '@jelica-rado/peregrine/lib/talons/CartPage/ProductListing/EditModal/useProductForm';
 
 import { useStyle } from '../../../../classify';
 import FormError from '../../../FormError';

@@ -70,7 +70,7 @@ Use Targets to add a new custom route to a Venia-based store, without editing an
 3. Create `packages/venia-concept/targets/local-intercept.js`:
    ```js
    module.exports = targets => {
-       targets.of('@magento/venia-ui').routes.tap(routes => {
+       targets.of('@jelica-rado/venia-ui').routes.tap(routes => {
            routes.push({
                name: 'Greeting',
                pattern: '/greeting/:who?',
@@ -199,7 +199,7 @@ In those interceptor callbacks, the intercept file can make customizations, gath
 
 ### How and when intercept files run
 
-PWA Studio's build process, using the `@magento/pwa-buildpack` module, calls intercept files by creating a `BuildBus` and running it.
+PWA Studio's build process, using the `@jelica-rado/pwa-buildpack` module, calls intercept files by creating a `BuildBus` and running it.
 It looks for intercept files _only in the **named** direct dependencies of the project._
 It does not traverse the whole dependency tree, running intercept files from second-level transitive dependencies and beyond.
 Only the modules listed in the project's `package.json` under `dependencies` and `devDependencies` can use Targets in the project.
@@ -217,11 +217,11 @@ It runs last, after all dependent modules have declared and intercepted targets.
 
 A project only runs Targets from its first-level dependencies.
 
-This means that if you're writing a third-party module which uses Targets from another module, like `@magento/peregrine`, then it shouldn't list Peregrine in its own `dependencies` list.
+This means that if you're writing a third-party module which uses Targets from another module, like `@jelica-rado/peregrine`, then it shouldn't list Peregrine in its own `dependencies` list.
 That does not guarantee that Peregrine will be a first-level dependency of the project.
 To use those Targets, your module needs its _host PWA project_ to also list a direct dependency on Peregrine.
-So it must add `@magento/peregrine` to the package.json `peerDependencies` collection.
-This instructs NPM to make sure that the top-level project installing your module is also installing `@magento/peregrine`.
+So it must add `@jelica-rado/peregrine` to the package.json `peerDependencies` collection.
+This instructs NPM to make sure that the top-level project installing your module is also installing `@jelica-rado/peregrine`.
 It warns the user strongly if that dependency is missing.
 Using `peerDependencies` for frontend libraries is a good practice anyway; it's a safeguard against including multiple copies of the same library in your built PWA.
 
@@ -235,7 +235,7 @@ This method returns a simple object whose keys are target names, and whose value
 
 ```js
 module.exports = targets => {
-  const builtins = targets.of('@magento/pwa-buildpack');
+  const builtins = targets.of('@jelica-rado/pwa-buildpack');
   builtins.webpackCompiler.tap(compiler => {
     // do fun stuff to the compiler using the familiar Tapable interface!
     compiler.emit.tap('MyExtension', compilation => {
@@ -253,7 +253,7 @@ Almost all target functionality comes from intercepting other targets, as in the
 
 ```js
 module.exports = targets => {
-  const builtins = targets.of('@magento/pwa-buildpack');
+  const builtins = targets.of('@jelica-rado/pwa-buildpack');
   builtins.webpackCompiler.tap(compiler => {
     compiler.emit.tap(targets.name, compilation => {
       const totalSize = compilation.getStats().chunks.reduce((sum, chunk) =>
@@ -297,13 +297,13 @@ An intercept file can access the full library of Targets declared by all direct 
 
 ### Targets as Public API
 Targets present another public API of a package alongside the modules it exports to runtime code.
-For example, `@magento/venia-ui` provides components for importing, and talons for making deep changes to those components.
+For example, `@jelica-rado/venia-ui` provides components for importing, and talons for making deep changes to those components.
 Let's say you want to make all CMS blocks that are only plain text (with no HTML) into big, beautiful blue text.
 Your app can import VeniaUI's RichContent component to make its own enhanced one:
 
 ```js
 import React from 'react';
-import BaseRichContent from '@magento/venia-ui/lib/components/RichContent';
+import BaseRichContent from '@jelica-rado/venia-ui/lib/components/RichContent';
 import WordArt from 'react-wordart';
 
 // If the content is just words, make 'em BLUE words.
@@ -342,7 +342,7 @@ export { BlueWords as Component };
 Now, add an interceptor in your intercept file.
 ```js
     targets
-        .of('@magento/venia-ui')
+        .of('@jelica-rado/venia-ui')
         .richContentRenderers.tap(richContentRenderers => {
             richContentRenderers.add({
                 componentName: 'BlueWords',
@@ -572,10 +572,10 @@ Since you're adding components from your third-party package to the storefront, 
 ```js
 module.exports = targets => {
     // targets.name is '@me/pwa-greeting-page'
-    targets.of('@magento/pwa-buildpack').specialFeatures.tap(flags => {
+    targets.of('@jelica-rado/pwa-buildpack').specialFeatures.tap(flags => {
         flags[targets.name] = { esModules: true };
     });
-    targets.of('@magento/venia-ui').routes.tap(routes => {
+    targets.of('@jelica-rado/venia-ui').routes.tap(routes => {
         routes.push({
             name: 'Greeting',
             pattern: '/greeting/:who?',
@@ -589,8 +589,8 @@ module.exports = targets => {
 ### Manage dependencies
 
 The GreetingPage uses `react` and `react-router`.
-The intercept file depends on targets of `@magento/venia-ui`.
-This means that the project using `@me/pwa-greeting-page` must also use `react`, `react-router`, and `@magento/venia-ui` as peers.
+The intercept file depends on targets of `@jelica-rado/venia-ui`.
+This means that the project using `@me/pwa-greeting-page` must also use `react`, `react-router`, and `@jelica-rado/venia-ui` as peers.
 Declare these dependencies in `package.json`:
 
 ```json
@@ -607,7 +607,7 @@ Declare these dependencies in `package.json`:
     }
   },
   "peerDependencies": {
-    "@magento/venia-ui": "~6.0.0",
+    "@jelica-rado/venia-ui": "~6.0.0",
     "react": "~17.0.1",
     "react-router-dom": "~5.1.0"
   }
@@ -646,12 +646,12 @@ To unit test individual Target implementations, use `mockTargetProvider` and `mo
 
 `mockTargetProvider` example from Peregrine:
 ```js
-const { mockTargetProvider } = require('@magento/pwa-buildpack');
+const { mockTargetProvider } = require('@jelica-rado/pwa-buildpack');
 const targets = mockTargetProvider(
-    '@magento/peregrine',
+    '@jelica-rado/peregrine',
     (_, dep) =>
         ({
-            '@magento/pwa-buildpack': {
+            '@jelica-rado/pwa-buildpack': {
                 specialFeatures: {
                     tap: jest.fn()
                 },
@@ -670,20 +670,20 @@ targets.own.talons.call('woah');
 expect(hook).toHaveBeenCalledWith('woah');
 
 intercept(targets);
-const buildpackTargets = targets.of('@magento/pwa-buildpack');
+const buildpackTargets = targets.of('@jelica-rado/pwa-buildpack');
 expect(buildpackTargets.transformModules.tap).toHaveBeenCalled();
 ```
 
 `mockBuildBus` example from VeniaUI:
 ```js
-const { mockBuildBus } = require('@magento/pwa-buildpack');
+const { mockBuildBus } = require('@jelica-rado/pwa-buildpack');
 const bus = mockBuildBus({
     context: __dirname,
     dependencies: [thisDep]
 });
 bus.runPhase('declare');
 const { richContentRenderers, routes } = bus.getTargetsOf(
-    '@magento/venia-ui'
+    '@jelica-rado/venia-ui'
 );
 expect(richContentRenderers.tap).toBeDefined();
 expect(routes.tap).toBeDefined();
@@ -708,7 +708,7 @@ To test Webpack loaders in a simulated Webpack loader context, use `runLoader`.
 
 Example from Buildpack's `wrap-esm-loader`:
 ```js
-const { runLoader } = require('@magento/pwa-buildpack');
+const { runLoader } = require('@jelica-rado/pwa-buildpack');
 const { output, context } = await runLoader(wrapEsmLoader, source, {
   query: [
     {
@@ -734,12 +734,12 @@ To simulate this, use `testFullBuild`.
 `buildModuleWith` example from Peregrine:
 
 ```js
-const { buildModuleWith } = require('@magento/pwa-buildpack');
+const { buildModuleWith } = require('@jelica-rado/pwa-buildpack');
 const talonIntegratingDep = {
     name: 'goose-app',
     declare() {},
     intercept(targets) {
-        targets.of('@magento/peregrine').talons.tap(talons => {
+        targets.of('@jelica-rado/peregrine').talons.tap(talons => {
             talons.ProductFullDetail.useProductFullDetail.wrapWith(
                 'src/usePFDIntercept'
             );
@@ -752,7 +752,7 @@ const built = await buildModuleWith('src/index.js', {
     context: __dirname,
     dependencies: [
         {
-            name: '@magento/peregrine',
+            name: '@jelica-rado/peregrine',
             declare,
             intercept
         },
@@ -760,8 +760,8 @@ const built = await buildModuleWith('src/index.js', {
     ],
     mockFiles: {
         'src/index.js': `
-import { useApp } from '@magento/peregrine/lib/talons/App/useApp';
-import { useProductFullDetail } from '@magento/peregrine/lib/talons/ProductFullDetail/useProductFullDetail';
+import { useApp } from '@jelica-rado/peregrine/lib/talons/App/useApp';
+import { useProductFullDetail } from '@jelica-rado/peregrine/lib/talons/ProductFullDetail/useProductFullDetail';
 export default useApp() + useProductFullDetail()`,
         'src/usePFDIntercept': `export default function usePFDIntercept(original) { return function usePFD() { return 'BEEP >o'; } };`,
         'src/useAppIntercept': `export default function useAppIntercept(original) {

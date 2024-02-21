@@ -7,7 +7,7 @@ import { useStyle } from '../../classify';
 import Icon from '../Icon';
 
 import defaultClasses from './kebab.module.css';
-import { useKebab } from '@magento/peregrine/lib/talons/LegacyMiniCart/useKebab';
+import { useKebab } from '@jelica-rado/peregrine/lib/talons/LegacyMiniCart/useKebab';
 
 const Kebab = props => {
     const { handleKebabClick, isOpen, kebabRef } = useKebab();

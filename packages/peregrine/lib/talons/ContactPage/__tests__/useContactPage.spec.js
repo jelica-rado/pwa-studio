@@ -1,5 +1,5 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import { useMutation, useQuery } from '@apollo/client';
 import { useContactPage } from '../useContactPage';
@@ -14,7 +14,7 @@ jest.mock('@apollo/client', () => {
     return { useMutation, useQuery };
 });
 
-jest.mock('@magento/peregrine/lib/util/shallowMerge', () => {
+jest.mock('@jelica-rado/peregrine/lib/util/shallowMerge', () => {
     return jest.fn(() => ({}));
 });
 

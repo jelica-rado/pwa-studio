@@ -1,11 +1,11 @@
 import React from 'react';
 import { StaticRouter } from 'react-router-dom';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import Routes from '../routes';
 import MagentoRoute from '../../MagentoRoute';
-import { useScrollTopOnChange } from '@magento/peregrine/lib/hooks/useScrollTopOnChange';
+import { useScrollTopOnChange } from '@jelica-rado/peregrine/lib/hooks/useScrollTopOnChange';
 
-jest.mock('@magento/peregrine/lib/hooks/useScrollTopOnChange');
+jest.mock('@jelica-rado/peregrine/lib/hooks/useScrollTopOnChange');
 jest.mock(
     '../../MagentoRoute',
     () =>

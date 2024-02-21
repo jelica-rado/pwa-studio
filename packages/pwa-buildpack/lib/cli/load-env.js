@@ -8,7 +8,7 @@ module.exports.builder = {
     coreDevMode: {
         type: 'boolean',
         desc:
-            'For core @magento/pwa-studio repository development. Creates a .env file populated with examples if one is not present.'
+            'For core @jelica-rado/pwa-studio repository development. Creates a .env file populated with examples if one is not present.'
     }
 };
 

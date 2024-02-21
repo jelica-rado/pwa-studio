@@ -6,9 +6,9 @@ import {
 } from 'react-feather';
 import { bool, shape, string } from 'prop-types';
 
-import { useScrollLock, Price, useToasts } from '@magento/peregrine';
-import { useMiniCart } from '@magento/peregrine/lib/talons/MiniCart/useMiniCart';
-import { useStyle } from '@magento/venia-ui/lib/classify';
+import { useScrollLock, Price, useToasts } from '@jelica-rado/peregrine';
+import { useMiniCart } from '@jelica-rado/peregrine/lib/talons/MiniCart/useMiniCart';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
 
 import Button from '../Button';
 import Icon from '../Icon';

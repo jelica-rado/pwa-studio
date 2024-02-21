@@ -1,7 +1,7 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
-import { useNavigation } from '@magento/peregrine/lib/talons/Navigation/useNavigation';
+import { useNavigation } from '@jelica-rado/peregrine/lib/talons/Navigation/useNavigation';
 
 import NavHeader from '../navHeader';
 import Navigation from '../navigation';
@@ -19,7 +19,7 @@ jest.mock('../navHeader', () => () => <i />);
 jest.mock('../../Header/storeSwitcher', () => () => 'StoreSwitcher');
 jest.mock('../../Header/currencySwitcher', () => () => 'CurrencySwitcher');
 
-jest.mock('@magento/peregrine/lib/talons/Navigation/useNavigation');
+jest.mock('@jelica-rado/peregrine/lib/talons/Navigation/useNavigation');
 
 jest.mock('react-aria', () => ({
     FocusScope: jest.fn(({ children }) => {

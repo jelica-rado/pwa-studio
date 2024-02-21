@@ -2,7 +2,7 @@ import React from 'react';
 import { useMutation, useQuery } from '@apollo/client';
 
 import createTestInstance from '../../../../../util/createTestInstance';
-import { useEventingContext } from '@magento/peregrine/lib/context/eventing';
+import { useEventingContext } from '@jelica-rado/peregrine/lib/context/eventing';
 import { useCustomerForm } from '../useCustomerForm';
 
 const mockCreateCustomerAddress = jest.fn();
@@ -40,7 +40,7 @@ jest.mock('../customerForm.gql', () => ({
     getDefaultShippingQuery: 'getCustomerAddressesQuery'
 }));
 
-jest.mock('@magento/peregrine/lib/context/eventing', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/eventing', () => ({
     useEventingContext: jest.fn().mockReturnValue([{}, { dispatch: jest.fn() }])
 }));
 

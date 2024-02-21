@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useLazyQuery, useQuery } from '@apollo/client';
 
-import mergeOperations from '@magento/peregrine/lib/util/shallowMerge';
+import mergeOperations from '@jelica-rado/peregrine/lib/util/shallowMerge';
 import { useCartContext } from '../../../context/cart';
 import DEFAULT_OPERATIONS from './productListing.gql';
 
@@ -22,7 +22,7 @@ import DEFAULT_OPERATIONS from './productListing.gql';
  * @returns {ProductListingTalonProps}
  *
  * @example <caption>Importing into your project</caption>
- * import { useProductListing } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useProductListing';
+ * import { useProductListing } from '@jelica-rado/peregrine/lib/talons/CartPage/ProductListing/useProductListing';
  */
 export const useProductListing = (props = {}) => {
     const operations = mergeOperations(DEFAULT_OPERATIONS, props.operations);

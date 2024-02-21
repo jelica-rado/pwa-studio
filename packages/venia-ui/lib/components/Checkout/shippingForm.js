@@ -8,7 +8,7 @@ import Select from '../Select';
 
 import { useStyle } from '../../classify';
 import defaultClasses from './shippingForm.module.css';
-import { useShippingForm } from '@magento/peregrine/lib/talons/Checkout/useShippingForm';
+import { useShippingForm } from '@jelica-rado/peregrine/lib/talons/Checkout/useShippingForm';
 
 const ShippingForm = props => {
     const {

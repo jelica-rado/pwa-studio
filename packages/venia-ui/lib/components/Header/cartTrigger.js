@@ -3,7 +3,7 @@ import { shape, string } from 'prop-types';
 import { ShoppingBag as ShoppingCartIcon } from 'react-feather';
 import { useIntl } from 'react-intl';
 
-import { useCartTrigger } from '@magento/peregrine/lib/talons/Header/useCartTrigger';
+import { useCartTrigger } from '@jelica-rado/peregrine/lib/talons/Header/useCartTrigger';
 
 import { useStyle } from '../../classify';
 import Icon from '../Icon';

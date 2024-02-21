@@ -17,7 +17,7 @@ To update this section, update the doc blocks in the source code
 
 ``` jsx
 {% raw %}
-import { List } from '@magento/peregrine';
+import { List } from '@jelica-rado/peregrine';
 
 const simpleData = new Map()
     .set('s', 'Small')

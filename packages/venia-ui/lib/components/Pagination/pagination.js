@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { func, number, shape, string } from 'prop-types';
 import { useIntl } from 'react-intl';
-import { usePagination } from '@magento/peregrine/lib/talons/Pagination/usePagination';
+import { usePagination } from '@jelica-rado/peregrine/lib/talons/Pagination/usePagination';
 
 import { useStyle } from '../../classify';
 import defaultClasses from './pagination.module.css';

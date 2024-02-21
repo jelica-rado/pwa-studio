@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Shimmer from '@magento/venia-ui/lib/components/Shimmer/shimmer.js';
+import Shimmer from '@jelica-rado/venia-ui/lib/components/Shimmer/shimmer.js';
 import { useStyle } from '../../classify';
 
 import defaultClasses from './cms.module.css';

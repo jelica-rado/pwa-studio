@@ -8,7 +8,7 @@ import AccountChip from '../AccountChip';
 import Icon from '../Icon';
 import Trigger from '../Trigger';
 import defaultClasses from './navHeader.module.css';
-import { useNavigationHeader } from '@magento/peregrine/lib/talons/Navigation/useNavigationHeader';
+import { useNavigationHeader } from '@jelica-rado/peregrine/lib/talons/Navigation/useNavigationHeader';
 
 const NavHeader = props => {
     const { isTopLevel, onBack, view } = props;

@@ -18,7 +18,7 @@ To update this section, update the doc blocks in the source code
 
 ```jsx
 import React from 'react';
-import { useProductListing } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useProductListing';
+import { useProductListing } from '@jelica-rado/peregrine/lib/talons/CartPage/ProductListing/useProductListing';
 
 import { GET_PRODUCT_LISTING } from './myProductListing.gql';
 

@@ -45,7 +45,7 @@ A [`Promise`][] object that contains the result of the request. See [response ha
 The following example imports the `request()` function into another module:
 
 ```js
-import { RestApi } from '@magento/peregrine';
+import { RestApi } from '@jelica-rado/peregrine';
 
 const { request } = RestApi.Magento2;
 ```
@@ -110,7 +110,7 @@ When the server returns an error code, the `request()` method builds an error co
 
 The multicasting feature of the Magento 2 REST client collects all successive calls to the `request()` method and returns a single request and response that is shared to all method callers.
 
-In any distributed architecture, where applications are built from components with view, behavior, and data fetching strategy, multiple components may request the same resource at the same time. 
+In any distributed architecture, where applications are built from components with view, behavior, and data fetching strategy, multiple components may request the same resource at the same time.
 GraphQL clients resolve this by merging GraphQL queries together, dispatching a request as a single call, and distributing the pieces of the GraphQL response to the original callers.
 A direct call using `fetch()` or `XMLHttpRequest()` does not provide this functionality.
 
@@ -159,7 +159,7 @@ The `request()` method is a convenience wrapper on top of the
 Use the `M2ApiRequest` class if you want more control over your REST requests.
 
 ```js
-import { RestApi } from '@magento/peregrine';
+import { RestApi } from '@jelica-rado/peregrine';
 const { M2ApiRequest } = RestApi;
 
 function placeCancelable(emitter) {

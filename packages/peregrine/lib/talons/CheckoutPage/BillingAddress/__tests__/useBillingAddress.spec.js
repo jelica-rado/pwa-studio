@@ -87,7 +87,7 @@ const setBillingAddressMutationResult = jest.fn().mockReturnValue([
     }
 ]);
 
-jest.mock('@magento/peregrine/lib/context/cart', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/cart', () => ({
     useCartContext: jest.fn().mockReturnValue([{ cartId: '123' }])
 }));
 

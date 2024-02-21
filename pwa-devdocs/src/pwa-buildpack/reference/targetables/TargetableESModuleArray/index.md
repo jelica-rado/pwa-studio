@@ -20,11 +20,11 @@ This example uses the `TargetableESModuleArray` class to add `PageBuilder` and `
 
 ```js
 // Create a TargetableESModuleArray linked to the richContentRenderers.js file
-const renderers = targetable.esModuleArray('@magento/venia-ui/lib/components/RichContent/richContentRenderers.js');
+const renderers = targetable.esModuleArray('@jelica-rado/venia-ui/lib/components/RichContent/richContentRenderers.js');
 
 // Push PageBuilder and PlainHtmlRenderer to the end of the array
-renderers.push('import * as PageBuilder from "@magento/pagebuilder"');
-renderers.push('import * as PlainHtmlRenderer from "@magento/venia-ui/lib/components/RichContent/plainHtmlRenderer"');
+renderers.push('import * as PageBuilder from "@jelica-rado/pagebuilder"');
+renderers.push('import * as PlainHtmlRenderer from "@jelica-rado/venia-ui/lib/components/RichContent/plainHtmlRenderer"');
 ```
 
 The file linked to the `TargetableESModuleArray` class must be a module that export an empty array.
@@ -34,8 +34,8 @@ Code editors and linters may also complain if the module is missing.
 After the transforms above, `richContentRenderers.js` enters the bundle as:
 
 ```js
-import * as PageBuilder from '@magento/pagebuilder';
-import * as PlainHtmlRenderer from '@magento/venia-ui/lib/components/RichContent/plainHtmlRenderer';
+import * as PageBuilder from '@jelica-rado/pagebuilder';
+import * as PlainHtmlRenderer from '@jelica-rado/venia-ui/lib/components/RichContent/plainHtmlRenderer';
 
 export default [
   PageBuilder,

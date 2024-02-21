@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form } from 'informed';
 import RadioGroup from '../radioGroup';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 jest.mock('informed', () => ({
     ...jest.requireActual('informed'),

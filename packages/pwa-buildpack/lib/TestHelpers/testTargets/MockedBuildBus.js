@@ -50,7 +50,7 @@ class MockedBuildBus extends BuildBus {
         let buildpackDeclared = false;
         const pertaining = [];
         const addPertaining = dep => {
-            if (dep.name === '@magento/pwa-buildpack') {
+            if (dep.name === '@jelica-rado/pwa-buildpack') {
                 buildpackDeclared = true;
             }
             pertaining.push(dep);
@@ -91,7 +91,7 @@ class MockedBuildBus extends BuildBus {
         /** Ensure buildpack. */
         if (!buildpackDeclared) {
             pertaining.unshift({
-                name: '@magento/pwa-buildpack',
+                name: '@jelica-rado/pwa-buildpack',
                 declare: require('../../BuildBus/declare-base'),
                 intercept: require('../../BuildBus/intercept-base')
             });

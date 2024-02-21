@@ -2,8 +2,8 @@ import React, { Fragment, Suspense } from 'react';
 import { useIntl } from 'react-intl';
 import { shape, string } from 'prop-types';
 
-import { useAccountTrigger } from '@magento/peregrine/lib/talons/Header/useAccountTrigger';
-import { useStyle } from '@magento/venia-ui/lib/classify';
+import { useAccountTrigger } from '@jelica-rado/peregrine/lib/talons/Header/useAccountTrigger';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
 
 import AccountChip from '../AccountChip';
 

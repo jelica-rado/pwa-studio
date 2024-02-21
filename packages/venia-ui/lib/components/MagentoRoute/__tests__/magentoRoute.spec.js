@@ -1,12 +1,12 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useMagentoRoute } from '@magento/peregrine/lib/talons/MagentoRoute';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useMagentoRoute } from '@jelica-rado/peregrine/lib/talons/MagentoRoute';
 
 import MagentoRoute from '../magentoRoute';
 
-jest.mock('@magento/peregrine/lib/talons/MagentoRoute');
-jest.mock('@magento/venia-ui/lib/components/ErrorView', () => 'ErrorView');
-jest.mock('@magento/venia-ui/lib/components/LoadingIndicator', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/MagentoRoute');
+jest.mock('@jelica-rado/venia-ui/lib/components/ErrorView', () => 'ErrorView');
+jest.mock('@jelica-rado/venia-ui/lib/components/LoadingIndicator', () => ({
     fullPageLoadingIndicator: 'LoadingIndicator'
 }));
 

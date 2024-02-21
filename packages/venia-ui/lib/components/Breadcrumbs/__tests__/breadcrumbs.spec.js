@@ -1,18 +1,18 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import { mockShimmer } from '../breadcrumbs.shimmer';
-import { useBreadcrumbs } from '@magento/peregrine/lib/talons/Breadcrumbs/useBreadcrumbs';
+import { useBreadcrumbs } from '@jelica-rado/peregrine/lib/talons/Breadcrumbs/useBreadcrumbs';
 
 import Breadcrumbs from '../breadcrumbs';
 
 jest.mock('react-router-dom', () => ({
     Link: ({ children }) => children
 }));
-jest.mock('@magento/peregrine/lib/util/makeUrl', () =>
+jest.mock('@jelica-rado/peregrine/lib/util/makeUrl', () =>
     jest.fn(url => `${url}.html`)
 );
 jest.mock('../../../classify');
-jest.mock('@magento/peregrine/lib/talons/Breadcrumbs/useBreadcrumbs');
+jest.mock('@jelica-rado/peregrine/lib/talons/Breadcrumbs/useBreadcrumbs');
 
 jest.mock('../breadcrumbs.shimmer', () => {
     const mockedShimmer = jest.fn(() => null);

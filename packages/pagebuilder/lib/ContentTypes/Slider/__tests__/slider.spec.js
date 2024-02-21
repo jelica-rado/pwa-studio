@@ -1,9 +1,9 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import Slider from '../slider';
 
-jest.mock('@magento/peregrine/lib/util/makeUrl');
-jest.mock('@magento/venia-ui/lib/classify');
+jest.mock('@jelica-rado/peregrine/lib/util/makeUrl');
+jest.mock('@jelica-rado/venia-ui/lib/classify');
 
 jest.mock('react-slick', () => {
     return jest.fn();

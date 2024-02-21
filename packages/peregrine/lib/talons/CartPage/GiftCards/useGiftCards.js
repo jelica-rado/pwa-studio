@@ -2,8 +2,8 @@ import { useCallback, useEffect, useState } from 'react';
 import { useFormApi } from 'informed';
 import { useLazyQuery, useMutation, useQuery } from '@apollo/client';
 
-import { useCartContext } from '@magento/peregrine/lib/context/cart';
-import mergeOperations from '@magento/peregrine/lib/util/shallowMerge';
+import { useCartContext } from '@jelica-rado/peregrine/lib/context/cart';
+import mergeOperations from '@jelica-rado/peregrine/lib/util/shallowMerge';
 import DEFAULT_OPERATIONS from './giftCardQueries.gql';
 
 // To keep track of the most recent action taken.
@@ -33,7 +33,7 @@ const actions = {
  * @returns {GiftCardsTalonProps}
  *
  * @example <caption>Importing into your project</caption>
- * import { useGiftCards } from '@magento/peregrine/lib/talons/CartPage/GiftCards'
+ * import { useGiftCards } from '@jelica-rado/peregrine/lib/talons/CartPage/GiftCards'
  */
 export const useGiftCards = props => {
     const operations = mergeOperations(DEFAULT_OPERATIONS, props.operations);

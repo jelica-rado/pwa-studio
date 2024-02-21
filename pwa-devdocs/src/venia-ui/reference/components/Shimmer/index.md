@@ -137,10 +137,10 @@ In this example, we'll add a custom attribute shimmer to the detail section of t
 **local-intercept.js**
 
 ```jsx
-const { Targetables } = require('@magento/pwa-buildpack');
+const { Targetables } = require('@jelica-rado/pwa-buildpack');
 const targetables = Targetables.using(targets);
 const productShimmerComponent = targetables.reactComponent(
-    '@magento/venia-ui/lib/RootComponents/Product/product.shimmer'
+    '@jelica-rado/venia-ui/lib/RootComponents/Product/product.shimmer'
 );
 
 /**

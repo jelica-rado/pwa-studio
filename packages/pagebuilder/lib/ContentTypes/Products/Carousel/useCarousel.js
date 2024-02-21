@@ -1,12 +1,12 @@
 import { useQuery } from '@apollo/client';
 
-import { useCustomerWishlistSkus } from '@magento/peregrine/lib/hooks/useCustomerWishlistSkus/useCustomerWishlistSkus';
+import { useCustomerWishlistSkus } from '@jelica-rado/peregrine/lib/hooks/useCustomerWishlistSkus/useCustomerWishlistSkus';
 
-import mergeOperations from '@magento/peregrine/lib/util/shallowMerge';
+import mergeOperations from '@jelica-rado/peregrine/lib/util/shallowMerge';
 import defaultOperations from './carousel.gql';
 
 /**
- * This is a duplicate of @magento/peregrine/lib/talons/Gallery/useGallery.js
+ * This is a duplicate of @jelica-rado/peregrine/lib/talons/Gallery/useGallery.js
  */
 export const useCarousel = (props = {}) => {
     const operations = mergeOperations(defaultOperations, props.operations);

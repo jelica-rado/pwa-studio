@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState, useRef, useMemo } from 'react';
 import { useMutation, useQuery } from '@apollo/client';
 import DEFAULT_OPERATIONS from './addressBook.gql';
-import mergeOperations from '@magento/peregrine/lib/util/shallowMerge';
+import mergeOperations from '@jelica-rado/peregrine/lib/util/shallowMerge';
 
 import { useAppContext } from '../../../context/app';
 import { useCartContext } from '../../../context/cart';

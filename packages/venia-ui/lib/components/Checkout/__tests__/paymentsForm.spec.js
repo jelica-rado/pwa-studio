@@ -1,6 +1,6 @@
 import React from 'react';
 import { act } from 'react-test-renderer';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import PaymentsForm from '../paymentsForm';
 import { Form } from 'informed';
@@ -10,7 +10,7 @@ import Button from '../../Button';
 jest.mock('../../../classify');
 jest.mock('../braintreeDropin', () => 'BraintreeDropin');
 
-jest.mock('@magento/peregrine/lib/context/user', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/user', () => {
     const state = {
         isSignedIn: false
     };

@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import { shape, string } from 'prop-types';
 
-import { BrowserPersistence } from '@magento/peregrine/lib/util';
-import { useStyle } from '@magento/venia-ui/lib/classify';
-import PriceComponent from '@magento/venia-ui/lib/components/Price';
+import { BrowserPersistence } from '@jelica-rado/peregrine/lib/util';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
+import PriceComponent from '@jelica-rado/venia-ui/lib/components/Price';
 
 import defaultClasses from './price.module.css';
 

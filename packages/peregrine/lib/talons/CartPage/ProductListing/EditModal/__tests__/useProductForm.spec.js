@@ -9,7 +9,7 @@ import {
 import { configurableThumbnailSourceResponse } from '../__fixtures__/configurableThumbnailSource';
 import { useProductForm } from '../useProductForm';
 import { useEventingContext } from '../../../../../context/eventing';
-import { getOutOfStockVariantsWithInitialSelection } from '@magento/peregrine/lib/util/getOutOfStockVariantsWithInitialSelection';
+import { getOutOfStockVariantsWithInitialSelection } from '@jelica-rado/peregrine/lib/util/getOutOfStockVariantsWithInitialSelection';
 
 jest.mock('@apollo/client', () => ({
     useMutation: jest
@@ -54,7 +54,7 @@ jest.mock('../../../../../context/eventing', () => ({
 }));
 
 jest.mock(
-    '@magento/peregrine/lib/util/getOutOfStockVariantsWithInitialSelection',
+    '@jelica-rado/peregrine/lib/util/getOutOfStockVariantsWithInitialSelection',
     () => ({
         getOutOfStockVariantsWithInitialSelection: jest.fn().mockReturnValue([])
     })

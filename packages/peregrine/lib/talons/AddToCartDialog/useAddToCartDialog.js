@@ -5,8 +5,8 @@ import mergeOperations from '../../util/shallowMerge';
 import { useCartContext } from '../../context/cart';
 import defaultOperations from './addToCartDialog.gql';
 import { useEventingContext } from '../../context/eventing';
-import { isProductConfigurable } from '@magento/peregrine/lib/util/isProductConfigurable';
-import { getOutOfStockVariants } from '@magento/peregrine/lib/util/getOutOfStockVariants';
+import { isProductConfigurable } from '@jelica-rado/peregrine/lib/util/isProductConfigurable';
+import { getOutOfStockVariants } from '@jelica-rado/peregrine/lib/util/getOutOfStockVariants';
 
 export const useAddToCartDialog = props => {
     const { item, onClose } = props;

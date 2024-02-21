@@ -8,7 +8,7 @@ import defaultClasses from './body.module.css';
 import EditItem from './editItem';
 import EmptyMiniCartBody from './emptyMiniCartBody';
 import ProductList from './productList';
-import { useBody } from '@magento/peregrine/lib/talons/LegacyMiniCart/useBody';
+import { useBody } from '@jelica-rado/peregrine/lib/talons/LegacyMiniCart/useBody';
 
 const UPDATING_TEXT = 'Updating Cart...';
 const LOADING_TEXT = 'Fetching Cart...';

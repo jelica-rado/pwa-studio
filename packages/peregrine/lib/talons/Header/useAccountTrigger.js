@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 
-import { useDropdown } from '@magento/peregrine/lib/hooks/useDropdown';
-import { useUserContext } from '@magento/peregrine/lib/context/user';
+import { useDropdown } from '@jelica-rado/peregrine/lib/hooks/useDropdown';
+import { useUserContext } from '@jelica-rado/peregrine/lib/context/user';
 /**
  * The useAccountTrigger talon complements the AccountTrigger component.
  *

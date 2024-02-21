@@ -1,10 +1,10 @@
 import React from 'react';
-import { createTestInstance, useToasts } from '@magento/peregrine';
+import { createTestInstance, useToasts } from '@jelica-rado/peregrine';
 
 import {
     CHECKOUT_STEP,
     useCheckoutPage
-} from '@magento/peregrine/lib/talons/CheckoutPage/useCheckoutPage';
+} from '@jelica-rado/peregrine/lib/talons/CheckoutPage/useCheckoutPage';
 import CheckoutPage from '../checkoutPage';
 import OrderConfirmationPage from '../OrderConfirmationPage';
 import FormError from '../../FormError';
@@ -13,8 +13,8 @@ const defaultWindowSize = 960;
 
 let mockWindowSize;
 
-jest.mock('@magento/peregrine', () => {
-    const actual = jest.requireActual('@magento/peregrine');
+jest.mock('@jelica-rado/peregrine', () => {
+    const actual = jest.requireActual('@jelica-rado/peregrine');
     const useToasts = jest.fn().mockReturnValue([{}, { addToast: jest.fn() }]);
     const useWindowSize = jest.fn().mockReturnValue({
         windowSize: {
@@ -29,9 +29,9 @@ jest.mock('@magento/peregrine', () => {
     };
 });
 
-jest.mock('@magento/peregrine/lib/talons/CheckoutPage/useCheckoutPage', () => {
+jest.mock('@jelica-rado/peregrine/lib/talons/CheckoutPage/useCheckoutPage', () => {
     const originalModule = jest.requireActual(
-        '@magento/peregrine/lib/talons/CheckoutPage/useCheckoutPage'
+        '@jelica-rado/peregrine/lib/talons/CheckoutPage/useCheckoutPage'
     );
 
     return {

@@ -1,8 +1,8 @@
 import React from 'react';
 import { useMutation } from '@apollo/client';
-import { createTestInstance } from '@magento/peregrine';
-import { useCountry } from '@magento/peregrine/lib/talons/Country/useCountry';
-import { useRegion } from '@magento/peregrine/lib/talons/Region/useRegion';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useCountry } from '@jelica-rado/peregrine/lib/talons/Country/useCountry';
+import { useRegion } from '@jelica-rado/peregrine/lib/talons/Region/useRegion';
 
 import ShippingForm from '../shippingForm';
 
@@ -55,7 +55,7 @@ jest.mock('@apollo/client', () => {
     };
 });
 
-jest.mock('@magento/peregrine/lib/context/cart', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/cart', () => {
     const state = { cartId: 'cart123' };
     const api = {};
     const useCartContext = jest.fn(() => [state, api]);
@@ -63,8 +63,8 @@ jest.mock('@magento/peregrine/lib/context/cart', () => {
     return { useCartContext };
 });
 
-jest.mock('@magento/peregrine/lib/talons/Country/useCountry');
-jest.mock('@magento/peregrine/lib/talons/Region/useRegion');
+jest.mock('@jelica-rado/peregrine/lib/talons/Country/useCountry');
+jest.mock('@jelica-rado/peregrine/lib/talons/Region/useRegion');
 
 describe('using localized data mocks', () => {
     beforeEach(() => {

@@ -2,8 +2,8 @@ import React from 'react';
 import { InMemoryCache } from '@apollo/client';
 import { MockedProvider } from '@apollo/client/testing';
 import { Form } from 'informed';
-import { createTestInstance } from '@magento/peregrine';
-import typePolicies from '@magento/peregrine/lib/Apollo/policies';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import typePolicies from '@jelica-rado/peregrine/lib/Apollo/policies';
 
 import Autocomplete from '../autocomplete';
 import { IntlProvider } from 'react-intl';
@@ -11,7 +11,7 @@ import { IntlProvider } from 'react-intl';
 jest.mock('../../../classify');
 jest.mock('../suggestions', () => () => null);
 
-jest.mock('@magento/peregrine/lib/context/eventing', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/eventing', () => ({
     useEventingContext: jest.fn().mockReturnValue([{}, { dispatch: jest.fn() }])
 }));
 

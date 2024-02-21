@@ -19,7 +19,7 @@ Array [
     "name": "author",
   },
   Object {
-    "default": "@magento/venia-concept",
+    "default": "@jelica-rado/venia-concept",
     "message": [Function],
     "name": "template",
   },
@@ -85,7 +85,7 @@ Array [
 exports[`should log details 1`] = `
 Array [
   Array [
-    "[92m@magento/create-pwa v1.3.1[39m",
+    "[92m@jelica-rado/create-pwa v1.3.1[39m",
   ],
   Array [
     "[37mCreating a [97mPWA Studio[37m project[39m",
@@ -94,7 +94,7 @@ Array [
     "
 Running command:
 
-[97mbuildpack create-project test --name \\"test\\" --author \\"Gooston <gooston@goosemail.com>\\" --template \\"@magento/venia-concept@8.0.0\\" --backend-url \\"https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/\\" --backend-edition \\"AC\\" --braintree-token \\"sandbox_8yrzsvtm_s2bg8fs563crhqzk\\" --npm-client \\"yarn\\" --no-install[39m
+[97mbuildpack create-project test --name \\"test\\" --author \\"Gooston <gooston@goosemail.com>\\" --template \\"@jelica-rado/venia-concept@8.0.0\\" --backend-url \\"https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/\\" --backend-edition \\"AC\\" --braintree-token \\"sandbox_8yrzsvtm_s2bg8fs563crhqzk\\" --npm-client \\"yarn\\" --no-install[39m
 [97m[39m
 [97m[39m",
   ],

@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import waitForExpect from 'wait-for-expect';
 import dropin from 'braintree-web-drop-in';
 
 import BraintreeDropin from '../braintreeDropin';
 
 jest.mock('../../../classify');
-jest.mock('@magento/peregrine', () => ({
-    ...jest.requireActual('@magento/peregrine'),
+jest.mock('@jelica-rado/peregrine', () => ({
+    ...jest.requireActual('@jelica-rado/peregrine'),
     Util: {
         BrowserPersistence: function() {
             return {

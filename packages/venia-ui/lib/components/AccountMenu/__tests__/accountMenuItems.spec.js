@@ -1,6 +1,6 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useAccountMenuItems } from '@magento/peregrine/lib/talons/AccountMenu/useAccountMenuItems';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useAccountMenuItems } from '@jelica-rado/peregrine/lib/talons/AccountMenu/useAccountMenuItems';
 
 import AccountMenuItems from '../accountMenuItems';
 
@@ -8,7 +8,7 @@ jest.mock('react-router-dom', () => ({
     Link: children => `<Link>${children.children}</Link>`
 }));
 jest.mock(
-    '@magento/peregrine/lib/talons/AccountMenu/useAccountMenuItems',
+    '@jelica-rado/peregrine/lib/talons/AccountMenu/useAccountMenuItems',
     () => {
         return {
             useAccountMenuItems: jest.fn()

@@ -1,5 +1,5 @@
 import { gql } from '@apollo/client';
-import { GET_PRODUCTS_IN_WISHLISTS } from '@magento/peregrine/lib/talons/Wishlist/AddToListButton/addToListButton.gql';
+import { GET_PRODUCTS_IN_WISHLISTS } from '@jelica-rado/peregrine/lib/talons/Wishlist/AddToListButton/addToListButton.gql';
 
 export const GET_WISHLIST_ITEMS = gql`
     query GetWishlistItemsForLocalField($currentPage: Int!) {

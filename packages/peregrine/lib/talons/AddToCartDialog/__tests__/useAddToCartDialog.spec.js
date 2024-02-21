@@ -6,7 +6,7 @@ import defaultOperations from '../addToCartDialog.gql';
 import { useAddToCartDialog } from '../useAddToCartDialog';
 import { useEventingContext } from '../../../context/eventing';
 import createTestInstance from '../../../util/createTestInstance';
-import { getOutOfStockVariants } from '@magento/peregrine/lib/util/getOutOfStockVariants';
+import { getOutOfStockVariants } from '@jelica-rado/peregrine/lib/util/getOutOfStockVariants';
 
 jest.mock('../../../context/cart', () => ({
     useCartContext: jest.fn().mockReturnValue([{ cartId: '123' }])
@@ -16,7 +16,7 @@ jest.mock('../../../context/eventing', () => ({
     useEventingContext: jest.fn().mockReturnValue([{}, { dispatch: jest.fn() }])
 }));
 
-jest.mock('@magento/peregrine/lib/util/getOutOfStockVariants', () => ({
+jest.mock('@jelica-rado/peregrine/lib/util/getOutOfStockVariants', () => ({
     getOutOfStockVariants: jest.fn().mockReturnValue([])
 }));
 

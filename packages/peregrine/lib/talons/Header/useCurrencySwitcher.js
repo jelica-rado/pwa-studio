@@ -1,9 +1,9 @@
 import { useQuery } from '@apollo/client';
 import { useCallback, useMemo } from 'react';
 import { useHistory } from 'react-router-dom';
-import { useDropdown } from '@magento/peregrine/lib/hooks/useDropdown';
-import { useTypePolicies } from '@magento/peregrine';
-import { BrowserPersistence } from '@magento/peregrine/lib/util';
+import { useDropdown } from '@jelica-rado/peregrine/lib/hooks/useDropdown';
+import { useTypePolicies } from '@jelica-rado/peregrine';
+import { BrowserPersistence } from '@jelica-rado/peregrine/lib/util';
 
 import mergeOperations from '../../util/shallowMerge';
 

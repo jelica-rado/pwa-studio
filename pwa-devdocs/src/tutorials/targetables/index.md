@@ -17,8 +17,8 @@ The most common pattern for working with Targetable objects is to connect an ins
 Then, you can use that instance to create Targetable objects.
 
 ```js
-// Access the TargetableSet class 
-const { Targetables } = require('@magento/pwa-buildpack')
+// Access the TargetableSet class
+const { Targetables } = require('@jelica-rado/pwa-buildpack')
 
 module.exports = targets => {
     // Create a TargetableSet instance connected to this project's TargetProvider
@@ -35,14 +35,14 @@ The `TargetableModule` class itself represents a plain module.
 It contains functions that let it manipulate the source code directly.
 
 ```js
-const { Targetables } = require('@magento/pwa-buildpack')
+const { Targetables } = require('@jelica-rado/pwa-buildpack')
 
 module.exports = targets => {
     const targetables = Targetables.using(targets);
 
     // Create a TargetableModule instance that points to the main.js source
     const MainComponent = targetables.module(
-        '@magento/venia-ui/lib/components/Main/main.js'
+        '@jelica-rado/venia-ui/lib/components/Main/main.js'
     );
 
     // Insert a console log message in the source
@@ -63,13 +63,13 @@ Some Targetable classes, such as `TargetableModule` and [`TargetableReactCompone
 Certain methods in these classes are chainable, which let you call these methods one after another in your code.
 
 ```js
-const { Targetables } = require('@magento/pwa-buildpack')
+const { Targetables } = require('@jelica-rado/pwa-buildpack')
 
 module.exports = targets => {
     const targetables = Targetables.using(targets);
 
     const MainComponent = targetables.reactComponent(
-        '@magento/venia-ui/lib/components/Main/main.js'
+        '@jelica-rado/venia-ui/lib/components/Main/main.js'
     );
 
     MainComponent
@@ -90,7 +90,7 @@ module.exports = targets => {
 A less common pattern for using Targetables is to access the Targetables classes directly and creating an object that is not connected to a project's TargetProvider.
 
 ```js
-const { Targetables } = require('@magento/pwa-buildpack')
+const { Targetables } = require('@jelica-rado/pwa-buildpack')
 
 module.exports = targets => {
     // Create an unbound Targetable ESModule object from a file
@@ -100,7 +100,7 @@ module.exports = targets => {
     handlers.wrapWithFile('handleLoad', 'src/overrides/doSomethingOnLoad.js');
 
     // Send it all to the build
-    targets.of('@magento/pwa-buildpack').transformModules.tap(addTransform => {
+    targets.of('@jelica-rado/pwa-buildpack').transformModules.tap(addTransform => {
         handlers.flush().forEach(request => addTransform(request));
     });
 }

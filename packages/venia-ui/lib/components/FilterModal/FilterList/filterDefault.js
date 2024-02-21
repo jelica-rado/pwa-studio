@@ -5,7 +5,7 @@ import { bool, shape, string } from 'prop-types';
 import Checkbox from '../../Checkbox';
 import { useStyle } from '../../../classify';
 import defaultClasses from './filterDefault.module.css';
-import { useCurrencySwitcher } from '@magento/peregrine/lib/talons/Header/useCurrencySwitcher';
+import { useCurrencySwitcher } from '@jelica-rado/peregrine/lib/talons/Header/useCurrencySwitcher';
 
 const FilterDefault = props => {
     const {

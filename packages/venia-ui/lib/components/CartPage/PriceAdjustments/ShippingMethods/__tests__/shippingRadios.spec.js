@@ -1,5 +1,5 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import ShippingRadios from '../shippingRadios';
 import { Form } from 'informed';
@@ -34,7 +34,7 @@ jest.mock('@apollo/client', () => {
     };
 });
 
-jest.mock('@magento/peregrine/lib/context/cart', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/cart', () => {
     const state = { cartId: 'cart123' };
     const api = {};
     const useCartContext = jest.fn(() => [state, api]);

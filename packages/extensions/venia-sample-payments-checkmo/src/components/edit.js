@@ -1,7 +1,7 @@
 import React from 'react';
 import { shape, string, bool, func } from 'prop-types';
 
-import { useStyle } from '@magento/venia-ui/lib/classify';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
 
 import CheckMo from './checkmo';
 import defaultClasses from './edit.module.css';

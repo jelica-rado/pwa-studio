@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useMediaQuery } from '../useMediaQuery';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import { act } from 'react-test-renderer';
 
 const log = jest.fn();

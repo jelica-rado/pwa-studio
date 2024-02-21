@@ -31,7 +31,7 @@ async function prepare() {
     const packagePath = name => path.resolve(root, packages[name].location);
 
     const buildpackCli = path.resolve(
-        packagePath('@magento/pwa-buildpack'),
+        packagePath('@jelica-rado/pwa-buildpack'),
         'bin',
         'buildpack'
     );
@@ -54,7 +54,7 @@ async function prepare() {
         })
     );
 
-    const veniaPath = packagePath('@magento/venia-concept');
+    const veniaPath = packagePath('@jelica-rado/venia-concept');
 
     console.warn(chalk.green('Ensuring valid environment...'));
     try {

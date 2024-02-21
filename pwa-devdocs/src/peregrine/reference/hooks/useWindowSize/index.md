@@ -25,7 +25,7 @@ return(
 Inside a component in your application, use the `useWindowSize()` function to get the window size value that updates when the window size changes.
 
 ```jsx
-import { useWindowSize  } from '@magento/peregrine';
+import { useWindowSize  } from '@jelica-rado/peregrine';
 
 function MyComponent(props) {
 

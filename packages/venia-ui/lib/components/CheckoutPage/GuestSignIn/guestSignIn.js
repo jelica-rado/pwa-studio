@@ -1,13 +1,13 @@
 import React from 'react';
 import { bool, func, shape, string } from 'prop-types';
 import { FormattedMessage } from 'react-intl';
-import { useGuestSignIn } from '@magento/peregrine/lib/talons/CheckoutPage/GuestSignIn/useGuestSignIn';
+import { useGuestSignIn } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/GuestSignIn/useGuestSignIn';
 
-import { useStyle } from '@magento/venia-ui/lib/classify';
-import CreateAccount from '@magento/venia-ui/lib/components/CreateAccount';
-import ForgotPassword from '@magento/venia-ui/lib/components/ForgotPassword';
-import LinkButton from '@magento/venia-ui/lib/components/LinkButton';
-import SignIn from '@magento/venia-ui/lib/components/SignIn';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
+import CreateAccount from '@jelica-rado/venia-ui/lib/components/CreateAccount';
+import ForgotPassword from '@jelica-rado/venia-ui/lib/components/ForgotPassword';
+import LinkButton from '@jelica-rado/venia-ui/lib/components/LinkButton';
+import SignIn from '@jelica-rado/venia-ui/lib/components/SignIn';
 import defaultClasses from './guestSignIn.module.css';
 
 const GuestSignIn = props => {

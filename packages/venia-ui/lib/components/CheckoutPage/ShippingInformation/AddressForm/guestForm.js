@@ -3,8 +3,8 @@ import { FormattedMessage, useIntl } from 'react-intl';
 import { Form } from 'informed';
 import { func, shape, string, arrayOf, number } from 'prop-types';
 import { AlertCircle } from 'react-feather';
-import { useGuestForm } from '@magento/peregrine/lib/talons/CheckoutPage/ShippingInformation/AddressForm/useGuestForm';
-import { useToasts } from '@magento/peregrine';
+import { useGuestForm } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/ShippingInformation/AddressForm/useGuestForm';
+import { useToasts } from '@jelica-rado/peregrine';
 
 import { useStyle } from '../../../../classify';
 import { isRequired } from '../../../../util/formValidators';

@@ -1,12 +1,12 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { usePlaceholderImage } from '@magento/peregrine/lib/talons/Image/usePlaceholderImage';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { usePlaceholderImage } from '@jelica-rado/peregrine/lib/talons/Image/usePlaceholderImage';
 
 import PlaceholderImage from '../placeholderImage';
 
-jest.mock('@magento/peregrine/lib/talons/Image/usePlaceholderImage', () => {
+jest.mock('@jelica-rado/peregrine/lib/talons/Image/usePlaceholderImage', () => {
     const usePlaceholderImageTalon = jest.requireActual(
-        '@magento/peregrine/lib/talons/Image/usePlaceholderImage'
+        '@jelica-rado/peregrine/lib/talons/Image/usePlaceholderImage'
     );
     const spy = jest.spyOn(usePlaceholderImageTalon, 'usePlaceholderImage');
 

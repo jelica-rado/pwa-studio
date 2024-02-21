@@ -1,5 +1,5 @@
 /**
- * This file is augmented at build time using the @magento/venia-ui build
+ * This file is augmented at build time using the @jelica-rado/venia-ui build
  * target "checkoutPagePaymentTypes", which allows third-party modules to
  * add new payment component mappings for the checkout page.
  *

@@ -1,11 +1,11 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useShippingInformation } from '@magento/peregrine/lib/talons/CheckoutPage/ShippingInformation/useShippingInformation';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useShippingInformation } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/ShippingInformation/useShippingInformation';
 
 import ShippingInformation from '../shippingInformation';
 
 jest.mock(
-    '@magento/peregrine/lib/talons/CheckoutPage/ShippingInformation/useShippingInformation'
+    '@jelica-rado/peregrine/lib/talons/CheckoutPage/ShippingInformation/useShippingInformation'
 );
 jest.mock('../../../../classify');
 

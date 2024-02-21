@@ -1,10 +1,10 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import { useQuery } from '@apollo/client';
 
 import { useAccountChip } from '../useAccountChip';
 
-jest.mock('@magento/peregrine/lib/context/user', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/user', () => {
     const state = {
         isSignedIn: true
     };

@@ -4,10 +4,10 @@ import { array, func, oneOfType, shape, string } from 'prop-types';
 import { gql, useQuery } from '@apollo/client';
 
 import { useStyle } from '../../classify';
-import { fullPageLoadingIndicator } from '@magento/venia-ui/lib/components/LoadingIndicator';
+import { fullPageLoadingIndicator } from '@jelica-rado/venia-ui/lib/components/LoadingIndicator';
 import Block from './block';
 import defaultClasses from './cmsBlock.module.css';
-import ErrorView from '@magento/venia-ui/lib/components/ErrorView';
+import ErrorView from '@jelica-rado/venia-ui/lib/components/ErrorView';
 
 const CmsBlockGroup = props => {
     const { identifiers } = props;

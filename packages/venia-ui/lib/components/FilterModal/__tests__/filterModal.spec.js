@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import LinkButton from '../../LinkButton';
 import { mockFilterBlock } from '../filterBlock';
@@ -98,7 +98,7 @@ const isBooleanFilter = options => {
     );
 };
 
-jest.mock('@magento/peregrine/lib/talons/FilterModal', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/FilterModal', () => ({
     useFilterModal: jest.fn(({ filters }) => {
         const names = new Map();
         const filterFrontendInput = new Map();

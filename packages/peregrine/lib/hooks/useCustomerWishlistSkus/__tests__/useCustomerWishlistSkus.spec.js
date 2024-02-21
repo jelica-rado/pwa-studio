@@ -3,7 +3,7 @@ import { InMemoryCache } from '@apollo/client';
 import { MockedProvider } from '@apollo/client/testing';
 import { renderHook } from '@testing-library/react-hooks';
 
-import typePolicies from '@magento/peregrine/lib/Apollo/policies';
+import typePolicies from '@jelica-rado/peregrine/lib/Apollo/policies';
 
 import operations from '../customerWishlist.gql.ee';
 import {

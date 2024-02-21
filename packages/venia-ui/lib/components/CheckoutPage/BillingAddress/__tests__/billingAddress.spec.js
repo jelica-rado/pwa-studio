@@ -1,15 +1,15 @@
 import React from 'react';
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
-import { useBillingAddress } from '@magento/peregrine/lib/talons/CheckoutPage/BillingAddress/useBillingAddress';
-import Country from '@magento/venia-ui/lib/components/Country';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
+import { useBillingAddress } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/BillingAddress/useBillingAddress';
+import Country from '@jelica-rado/venia-ui/lib/components/Country';
 
 import BillingAddress from '../billingAddress';
 
 import classes from '../billingAddress.module.css';
 
-jest.mock('@magento/venia-ui/lib/classify');
+jest.mock('@jelica-rado/venia-ui/lib/classify');
 jest.mock(
-    '@magento/peregrine/lib/talons/CheckoutPage/BillingAddress/useBillingAddress',
+    '@jelica-rado/peregrine/lib/talons/CheckoutPage/BillingAddress/useBillingAddress',
     () => {
         return {
             useBillingAddress: jest.fn().mockReturnValue({
@@ -33,29 +33,29 @@ jest.mock(
     }
 );
 
-jest.mock('@magento/venia-ui/lib/components/FormError', () => 'FormError');
+jest.mock('@jelica-rado/venia-ui/lib/components/FormError', () => 'FormError');
 
-jest.mock('@magento/venia-ui/lib/components/Checkbox', () => {
+jest.mock('@jelica-rado/venia-ui/lib/components/Checkbox', () => {
     return props => <mock-Checkbox {...props} />;
 });
 
-jest.mock('@magento/venia-ui/lib/components/Field', () => {
+jest.mock('@jelica-rado/venia-ui/lib/components/Field', () => {
     return props => <mock-Field {...props} />;
 });
 
-jest.mock('@magento/venia-ui/lib/components/TextInput', () => {
+jest.mock('@jelica-rado/venia-ui/lib/components/TextInput', () => {
     return props => <mock-TextInput {...props} />;
 });
 
-jest.mock('@magento/venia-ui/lib/components/Country', () => {
+jest.mock('@jelica-rado/venia-ui/lib/components/Country', () => {
     return props => <mock-Country {...props} />;
 });
 
-jest.mock('@magento/venia-ui/lib/components/Region', () => {
+jest.mock('@jelica-rado/venia-ui/lib/components/Region', () => {
     return props => <mock-Region {...props} />;
 });
 
-jest.mock('@magento/venia-ui/lib/components/Postcode', () => {
+jest.mock('@jelica-rado/venia-ui/lib/components/Postcode', () => {
     return props => <mock-Postcode {...props} />;
 });
 

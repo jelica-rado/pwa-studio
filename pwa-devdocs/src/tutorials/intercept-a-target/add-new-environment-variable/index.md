@@ -36,8 +36,8 @@ Edit the `package.json` file so it looks like the following:
   "version": "1.0.0",
   "license": "MIT",
   "peerDependencies": {
-    "@magento/pwa-buildpack": "^7.0.0",
-    "@magento/venia-ui": "^5.0.0",
+    "@jelica-rado/pwa-buildpack": "^7.0.0",
+    "@jelica-rado/venia-ui": "^5.0.0",
     "react": "^16.14.0"
   }
 }
@@ -93,8 +93,8 @@ make the following modifications to the `package.json` file:
     "license": "MIT",
 +   "main": "src/components/PlaceholderImage/placeholderImage.js",
     "peerDependencies": {
-      "@magento/pwa-buildpack": "^7.0.0",
-      "@magento/venia-ui": "^5.0.0",
+      "@jelica-rado/pwa-buildpack": "^7.0.0",
+      "@jelica-rado/venia-ui": "^5.0.0",
       "react": "^16.14.0"
     }
   }
@@ -118,8 +118,8 @@ Set the value for `pwa-studio.targets.intercept` in your project's `package.json
     "license": "MIT",
     "main": "src/components/PlaceholderImage/placeholderImage.js",
     "peerDependencies": {
-      "@magento/pwa-buildpack": "^7.0.0",
-      "@magento/venia-ui": "^5.0.0",
+      "@jelica-rado/pwa-buildpack": "^7.0.0",
+      "@jelica-rado/venia-ui": "^5.0.0",
       "react": "^16.14.0"
 -   }
 +   },
@@ -139,7 +139,7 @@ In your intercept file, add the following content:
 
 ```js
 module.exports = (targets) => {
-  const buildpackTargets = targets.of("@magento/pwa-buildpack");
+  const buildpackTargets = targets.of("@jelica-rado/pwa-buildpack");
 
   buildpackTargets.envVarDefinitions.tap((defs) => {
     defs.sections.push({
@@ -162,7 +162,7 @@ module.exports = (targets) => {
 };
 ```
 
-When this file runs, it taps into the `envVarDefinitions` target from the available targets in `@magento/pwa-buildpack` and passes in an intercept function.
+When this file runs, it taps into the `envVarDefinitions` target from the available targets in `@jelica-rado/pwa-buildpack` and passes in an intercept function.
 The intercept function appends a new definition to the [core environment variable definitions][], which allows frontend code access to the `IMAGE_PLACEHOLDER_SERVICE_URL` environment variable.
 
 ## Test on a local instance
@@ -222,7 +222,7 @@ Inside your storefront's intercept file, add the following content to add a new 
 
 ```js
 function localIntercept(targets) {
-  targets.of("@magento/venia-ui").routes.tap((routes) => {
+  targets.of("@jelica-rado/venia-ui").routes.tap((routes) => {
     routes.push({
       name: "Placeholder Image demo page",
       pattern: "/placeholder-image-demo",

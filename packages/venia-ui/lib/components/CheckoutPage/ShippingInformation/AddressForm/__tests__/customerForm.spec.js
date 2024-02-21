@@ -1,11 +1,11 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useCustomerForm } from '@magento/peregrine/lib/talons/CheckoutPage/ShippingInformation/AddressForm/useCustomerForm';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useCustomerForm } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/ShippingInformation/AddressForm/useCustomerForm';
 
 import CustomerForm from '../customerForm';
 
 jest.mock(
-    '@magento/peregrine/lib/talons/CheckoutPage/ShippingInformation/AddressForm/useCustomerForm'
+    '@jelica-rado/peregrine/lib/talons/CheckoutPage/ShippingInformation/AddressForm/useCustomerForm'
 );
 jest.mock('../../../../../classify');
 jest.mock('../../../../Country', () => 'Country');

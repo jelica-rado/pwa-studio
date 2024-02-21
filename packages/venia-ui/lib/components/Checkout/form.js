@@ -3,8 +3,8 @@ import { func, shape, string } from 'prop-types';
 import { gql } from '@apollo/client';
 import { AlertCircle as AlertCircleIcon } from 'react-feather';
 
-import { useToasts } from '@magento/peregrine';
-import { useForm } from '@magento/peregrine/lib/talons/Checkout/useForm';
+import { useToasts } from '@jelica-rado/peregrine';
+import { useForm } from '@jelica-rado/peregrine/lib/talons/Checkout/useForm';
 
 import { useStyle } from '../../classify';
 import Icon from '../Icon';

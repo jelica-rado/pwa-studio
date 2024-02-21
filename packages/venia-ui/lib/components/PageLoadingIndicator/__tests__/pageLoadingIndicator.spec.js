@@ -1,10 +1,10 @@
 import React from 'react';
 import { act, create } from 'react-test-renderer';
-import { usePageLoadingIndicator } from '@magento/peregrine/lib/talons/PageLoadingIndicator/usePageLoadingIndicator';
+import { usePageLoadingIndicator } from '@jelica-rado/peregrine/lib/talons/PageLoadingIndicator/usePageLoadingIndicator';
 import PageLoadingIndicator from '../pageLoadingIndicator';
 
 jest.mock(
-    '@magento/peregrine/lib/talons/PageLoadingIndicator/usePageLoadingIndicator'
+    '@jelica-rado/peregrine/lib/talons/PageLoadingIndicator/usePageLoadingIndicator'
 );
 
 jest.mock('../../../classify');

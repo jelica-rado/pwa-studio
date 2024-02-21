@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { createTestInstance } from '@magento/peregrine';
-import { useSubMenu } from '@magento/peregrine/lib/talons/MegaMenu/useSubMenu';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useSubMenu } from '@jelica-rado/peregrine/lib/talons/MegaMenu/useSubMenu';
 
 const Component = props => {
     const talonProps = useSubMenu(props);

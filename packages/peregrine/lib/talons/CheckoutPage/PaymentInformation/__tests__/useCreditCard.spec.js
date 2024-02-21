@@ -122,7 +122,7 @@ const operations = {
 
 jest.mock('@apollo/client');
 
-jest.mock('@magento/peregrine/lib/hooks/useGoogleReCaptcha', () => ({
+jest.mock('@jelica-rado/peregrine/lib/hooks/useGoogleReCaptcha', () => ({
     useGoogleReCaptcha: jest.fn().mockReturnValue({
         recaptchaLoading: false,
         generateReCaptchaData: jest.fn(() => {}),

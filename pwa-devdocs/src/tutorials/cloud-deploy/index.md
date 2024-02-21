@@ -227,7 +227,7 @@ variables, such as `CONFIG__DEFAULT__WEB__UPWARD__PATH` and `MAGENTO_BACKEND_URL
 [project setup]: <{%link tutorials/pwa-studio-fundamentals/project-setup/index.md %}>
 
 [magento pwa studio]: https://developer.adobe.com/commerce/pwa-studio/
-[`@magento/venia-concept`]: https://www.npmjs.com/package/@magento/venia-concept
+[`@jelica-rado/venia-concept`]: https://www.npmjs.com/package/@jelica-rado/venia-concept
 [venia storefront]: https://developer.adobe.com/commerce/pwa-studio/guides/storefront-architecture/
 [create a `package.json`]: https://docs.npmjs.com/cli/init
 

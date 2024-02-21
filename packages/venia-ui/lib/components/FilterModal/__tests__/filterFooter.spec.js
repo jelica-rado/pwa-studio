@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import Button from '../../Button';
 import FilterFooter from '../filterFooter';
 
 jest.mock('../../Button', () => props => <mock-Button {...props} />);
 
-jest.mock('@magento/peregrine/lib/talons/FilterModal', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/FilterModal', () => ({
     useFilterFooter: jest.fn(({ isOpen }) => {
         return {
             touched: isOpen

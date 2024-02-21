@@ -1,18 +1,18 @@
 import React from 'react';
-import { createTestInstance, useToasts } from '@magento/peregrine';
-import { useWishlistItem } from '@magento/peregrine/lib/talons/WishlistPage/useWishlistItem';
+import { createTestInstance, useToasts } from '@jelica-rado/peregrine';
+import { useWishlistItem } from '@jelica-rado/peregrine/lib/talons/WishlistPage/useWishlistItem';
 
 import WishlistItem from '../wishlistItem';
 
-jest.mock('@magento/peregrine', () => {
+jest.mock('@jelica-rado/peregrine', () => {
     const useToasts = jest.fn(() => [{}, { addToast: jest.fn() }]);
 
     return {
-        ...jest.requireActual('@magento/peregrine'),
+        ...jest.requireActual('@jelica-rado/peregrine'),
         useToasts
     };
 });
-jest.mock('@magento/peregrine/lib/talons/WishlistPage/useWishlistItem', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/WishlistPage/useWishlistItem', () => ({
     useWishlistItem: jest.fn()
 }));
 

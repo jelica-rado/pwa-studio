@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { Form, Text } from 'informed';
 import { arrayOf, bool, func, number, shape, string } from 'prop-types';
-import { useCustomerForm } from '@magento/peregrine/lib/talons/CheckoutPage/ShippingInformation/AddressForm/useCustomerForm';
+import { useCustomerForm } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/ShippingInformation/AddressForm/useCustomerForm';
 
 import { useStyle } from '../../../../classify';
 import { isRequired } from '../../../../util/formValidators';

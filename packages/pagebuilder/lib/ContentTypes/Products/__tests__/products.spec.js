@@ -1,9 +1,9 @@
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import React from 'react';
 import Products, { GET_PRODUCTS_BY_URL_KEY } from '../products';
 
 jest.mock(
-    '@magento/peregrine/lib/hooks/useCustomerWishlistSkus/useCustomerWishlistSkus',
+    '@jelica-rado/peregrine/lib/hooks/useCustomerWishlistSkus/useCustomerWishlistSkus',
     () => ({
         useCustomerWishlistSkus: jest.fn()
     })
@@ -24,10 +24,10 @@ const mockSlick = SlickSlider.mockImplementation(({ children }) => (
     <div>{children}</div>
 ));
 import { useQuery } from '@apollo/client';
-jest.mock('@magento/venia-ui/lib/components/Gallery', () => jest.fn());
-jest.mock('@magento/venia-ui/lib/components/Gallery/item', () => jest.fn());
-import Gallery from '@magento/venia-ui/lib/components/Gallery';
-import GalleryItem from '@magento/venia-ui/lib/components/Gallery/item';
+jest.mock('@jelica-rado/venia-ui/lib/components/Gallery', () => jest.fn());
+jest.mock('@jelica-rado/venia-ui/lib/components/Gallery/item', () => jest.fn());
+import Gallery from '@jelica-rado/venia-ui/lib/components/Gallery';
+import GalleryItem from '@jelica-rado/venia-ui/lib/components/Gallery/item';
 const mockGallery = Gallery.mockImplementation(() => 'Gallery');
 const mockGalleryItem = GalleryItem.mockImplementation(() => 'GalleryItem');
 

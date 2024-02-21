@@ -2,8 +2,8 @@ import React, { useMemo } from 'react';
 import { arrayOf, string, shape, number } from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 
-import Price from '@magento/venia-ui/lib/components/Price';
-import { useStyle } from '@magento/venia-ui/lib/classify';
+import Price from '@jelica-rado/venia-ui/lib/components/Price';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
 
 import defaultClasses from './orderTotal.module.css';
 

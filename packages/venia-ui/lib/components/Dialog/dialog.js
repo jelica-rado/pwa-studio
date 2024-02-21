@@ -4,8 +4,8 @@ import { bool, func, shape, string, object, node } from 'prop-types';
 import { Form } from 'informed';
 import { X as CloseIcon } from 'react-feather';
 
-import { useScrollLock } from '@magento/peregrine';
-import { useStyle } from '@magento/venia-ui/lib/classify';
+import { useScrollLock } from '@jelica-rado/peregrine';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
 
 import Button from '../Button';
 import Icon from '../Icon';

@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import { FormattedMessage } from 'react-intl';
 
-import { useGiftCard } from '@magento/peregrine/lib/talons/CartPage/GiftCards/useGiftCard.js';
-import Price from '@magento/venia-ui/lib/components/Price';
+import { useGiftCard } from '@jelica-rado/peregrine/lib/talons/CartPage/GiftCards/useGiftCard.js';
+import Price from '@jelica-rado/venia-ui/lib/components/Price';
 
 import { useStyle } from '../../../classify';
 import defaultClasses from './giftCard.module.css';

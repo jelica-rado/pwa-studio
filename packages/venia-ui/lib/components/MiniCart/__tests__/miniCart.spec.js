@@ -1,5 +1,5 @@
 import React from 'react';
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
 
 import MiniCart from '../miniCart';
 
@@ -9,7 +9,7 @@ jest.mock('../../StockStatusMessage', () => props => (
 ));
 jest.mock('../ProductList', () => () => <mock-ProductList />);
 
-jest.mock('@magento/peregrine', () => ({
+jest.mock('@jelica-rado/peregrine', () => ({
     Price: jest.fn(props => {
         const priceString = `$${props.value}`;
         return <span>{priceString}</span>;
@@ -23,7 +23,7 @@ jest.mock('@magento/peregrine', () => ({
     ])
 }));
 
-jest.mock('@magento/peregrine/lib/talons/MiniCart/useMiniCart', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/MiniCart/useMiniCart', () => ({
     useMiniCart: jest.fn().mockReturnValue({
         productList: [
             {

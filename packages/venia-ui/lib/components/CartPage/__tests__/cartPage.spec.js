@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createTestInstance, useToasts } from '@magento/peregrine';
-import { useCartPage } from '@magento/peregrine/lib/talons/CartPage/useCartPage';
+import { createTestInstance, useToasts } from '@jelica-rado/peregrine';
+import { useCartPage } from '@jelica-rado/peregrine/lib/talons/CartPage/useCartPage';
 
 import CartPage from '../cartPage';
 
@@ -15,17 +15,17 @@ jest.mock('../PriceAdjustments', () => 'PriceAdjustments');
 jest.mock('../PriceSummary', () => 'PriceSummary');
 jest.mock('../ProductListing', () => 'ProductListing');
 
-jest.mock('@magento/peregrine/lib/talons/CartPage/useCartPage', () => {
+jest.mock('@jelica-rado/peregrine/lib/talons/CartPage/useCartPage', () => {
     const useCartPageTalon = jest.requireActual(
-        '@magento/peregrine/lib/talons/CartPage/useCartPage'
+        '@jelica-rado/peregrine/lib/talons/CartPage/useCartPage'
     );
     const spy = jest.spyOn(useCartPageTalon, 'useCartPage');
 
     return Object.assign(useCartPageTalon, { useCartPage: spy });
 });
 
-jest.mock('@magento/peregrine', () => ({
-    ...jest.requireActual('@magento/peregrine'),
+jest.mock('@jelica-rado/peregrine', () => ({
+    ...jest.requireActual('@jelica-rado/peregrine'),
     useToasts: jest.fn().mockReturnValue([
         {},
         {

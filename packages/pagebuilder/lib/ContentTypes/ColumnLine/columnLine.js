@@ -1,6 +1,6 @@
 import React from 'react';
 import defaultClasses from './columnLine.module.css';
-import { useStyle } from '@magento/venia-ui/lib/classify';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
 import { shape, string } from 'prop-types';
 
 /**

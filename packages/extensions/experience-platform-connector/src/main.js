@@ -1,5 +1,5 @@
-import { useEventingContext } from '@magento/peregrine/lib/context/eventing';
-import { useUserContext } from '@magento/peregrine/lib/context/user';
+import { useEventingContext } from '@jelica-rado/peregrine/lib/context/eventing';
+import { useUserContext } from '@jelica-rado/peregrine/lib/context/user';
 import { useEffect, useState } from 'react';
 import { default as handleEvent } from './handleEvent';
 import useExtensionContext from './hooks/useExtensionContext';

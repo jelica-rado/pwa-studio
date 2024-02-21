@@ -17,7 +17,7 @@ class EditablePaymentTypes {
         const registry = this;
         this._methods = venia.esModuleObject({
             module:
-                '@magento/venia-ui/lib/components/CheckoutPage/PaymentInformation/editablePaymentCollection.js',
+                '@jelica-rado/venia-ui/lib/components/CheckoutPage/PaymentInformation/editablePaymentCollection.js',
             publish(targets) {
                 targets.editablePaymentTypes.call(registry);
             }

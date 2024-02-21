@@ -9,7 +9,7 @@ jest.mock('@apollo/client', () => ({
     })
 }));
 
-jest.mock('@magento/peregrine/lib/context/user', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/user', () => ({
     useUserContext: jest.fn().mockReturnValue([{ isSignedIn: true }])
 }));
 

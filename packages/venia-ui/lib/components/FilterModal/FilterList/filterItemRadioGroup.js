@@ -8,11 +8,11 @@ import {
     string,
     instanceOf
 } from 'prop-types';
-import setValidator from '@magento/peregrine/lib/validators/set';
+import setValidator from '@jelica-rado/peregrine/lib/validators/set';
 import RadioGroup from '../../RadioGroup';
 import FilterItemRadio from './filterItemRadio';
 import { useFieldApi } from 'informed';
-import useFieldState from '@magento/peregrine/lib/hooks/hook-wrappers/useInformedFieldStateWrapper';
+import useFieldState from '@jelica-rado/peregrine/lib/hooks/hook-wrappers/useInformedFieldStateWrapper';
 
 const FilterItemRadioGroup = props => {
     const { filterApi, filterState, group, items, onApply, labels } = props;

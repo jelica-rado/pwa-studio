@@ -16,7 +16,7 @@ In this topic you will initialize the `package.json` file and install project de
 1. Run the following command to install [peregrine] and [React] as a production dependency:
 
    ``` bash
-   npm install --save @magento/peregrine \
+   npm install --save @jelica-rado/peregrine \
    react react-dom react-redux react-router-dom redux@3
    ```
 
@@ -25,7 +25,7 @@ In this topic you will initialize the `package.json` file and install project de
 1. Run the following command to install [pwa-buildpack] and its standard peer dependencies:
 
    ``` bash
-   npm install --save-dev @magento/pwa-buildpack \
+   npm install --save-dev @jelica-rado/pwa-buildpack \
    babel-core babel-loader babel-helper-module-imports \
    babel-plugin-syntax-jsx babel-plugin-transform-class-properties \
    babel-plugin-transform-object-rest-spread babel-plugin-transform-react-jsx \
@@ -63,7 +63,7 @@ Now that you have your project dependencies installed, your `package.json` file 
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@magento/peregrine": "^0.1.5-alpha",
+    "@jelica-rado/peregrine": "^0.1.5-alpha",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-redux": "^5.0.7",
@@ -71,7 +71,7 @@ Now that you have your project dependencies installed, your `package.json` file 
     "redux": "^3.7.2"
   },
   "devDependencies": {
-    "@magento/pwa-buildpack": "^0.2.0",
+    "@jelica-rado/pwa-buildpack": "^0.2.0",
     "babel-core": "^6.26.0",
     "babel-helper-module-imports": "^7.0.0-beta.3",
     "babel-loader": "^7.1.4",

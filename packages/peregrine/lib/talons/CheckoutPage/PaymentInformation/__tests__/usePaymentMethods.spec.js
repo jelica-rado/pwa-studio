@@ -10,7 +10,7 @@ jest.mock('../../../../context/cart');
 useCartContext.mockReturnValue([{ cartId: '123456' }]);
 
 jest.mock(
-    '@magento/peregrine/lib/hooks/hook-wrappers/useInformedFieldStateWrapper',
+    '@jelica-rado/peregrine/lib/hooks/hook-wrappers/useInformedFieldStateWrapper',
     () => {
         return jest.fn().mockReturnValue({
             value: 'currentSelectedPaymentMethod'

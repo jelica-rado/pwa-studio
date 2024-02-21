@@ -88,7 +88,7 @@ It represents a typical setup using `configureWebpack` to generate Webpack confi
 It also demonstrates that `configureWebpack` returns a recognizable Webpack object, which you can modify.
 
 ```js
-const { configureWebpack } = require('@magento/pwa-buildpack');
+const { configureWebpack } = require('@jelica-rado/pwa-buildpack');
 
 module.exports = async env => {
     const config = await configureWebpack({
@@ -107,16 +107,16 @@ module.exports = async env => {
             'redux-thunk'
         ],
         special: {
-            // Treat code originating in the `@magento/peregrine` module
+            // Treat code originating in the `@jelica-rado/peregrine` module
             // as ES Modules, just like the project source itself.
-            '@magento/peregrine': {
+            '@jelica-rado/peregrine': {
                 esModules: true
             }
-            // Treat code originating in the `@magento/venia-ui` as though
+            // Treat code originating in the `@jelica-rado/venia-ui` as though
             // it uses ES Modules, CSS Modules, GraphQL queries, RootComponents,
             // and UPWARD definitions. This is the right set of flags for a UI
             // library that makes up the bulk of your project.
-            '@magento/venia-ui': {
+            '@jelica-rado/venia-ui': {
                 cssModules: true,
                 esModules: true,
                 graphqlQueries: true,

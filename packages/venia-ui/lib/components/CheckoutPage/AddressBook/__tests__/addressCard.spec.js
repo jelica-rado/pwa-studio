@@ -1,11 +1,11 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useAddressCard } from '@magento/peregrine/lib/talons/CheckoutPage/AddressBook/useAddressCard';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useAddressCard } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/AddressBook/useAddressCard';
 
 import AddressCard from '../addressCard';
 
 jest.mock(
-    '@magento/peregrine/lib/talons/CheckoutPage/AddressBook/useAddressCard'
+    '@jelica-rado/peregrine/lib/talons/CheckoutPage/AddressBook/useAddressCard'
 );
 jest.mock('../../../../classify');
 

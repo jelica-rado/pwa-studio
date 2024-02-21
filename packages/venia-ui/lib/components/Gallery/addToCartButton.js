@@ -1,7 +1,7 @@
 import React from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { string, number, shape } from 'prop-types';
-import { useAddToCartButton } from '@magento/peregrine/lib/talons/Gallery/useAddToCartButton';
+import { useAddToCartButton } from '@jelica-rado/peregrine/lib/talons/Gallery/useAddToCartButton';
 import { ShoppingBag, XSquare } from 'react-feather';
 import Icon from '../Icon';
 import Button from '../Button';

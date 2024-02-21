@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import ContextProvider from '../contextProvider';
 
-jest.mock('@magento/peregrine', () => ({
-    ...jest.requireActual('@magento/peregrine'),
+jest.mock('@jelica-rado/peregrine', () => ({
+    ...jest.requireActual('@jelica-rado/peregrine'),
     PeregrineContextProvider: props => (
         <mock-PeregrineContextProvider {...props} />
     ),

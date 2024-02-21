@@ -1,11 +1,11 @@
 import React from 'react';
 import { act } from 'react-test-renderer';
 import { Form } from 'informed';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import Button from '../../Button';
 import SignIn from '../signIn';
-import { useUserContext } from '@magento/peregrine/lib/context/user';
+import { useUserContext } from '@jelica-rado/peregrine/lib/context/user';
 import { useMutation } from '@apollo/client';
 
 jest.mock('@apollo/client', () => ({
@@ -28,7 +28,7 @@ jest.mock('../../Button', () => () => <i />);
 jest.mock('../../FormError/formError', () => 'FormError');
 jest.mock('../../LoadingIndicator', () => () => <i />);
 
-jest.mock('@magento/peregrine/lib/context/cart', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/cart', () => {
     const state = {};
     const api = {
         createCart: jest.fn(),
@@ -40,7 +40,7 @@ jest.mock('@magento/peregrine/lib/context/cart', () => {
     return { useCartContext };
 });
 
-jest.mock('@magento/peregrine/lib/context/user', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/user', () => {
     const userState = {
         isGettingDetails: false,
         getDetailsError: null
@@ -55,7 +55,7 @@ jest.mock('@magento/peregrine/lib/context/user', () => {
     return { useUserContext };
 });
 
-jest.mock('@magento/peregrine/lib/hooks/useAwaitQuery', () => {
+jest.mock('@jelica-rado/peregrine/lib/hooks/useAwaitQuery', () => {
     const useAwaitQuery = jest
         .fn()
         .mockResolvedValue({ data: { customer: {} } });
@@ -63,7 +63,7 @@ jest.mock('@magento/peregrine/lib/hooks/useAwaitQuery', () => {
     return { useAwaitQuery };
 });
 
-jest.mock('@magento/peregrine/lib/context/eventing', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/eventing', () => ({
     useEventingContext: jest.fn().mockReturnValue([{}, { dispatch: jest.fn() }])
 }));
 

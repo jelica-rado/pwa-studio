@@ -4,10 +4,10 @@ const HookInterceptorSet = require('./HookInterceptorSet');
 const packageDir = path.resolve(__dirname, '../../');
 
 module.exports = targets => {
-    const builtins = targets.of('@magento/pwa-buildpack');
+    const builtins = targets.of('@jelica-rado/pwa-buildpack');
 
     builtins.specialFeatures.tap(featuresByModule => {
-        featuresByModule['@magento/peregrine'] = {
+        featuresByModule['@jelica-rado/peregrine'] = {
             cssModules: true,
             esModules: true,
             graphqlQueries: true

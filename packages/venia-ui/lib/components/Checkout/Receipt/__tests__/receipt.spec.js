@@ -1,11 +1,11 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import Receipt from '../receipt';
 
 jest.mock('../../../../classify');
 
-jest.mock('@magento/peregrine/lib/talons/Checkout/Receipt/useReceipt', () => {
+jest.mock('@jelica-rado/peregrine/lib/talons/Checkout/Receipt/useReceipt', () => {
     const handleCreateAccount = jest.fn();
     const handleViewOrderDetails = jest.fn();
     const isSignedIn = false;

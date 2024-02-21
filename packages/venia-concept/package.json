@@ -1,5 +1,5 @@
 {
-  "name": "@magento/venia-concept",
+  "name": "@jelica-rado/venia-concept",
   "version": "13.3.0",
   "publishConfig": {
     "access": "public"
@@ -7,7 +7,7 @@
   "description": "Venia PWA Concept Storefront for Magento 2",
   "main": "src/index.js",
   "browser": {
-    "@magento/venia-drivers": "src/drivers"
+    "@jelica-rado/venia-drivers": "src/drivers"
   },
   "scripts": {
     "build": "yarn run build:prod",
@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/magento/pwa-studio/tree/main/packages/venia-concept#readme",
   "dependencies": {
-    "@magento/pwa-buildpack": "~11.4.3"
+    "@jelica-rado/pwa-buildpack": "~11.4.3"
   },
   "devDependencies": {
     "@adobe/apollo-link-mutation-queue": "~1.0.2",
@@ -50,13 +50,13 @@
     "@babel/plugin-transform-runtime": "~7.4.4",
     "@babel/preset-env": "~7.16.0",
     "@babel/runtime": "~7.15.3",
-    "@magento/babel-preset-peregrine": "~1.2.3",
-    "@magento/eslint-config": "~1.5.0",
-    "@magento/pagebuilder": "~8.2.1",
-    "@magento/peregrine": "~13.2.1",
-    "@magento/pwa-theme-venia": "~1.4.0",
-    "@magento/upward-security-headers": "~1.0.14",
-    "@magento/venia-ui": "~10.3.0",
+    "@jelica-rado/babel-preset-peregrine": "~1.2.3",
+    "@jelica-rado/eslint-config": "~1.5.0",
+    "@jelica-rado/pagebuilder": "~8.2.1",
+    "@jelica-rado/peregrine": "~13.2.1",
+    "@jelica-rado/pwa-theme-venia": "~1.4.0",
+    "@jelica-rado/upward-security-headers": "~1.0.14",
+    "@jelica-rado/venia-ui": "~10.3.0",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.1",
     "@storybook/react": "^7.6.12",
     "@types/node": "16",
@@ -117,9 +117,9 @@
     "style-loader": "~2.0.0",
     "subscriptions-transport-ws": "~0.9.19",
     "tailwindcss": "~2.2.7",
-    "terser-webpack-plugin": "~1.2.3",
+    "terser-webpack-plugin": "5.3.10",
     "uuid": "~8.3.2",
-    "webpack": "~4.46.0",
+    "webpack": "^5.3.10",
     "webpack-bundle-analyzer": "~3.3.2",
     "webpack-cli": "~3.2.3",
     "webpack-dev-server": "~3.2.1",

@@ -2,8 +2,8 @@ import React from 'react';
 import { render } from 'react-dom';
 
 import store from './store';
-import app from '@magento/peregrine/lib/store/actions/app';
-import Adapter from '@magento/venia-ui/lib/components/Adapter';
+import app from '@jelica-rado/peregrine/lib/store/actions/app';
+import Adapter from '@jelica-rado/venia-ui/lib/components/Adapter';
 import { registerSW } from './registerSW';
 import './index.css';
 

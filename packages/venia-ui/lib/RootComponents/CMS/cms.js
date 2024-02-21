@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { shape, string } from 'prop-types';
 
 import CMSPageShimmer from './cms.shimmer';
-import { useCmsPage } from '@magento/peregrine/lib/talons/Cms/useCmsPage';
+import { useCmsPage } from '@jelica-rado/peregrine/lib/talons/Cms/useCmsPage';
 import RichContent from '../../components/RichContent';
 import { Meta, StoreTitle } from '../../components/Head';
 import { useStyle } from '../../classify';

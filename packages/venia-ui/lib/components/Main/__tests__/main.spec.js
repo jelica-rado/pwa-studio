@@ -1,5 +1,5 @@
 import React from 'react';
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
 import Main from '../main';
 
 jest.mock('../../Header/header', () => 'Header');

@@ -7,7 +7,7 @@ import { useCreateWishlist } from '../useCreateWishlist';
 import defaultOperations from '../createWishlist.gql';
 import wishlistPageOperations from '../wishlistPage.gql';
 
-jest.mock('@magento/peregrine/lib/context/app', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/app', () => {
     const state = {};
     const api = { actions: { setPageLoading: jest.fn() } };
     const useAppContext = jest.fn(() => [state, api]);

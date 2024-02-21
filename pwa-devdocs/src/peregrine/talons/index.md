@@ -55,7 +55,7 @@ The following code snippet comes from Venia's [`Pagination`][] UI component:
 
 ...
 
-import { usePagination } from '@magento/peregrine/lib/talons/Pagination/usePagination';
+import { usePagination } from '@jelica-rado/peregrine/lib/talons/Pagination/usePagination';
 
 ...
 

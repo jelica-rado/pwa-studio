@@ -8,13 +8,13 @@
   dependencies:
     apollo-link "~1.2.13"
 
-"@magento/peregrine":
+"@jelica-rado/peregrine":
   version "8.0.0"
   resolved "file:///Users/annavara/Documents/node_projects/pwa-studio/packages/peregrine/magento-peregrine-8.0.0.tgz#d2d5d7ebe30b5ab3a6e669745fc510c8f4247198"
   dependencies:
     fast-glob "~3.2.4"
 
-"@magento/venia-ui":
+"@jelica-rado/venia-ui":
   version "5.0.0"
   uid "1a010839921b5fcec8dfdb39d49027648c38ef39"
   resolved "file:../../pwa-studio/packages/venia-ui/magento-venia-ui-5.0.0.tgz#1a010839921b5fcec8dfdb39d49027648c38ef39"
@@ -34,12 +34,12 @@
     redux-thunk "~2.3.0"
     uuid "~3.3.2"
 
-"@magento/pwa-buildpack":
+"@jelica-rado/pwa-buildpack":
   version "7.0.0"
   resolved "file:../../pwa-studio/packages/pwa-buildpack/magento-pwa-buildpack-7.0.0.tgz#06755053989d8c09219edaba9610ea8280d07cc2"
   dependencies:
-    "@magento/directive-parser" "~0.1.7"
-    "@magento/upward-js" "~5.0.0"
+    "@jelica-rado/directive-parser" "~0.1.7"
+    "@jelica-rado/upward-js" "~5.0.0"
     "@pmmmwh/react-refresh-webpack-plugin" "~0.4.1"
     apicache "~1.4.0"
     boxen "~3.0.0"

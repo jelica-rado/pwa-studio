@@ -1,5 +1,5 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import Pagination from '../pagination';
 
@@ -7,7 +7,7 @@ jest.mock('../../../classify');
 jest.mock('../navButton', () => () => <i />);
 jest.mock('../tile', () => () => <i />);
 
-jest.mock('@magento/peregrine/lib/talons/Pagination/usePagination', () => {
+jest.mock('@jelica-rado/peregrine/lib/talons/Pagination/usePagination', () => {
     const handleLeftSkip = jest.fn();
     const handleRightSkip = jest.fn();
     const handleNavBack = jest.fn();

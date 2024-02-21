@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import { useQuery } from '@apollo/client';
 
-import { useAppContext } from '@magento/peregrine/lib/context/app';
-import { useUserContext } from '@magento/peregrine/lib/context/user';
-import mergeOperations from '@magento/peregrine/lib/util/shallowMerge';
+import { useAppContext } from '@jelica-rado/peregrine/lib/context/app';
+import { useUserContext } from '@jelica-rado/peregrine/lib/context/user';
+import mergeOperations from '@jelica-rado/peregrine/lib/util/shallowMerge';
 
 import defaultOperations from './savedPaymentsPage.gql';
 
@@ -32,7 +32,7 @@ export const normalizeTokens = responseData => {
  * @returns {SavedPaymentsPageTalonProps}
  *
  * @example <caption>Importing into your project</caption>
- * import { useSavedPayments } from '@magento/peregrine/lib/talons/SavedPaymentsPage/useSavedPaymentsPage';
+ * import { useSavedPayments } from '@jelica-rado/peregrine/lib/talons/SavedPaymentsPage/useSavedPaymentsPage';
  */
 export const useSavedPaymentsPage = (props = {}) => {
     const operations = mergeOperations(defaultOperations, props.operations);

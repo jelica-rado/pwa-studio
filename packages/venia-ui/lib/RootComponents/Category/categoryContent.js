@@ -2,8 +2,8 @@ import React, { Fragment, Suspense, useMemo, useRef } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { array, number, shape, string } from 'prop-types';
 
-import { useIsInViewport } from '@magento/peregrine/lib/hooks/useIsInViewport';
-import { useCategoryContent } from '@magento/peregrine/lib/talons/RootComponents/Category';
+import { useIsInViewport } from '@jelica-rado/peregrine/lib/hooks/useIsInViewport';
+import { useCategoryContent } from '@jelica-rado/peregrine/lib/talons/RootComponents/Category';
 
 import { useStyle } from '../../classify';
 import Breadcrumbs from '../../components/Breadcrumbs';

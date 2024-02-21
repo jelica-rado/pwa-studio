@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import { act } from 'react-test-renderer';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import {
     useShippingMethod,
     displayStates
 } from '../ShippingMethod/useShippingMethod';
 import { useMutation, useQuery } from '@apollo/client';
-import { useUserContext } from '@magento/peregrine/lib/context/user';
-import { useCartContext } from '@magento/peregrine/lib/context/cart';
-import { useEventingContext } from '@magento/peregrine/lib/context/eventing';
+import { useUserContext } from '@jelica-rado/peregrine/lib/context/user';
+import { useCartContext } from '@jelica-rado/peregrine/lib/context/cart';
+import { useEventingContext } from '@jelica-rado/peregrine/lib/context/eventing';
 
 /*
  *  Mocks.
@@ -59,7 +59,7 @@ jest.mock('@apollo/client', () => {
     };
 });
 
-jest.mock('@magento/peregrine/lib/context/cart', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/cart', () => {
     const state = { cartId: 'cart123' };
     const api = {};
 
@@ -68,7 +68,7 @@ jest.mock('@magento/peregrine/lib/context/cart', () => {
     return { useCartContext };
 });
 
-jest.mock('@magento/peregrine/lib/context/user', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/user', () => {
     const state = { isSignedIn: false };
     const api = {};
 
@@ -77,7 +77,7 @@ jest.mock('@magento/peregrine/lib/context/user', () => {
     return { useUserContext };
 });
 
-jest.mock('@magento/peregrine/lib/context/eventing', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/eventing', () => ({
     useEventingContext: jest.fn().mockReturnValue([{}, { dispatch: jest.fn() }])
 }));
 

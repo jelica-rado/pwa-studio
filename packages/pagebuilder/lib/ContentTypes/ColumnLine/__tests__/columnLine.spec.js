@@ -1,5 +1,5 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import ColumnLine from '../columnLine';
 
 test('renders a ColumnLine component', () => {

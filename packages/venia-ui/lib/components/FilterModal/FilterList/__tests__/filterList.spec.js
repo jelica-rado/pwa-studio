@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import FilterList from '../filterList';
 import FilterItem from '../filterItem';
@@ -24,7 +24,7 @@ let mockIsListExpanded;
 
 jest.mock('../filterItem', () => props => <mock-FilterItem {...props} />);
 
-jest.mock('@magento/peregrine/lib/talons/FilterModal', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/FilterModal', () => ({
     useFilterList: jest.fn(() => {
         return {
             isListExpanded: mockIsListExpanded,

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import SuggestedCategories from '../suggestedCategories';
 import SuggestedCategory from '../suggestedCategory';
 

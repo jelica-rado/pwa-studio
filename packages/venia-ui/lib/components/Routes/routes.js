@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import { Route, Switch, useLocation } from 'react-router-dom';
 
-import { useScrollTopOnChange } from '@magento/peregrine/lib/hooks/useScrollTopOnChange';
+import { useScrollTopOnChange } from '@jelica-rado/peregrine/lib/hooks/useScrollTopOnChange';
 import { fullPageLoadingIndicator } from '../LoadingIndicator';
 import HomePage from '../HomePage';
 import MagentoRoute from '../MagentoRoute';

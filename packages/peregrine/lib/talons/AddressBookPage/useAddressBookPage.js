@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useMutation, useQuery } from '@apollo/client';
 
-import { useAppContext } from '@magento/peregrine/lib/context/app';
-import { useUserContext } from '@magento/peregrine/lib/context/user';
-import mergeOperations from '@magento/peregrine/lib/util/shallowMerge';
+import { useAppContext } from '@jelica-rado/peregrine/lib/context/app';
+import { useUserContext } from '@jelica-rado/peregrine/lib/context/user';
+import mergeOperations from '@jelica-rado/peregrine/lib/util/shallowMerge';
 
 import defaultOperations from './addressBookPage.gql';
 import { useEventingContext } from '../../context/eventing';
@@ -19,7 +19,7 @@ import { useEventingContext } from '../../context/eventing';
  *  @returns {AddressBookPageTalonProps}
  *
  * @example <caption>Importing into your project</caption>
- * import { useAddressBookPage } from '@magento/peregrine/lib/talons/AddressBookPage/useAddressBookPage';
+ * import { useAddressBookPage } from '@jelica-rado/peregrine/lib/talons/AddressBookPage/useAddressBookPage';
  */
 export const useAddressBookPage = (props = {}) => {
     const operations = mergeOperations(defaultOperations, props.operations);

@@ -31,7 +31,7 @@ A [Promise] configuration type for webpack.
 In `webpack.config.js`:
 
 ``` js
-const buildpack = require('@magento/pwa-buildpack');
+const buildpack = require('@jelica-rado/pwa-buildpack');
 const MagentoResolver = buildpack.WebpackTools.MagentoResolver;
 
 module.exports = async env => {

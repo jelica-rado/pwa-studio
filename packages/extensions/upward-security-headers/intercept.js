@@ -1,7 +1,7 @@
 const SECURITY_HEADER_DEFINITION = 'veniaSecurityHeaders';
 
 module.exports = targets => {
-    const builtins = targets.of('@magento/pwa-buildpack');
+    const builtins = targets.of('@jelica-rado/pwa-buildpack');
 
     builtins.specialFeatures.tap(features => {
         features[targets.name] = { upward: true };

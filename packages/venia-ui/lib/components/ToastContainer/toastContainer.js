@@ -1,6 +1,6 @@
 import React from 'react';
 import { shape, string } from 'prop-types';
-import { useToasts } from '@magento/peregrine';
+import { useToasts } from '@jelica-rado/peregrine';
 import Toast from './toast';
 import { useStyle } from '../../classify';
 import defaultClasses from './toastContainer.module.css';

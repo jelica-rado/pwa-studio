@@ -52,7 +52,7 @@ jest.mock('../../../hooks/useGoogleReCaptcha', () => ({
     })
 }));
 
-jest.mock('@magento/peregrine/lib/context/eventing', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/eventing', () => ({
     useEventingContext: jest.fn().mockReturnValue([{}, { dispatch: jest.fn() }])
 }));
 

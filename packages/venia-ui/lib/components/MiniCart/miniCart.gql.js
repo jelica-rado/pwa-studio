@@ -1,9 +1,9 @@
 import { gql } from '@apollo/client';
-import { MiniCartFragment } from '@magento/peregrine/lib/talons/MiniCart/miniCartFragments.gql';
-import { CartPageFragment } from '@magento/peregrine/lib/talons/CartPage/cartPageFragments.gql.js';
+import { MiniCartFragment } from '@jelica-rado/peregrine/lib/talons/MiniCart/miniCartFragments.gql';
+import { CartPageFragment } from '@jelica-rado/peregrine/lib/talons/CartPage/cartPageFragments.gql.js';
 
 /**
- * @deprecated - Moved to @magento/peregrine/lib/talons/MiniCart/miniCartFragments.gql
+ * @deprecated - Moved to @jelica-rado/peregrine/lib/talons/MiniCart/miniCartFragments.gql
  */
 export { MiniCartFragment };
 

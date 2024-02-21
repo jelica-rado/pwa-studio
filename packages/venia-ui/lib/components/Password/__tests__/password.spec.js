@@ -1,12 +1,12 @@
 import React from 'react';
 import { Form } from 'informed';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
-import { usePassword } from '@magento/peregrine/lib/talons/Password/usePassword';
+import { usePassword } from '@jelica-rado/peregrine/lib/talons/Password/usePassword';
 
 import Password from '../password';
 
-jest.mock('@magento/peregrine/lib/talons/Password/usePassword', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/Password/usePassword', () => ({
     usePassword: jest.fn().mockReturnValue({
         visible: false,
         togglePasswordVisibility: jest.fn()

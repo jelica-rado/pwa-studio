@@ -1,7 +1,7 @@
 import React from 'react';
 import { bool, func, shape, string } from 'prop-types';
 
-import { useStyle } from '@magento/venia-ui/lib/classify';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
 
 import defaultClasses from './googleReCaptcha.module.css';
 

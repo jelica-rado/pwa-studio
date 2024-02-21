@@ -1,7 +1,7 @@
 import React, { Fragment, useRef } from 'react';
 import { element, func, shape, string } from 'prop-types';
 import { Heart } from 'react-feather';
-import { useAddToListButton } from '@magento/peregrine/lib/talons/Wishlist/AddToListButton/useAddToListButton';
+import { useAddToListButton } from '@jelica-rado/peregrine/lib/talons/Wishlist/AddToListButton/useAddToListButton';
 import { useButton } from 'react-aria';
 
 import { useStyle } from '../../../classify';

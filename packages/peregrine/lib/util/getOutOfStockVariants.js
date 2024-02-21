@@ -2,11 +2,11 @@
  * Find out of stock variants/options of current option selections
  * @return {Array} variants
  */
-import { isProductConfigurable } from '@magento/peregrine/lib/util/isProductConfigurable';
-import { findAllMatchingVariants } from '@magento/peregrine/lib/util/findAllMatchingVariants';
-import { getOutOfStockIndexes } from '@magento/peregrine/lib/util/getOutOfStockIndexes';
-import { createProductVariants } from '@magento/peregrine/lib/util/createProductVariants';
-import { getCombinations } from '@magento/peregrine/lib/util/getCombinations';
+import { isProductConfigurable } from '@jelica-rado/peregrine/lib/util/isProductConfigurable';
+import { findAllMatchingVariants } from '@jelica-rado/peregrine/lib/util/findAllMatchingVariants';
+import { getOutOfStockIndexes } from '@jelica-rado/peregrine/lib/util/getOutOfStockIndexes';
+import { createProductVariants } from '@jelica-rado/peregrine/lib/util/createProductVariants';
+import { getCombinations } from '@jelica-rado/peregrine/lib/util/getCombinations';
 
 const OUT_OF_STOCK_CODE = 'OUT_OF_STOCK';
 

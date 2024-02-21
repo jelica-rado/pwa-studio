@@ -1,10 +1,10 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import { useCheckmo } from '../../talons/useCheckmo';
 
 import CheckMo from '../checkmo';
 
-jest.mock('@magento/venia-ui/lib/classify');
+jest.mock('@jelica-rado/venia-ui/lib/classify');
 jest.mock('../../talons/useCheckmo', () => {
     return {
         useCheckmo: jest.fn().mockReturnValue({
@@ -17,7 +17,7 @@ jest.mock('../../talons/useCheckmo', () => {
 });
 
 jest.mock(
-    '@magento/venia-ui/lib/components/CheckoutPage/BillingAddress',
+    '@jelica-rado/venia-ui/lib/components/CheckoutPage/BillingAddress',
     () => props => <mock-BillingAddress {...props} />
 );
 

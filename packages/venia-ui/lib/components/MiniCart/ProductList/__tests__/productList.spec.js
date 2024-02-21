@@ -1,5 +1,5 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import ProductList from '../productList';
 
@@ -8,7 +8,7 @@ jest.mock('../item', () => 'Item');
 jest.mock('react-router-dom', () => ({
     Link: ({ children, ...rest }) => <div {...rest}>{children}</div>
 }));
-jest.mock('@magento/peregrine/lib/util/makeUrl');
+jest.mock('@jelica-rado/peregrine/lib/util/makeUrl');
 
 const props = {
     closeMiniCart: jest.fn().mockName('closeMiniCart'),

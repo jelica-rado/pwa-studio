@@ -2,8 +2,8 @@ import { useEffect, useCallback } from 'react';
 import { useQuery } from '@apollo/client';
 import { useLocation } from 'react-router-dom';
 
-import { useCartContext } from '@magento/peregrine/lib/context/cart';
-import mergeOperations from '@magento/peregrine/lib/util/shallowMerge';
+import { useCartContext } from '@jelica-rado/peregrine/lib/context/cart';
+import mergeOperations from '@jelica-rado/peregrine/lib/util/shallowMerge';
 
 import DEFAULT_OPERATIONS from './cmsDynamicBlock.gql';
 
@@ -67,7 +67,7 @@ export const flatten = cartData => {
  * @returns {CmsDynamicBlockTalonProps}
  *
  * @example <caption>Importing into your project</caption>
- * import { useCmsDynamicBlock } from '@magento/peregrine/lib/talons/CmsDynamicBlock/useCmsDynamicBlock';
+ * import { useCmsDynamicBlock } from '@jelica-rado/peregrine/lib/talons/CmsDynamicBlock/useCmsDynamicBlock';
  */
 export const useCmsDynamicBlock = props => {
     const { locations, uids, type } = props;

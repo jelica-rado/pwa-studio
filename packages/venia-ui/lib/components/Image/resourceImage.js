@@ -1,10 +1,10 @@
 import React from 'react';
 import { func, instanceOf, number, oneOfType, string } from 'prop-types';
-import { useResourceImage } from '@magento/peregrine/lib/talons/Image/useResourceImage';
+import { useResourceImage } from '@jelica-rado/peregrine/lib/talons/Image/useResourceImage';
 import {
     generateSrcset,
     generateUrl
-} from '@magento/peregrine/lib/util/imageUtils';
+} from '@jelica-rado/peregrine/lib/util/imageUtils';
 
 /**
  * Renders a Magento resource image.

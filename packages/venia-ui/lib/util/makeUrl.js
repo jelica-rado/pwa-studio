@@ -1,4 +1,4 @@
 /**
- * @deprecated Moved to @magento/peregrine/lib/util/makeUrl
+ * @deprecated Moved to @jelica-rado/peregrine/lib/util/makeUrl
  */
-export { default } from '@magento/peregrine/lib/util/makeUrl';
+export { default } from '@jelica-rado/peregrine/lib/util/makeUrl';

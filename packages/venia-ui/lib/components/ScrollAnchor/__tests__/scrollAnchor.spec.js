@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-literals */
 import React, { useRef } from 'react';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import ScrollAnchor from '../scrollAnchor';
 

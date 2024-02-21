@@ -6,8 +6,8 @@ jest.mock('../../../classify');
 jest.mock('react-router-dom', () => ({
     Link: ({ children }) => children
 }));
-jest.mock('@magento/peregrine/lib/util/makeUrl');
-jest.mock('@magento/peregrine/lib/context/eventing', () => ({
+jest.mock('@jelica-rado/peregrine/lib/util/makeUrl');
+jest.mock('@jelica-rado/peregrine/lib/context/eventing', () => ({
     useEventingContext: jest.fn().mockReturnValue([{}, { dispatch: jest.fn() }])
 }));
 

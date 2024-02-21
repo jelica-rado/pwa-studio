@@ -2,11 +2,11 @@ import React from 'react';
 import { useQuery } from '@apollo/client';
 import { usePriceSummary } from '../usePriceSummary';
 import { useHistory } from 'react-router-dom';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import { priceSummaryResponse } from '../__fixtures__/priceSummary';
 import { act } from 'react-test-renderer';
 
-jest.mock('@magento/peregrine/lib/context/cart', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/cart', () => {
     const state = {
         cartId: 'cart123'
     };

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { FormattedMessage } from 'react-intl';
-import Price from '@magento/venia-ui/lib/components/Price';
+import Price from '@jelica-rado/venia-ui/lib/components/Price';
 
 import { useStyle } from '../../../classify';
 

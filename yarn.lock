@@ -2081,6 +2081,191 @@
   resolved "https://registry.npmjs.org/@istanbuljs/schema/-/schema-0.1.3.tgz"
   integrity sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA==
 
+"@jelica-rado/babel-preset-peregrine@~1.2.3", "@jelica-rado/babel-preset-peregrine@file:/home/jrad/Sites/pwa-studio/packages/babel-preset-peregrine":
+  version "1.2.3"
+  resolved "file:packages/babel-preset-peregrine"
+
+"@jelica-rado/create-pwa@file:/home/jrad/Sites/pwa-studio/packages/create-pwa":
+  version "2.4.5"
+  resolved "file:packages/create-pwa"
+  dependencies:
+    "@jelica-rado/pwa-buildpack" "~11.4.3"
+    "@jelica-rado/venia-concept" "~13.3.0"
+    chalk "^2.4.2"
+    change-case "^3.1.0"
+    compression "~1.7.4"
+    execa "^1.0.0"
+    git-user-info "^1.0.1"
+    inquirer "^8.2.0"
+    is-invalid-path "^1.0.2"
+    is-valid-npm-name "^0.0.4"
+    node-fetch "~2.6.1"
+    webpack "~4.46.0"
+
+"@jelica-rado/directive-parser@~0.1.7":
+  version "0.1.8"
+  resolved "https://registry.npmjs.org/@jelica-rado/directive-parser/-/directive-parser-0.1.8.tgz"
+  integrity sha512-LxPNAvSBDDLOQpeMrZ+0fp3soexB84s7FA0hmhsRSgzkuLU9fMLDKDoMt4hImcw7XhaCexpr44E1lwu2aXEjUg==
+  dependencies:
+    es-comments "^1.0.1"
+
+"@jelica-rado/eslint-config@~1.5.0":
+  version "1.5.3"
+  resolved "https://registry.npmjs.org/@jelica-rado/eslint-config/-/eslint-config-1.5.3.tgz"
+  integrity sha512-nCmdeIFbadK6gLvQ/g3OXXuK8JBrp0Hxt8CZD1uj+824X51jr6W7xRKGabmeNKXifnYXFk0wfu+eeMq86PA3jA==
+
+"@jelica-rado/experience-platform-connector@file:/home/jrad/Sites/pwa-studio/packages/extensions/experience-platform-connector":
+  version "1.0.6"
+  resolved "file:packages/extensions/experience-platform-connector"
+  dependencies:
+    "@adobe/magento-storefront-event-collector" "~1.3.1"
+    "@adobe/magento-storefront-events-sdk" "~1.3.1"
+
+"@jelica-rado/pagebuilder@~8.2.1", "@jelica-rado/pagebuilder@file:/home/jrad/Sites/pwa-studio/packages/pagebuilder":
+  version "8.2.2"
+  resolved "file:packages/pagebuilder"
+
+"@jelica-rado/peregrine@~13.2.1", "@jelica-rado/peregrine@file:/home/jrad/Sites/pwa-studio/packages/peregrine":
+  version "13.2.1"
+  resolved "file:packages/peregrine"
+  dependencies:
+    fast-glob "~3.2.4"
+    zen-observable-ts "^1.2.0"
+
+"@jelica-rado/pwa-buildpack@~11.4.3", "@jelica-rado/pwa-buildpack@file:/home/jrad/Sites/pwa-studio/packages/pwa-buildpack":
+  version "11.4.3"
+  resolved "file:packages/pwa-buildpack"
+  dependencies:
+    "@jelica-rado/directive-parser" "~0.1.7"
+    "@jelica-rado/upward-js" "~5.3.2"
+    "@pmmmwh/react-refresh-webpack-plugin" "~0.4.3"
+    "@yarnpkg/lockfile" "~1.1.0"
+    apicache "~1.4.0"
+    boxen "~5.1.2"
+    camelspace "~1.0.0"
+    chalk "~2.4.2"
+    copy-webpack-plugin "~6.4.0"
+    debug "~4.3.1"
+    devcert "~1.1.1"
+    dotenv "~6.2.0"
+    enhanced-resolve "~4.1.1"
+    envalid "~6.0.1"
+    errorhandler "~1.5.1"
+    execa "~1.0.0"
+    figures "~2.0.0"
+    fs-extra "~7.0.1"
+    gitignore-to-glob "~0.3.0"
+    graphql-playground-middleware-express "~1.7.18"
+    hastily "~0.5.0"
+    js-yaml "~3.13.1"
+    jsdom "~16.6.0"
+    klaw "~3.0.0"
+    loader-utils "~2.0.0"
+    lodash "~4.17.11"
+    memfs "~3.1.2"
+    merge "~2.1.1"
+    micromatch "~4.0.2"
+    node-fetch "~2.6.1"
+    pertain "~0.2.0"
+    pkg-dir "~4.1.0"
+    portscanner "~2.2.0"
+    tapable "~1.1.3"
+    tar "~4.4.8"
+    unionfs "~4.4.0"
+    walk-object "~4.0.0"
+    webpack-assets-manifest "~3.1.1"
+    webpack-inject-plugin "~1.5.3"
+    webpack-node-externals "~2.5.2"
+    webpack-virtual-modules "~0.3.1"
+    word-wrap "~1.2.3"
+    write-file-webpack-plugin "~4.5.0"
+    yargs "~17.3.0"
+
+"@jelica-rado/pwa-theme-venia@~1.4.0", "@jelica-rado/pwa-theme-venia@file:/home/jrad/Sites/pwa-studio/packages/pwa-theme-venia":
+  version "1.4.0"
+  resolved "file:packages/pwa-theme-venia"
+
+"@jelica-rado/upward-js@~5.3.2", "@jelica-rado/upward-js@file:/home/jrad/Sites/pwa-studio/packages/upward-js":
+  version "5.3.2"
+  resolved "file:packages/upward-js"
+  dependencies:
+    "@apollo/client" "^3.8.8"
+    camelspace "~1.0.0"
+    connect "~3.6.6"
+    contains-path "~1.0.0"
+    debug "~4.3.1"
+    dotenv "~6.2.0"
+    errorhandler "~1.5.1"
+    graphql "~15.5.0"
+    hogan.js "~3.0.2"
+    http-proxy-middleware "~0.19.1"
+    js-yaml "~3.13.1"
+    lodash "~4.17.11"
+    morgan "~1.9.1"
+    node-fetch "~2.6.1"
+
+"@jelica-rado/upward-security-headers@~1.0.14", "@jelica-rado/upward-security-headers@file:/home/jrad/Sites/pwa-studio/packages/extensions/upward-security-headers":
+  version "1.0.15"
+  resolved "file:packages/extensions/upward-security-headers"
+
+"@jelica-rado/upward-spec@~5.2.1", "@jelica-rado/upward-spec@file:/home/jrad/Sites/pwa-studio/packages/upward-spec":
+  version "5.2.1"
+  resolved "file:packages/upward-spec"
+  dependencies:
+    chalk "~2.4.2"
+    csv-parse "~4.4.6"
+    graphql "~15.5.0"
+    js-yaml "~3.13.1"
+    node-fetch "~2.6.1"
+    tap-diff "~0.1.1"
+    tap-xunit "~2.3.0"
+    tape "~4.10.1"
+
+"@jelica-rado/venia-concept@~13.3.0", "@jelica-rado/venia-concept@file:/home/jrad/Sites/pwa-studio/packages/venia-concept":
+  version "13.3.0"
+  resolved "file:packages/venia-concept"
+  dependencies:
+    "@jelica-rado/pwa-buildpack" "~11.4.3"
+  optionalDependencies:
+    sharp "~0.29.3"
+
+"@jelica-rado/venia-sample-backends@file:/home/jrad/Sites/pwa-studio/packages/extensions/venia-sample-backends":
+  version "0.0.11"
+  resolved "file:packages/extensions/venia-sample-backends"
+
+"@jelica-rado/venia-sample-eventing@file:/home/jrad/Sites/pwa-studio/packages/extensions/venia-sample-eventing":
+  version "0.0.7"
+  resolved "file:packages/extensions/venia-sample-eventing"
+
+"@jelica-rado/venia-sample-language-packs@file:/home/jrad/Sites/pwa-studio/packages/extensions/venia-sample-language-packs":
+  version "0.0.15"
+  resolved "file:packages/extensions/venia-sample-language-packs"
+
+"@jelica-rado/venia-sample-payments-checkmo@file:/home/jrad/Sites/pwa-studio/packages/extensions/venia-sample-payments-checkmo":
+  version "0.0.13"
+  resolved "file:packages/extensions/venia-sample-payments-checkmo"
+
+"@jelica-rado/venia-ui@~10.3.0", "@jelica-rado/venia-ui@file:/home/jrad/Sites/pwa-studio/packages/venia-ui":
+  version "10.3.0"
+  resolved "file:packages/venia-ui"
+  dependencies:
+    informed "^4.56.0"
+    jarallax "~1.11.1"
+    load-google-maps-api "~2.0.1"
+    lodash.escape "~4.0.1"
+    lodash.over "~4.7.0"
+    lodash.throttle "~4.1.1"
+    memoize-one "~5.0.0"
+    prop-types "~15.7.2"
+    react-animate-height "^2.0.23"
+    react-aria "~3.4.0"
+    react-feather "~2.0.3"
+    react-helmet-async "^1.0.2"
+    react-slick "^0.30.1"
+    redux-actions "~2.6.4"
+    redux-thunk "~2.3.0"
+    uuid "~8.3.2"
+
 "@jest/console@^26.6.2":
   version "26.6.2"
   resolved "https://registry.npmjs.org/@jest/console/-/console-26.6.2.tgz"
@@ -2303,191 +2488,6 @@
   version "1.1.1"
   resolved "https://registry.npmjs.org/@kwsites/promise-deferred/-/promise-deferred-1.1.1.tgz"
   integrity sha512-GaHYm+c0O9MjZRu0ongGBRbinu8gVAMd2UZjji6jVmqKtZluZnptXGWhz1E8j8D2HJ3f/yMxKAUC0b+57wncIw==
-
-"@magento/babel-preset-peregrine@~1.2.3", "@magento/babel-preset-peregrine@file:/home/jrad/Sites/pwa-studio/packages/babel-preset-peregrine":
-  version "1.2.3"
-  resolved "file:packages/babel-preset-peregrine"
-
-"@magento/create-pwa@file:/home/jrad/Sites/pwa-studio/packages/create-pwa":
-  version "2.4.5"
-  resolved "file:packages/create-pwa"
-  dependencies:
-    "@magento/pwa-buildpack" "~11.4.3"
-    "@magento/venia-concept" "~13.3.0"
-    chalk "^2.4.2"
-    change-case "^3.1.0"
-    compression "~1.7.4"
-    execa "^1.0.0"
-    git-user-info "^1.0.1"
-    inquirer "^8.2.0"
-    is-invalid-path "^1.0.2"
-    is-valid-npm-name "^0.0.4"
-    node-fetch "~2.6.1"
-    webpack "~4.46.0"
-
-"@magento/directive-parser@~0.1.7":
-  version "0.1.8"
-  resolved "https://registry.npmjs.org/@magento/directive-parser/-/directive-parser-0.1.8.tgz"
-  integrity sha512-LxPNAvSBDDLOQpeMrZ+0fp3soexB84s7FA0hmhsRSgzkuLU9fMLDKDoMt4hImcw7XhaCexpr44E1lwu2aXEjUg==
-  dependencies:
-    es-comments "^1.0.1"
-
-"@magento/eslint-config@~1.5.0":
-  version "1.5.3"
-  resolved "https://registry.npmjs.org/@magento/eslint-config/-/eslint-config-1.5.3.tgz"
-  integrity sha512-nCmdeIFbadK6gLvQ/g3OXXuK8JBrp0Hxt8CZD1uj+824X51jr6W7xRKGabmeNKXifnYXFk0wfu+eeMq86PA3jA==
-
-"@magento/experience-platform-connector@file:/home/jrad/Sites/pwa-studio/packages/extensions/experience-platform-connector":
-  version "1.0.6"
-  resolved "file:packages/extensions/experience-platform-connector"
-  dependencies:
-    "@adobe/magento-storefront-event-collector" "~1.3.1"
-    "@adobe/magento-storefront-events-sdk" "~1.3.1"
-
-"@magento/pagebuilder@~8.2.1", "@magento/pagebuilder@file:/home/jrad/Sites/pwa-studio/packages/pagebuilder":
-  version "8.2.1"
-  resolved "file:packages/pagebuilder"
-
-"@magento/peregrine@~13.2.1", "@magento/peregrine@file:/home/jrad/Sites/pwa-studio/packages/peregrine":
-  version "13.2.1"
-  resolved "file:packages/peregrine"
-  dependencies:
-    fast-glob "~3.2.4"
-    zen-observable-ts "^1.2.0"
-
-"@magento/pwa-buildpack@~11.4.3", "@magento/pwa-buildpack@file:/home/jrad/Sites/pwa-studio/packages/pwa-buildpack":
-  version "11.4.3"
-  resolved "file:packages/pwa-buildpack"
-  dependencies:
-    "@magento/directive-parser" "~0.1.7"
-    "@magento/upward-js" "~5.3.2"
-    "@pmmmwh/react-refresh-webpack-plugin" "~0.4.3"
-    "@yarnpkg/lockfile" "~1.1.0"
-    apicache "~1.4.0"
-    boxen "~5.1.2"
-    camelspace "~1.0.0"
-    chalk "~2.4.2"
-    copy-webpack-plugin "~6.4.0"
-    debug "~4.3.1"
-    devcert "~1.1.1"
-    dotenv "~6.2.0"
-    enhanced-resolve "~4.1.1"
-    envalid "~6.0.1"
-    errorhandler "~1.5.1"
-    execa "~1.0.0"
-    figures "~2.0.0"
-    fs-extra "~7.0.1"
-    gitignore-to-glob "~0.3.0"
-    graphql-playground-middleware-express "~1.7.18"
-    hastily "~0.5.0"
-    js-yaml "~3.13.1"
-    jsdom "~16.6.0"
-    klaw "~3.0.0"
-    loader-utils "~2.0.0"
-    lodash "~4.17.11"
-    memfs "~3.1.2"
-    merge "~2.1.1"
-    micromatch "~4.0.2"
-    node-fetch "~2.6.1"
-    pertain "~0.2.0"
-    pkg-dir "~4.1.0"
-    portscanner "~2.2.0"
-    tapable "~1.1.3"
-    tar "~4.4.8"
-    unionfs "~4.4.0"
-    walk-object "~4.0.0"
-    webpack-assets-manifest "~3.1.1"
-    webpack-inject-plugin "~1.5.3"
-    webpack-node-externals "~2.5.2"
-    webpack-virtual-modules "~0.3.1"
-    word-wrap "~1.2.3"
-    write-file-webpack-plugin "~4.5.0"
-    yargs "~17.3.0"
-
-"@magento/pwa-theme-venia@~1.4.0", "@magento/pwa-theme-venia@file:/home/jrad/Sites/pwa-studio/packages/pwa-theme-venia":
-  version "1.4.0"
-  resolved "file:packages/pwa-theme-venia"
-
-"@magento/upward-js@~5.3.2", "@magento/upward-js@file:/home/jrad/Sites/pwa-studio/packages/upward-js":
-  version "5.3.2"
-  resolved "file:packages/upward-js"
-  dependencies:
-    "@apollo/client" "^3.8.8"
-    camelspace "~1.0.0"
-    connect "~3.6.6"
-    contains-path "~1.0.0"
-    debug "~4.3.1"
-    dotenv "~6.2.0"
-    errorhandler "~1.5.1"
-    graphql "~15.5.0"
-    hogan.js "~3.0.2"
-    http-proxy-middleware "~0.19.1"
-    js-yaml "~3.13.1"
-    lodash "~4.17.11"
-    morgan "~1.9.1"
-    node-fetch "~2.6.1"
-
-"@magento/upward-security-headers@~1.0.14", "@magento/upward-security-headers@file:/home/jrad/Sites/pwa-studio/packages/extensions/upward-security-headers":
-  version "1.0.15"
-  resolved "file:packages/extensions/upward-security-headers"
-
-"@magento/upward-spec@~5.2.1", "@magento/upward-spec@file:/home/jrad/Sites/pwa-studio/packages/upward-spec":
-  version "5.2.1"
-  resolved "file:packages/upward-spec"
-  dependencies:
-    chalk "~2.4.2"
-    csv-parse "~4.4.6"
-    graphql "~15.5.0"
-    js-yaml "~3.13.1"
-    node-fetch "~2.6.1"
-    tap-diff "~0.1.1"
-    tap-xunit "~2.3.0"
-    tape "~4.10.1"
-
-"@magento/venia-concept@~13.3.0", "@magento/venia-concept@file:/home/jrad/Sites/pwa-studio/packages/venia-concept":
-  version "13.3.0"
-  resolved "file:packages/venia-concept"
-  dependencies:
-    "@magento/pwa-buildpack" "~11.4.3"
-  optionalDependencies:
-    sharp "~0.29.3"
-
-"@magento/venia-sample-backends@file:/home/jrad/Sites/pwa-studio/packages/extensions/venia-sample-backends":
-  version "0.0.11"
-  resolved "file:packages/extensions/venia-sample-backends"
-
-"@magento/venia-sample-eventing@file:/home/jrad/Sites/pwa-studio/packages/extensions/venia-sample-eventing":
-  version "0.0.7"
-  resolved "file:packages/extensions/venia-sample-eventing"
-
-"@magento/venia-sample-language-packs@file:/home/jrad/Sites/pwa-studio/packages/extensions/venia-sample-language-packs":
-  version "0.0.15"
-  resolved "file:packages/extensions/venia-sample-language-packs"
-
-"@magento/venia-sample-payments-checkmo@file:/home/jrad/Sites/pwa-studio/packages/extensions/venia-sample-payments-checkmo":
-  version "0.0.13"
-  resolved "file:packages/extensions/venia-sample-payments-checkmo"
-
-"@magento/venia-ui@~10.3.0", "@magento/venia-ui@file:/home/jrad/Sites/pwa-studio/packages/venia-ui":
-  version "10.3.0"
-  resolved "file:packages/venia-ui"
-  dependencies:
-    informed "^4.56.0"
-    jarallax "~1.11.1"
-    load-google-maps-api "~2.0.1"
-    lodash.escape "~4.0.1"
-    lodash.over "~4.7.0"
-    lodash.throttle "~4.1.1"
-    memoize-one "~5.0.0"
-    prop-types "~15.7.2"
-    react-animate-height "^2.0.23"
-    react-aria "~3.4.0"
-    react-feather "~2.0.3"
-    react-helmet-async "^1.0.2"
-    react-slick "^0.30.1"
-    redux-actions "~2.6.4"
-    redux-thunk "~2.3.0"
-    uuid "~8.3.2"
 
 "@microsoft/fetch-event-source@2.0.1":
   version "2.0.1"

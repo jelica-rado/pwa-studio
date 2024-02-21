@@ -1,10 +1,10 @@
 import React from 'react';
-import { createTestInstance, useToasts } from '@magento/peregrine';
-import { useGuestForm } from '@magento/peregrine/lib/talons/CheckoutPage/ShippingInformation/AddressForm/useGuestForm';
+import { createTestInstance, useToasts } from '@jelica-rado/peregrine';
+import { useGuestForm } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/ShippingInformation/AddressForm/useGuestForm';
 
 import GuestForm from '../guestForm';
 
-jest.mock('@magento/peregrine', () => {
+jest.mock('@jelica-rado/peregrine', () => {
     const state = {};
     const api = {
         addToast: jest.fn()
@@ -12,13 +12,13 @@ jest.mock('@magento/peregrine', () => {
 
     const useToasts = jest.fn(() => [state, api]);
     return {
-        ...jest.requireActual('@magento/peregrine'),
+        ...jest.requireActual('@jelica-rado/peregrine'),
         useToasts
     };
 });
 
 jest.mock(
-    '@magento/peregrine/lib/talons/CheckoutPage/ShippingInformation/AddressForm/useGuestForm'
+    '@jelica-rado/peregrine/lib/talons/CheckoutPage/ShippingInformation/AddressForm/useGuestForm'
 );
 jest.mock('../../../../../classify');
 jest.mock('../../../../Country', () => 'Country');

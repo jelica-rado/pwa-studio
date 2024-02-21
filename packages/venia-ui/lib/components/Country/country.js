@@ -1,7 +1,7 @@
 import React from 'react';
 import { useIntl } from 'react-intl';
 import { func, shape, string } from 'prop-types';
-import { useCountry } from '@magento/peregrine/lib/talons/Country/useCountry';
+import { useCountry } from '@jelica-rado/peregrine/lib/talons/Country/useCountry';
 
 import { useStyle } from '../../classify';
 import Field from '../Field';

@@ -1,8 +1,8 @@
 import { useCallback, useMemo, useState } from 'react';
 import { useMutation } from '@apollo/client';
 
-import { useCartContext } from '@magento/peregrine/lib/context/cart';
-import { useAwaitQuery } from '@magento/peregrine/lib/hooks/useAwaitQuery';
+import { useCartContext } from '@jelica-rado/peregrine/lib/context/cart';
+import { useAwaitQuery } from '@jelica-rado/peregrine/lib/hooks/useAwaitQuery';
 
 import { appendOptionsToPayload } from '../../util/appendOptionsToPayload';
 import { isProductConfigurable } from '../../util/isProductConfigurable';

@@ -1,18 +1,18 @@
 import { useCallback, useState, useMemo } from 'react';
 import { useIntl } from 'react-intl';
 import { useMutation, useQuery } from '@apollo/client';
-import { useCartContext } from '@magento/peregrine/lib/context/cart';
-import { useUserContext } from '@magento/peregrine/lib/context/user';
+import { useCartContext } from '@jelica-rado/peregrine/lib/context/cart';
+import { useUserContext } from '@jelica-rado/peregrine/lib/context/user';
 
-import { appendOptionsToPayload } from '@magento/peregrine/lib/util/appendOptionsToPayload';
-import { findMatchingVariant } from '@magento/peregrine/lib/util/findMatchingProductVariant';
-import { isProductConfigurable } from '@magento/peregrine/lib/util/isProductConfigurable';
-import { isSupportedProductType as isSupported } from '@magento/peregrine/lib/util/isSupportedProductType';
+import { appendOptionsToPayload } from '@jelica-rado/peregrine/lib/util/appendOptionsToPayload';
+import { findMatchingVariant } from '@jelica-rado/peregrine/lib/util/findMatchingProductVariant';
+import { isProductConfigurable } from '@jelica-rado/peregrine/lib/util/isProductConfigurable';
+import { isSupportedProductType as isSupported } from '@jelica-rado/peregrine/lib/util/isSupportedProductType';
 import { deriveErrorMessage } from '../../util/deriveErrorMessage';
 import mergeOperations from '../../util/shallowMerge';
 import defaultOperations from './productFullDetail.gql';
 import { useEventingContext } from '../../context/eventing';
-import { getOutOfStockVariants } from '@magento/peregrine/lib/util/getOutOfStockVariants';
+import { getOutOfStockVariants } from '@jelica-rado/peregrine/lib/util/getOutOfStockVariants';
 
 const INITIAL_OPTION_CODES = new Map();
 const INITIAL_OPTION_SELECTIONS = new Map();

@@ -3,20 +3,20 @@ import { FormattedMessage, useIntl } from 'react-intl';
 import { Edit2 as EditIcon } from 'react-feather';
 import { Form } from 'informed';
 
-import { useGiftOptions } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/GiftOptions/useGiftOptions';
-import { useStyle } from '@magento/venia-ui/lib/classify';
-import Button from '@magento/venia-ui/lib/components/Button';
-import Checkbox from '@magento/venia-ui/lib/components/Checkbox';
-import Field from '@magento/venia-ui/lib/components/Field';
-import FormError from '@magento/venia-ui/lib/components/FormError';
-import Icon from '@magento/venia-ui/lib/components/Icon';
+import { useGiftOptions } from '@jelica-rado/peregrine/lib/talons/CartPage/PriceAdjustments/GiftOptions/useGiftOptions';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
+import Button from '@jelica-rado/venia-ui/lib/components/Button';
+import Checkbox from '@jelica-rado/venia-ui/lib/components/Checkbox';
+import Field from '@jelica-rado/venia-ui/lib/components/Field';
+import FormError from '@jelica-rado/venia-ui/lib/components/FormError';
+import Icon from '@jelica-rado/venia-ui/lib/components/Icon';
 import LoadingIndicator, {
     Spinner
-} from '@magento/venia-ui/lib/components/LoadingIndicator';
-import LinkButton from '@magento/venia-ui/lib/components/LinkButton';
-import Price from '@magento/venia-ui/lib/components/Price';
-import TextArea from '@magento/venia-ui/lib/components/TextArea';
-import TextInput from '@magento/venia-ui/lib/components/TextInput';
+} from '@jelica-rado/venia-ui/lib/components/LoadingIndicator';
+import LinkButton from '@jelica-rado/venia-ui/lib/components/LinkButton';
+import Price from '@jelica-rado/venia-ui/lib/components/Price';
+import TextArea from '@jelica-rado/venia-ui/lib/components/TextArea';
+import TextInput from '@jelica-rado/venia-ui/lib/components/TextInput';
 
 import defaultClasses from './giftOptions.module.css';
 
@@ -33,7 +33,7 @@ import defaultClasses from './giftOptions.module.css';
  * @returns {React.Element}
  *
  * @example <caption>Importing into your project</caption>
- * import GiftOptions from "@magento/venia-ui/lib/components/CartPage/PriceAdjustments/GiftOptions";
+ * import GiftOptions from "@jelica-rado/venia-ui/lib/components/CartPage/PriceAdjustments/GiftOptions";
  */
 const GiftOptions = props => {
     const { classes: propClasses } = props;

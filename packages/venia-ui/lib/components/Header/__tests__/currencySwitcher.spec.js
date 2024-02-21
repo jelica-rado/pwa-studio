@@ -1,17 +1,17 @@
 import React from 'react';
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
 import CurrencySwitcher from '../currencySwitcher';
-import { useCurrencySwitcher } from '@magento/peregrine/lib/talons/Header/useCurrencySwitcher';
+import { useCurrencySwitcher } from '@jelica-rado/peregrine/lib/talons/Header/useCurrencySwitcher';
 
-jest.mock('@magento/peregrine/lib/talons/Header/useCurrencySwitcher', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/Header/useCurrencySwitcher', () => ({
     useCurrencySwitcher: jest.fn()
 }));
 
-jest.mock('@magento/venia-ui/lib/components/CurrencySymbol', () => {
+jest.mock('@jelica-rado/venia-ui/lib/components/CurrencySymbol', () => {
     return jest.fn(props => <i {...props} />);
 });
 
-jest.mock('@magento/venia-ui/lib/classify');
+jest.mock('@jelica-rado/venia-ui/lib/classify');
 
 const talonProps = {
     handleSwitchCurrency: jest.fn(),

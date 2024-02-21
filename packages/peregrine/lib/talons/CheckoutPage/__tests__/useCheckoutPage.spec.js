@@ -11,7 +11,7 @@ import { useCheckoutPage, CHECKOUT_STEP } from '../useCheckoutPage';
 import createTestInstance from '../../../util/createTestInstance';
 import { useCartContext } from '../../../context/cart';
 import { useUserContext } from '../../../context/user';
-import { useEventingContext } from '@magento/peregrine/lib/context/eventing';
+import { useEventingContext } from '@jelica-rado/peregrine/lib/context/eventing';
 import CheckoutError from '../CheckoutError';
 
 /**
@@ -60,7 +60,7 @@ jest.mock('../CheckoutError', () => {
     return CheckoutError;
 });
 
-jest.mock('@magento/peregrine/lib/context/eventing', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/eventing', () => ({
     useEventingContext: jest.fn().mockReturnValue([{}, { dispatch: jest.fn() }])
 }));
 

@@ -1,5 +1,5 @@
 /**
- * These targets are available for interception to modules which depend on `@magento/pagebuilder`.
+ * These targets are available for interception to modules which depend on `@jelica-rado/pagebuilder`.
  *
  * Their implementations are found in `./intercept.js`.
  *
@@ -17,7 +17,7 @@ module.exports = targets => {
          * @see [RichContent]{@link RichContent}
          *
          * @example <caption>Add a custom content type</caption>
-         * targets.of('@magento/pagebuilder').customContentTypes.tap(
+         * targets.of('@jelica-rado/pagebuilder').customContentTypes.tap(
          *   contentTypes => contentTypes.add({
          *     contentType: 'AdobeXMC',
          *     importPath: '@adobe/xm-components/xm-content-type'

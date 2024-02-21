@@ -1,11 +1,11 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useEditModal } from '@magento/peregrine/lib/talons/CheckoutPage/ShippingInformation/useEditModal';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useEditModal } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/ShippingInformation/useEditModal';
 
 import EditModal from '../editModal';
 
 jest.mock(
-    '@magento/peregrine/lib/talons/CheckoutPage/ShippingInformation/useEditModal'
+    '@jelica-rado/peregrine/lib/talons/CheckoutPage/ShippingInformation/useEditModal'
 );
 jest.mock('../../../../classify');
 jest.mock('../../../Portal', () => ({

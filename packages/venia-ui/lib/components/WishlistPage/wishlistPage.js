@@ -1,7 +1,7 @@
 import React, { Fragment, useMemo } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
-import { useWishlistPage } from '@magento/peregrine/lib/talons/WishlistPage/useWishlistPage';
-import { deriveErrorMessage } from '@magento/peregrine/lib/util/deriveErrorMessage';
+import { useWishlistPage } from '@jelica-rado/peregrine/lib/talons/WishlistPage/useWishlistPage';
+import { deriveErrorMessage } from '@jelica-rado/peregrine/lib/util/deriveErrorMessage';
 
 import { useStyle } from '../../classify';
 import { fullPageLoadingIndicator } from '../LoadingIndicator';

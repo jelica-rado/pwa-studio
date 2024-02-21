@@ -1,7 +1,7 @@
 import React from 'react';
 import { shape, string } from 'prop-types';
 
-import { useLegacyMiniCart } from '@magento/peregrine/lib/talons/LegacyMiniCart/useLegacyMiniCart';
+import { useLegacyMiniCart } from '@jelica-rado/peregrine/lib/talons/LegacyMiniCart/useLegacyMiniCart';
 
 import Body from './body';
 import Footer from './footer';

@@ -4,9 +4,9 @@ import { arrayOf, bool, number, shape, string } from 'prop-types';
 import { Form } from 'informed';
 import { Info } from 'react-feather';
 
-import Price from '@magento/venia-ui/lib/components/Price';
-import { useProductFullDetail } from '@magento/peregrine/lib/talons/ProductFullDetail/useProductFullDetail';
-import { isProductConfigurable } from '@magento/peregrine/lib/util/isProductConfigurable';
+import Price from '@jelica-rado/venia-ui/lib/components/Price';
+import { useProductFullDetail } from '@jelica-rado/peregrine/lib/talons/ProductFullDetail/useProductFullDetail';
+import { isProductConfigurable } from '@jelica-rado/peregrine/lib/util/isProductConfigurable';
 
 import { useStyle } from '../../classify';
 import Breadcrumbs from '../Breadcrumbs';

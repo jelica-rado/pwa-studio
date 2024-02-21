@@ -1,6 +1,6 @@
 import React from 'react';
-import { createTestInstance, useToasts } from '@magento/peregrine';
-import { useContactPage } from '@magento/peregrine/lib/talons/ContactPage';
+import { createTestInstance, useToasts } from '@jelica-rado/peregrine';
+import { useContactPage } from '@jelica-rado/peregrine/lib/talons/ContactPage';
 import LoadingIndicator from '../../LoadingIndicator';
 import ContactPage from '../contactPage';
 
@@ -15,8 +15,8 @@ jest.mock('informed', () => ({
     Form: ({ children }) => <mock-Form>{children}</mock-Form>
 }));
 
-jest.mock('@magento/peregrine', () => {
-    const peregrine = jest.requireActual('@magento/peregrine');
+jest.mock('@jelica-rado/peregrine', () => {
+    const peregrine = jest.requireActual('@jelica-rado/peregrine');
 
     return {
         ...peregrine,
@@ -24,7 +24,7 @@ jest.mock('@magento/peregrine', () => {
     };
 });
 
-jest.mock('@magento/peregrine/lib/talons/ContactPage');
+jest.mock('@jelica-rado/peregrine/lib/talons/ContactPage');
 
 jest.mock('../../../classify');
 

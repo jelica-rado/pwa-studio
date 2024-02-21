@@ -2,8 +2,8 @@ import React, { useCallback } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { Form } from 'informed';
 import { func, shape, string } from 'prop-types';
-import { useToasts } from '@magento/peregrine';
-import { useCreateAccount } from '@magento/peregrine/lib/talons/CheckoutPage/OrderConfirmationPage/useCreateAccount';
+import { useToasts } from '@jelica-rado/peregrine';
+import { useCreateAccount } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/OrderConfirmationPage/useCreateAccount';
 
 import combine from '../../../util/combineValidators';
 import { useStyle } from '../../../classify';

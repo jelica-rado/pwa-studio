@@ -1,16 +1,16 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import Gallery from '../gallery';
 
-jest.mock('@magento/peregrine/lib/context/eventing', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/eventing', () => ({
     useEventingContext: jest.fn().mockReturnValue([{}, { dispatch: jest.fn() }])
 }));
 jest.mock('react-router-dom', () => ({
     Link: ({ children }) => children
 }));
-jest.mock('@magento/peregrine/lib/util/makeUrl');
-jest.mock('@magento/peregrine/lib/talons/Image/useImage', () => {
+jest.mock('@jelica-rado/peregrine/lib/util/makeUrl');
+jest.mock('@jelica-rado/peregrine/lib/talons/Image/useImage', () => {
     return {
         useImage: () => ({
             handleError: jest.fn(),
@@ -21,7 +21,7 @@ jest.mock('@magento/peregrine/lib/talons/Image/useImage', () => {
         })
     };
 });
-jest.mock('@magento/peregrine/lib/talons/Gallery/useGallery', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/Gallery/useGallery', () => ({
     useGallery: () => ({ storeConfig: jest.fn().mockName('storeConfig') })
 }));
 jest.mock('../../../classify');

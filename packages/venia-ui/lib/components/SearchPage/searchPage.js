@@ -1,7 +1,7 @@
 import React, { Fragment, Suspense, useMemo } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { shape, string } from 'prop-types';
-import { useSearchPage } from '@magento/peregrine/lib/talons/SearchPage/useSearchPage';
+import { useSearchPage } from '@jelica-rado/peregrine/lib/talons/SearchPage/useSearchPage';
 
 import { useStyle } from '../../classify';
 import Pagination from '../../components/Pagination';

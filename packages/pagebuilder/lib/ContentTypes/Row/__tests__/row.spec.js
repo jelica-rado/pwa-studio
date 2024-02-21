@@ -1,8 +1,8 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import Row from '../row';
 
-jest.mock('@magento/peregrine/lib/util/makeUrl');
+jest.mock('@jelica-rado/peregrine/lib/util/makeUrl');
 
 jest.mock('jarallax', () => {
     return {
@@ -15,7 +15,7 @@ import { act } from 'react-test-renderer';
 const mockJarallax = jarallax.mockImplementation(() => {});
 const mockJarallaxVideo = jarallaxVideo.mockImplementation(() => {});
 
-jest.mock('@magento/venia-ui/lib/classify');
+jest.mock('@jelica-rado/venia-ui/lib/classify');
 
 test('render row with no props', () => {
     const component = createTestInstance(<Row />);

@@ -1,9 +1,9 @@
 import React from 'react';
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
 jest.mock('../../../../classify');
 
 import classes from '../braintreeSummary.module.css';
-import { useBraintreeSummary } from '@magento/peregrine/lib/talons/CheckoutPage/PaymentInformation/useBraintreeSummary';
+import { useBraintreeSummary } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/PaymentInformation/useBraintreeSummary';
 import BraintreeSummary from '../braintreeSummary';
 
 const billingAddress = {
@@ -23,7 +23,7 @@ const paymentNonce = {
 };
 
 jest.mock(
-    '@magento/peregrine/lib/talons/CheckoutPage/PaymentInformation/useBraintreeSummary',
+    '@jelica-rado/peregrine/lib/talons/CheckoutPage/PaymentInformation/useBraintreeSummary',
     () => {
         return {
             useBraintreeSummary: jest.fn(() => ({

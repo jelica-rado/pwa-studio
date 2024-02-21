@@ -1,8 +1,8 @@
 import React from 'react';
 import { IntlProvider } from 'react-intl';
 
-import { createTestInstance } from '@magento/peregrine';
-import { useGiftOptions } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/GiftOptions/useGiftOptions';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useGiftOptions } from '@jelica-rado/peregrine/lib/talons/CartPage/PriceAdjustments/GiftOptions/useGiftOptions';
 
 import GiftOptions from '../giftOptions';
 
@@ -14,44 +14,44 @@ jest.mock('informed', () => ({
 }));
 
 jest.mock(
-    '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/GiftOptions/useGiftOptions'
+    '@jelica-rado/peregrine/lib/talons/CartPage/PriceAdjustments/GiftOptions/useGiftOptions'
 );
-jest.mock('@magento/venia-ui/lib/classify');
-jest.mock('@magento/venia-ui/lib/components/Button', () => props => (
+jest.mock('@jelica-rado/venia-ui/lib/classify');
+jest.mock('@jelica-rado/venia-ui/lib/components/Button', () => props => (
     <mock-Button {...props} />
 ));
-jest.mock('@magento/venia-ui/lib/components/Checkbox', () => props => (
+jest.mock('@jelica-rado/venia-ui/lib/components/Checkbox', () => props => (
     <mock-Checkbox {...props} />
 ));
 jest.mock(
-    '@magento/venia-ui/lib/components/Field',
+    '@jelica-rado/venia-ui/lib/components/Field',
     () => ({ children, ...rest }) => (
         <mock-Field {...rest}>{children}</mock-Field>
     )
 );
-jest.mock('@magento/venia-ui/lib/components/FormError', () => props => (
+jest.mock('@jelica-rado/venia-ui/lib/components/FormError', () => props => (
     <mock-FormError {...props} />
 ));
-jest.mock('@magento/venia-ui/lib/components/Icon', () => props => (
+jest.mock('@jelica-rado/venia-ui/lib/components/Icon', () => props => (
     <mock-Icon {...props} />
 ));
-jest.mock('@magento/venia-ui/lib/components/LoadingIndicator', () => ({
+jest.mock('@jelica-rado/venia-ui/lib/components/LoadingIndicator', () => ({
     __esModule: true,
     default: jest
         .fn()
         .mockImplementation(props => <mock-LoadingIndicator {...props} />),
     Spinner: jest.fn().mockImplementation(props => <mock-Spinner {...props} />)
 }));
-jest.mock('@magento/venia-ui/lib/components/LinkButton', () => props => (
+jest.mock('@jelica-rado/venia-ui/lib/components/LinkButton', () => props => (
     <mock-LinkButton {...props} />
 ));
-jest.mock('@magento/venia-ui/lib/components/Price', () => props => (
+jest.mock('@jelica-rado/venia-ui/lib/components/Price', () => props => (
     <mock-Price {...props} />
 ));
-jest.mock('@magento/venia-ui/lib/components/TextArea', () => props => (
+jest.mock('@jelica-rado/venia-ui/lib/components/TextArea', () => props => (
     <mock-TextArea {...props} />
 ));
-jest.mock('@magento/venia-ui/lib/components/TextInput', () => props => (
+jest.mock('@jelica-rado/venia-ui/lib/components/TextInput', () => props => (
     <mock-TextInput {...props} />
 ));
 

@@ -19,8 +19,8 @@ Since the ToastContainer consumes the context provided by the [ToastContextProvi
 it can be nested within other components that are wrapped by ToastContextProvider.
 
 ```jsx
-import { ToastContextProvider } from '@magento/peregrine';
-import  ToastContainer  from '@magento/venia-ui/lib/components/ToastContainer'
+import { ToastContextProvider } from '@jelica-rado/peregrine';
+import  ToastContainer  from '@jelica-rado/venia-ui/lib/components/ToastContainer'
 
 import MyToastCreator from './MyToastCreator'
 

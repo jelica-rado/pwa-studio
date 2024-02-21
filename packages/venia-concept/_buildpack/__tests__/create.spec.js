@@ -8,8 +8,8 @@ const MemoryFS = require('memory-fs');
 const {
     makeCommonTasks,
     makeCopyStream
-} = require('@magento/pwa-buildpack/lib/Utilities/createProject');
-const sampleBackends = require('@magento/pwa-buildpack/sampleBackends.json');
+} = require('@jelica-rado/pwa-buildpack/lib/Utilities/createProject');
+const sampleBackends = require('@jelica-rado/pwa-buildpack/sampleBackends.json');
 const createVenia = require('../create');
 
 const mockFs = data => {
@@ -176,10 +176,10 @@ describe('when DEBUG_PROJECT_CREATION is set', () => {
     const old = process.env.DEBUG_PROJECT_CREATION;
     const mockWorkspaceResponse = JSON.stringify({
         foo: { location: '/repo/packages/me' },
-        '@magento/create-pwa': { location: 'packages/create-pwa' },
-        '@magento/pwa-buildpack': { location: 'packages/pwa-buildpack' },
-        '@magento/peregrine': { location: 'packages/peregrine' },
-        '@magento/venia-ui': { location: 'packages/venia-ui' }
+        '@jelica-rado/create-pwa': { location: 'packages/create-pwa' },
+        '@jelica-rado/pwa-buildpack': { location: 'packages/pwa-buildpack' },
+        '@jelica-rado/peregrine': { location: 'packages/peregrine' },
+        '@jelica-rado/venia-ui': { location: 'packages/venia-ui' }
     });
 
     let fs;
@@ -191,11 +191,11 @@ describe('when DEBUG_PROJECT_CREATION is set', () => {
             name: 'foo',
             author: 'bar',
             dependencies: {
-                '@magento/venia-ui': '1.0.0'
+                '@jelica-rado/venia-ui': '1.0.0'
             },
             devDependencies: {
-                '@magento/peregrine': '1.0.0',
-                '@magento/pwa-buildpack': '1.0.0'
+                '@jelica-rado/peregrine': '1.0.0',
+                '@jelica-rado/pwa-buildpack': '1.0.0'
             },
             scripts: {},
             optionalDependencies: {
@@ -207,16 +207,16 @@ describe('when DEBUG_PROJECT_CREATION is set', () => {
             '/repo/packages/me/package-lock.json': '{ "for": "npm" }',
             '/repo/packages/me/yarn.lock': '{ "for": "yarn" }',
             [resolve(packagesRoot, 'venia-ui/package.json')]: JSON.stringify({
-                name: '@magento/venia-ui'
+                name: '@jelica-rado/venia-ui'
             }),
             [resolve(packagesRoot, 'peregrine/package.json')]: JSON.stringify({
-                name: '@magento/peregrine'
+                name: '@jelica-rado/peregrine'
             }),
             [resolve(
                 packagesRoot,
                 'pwa-buildpack/package.json'
             )]: JSON.stringify({
-                name: '@magento/pwa-buildpack'
+                name: '@jelica-rado/pwa-buildpack'
             })
         });
         execSync.mockImplementation((cmd, { cwd }) => {
@@ -233,7 +233,7 @@ describe('when DEBUG_PROJECT_CREATION is set', () => {
             );
             // but it produces THIS in filename output. Hilarious!
             return JSON.stringify([
-                { filename: `@magento/${pkgName}-1.0.0.tgz` }
+                { filename: `@jelica-rado/${pkgName}-1.0.0.tgz` }
             ]);
         });
     });
@@ -263,11 +263,11 @@ describe('when DEBUG_PROJECT_CREATION is set', () => {
                 devDependencies,
                 resolutions
             } = await createDebugScaffold();
-            expect(devDependencies['@magento/pwa-buildpack']).toMatch(
+            expect(devDependencies['@jelica-rado/pwa-buildpack']).toMatch(
                 fileScheme
             );
-            expect(dependencies['@magento/create-pwa']).toBeUndefined();
-            expect(resolutions['@magento/peregrine']).toMatch(fileScheme);
+            expect(dependencies['@jelica-rado/create-pwa']).toBeUndefined();
+            expect(resolutions['@jelica-rado/peregrine']).toMatch(fileScheme);
         });
         test('uses npm to create the local tarballs it references', async () => {
             const {
@@ -288,12 +288,12 @@ describe('when DEBUG_PROJECT_CREATION is set', () => {
             };
 
             expect(
-                tryReadTarball(devDependencies['@magento/pwa-buildpack'])
+                tryReadTarball(devDependencies['@jelica-rado/pwa-buildpack'])
             ).toBe('pwa-buildpack tarball contents');
-            expect(tryReadTarball(devDependencies['@magento/peregrine'])).toBe(
+            expect(tryReadTarball(devDependencies['@jelica-rado/peregrine'])).toBe(
                 'peregrine tarball contents'
             );
-            expect(tryReadTarball(dependencies['@magento/venia-ui'])).toBe(
+            expect(tryReadTarball(dependencies['@jelica-rado/venia-ui'])).toBe(
                 'venia-ui tarball contents'
             );
         });

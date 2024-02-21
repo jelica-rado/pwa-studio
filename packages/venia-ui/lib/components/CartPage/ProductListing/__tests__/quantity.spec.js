@@ -1,10 +1,10 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useQuantityStepper } from '@magento/peregrine/lib/talons/QuantityStepper/useQuantityStepper';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useQuantityStepper } from '@jelica-rado/peregrine/lib/talons/QuantityStepper/useQuantityStepper';
 import Quantity from '../quantity';
 
 jest.mock('../../../../classify');
-jest.mock('@magento/peregrine/lib/talons/QuantityStepper/useQuantityStepper');
+jest.mock('@jelica-rado/peregrine/lib/talons/QuantityStepper/useQuantityStepper');
 
 const mockOnChange = jest.fn();
 const defaultProps = {

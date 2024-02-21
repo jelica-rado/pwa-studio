@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import CustomAttributes, { IS_VISIBLE_ON_FRONT } from '../customAttributes';
 

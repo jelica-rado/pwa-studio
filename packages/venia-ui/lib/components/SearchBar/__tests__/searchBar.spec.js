@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 
 import { Form } from 'informed';
 import { act } from 'react-test-renderer';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import Autocomplete from '../autocomplete';
 import SearchBar from '../searchBar';

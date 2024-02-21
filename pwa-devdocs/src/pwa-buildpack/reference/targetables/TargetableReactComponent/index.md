@@ -23,19 +23,19 @@ It uses JSX strings found in the [`main.js`][] file to specify where these chang
 {% raw %}
 
 ```js
-const { Targetables } = require('@magento/pwa-buildpack')
+const { Targetables } = require('@jelica-rado/pwa-buildpack')
 
 module.exports = targets => {
     const targetables = Targetables.using(targets);
 
     // Create a TargetableReactComponent linked to the `main.js` file
     const MainComponent = targetables.reactComponent(
-        '@magento/venia-ui/lib/components/Main/main.js'
+        '@jelica-rado/venia-ui/lib/components/Main/main.js'
     );
 
     // Add an import statement for Venia's Button component
     const Button = MainComponent.addImport(
-        "Button from '@magento/venia-ui/lib/components/Button'"
+        "Button from '@jelica-rado/venia-ui/lib/components/Button'"
     );
 
     // Use method chaining to call chainable functions one after the other

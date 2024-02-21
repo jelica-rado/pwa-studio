@@ -1,7 +1,7 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import Header from '../header';
-import { useHeader } from '@magento/peregrine/lib/talons/Header/useHeader';
+import { useHeader } from '@jelica-rado/peregrine/lib/talons/Header/useHeader';
 import { useQuery } from '@apollo/client';
 
 jest.mock('../../../classify');
@@ -18,9 +18,9 @@ jest.mock('../../PageLoadingIndicator', () => () => (
     <div id={'pageLoadingIndicator'} />
 ));
 
-jest.mock('@magento/peregrine/lib/util/makeUrl');
+jest.mock('@jelica-rado/peregrine/lib/util/makeUrl');
 
-jest.mock('@magento/peregrine/lib/talons/Header/useHeader', () => {
+jest.mock('@jelica-rado/peregrine/lib/talons/Header/useHeader', () => {
     const state = {
         handleSearchTriggerClick: jest.fn(),
         hasBeenOffline: false,

@@ -3,7 +3,7 @@ import { shape, string } from 'prop-types';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { PlusSquare } from 'react-feather';
 
-import { useCreateWishlist } from '@magento/peregrine/lib/talons/WishlistPage/useCreateWishlist';
+import { useCreateWishlist } from '@jelica-rado/peregrine/lib/talons/WishlistPage/useCreateWishlist';
 
 import Dialog from '../Dialog';
 import Field from '../Field';

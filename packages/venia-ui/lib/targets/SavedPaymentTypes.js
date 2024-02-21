@@ -17,7 +17,7 @@ class SavedPaymentTypes {
         const registry = this;
         this._methods = venia.esModuleObject({
             module:
-                '@magento/venia-ui/lib/components/SavedPaymentsPage/savedPaymentTypes.js',
+                '@jelica-rado/venia-ui/lib/components/SavedPaymentsPage/savedPaymentTypes.js',
             publish(targets) {
                 targets.savedPaymentTypes.call(registry);
             }

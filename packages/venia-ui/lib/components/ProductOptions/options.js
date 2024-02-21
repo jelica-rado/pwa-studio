@@ -2,7 +2,7 @@ import React from 'react';
 import { array, func } from 'prop-types';
 
 import Option from './option';
-import { useOptions } from '@magento/peregrine/lib/talons/ProductOptions/useOptions';
+import { useOptions } from '@jelica-rado/peregrine/lib/talons/ProductOptions/useOptions';
 
 const Options = props => {
     const {

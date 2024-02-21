@@ -1,7 +1,7 @@
 import React from 'react';
 import { gql } from '@apollo/client';
 import { bool, func, shape, string } from 'prop-types';
-import { useAutocomplete } from '@magento/peregrine/lib/talons/SearchBar';
+import { useAutocomplete } from '@jelica-rado/peregrine/lib/talons/SearchBar';
 import { useIntl } from 'react-intl';
 
 import defaultClasses from './autocomplete.module.css';

@@ -109,7 +109,7 @@ Example: `myButtonWrapper.js`
 ```jsx
 import React from 'react';
 
-import Button from '@magento/venia-ui/lib/components/Button';
+import Button from '@jelica-rado/venia-ui/lib/components/Button';
 
 import buttonOverrides from './myButtonWrapper.css';
 
@@ -131,7 +131,7 @@ Example: `foo.js`
 
 ```diff
   import React from 'react';
-+ import { useStyle } from '@magento/venia-ui/lib/classify';
++ import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
   
 - import classes from './foo.css';
 + import defaultClasses from './foo.css';

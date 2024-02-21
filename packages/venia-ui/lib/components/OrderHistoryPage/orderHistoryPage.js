@@ -8,9 +8,9 @@ import {
 import { shape, string } from 'prop-types';
 import { Form } from 'informed';
 
-import { useToasts } from '@magento/peregrine/lib/Toasts';
-import OrderHistoryContextProvider from '@magento/peregrine/lib/talons/OrderHistoryPage/orderHistoryContext';
-import { useOrderHistoryPage } from '@magento/peregrine/lib/talons/OrderHistoryPage/useOrderHistoryPage';
+import { useToasts } from '@jelica-rado/peregrine/lib/Toasts';
+import OrderHistoryContextProvider from '@jelica-rado/peregrine/lib/talons/OrderHistoryPage/orderHistoryContext';
+import { useOrderHistoryPage } from '@jelica-rado/peregrine/lib/talons/OrderHistoryPage/useOrderHistoryPage';
 
 import { useStyle } from '../../classify';
 import Button from '../Button';

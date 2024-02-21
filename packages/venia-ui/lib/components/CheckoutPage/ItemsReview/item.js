@@ -4,7 +4,7 @@ import { FormattedMessage } from 'react-intl';
 import ProductOptions from '../../LegacyMiniCart/productOptions';
 import Image from '../../Image';
 import { useStyle } from '../../../classify';
-import configuredVariant from '@magento/peregrine/lib/util/configuredVariant';
+import configuredVariant from '@jelica-rado/peregrine/lib/util/configuredVariant';
 
 import defaultClasses from './item.module.css';
 

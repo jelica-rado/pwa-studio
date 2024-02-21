@@ -2,7 +2,7 @@ import React from 'react';
 import { act } from 'react-test-renderer';
 import { useQuery } from '@apollo/client';
 import { useFieldApi } from 'informed';
-import useFieldState from '@magento/peregrine/lib/hooks/hook-wrappers/useInformedFieldStateWrapper';
+import useFieldState from '@jelica-rado/peregrine/lib/hooks/hook-wrappers/useInformedFieldStateWrapper';
 
 import createTestInstance from '../../../util/createTestInstance';
 import { useRegion } from '../useRegion';
@@ -14,7 +14,7 @@ jest.mock('informed', () => {
 });
 
 jest.mock(
-    '@magento/peregrine/lib/hooks/hook-wrappers/useInformedFieldStateWrapper',
+    '@jelica-rado/peregrine/lib/hooks/hook-wrappers/useInformedFieldStateWrapper',
     () => {
         return jest.fn().mockReturnValue({
             value: 'US'

@@ -16,7 +16,7 @@ To update this section, update the doc blocks in the source code
 
 ```jsx
 import React from 'react';
-import { useCartPage } from '@magento/peregrine/lib/talons/CartPage/useCartPage';
+import { useCartPage } from '@jelica-rado/peregrine/lib/talons/CartPage/useCartPage';
 
 import { GET_CART_DETAILS } from './myCartPage.gql';
 

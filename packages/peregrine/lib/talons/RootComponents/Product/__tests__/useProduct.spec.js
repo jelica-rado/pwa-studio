@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
-import { createTestInstance } from '@magento/peregrine';
-import { useEventingContext } from '@magento/peregrine/lib/context/eventing';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useEventingContext } from '@jelica-rado/peregrine/lib/context/eventing';
 
 import { useProduct } from '../useProduct';
 
@@ -14,7 +14,7 @@ jest.mock('react-router-dom', () => {
     return { useLocation };
 });
 
-jest.mock('@magento/peregrine/lib/context/app', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/app', () => {
     const state = {};
     const api = { actions: { setPageLoading: jest.fn() } };
     const useAppContext = jest.fn(() => [state, api]);
@@ -63,7 +63,7 @@ jest.mock('@apollo/client', () => {
     };
 });
 
-jest.mock('@magento/peregrine/lib/context/eventing', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/eventing', () => ({
     useEventingContext: jest.fn().mockReturnValue([{}, { dispatch: jest.fn() }])
 }));
 

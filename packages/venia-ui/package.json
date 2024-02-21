@@ -1,5 +1,5 @@
 {
-  "name": "@magento/venia-ui",
+  "name": "@jelica-rado/venia-ui",
   "version": "10.3.0",
   "publishConfig": {
     "access": "public"
@@ -7,7 +7,7 @@
   "description": "Venia PWA UI modules for use by other projects",
   "main": "lib/index.js",
   "browser": {
-    "@magento/venia-drivers": "./lib/drivers"
+    "@jelica-rado/venia-drivers": "./lib/drivers"
   },
   "files": [
     "{lib,venia-static,targets,i18n}/*",
@@ -79,9 +79,9 @@
   },
   "peerDependencies": {
     "@apollo/client": "^3.8.8",
-    "@magento/babel-preset-peregrine": "~1.2.3",
-    "@magento/peregrine": "~13.2.1",
-    "@magento/pwa-buildpack": "~11.4.3",
+    "@jelica-rado/babel-preset-peregrine": "~1.2.3",
+    "@jelica-rado/peregrine": "~13.2.1",
+    "@jelica-rado/pwa-buildpack": "~11.4.3",
     "apollo-cache-persist": "~0.1.1",
     "braintree-web-drop-in": "~1.33.3",
     "graphql": "~15.5.0",
@@ -90,7 +90,7 @@
     "react-redux": "~7.2.2",
     "react-router-dom": "~5.2.0",
     "redux": "~4.0.1",
-    "webpack": "~4.46.0"
+    "webpack": "^5.3.10"
   },
   "pwa-studio": {
     "targets": {

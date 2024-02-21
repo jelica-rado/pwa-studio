@@ -1,5 +1,5 @@
 import { setContext } from '@apollo/client/link/context';
-import { BrowserPersistence } from '@magento/peregrine/lib/util';
+import { BrowserPersistence } from '@jelica-rado/peregrine/lib/util';
 
 const storage = new BrowserPersistence();
 

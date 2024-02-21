@@ -6,8 +6,8 @@ import ShippingAddressSummary from './shippingAddressSummary';
 import ShippingMethodSummary from './shippingMethodSummary';
 import Section from './section';
 import Button from '../Button';
-import Price from '@magento/venia-ui/lib/components/Price';
-import { useOverview } from '@magento/peregrine/lib/talons/Checkout/useOverview';
+import Price from '@jelica-rado/venia-ui/lib/components/Price';
+import { useOverview } from '@jelica-rado/peregrine/lib/talons/Checkout/useOverview';
 
 /**
  * The Overview component renders summaries for each section of the editable

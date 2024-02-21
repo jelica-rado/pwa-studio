@@ -1,7 +1,7 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import { useWishlistPage } from '../useWishlistPage';
 
 jest.mock('react-router-dom', () => ({
@@ -14,7 +14,7 @@ jest.mock('@apollo/client', () => {
         useQuery: jest.fn().mockReturnValue({})
     };
 });
-jest.mock('@magento/peregrine/lib/context/user', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/user', () => ({
     useUserContext: jest.fn().mockReturnValue([{ isSignedIn: true }])
 }));
 

@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { ChevronDown, ChevronUp } from 'react-feather';
-import { useWishlist } from '@magento/peregrine/lib/talons/WishlistPage/useWishlist';
+import { useWishlist } from '@jelica-rado/peregrine/lib/talons/WishlistPage/useWishlist';
 import { bool, shape, string, int } from 'prop-types';
 
 import { useStyle } from '../../classify';

@@ -1,12 +1,12 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import ProductDetail from '../productDetail';
-import configuredVariant from '@magento/peregrine/lib/util/configuredVariant';
+import configuredVariant from '@jelica-rado/peregrine/lib/util/configuredVariant';
 
 jest.mock('../../../../../classify');
 jest.mock('../../../../Image', () => 'Image');
-jest.mock('@magento/peregrine/lib/util/configuredVariant');
+jest.mock('@jelica-rado/peregrine/lib/util/configuredVariant');
 
 const mockProduct = {
     name: 'Simple Product',

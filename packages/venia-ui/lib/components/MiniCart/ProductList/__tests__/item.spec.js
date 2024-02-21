@@ -1,11 +1,11 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useItem } from '@magento/peregrine/lib/talons/MiniCart/useItem';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useItem } from '@jelica-rado/peregrine/lib/talons/MiniCart/useItem';
 
 import Item from '../item';
 
 jest.mock('../../../../classify');
-jest.mock('@magento/peregrine/lib/talons/MiniCart/useItem', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/MiniCart/useItem', () => ({
     useItem: jest.fn().mockReturnValue({
         isDeleting: false,
         removeItem: () => {}
@@ -14,7 +14,7 @@ jest.mock('@magento/peregrine/lib/talons/MiniCart/useItem', () => ({
 jest.mock('react-router-dom', () => ({
     Link: ({ children, ...rest }) => <div {...rest}>{children}</div>
 }));
-// jest.mock('@magento/peregrine/lib/util/makeUrl', () => jest.fn(src => src));
+// jest.mock('@jelica-rado/peregrine/lib/util/makeUrl', () => jest.fn(src => src));
 
 const props = {
     product: {

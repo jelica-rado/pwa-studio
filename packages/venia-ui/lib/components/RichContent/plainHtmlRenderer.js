@@ -1,5 +1,5 @@
 import React from 'react';
-import htmlStringImgUrlConverter from '@magento/peregrine/lib/util/htmlStringImgUrlConverter';
+import htmlStringImgUrlConverter from '@jelica-rado/peregrine/lib/util/htmlStringImgUrlConverter';
 
 const toHTML = str => ({ __html: htmlStringImgUrlConverter(str) });
 

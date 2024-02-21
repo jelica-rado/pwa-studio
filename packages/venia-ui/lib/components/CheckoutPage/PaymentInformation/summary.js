@@ -2,7 +2,7 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import { shape, string, func } from 'prop-types';
 
-import { useSummary } from '@magento/peregrine/lib/talons/CheckoutPage/PaymentInformation/useSummary';
+import { useSummary } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/PaymentInformation/useSummary';
 import { useStyle } from '../../../classify';
 
 import defaultClasses from './summary.module.css';

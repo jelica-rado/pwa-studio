@@ -1,10 +1,10 @@
 import React, { useCallback } from 'react';
 import { arrayOf, oneOf, string, bool } from 'prop-types';
 import { useHistory } from 'react-router-dom';
-import { useStyle } from '@magento/venia-ui/lib/classify';
-import Button from '@magento/venia-ui/lib/components/Button/button';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
+import Button from '@jelica-rado/venia-ui/lib/components/Button/button';
 
-import resolveLinkProps from '@magento/peregrine/lib/util/resolveLinkProps';
+import resolveLinkProps from '@jelica-rado/peregrine/lib/util/resolveLinkProps';
 import defaultClasses from './buttonItem.module.css';
 
 /**

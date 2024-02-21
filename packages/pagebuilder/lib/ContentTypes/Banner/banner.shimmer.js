@@ -1,9 +1,9 @@
 import React from 'react';
 import { arrayOf, shape, string, object } from 'prop-types';
 import defaultClasses from './banner.shimmer.module.css';
-import { useStyle } from '@magento/venia-ui/lib/classify';
-import Shimmer from '@magento/venia-ui/lib/components/Shimmer';
-import { useMediaQuery } from '@magento/peregrine/lib/hooks/useMediaQuery';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
+import Shimmer from '@jelica-rado/venia-ui/lib/components/Shimmer';
+import { useMediaQuery } from '@jelica-rado/peregrine/lib/hooks/useMediaQuery';
 
 /**
  * Page Builder Banner Shimmer component.

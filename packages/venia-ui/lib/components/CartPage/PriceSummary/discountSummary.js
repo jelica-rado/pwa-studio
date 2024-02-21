@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
-import Price from '@magento/venia-ui/lib/components/Price';
+import Price from '@jelica-rado/venia-ui/lib/components/Price';
 import { useStyle } from '../../../classify';
 import Icon from '../../Icon';
 import { ChevronDown as ArrowDown, ChevronUp as ArrowUp } from 'react-feather';
 import defaultClasses from './discountSummary.module.css';
 import AnimateHeight from 'react-animate-height';
-import { useDiscountSummary } from '@magento/peregrine/lib/talons/CartPage/PriceSummary/useDiscountSummary';
+import { useDiscountSummary } from '@jelica-rado/peregrine/lib/talons/CartPage/PriceSummary/useDiscountSummary';
 
 const MINUS_SYMBOL = '-';
 

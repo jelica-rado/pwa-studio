@@ -1,15 +1,15 @@
 import React from 'react';
 import { Form } from 'informed';
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
 
 import PaymentMethods from '../paymentMethods';
 
-import { usePaymentMethods } from '@magento/peregrine/lib/talons/CheckoutPage/PaymentInformation/usePaymentMethods';
+import { usePaymentMethods } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/PaymentInformation/usePaymentMethods';
 
 jest.mock('../../../../classify');
 
 jest.mock(
-    '@magento/peregrine/lib/talons/CheckoutPage/PaymentInformation/usePaymentMethods'
+    '@jelica-rado/peregrine/lib/talons/CheckoutPage/PaymentInformation/usePaymentMethods'
 );
 
 jest.mock('../paymentMethodCollection', () => ({

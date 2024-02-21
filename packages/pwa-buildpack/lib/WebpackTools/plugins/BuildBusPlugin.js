@@ -39,7 +39,7 @@ class BuildBusPlugin {
             );
         }
         this.bus
-            .getTargetsOf('@magento/pwa-buildpack')
+            .getTargetsOf('@jelica-rado/pwa-buildpack')
             .webpackCompiler.call(compiler);
     }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useCatalogContext } from '../../../../context/catalog';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import { useNoProductsFound } from '../useNoProductsFound';
 

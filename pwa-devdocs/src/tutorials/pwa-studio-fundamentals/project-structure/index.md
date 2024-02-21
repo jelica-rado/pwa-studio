@@ -7,7 +7,7 @@ This topic covers the project structure created using the steps outlined in the 
 
 ## Project Structure
 
-The  `@magento/create-pwa` scaffolding tool generates all the files and directories you need to run the Venia storefront.
+The  `@jelica-rado/create-pwa` scaffolding tool generates all the files and directories you need to run the Venia storefront.
 
 ### `src` directory
 
@@ -53,10 +53,10 @@ You can delete this directory if you do not need it or if your chosen testing fr
 The `drivers.js` file is a centralized module that provides non-PWA-Studio dependencies, such as GraphQL clients, React-router components, Redux components, etc.
 Centralizing these modules into a virtual dependency makes it easy to switch out or override these components
 
-Access these dependencies through the virtual `@magento/venia-drivers` dependency:
+Access these dependencies through the virtual `@jelica-rado/venia-drivers` dependency:
 
 ```js
-import { Link, resourceUrl } from '@magento/venia-drivers';
+import { Link, resourceUrl } from '@jelica-rado/venia-drivers';
 ```
 
 Edit the entry in the `browser` section of the `package.json` file if you want to change the name.

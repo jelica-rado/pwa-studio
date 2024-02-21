@@ -6,8 +6,8 @@ import {
     ChevronRight as ChevronRightIcon
 } from 'react-feather';
 
-import { transparentPlaceholder } from '@magento/peregrine/lib/util/images';
-import { useProductImageCarousel } from '@magento/peregrine/lib/talons/ProductImageCarousel/useProductImageCarousel';
+import { transparentPlaceholder } from '@jelica-rado/peregrine/lib/util/images';
+import { useProductImageCarousel } from '@jelica-rado/peregrine/lib/talons/ProductImageCarousel/useProductImageCarousel';
 
 import { useStyle } from '../../classify';
 import AriaButton from '../AriaButton';

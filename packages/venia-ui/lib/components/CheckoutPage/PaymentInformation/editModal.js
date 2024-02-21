@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { bool, func } from 'prop-types';
 
-import { useEditModal } from '@magento/peregrine/lib/talons/CheckoutPage/PaymentInformation/useEditModal';
+import { useEditModal } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/PaymentInformation/useEditModal';
 import Dialog from '../../Dialog';
 import editablePayments from './editablePaymentCollection';
 

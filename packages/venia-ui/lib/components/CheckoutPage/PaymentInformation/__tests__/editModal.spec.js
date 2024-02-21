@@ -1,6 +1,6 @@
 import React from 'react';
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
-import { useEditModal } from '@magento/peregrine/lib/talons/CheckoutPage/PaymentInformation/useEditModal';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
+import { useEditModal } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/PaymentInformation/useEditModal';
 import EditModal from '../editModal';
 
 jest.mock('../../../../classify');
@@ -8,7 +8,7 @@ jest.mock('../../../Dialog', () => props => (
     <mock-Dialog {...props}>{props.children}</mock-Dialog>
 ));
 jest.mock(
-    '@magento/peregrine/lib/talons/CheckoutPage/PaymentInformation/useEditModal',
+    '@jelica-rado/peregrine/lib/talons/CheckoutPage/PaymentInformation/useEditModal',
     () => ({
         useEditModal: jest.fn().mockReturnValue({
             selectedPaymentMethod: 'braintree',

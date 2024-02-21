@@ -1,8 +1,8 @@
 import React from 'react';
 import { act } from 'react-test-renderer';
 import { useMutation } from '@apollo/client';
-import { createTestInstance } from '@magento/peregrine';
-import { useCouponCode } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/CouponCode/useCouponCode';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useCouponCode } from '@jelica-rado/peregrine/lib/talons/CartPage/PriceAdjustments/CouponCode/useCouponCode';
 
 jest.mock('@apollo/client', () => {
     return {
@@ -11,7 +11,7 @@ jest.mock('@apollo/client', () => {
     };
 });
 
-jest.mock('@magento/peregrine/lib/context/cart', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/cart', () => {
     const api = {};
     const state = {
         cartId: 'abc123'

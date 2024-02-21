@@ -1,12 +1,12 @@
 import React from 'react';
 import { func, number, shape, string } from 'prop-types';
 import { Link } from 'react-router-dom';
-import Price from '@magento/venia-ui/lib/components/Price';
+import Price from '@jelica-rado/venia-ui/lib/components/Price';
 import { useStyle } from '../../classify';
 
 import Image from '../Image';
 import defaultClasses from './suggestedProduct.module.css';
-import { useSuggestedProduct } from '@magento/peregrine/lib/talons/SearchBar';
+import { useSuggestedProduct } from '@jelica-rado/peregrine/lib/talons/SearchBar';
 
 const IMAGE_WIDTH = 60;
 

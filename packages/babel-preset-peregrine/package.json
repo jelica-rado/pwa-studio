@@ -1,5 +1,5 @@
 {
-  "name": "@magento/babel-preset-peregrine",
+  "name": "@jelica-rado/babel-preset-peregrine",
   "version": "1.2.3",
   "publishConfig": {
     "access": "public"

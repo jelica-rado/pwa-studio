@@ -1,7 +1,7 @@
 import {
     VALID_SERVICE_WORKER_ENVIRONMENT,
     handleMessageFromSW
-} from '@magento/peregrine/lib/util/swUtils';
+} from '@jelica-rado/peregrine/lib/util/swUtils';
 
 export const registerSW = () => {
     if (VALID_SERVICE_WORKER_ENVIRONMENT && globalThis.navigator) {

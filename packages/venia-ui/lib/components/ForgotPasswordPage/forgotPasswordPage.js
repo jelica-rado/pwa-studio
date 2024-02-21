@@ -2,10 +2,10 @@ import React from 'react';
 import { shape, string } from 'prop-types';
 import { FormattedMessage, useIntl } from 'react-intl';
 
-import { useForgotPasswordPage } from '@magento/peregrine/lib/talons/ForgotPasswordPage/useForgotPasswordPage';
-import { useStyle } from '@magento/venia-ui/lib/classify';
-import ForgotPassword from '@magento/venia-ui/lib/components/ForgotPassword';
-import { StoreTitle } from '@magento/venia-ui/lib/components/Head';
+import { useForgotPasswordPage } from '@jelica-rado/peregrine/lib/talons/ForgotPasswordPage/useForgotPasswordPage';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
+import ForgotPassword from '@jelica-rado/venia-ui/lib/components/ForgotPassword';
+import { StoreTitle } from '@jelica-rado/venia-ui/lib/components/Head';
 
 import defaultClasses from './forgotPasswordPage.module.css';
 

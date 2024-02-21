@@ -6,7 +6,7 @@ import { useCommunicationsPage } from '../useCommunicationsPage';
 
 const mockSetNewsletterSubscription = jest.fn();
 
-jest.mock('@magento/peregrine/lib/context/user', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/user', () => {
     const state = {
         isSignedIn: true
     };

@@ -1,7 +1,7 @@
 import React from 'react';
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
-import { useAdapter } from '@magento/peregrine/lib/talons/Adapter/useAdapter';
-import Adapter from '@magento/venia-ui/lib/components/Adapter';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
+import { useAdapter } from '@jelica-rado/peregrine/lib/talons/Adapter/useAdapter';
+import Adapter from '@jelica-rado/venia-ui/lib/components/Adapter';
 
 // mock components
 jest.mock('@apollo/client', () => ({
@@ -19,12 +19,12 @@ jest.mock('react-router-dom', () => ({
         return <i title="BrowserRouter">{props.children}</i>;
     })
 }));
-jest.mock('@magento/peregrine/lib/context/style', () =>
+jest.mock('@jelica-rado/peregrine/lib/context/style', () =>
     jest.fn(props => {
         return <i title="StyleContextProvider">{props.children}</i>;
     })
 );
-jest.mock('@magento/venia-ui/lib/components/App', () => {
+jest.mock('@jelica-rado/venia-ui/lib/components/App', () => {
     const App = jest.fn(props => {
         return <i title="App">{props.children}</i>;
     });
@@ -35,14 +35,14 @@ jest.mock('@magento/venia-ui/lib/components/App', () => {
 
     return App;
 });
-jest.mock('@magento/venia-ui/lib/components/StoreCodeRoute', () =>
+jest.mock('@jelica-rado/venia-ui/lib/components/StoreCodeRoute', () =>
     jest.fn(props => {
         return <i title="StoreCodeRoute">{props.children}</i>;
     })
 );
 
 // mock hooks
-jest.mock('@magento/peregrine/lib/talons/Adapter/useAdapter', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/Adapter/useAdapter', () => ({
     useAdapter: jest.fn()
 }));
 

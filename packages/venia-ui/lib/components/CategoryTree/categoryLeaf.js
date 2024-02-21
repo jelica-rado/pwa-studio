@@ -2,8 +2,8 @@ import React from 'react';
 import { func, shape, string } from 'prop-types';
 import { Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
-import { useCategoryLeaf } from '@magento/peregrine/lib/talons/CategoryTree';
-import resourceUrl from '@magento/peregrine/lib/util/makeUrl';
+import { useCategoryLeaf } from '@jelica-rado/peregrine/lib/talons/CategoryTree';
+import resourceUrl from '@jelica-rado/peregrine/lib/util/makeUrl';
 
 import { useStyle } from '../../classify';
 import defaultClasses from './categoryLeaf.module.css';

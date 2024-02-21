@@ -16,7 +16,7 @@ To update this section, update the doc blocks in the source code
 
 ```jsx
 import React from 'react'
-import { useGiftCards } from '@magento/peregrine/lib/talons/CartPage/GiftCards'
+import { useGiftCards } from '@jelica-rado/peregrine/lib/talons/CartPage/GiftCards'
 import {
     GET_CART_GIFT_CARDS_QUERY,
     GET_GIFT_CARD_BALANCE_QUERY,
@@ -69,7 +69,7 @@ export default MyGiftCards
 
 ```jsx
 import React from 'react'
-import { useGiftCard } from '@magento/peregrine/lib/talons/CartPage/GiftCards/useGiftCard';
+import { useGiftCard } from '@jelica-rado/peregrine/lib/talons/CartPage/GiftCards/useGiftCard';
 
 const MyGiftCard = props => {
     const { code } = props;

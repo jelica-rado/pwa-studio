@@ -26,7 +26,7 @@ COPY ./docker/.env.docker.prod ./packages/venia-concept/.env
 RUN yarn install --frozen-lockfile
 
 # add french language pack
-RUN yarn venia add -D @magento/venia-sample-language-packs
+RUN yarn venia add -D @jelica-rado/venia-sample-language-packs
 
 ENV NODE_ENV=production
 # keep data attributes for Cypress testing

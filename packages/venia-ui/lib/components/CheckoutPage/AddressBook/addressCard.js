@@ -2,7 +2,7 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import { shape, string, bool, func, arrayOf } from 'prop-types';
 import { Edit2 as EditIcon } from 'react-feather';
-import { useAddressCard } from '@magento/peregrine/lib/talons/CheckoutPage/AddressBook/useAddressCard';
+import { useAddressCard } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/AddressBook/useAddressCard';
 
 import { useStyle } from '../../../classify';
 import Icon from '../../Icon';

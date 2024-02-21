@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import { useMutation, useQuery } from '@apollo/client';
-import { useAppContext } from '@magento/peregrine/lib/context/app';
+import { useAppContext } from '@jelica-rado/peregrine/lib/context/app';
 import { useEventingContext } from '../../../../context/eventing';
 
 import { useProduct } from '../useProduct';
@@ -49,7 +49,7 @@ jest.mock('@apollo/client', () => {
     };
 });
 
-jest.mock('@magento/peregrine/lib/context/app', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/app', () => {
     const state = {
         drawer: null
     };
@@ -59,7 +59,7 @@ jest.mock('@magento/peregrine/lib/context/app', () => {
     return { useAppContext };
 });
 
-jest.mock('@magento/peregrine/lib/context/cart', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/cart', () => {
     const state = {
         cartId: 'cart123'
     };
@@ -69,7 +69,7 @@ jest.mock('@magento/peregrine/lib/context/cart', () => {
     return { useCartContext };
 });
 
-jest.mock('@magento/peregrine/lib/context/user', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/user', () => ({
     useUserContext: jest.fn().mockReturnValue([{ isSignedIn: true }])
 }));
 

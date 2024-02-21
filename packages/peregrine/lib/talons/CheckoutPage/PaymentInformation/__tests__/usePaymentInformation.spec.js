@@ -1,7 +1,7 @@
 import React from 'react';
 import { useQuery, useMutation, useApolloClient } from '@apollo/client';
 
-import { useEventingContext } from '@magento/peregrine/lib/context/eventing';
+import { useEventingContext } from '@jelica-rado/peregrine/lib/context/eventing';
 import { usePaymentInformation } from '../usePaymentInformation';
 import createTestInstance from '../../../../util/createTestInstance';
 import { CHECKOUT_STEP } from '../../useCheckoutPage';
@@ -52,7 +52,7 @@ jest.mock('@apollo/client', () => {
 });
 
 jest.mock(
-    '@magento/peregrine/lib/hooks/hook-wrappers/useInformedFieldStateWrapper',
+    '@jelica-rado/peregrine/lib/hooks/hook-wrappers/useInformedFieldStateWrapper',
     () => {
         return {
             useFieldState: jest.fn().mockReturnValue({ value: 'braintree' })
@@ -70,7 +70,7 @@ jest.mock('../../CheckoutError', () => {
     return CheckoutError;
 });
 
-jest.mock('@magento/peregrine/lib/context/eventing', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/eventing', () => ({
     useEventingContext: jest.fn().mockReturnValue([{}, { dispatch: jest.fn() }])
 }));
 

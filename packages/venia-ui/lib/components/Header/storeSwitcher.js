@@ -1,8 +1,8 @@
 import React from 'react';
 import { shape, string } from 'prop-types';
 
-import { useStoreSwitcher } from '@magento/peregrine/lib/talons/Header/useStoreSwitcher';
-import { availableRoutes } from '@magento/venia-ui/lib/components/Routes/routes';
+import { useStoreSwitcher } from '@jelica-rado/peregrine/lib/talons/Header/useStoreSwitcher';
+import { availableRoutes } from '@jelica-rado/venia-ui/lib/components/Routes/routes';
 
 import { useStyle } from '../../classify';
 import defaultClasses from './storeSwitcher.module.css';

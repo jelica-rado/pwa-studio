@@ -1,9 +1,9 @@
 import { useQuery } from '@apollo/client';
 import { useCallback, useMemo } from 'react';
 import { useLocation } from 'react-router-dom';
-import { useDropdown } from '@magento/peregrine/lib/hooks/useDropdown';
-import { useAwaitQuery } from '@magento/peregrine/lib/hooks/useAwaitQuery';
-import { BrowserPersistence } from '@magento/peregrine/lib/util';
+import { useDropdown } from '@jelica-rado/peregrine/lib/hooks/useDropdown';
+import { useAwaitQuery } from '@jelica-rado/peregrine/lib/hooks/useAwaitQuery';
+import { BrowserPersistence } from '@jelica-rado/peregrine/lib/util';
 import mergeOperations from '../../util/shallowMerge';
 import DEFAULT_OPERATIONS from './storeSwitcher.gql';
 

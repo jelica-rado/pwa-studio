@@ -2,7 +2,7 @@ import React, { Suspense } from 'react';
 import { useIntl } from 'react-intl';
 import { func } from 'prop-types';
 
-import LoadingIndicator from '@magento/venia-ui/lib/components/LoadingIndicator';
+import LoadingIndicator from '@jelica-rado/venia-ui/lib/components/LoadingIndicator';
 import { useStyle } from '../../../classify';
 import { Accordion, Section } from '../../Accordion';
 import GiftCardSection from './giftCardSection';
@@ -26,7 +26,7 @@ const ShippingMethods = React.lazy(() => import('./ShippingMethods'));
  * @returns {React.Element}
  *
  * @example <caption>Importing into your project</caption>
- * import PriceAdjustments from '@magento/venia-ui/lib/components/CartPage/PriceAdjustments'
+ * import PriceAdjustments from '@jelica-rado/venia-ui/lib/components/CartPage/PriceAdjustments'
  */
 const PriceAdjustments = props => {
     const classes = useStyle(defaultClasses, props.classes);

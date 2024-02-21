@@ -1,7 +1,7 @@
 import React, { useRef, useLayoutEffect } from 'react';
 import defaultClasses from './buttons.module.css';
 import { oneOf, arrayOf, string, bool, shape } from 'prop-types';
-import { useStyle } from '@magento/venia-ui/lib/classify';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
 
 /**
  * Page Builder Buttons component.

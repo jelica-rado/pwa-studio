@@ -86,7 +86,7 @@ async function createProjectFromVenia({ fs, tasks, options, sampleBackends }) {
             // to write that file directly.
             fs.outputFileSync(
                 resolve(options.directory, 'babel.config.js'),
-                "module.exports = { presets: ['@magento/peregrine'] };\n",
+                "module.exports = { presets: ['@jelica-rado/peregrine'] };\n",
                 'utf8'
             );
         },
@@ -103,7 +103,7 @@ async function createProjectFromVenia({ fs, tasks, options, sampleBackends }) {
                     private: true,
                     version: '0.0.1',
                     description:
-                        'A new project based on @magento/venia-concept',
+                        'A new project based on @jelica-rado/venia-concept',
                     author,
                     license: 'UNLICENSED',
                     scripts: {}
@@ -116,7 +116,7 @@ async function createProjectFromVenia({ fs, tasks, options, sampleBackends }) {
                 if (sampleBackendEnvironments.includes(backendUrl)) {
                     pkg.devDependencies = {
                         ...pkg.devDependencies,
-                        '@magento/venia-sample-backends': '~0.0.1'
+                        '@jelica-rado/venia-sample-backends': '~0.0.1'
                     };
                 }
 
@@ -198,8 +198,8 @@ function setDebugDependencies(pkg, fs) {
 
     // Packages not found in the template that must also be locally packed
     const transitivePackages = new Set([
-        '@magento/pwa-buildpack',
-        '@magento/upward-js'
+        '@jelica-rado/pwa-buildpack',
+        '@jelica-rado/upward-js'
     ]);
 
     // We'll look for existing dependencies in all of the dep collections that
@@ -250,7 +250,7 @@ function setDebugDependencies(pkg, fs) {
         //
         // ADDENDUM 2021-09-14:
         // NPM 7 has a bug where the JSON output "filename" is wrong. It says
-        // "@magento/package-name-X.X.X.tgz" when the actual filename is
+        // "@jelica-rado/package-name-X.X.X.tgz" when the actual filename is
         // "magento-package-name-X.X.X.tgz". The most reliable way to find the
         // newly generated tarball is to scan packageDir for new tarball files.
         let filename;

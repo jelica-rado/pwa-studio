@@ -4,8 +4,8 @@ import { matchPath } from 'react-router';
 import { useHistory, useLocation } from 'react-router-dom';
 
 import { useApolloClient } from '@apollo/client';
-import { mockSetPageLoading } from '@magento/peregrine/lib/context/app';
-import { mockSetComponentMap } from '@magento/peregrine/lib/context/rootComponents';
+import { mockSetPageLoading } from '@jelica-rado/peregrine/lib/context/app';
+import { mockSetComponentMap } from '@jelica-rado/peregrine/lib/context/rootComponents';
 
 import { getRootComponent } from '../../talons/MagentoRoute/helpers';
 import { useDelayedTransition } from '../useDelayedTransition';
@@ -29,7 +29,7 @@ jest.mock('@apollo/client', () => {
     };
 });
 
-jest.mock('@magento/venia-ui/lib/components/Routes/routes', () => ({
+jest.mock('@jelica-rado/venia-ui/lib/components/Routes/routes', () => ({
     availableRoutes: [
         {
             pattern: '/hardcoded.html',
@@ -38,7 +38,7 @@ jest.mock('@magento/venia-ui/lib/components/Routes/routes', () => ({
     ]
 }));
 
-jest.mock('@magento/peregrine/lib/context/app', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/app', () => {
     const mockSetPageLoading = jest.fn();
 
     return {
@@ -56,7 +56,7 @@ jest.mock('@magento/peregrine/lib/context/app', () => {
     };
 });
 
-jest.mock('@magento/peregrine/lib/context/rootComponents', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/rootComponents', () => {
     const mockSetComponentMap = jest.fn(fn => fn());
 
     return {

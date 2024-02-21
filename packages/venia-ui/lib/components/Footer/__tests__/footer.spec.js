@@ -1,23 +1,23 @@
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import Footer from '../footer';
 
 jest.mock('../../../classify');
 
-jest.mock('@magento/peregrine/lib/talons/Footer/useFooter', () => {
+jest.mock('@jelica-rado/peregrine/lib/talons/Footer/useFooter', () => {
     const talonProps = { copyrightText: 'foo' };
     const useFooter = jest.fn(() => talonProps);
 
     return { useFooter };
 });
 
-jest.mock('@magento/venia-ui/lib/components/Logo', () => {
+jest.mock('@jelica-rado/venia-ui/lib/components/Logo', () => {
     return props => <i {...props} />;
 });
 
-jest.mock('@magento/venia-ui/lib/components/Newsletter', () => {
+jest.mock('@jelica-rado/venia-ui/lib/components/Newsletter', () => {
     return props => <i {...props} />;
 });
 

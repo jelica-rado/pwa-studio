@@ -4,7 +4,7 @@ import { useMutation } from '@apollo/client';
 
 import { useAppContext } from '../../../../context/app';
 import { useCartContext } from '../../../../context/cart';
-import { useEventingContext } from '@magento/peregrine/lib/context/eventing';
+import { useEventingContext } from '@jelica-rado/peregrine/lib/context/eventing';
 import createTestInstance from '../../../../util/createTestInstance';
 
 import { useShippingInformation } from '../useShippingInformation';
@@ -70,14 +70,14 @@ jest.mock('../../../../context/user', () => {
 });
 
 jest.mock(
-    '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/shippingMethods.gql.js',
+    '@jelica-rado/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/shippingMethods.gql.js',
     () => ({
         getShippingMethodsQuery: 'getShippingMethodsQuery',
         setShippingAddressMutation: 'setShippingAddressMutation'
     })
 );
 
-jest.mock('@magento/peregrine/lib/context/eventing', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/eventing', () => ({
     useEventingContext: jest.fn().mockReturnValue([{}, { dispatch: jest.fn() }])
 }));
 

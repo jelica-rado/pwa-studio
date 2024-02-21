@@ -1,5 +1,5 @@
 import { gql } from '@apollo/client';
-import { BrowserPersistence } from '@magento/peregrine/lib/util';
+import { BrowserPersistence } from '@jelica-rado/peregrine/lib/util';
 
 const storage = new BrowserPersistence();
 

@@ -1,9 +1,9 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import { useCategoryContent } from '../useCategoryContent';
 import { useLazyQuery, useQuery } from '@apollo/client';
-import { useEventingContext } from '@magento/peregrine/lib/context/eventing';
+import { useEventingContext } from '@jelica-rado/peregrine/lib/context/eventing';
 
 global.STORE_NAME = 'Venia';
 
@@ -92,7 +92,7 @@ const mockCategoryData = {
 const mockGetSortMethods = jest.fn();
 const mockGetFilters = jest.fn();
 
-jest.mock('@magento/peregrine/lib/context/eventing', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/eventing', () => ({
     useEventingContext: jest.fn().mockReturnValue([{}, { dispatch: jest.fn() }])
 }));
 

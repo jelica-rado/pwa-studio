@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { generateUrl } from '@magento/peregrine/lib/util/imageUtils';
+import { generateUrl } from '@jelica-rado/peregrine/lib/util/imageUtils';
 import {
     bool,
     func,
@@ -16,7 +16,7 @@ import { Check as CheckIcon } from 'react-feather';
 
 import defaultClasses from './swatch.module.css';
 
-import { useSwatch } from '@magento/peregrine/lib/talons/ProductOptions/useSwatch';
+import { useSwatch } from '@jelica-rado/peregrine/lib/talons/ProductOptions/useSwatch';
 
 const getClassName = (
     name,

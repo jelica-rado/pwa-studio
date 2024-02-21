@@ -1,6 +1,6 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useGiftCard } from '@magento/peregrine/lib/talons/CartPage/GiftCards/useGiftCard';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useGiftCard } from '@jelica-rado/peregrine/lib/talons/CartPage/GiftCards/useGiftCard';
 
 import GiftCard from '../giftCard';
 
@@ -8,10 +8,10 @@ import GiftCard from '../giftCard';
  *  Mock talon.
  */
 jest.mock(
-    '@magento/peregrine/lib/talons/CartPage/GiftCards/useGiftCard',
+    '@jelica-rado/peregrine/lib/talons/CartPage/GiftCards/useGiftCard',
     () => {
         const useGiftCardTalon = jest.requireActual(
-            '@magento/peregrine/lib/talons/CartPage/GiftCards/useGiftCard'
+            '@jelica-rado/peregrine/lib/talons/CartPage/GiftCards/useGiftCard'
         );
         const spy = jest.spyOn(useGiftCardTalon, 'useGiftCard');
 

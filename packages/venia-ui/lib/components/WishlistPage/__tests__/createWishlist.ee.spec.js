@@ -1,16 +1,16 @@
 import React from 'react';
 import { Form } from 'informed';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import CreateWishlist from '../createWishlist.ee';
-import { useCreateWishlist } from '@magento/peregrine/lib/talons/WishlistPage/useCreateWishlist';
+import { useCreateWishlist } from '@jelica-rado/peregrine/lib/talons/WishlistPage/useCreateWishlist';
 
 jest.mock('../../../classify');
 jest.mock('../../Dialog', () => props => (
     <div componentName={'Dialog'} {...props} />
 ));
 jest.mock(
-    '@magento/peregrine/lib/talons/WishlistPage/useCreateWishlist',
+    '@jelica-rado/peregrine/lib/talons/WishlistPage/useCreateWishlist',
     () => ({
         useCreateWishlist: jest.fn().mockReturnValue({
             handleCreateList: jest.fn().mockName('handleCreateList'),

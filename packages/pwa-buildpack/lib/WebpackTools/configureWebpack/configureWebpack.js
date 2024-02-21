@@ -169,7 +169,7 @@ async function configureWebpack(options) {
     /** @typedef {import('../../BuildBus/declare-base)} BuiltinTargets */
 
     await bus
-        .getTargetsOf('@magento/pwa-buildpack')
+        .getTargetsOf('@jelica-rado/pwa-buildpack')
         .transformModules.promise(x => transforms.add(x));
 
     const transformRequests = await transforms.toLoaderOptions();

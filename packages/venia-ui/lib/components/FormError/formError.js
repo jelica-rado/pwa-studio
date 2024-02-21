@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 import { arrayOf, bool, instanceOf, shape, string } from 'prop-types';
 
-import { useFormError } from '@magento/peregrine/lib/talons/FormError/useFormError';
-import { useScrollIntoView } from '@magento/peregrine/lib/hooks/useScrollIntoView';
+import { useFormError } from '@jelica-rado/peregrine/lib/talons/FormError/useFormError';
+import { useScrollIntoView } from '@jelica-rado/peregrine/lib/hooks/useScrollIntoView';
 
 import { useStyle } from '../../classify';
 import ErrorMessage from '../ErrorMessage';

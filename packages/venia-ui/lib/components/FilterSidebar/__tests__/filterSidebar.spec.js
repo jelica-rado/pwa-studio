@@ -1,7 +1,7 @@
 import React from 'react';
 import { act } from 'react-test-renderer';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import FilterBlock, { mockFilterBlock } from '../../FilterModal/filterBlock';
 import { mockCurrentFilters } from '../../FilterModal/CurrentFilters';
@@ -57,7 +57,7 @@ let mockFilterState;
 
 jest.mock('../../LinkButton', () => props => <mock-LinkButton {...props} />);
 
-jest.mock('@magento/peregrine/lib/talons/FilterSidebar', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/FilterSidebar', () => ({
     useFilterSidebar: jest.fn(({ filters }) => {
         const names = new Map();
         const itemsByGroup = new Map();

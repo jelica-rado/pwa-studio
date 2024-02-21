@@ -1,6 +1,6 @@
 import React, { useCallback, useMemo } from 'react';
 import { func, number, oneOfType, shape, string } from 'prop-types';
-import setValidator from '@magento/peregrine/lib/validators/set';
+import setValidator from '@jelica-rado/peregrine/lib/validators/set';
 
 import FilterDefault from './filterDefault';
 

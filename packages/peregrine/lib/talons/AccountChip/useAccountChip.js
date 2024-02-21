@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { useQuery } from '@apollo/client';
-import { useUserContext } from '@magento/peregrine/lib/context/user';
+import { useUserContext } from '@jelica-rado/peregrine/lib/context/user';
 
 /**
  * The useAccountChip talon supports the AccountChip component.

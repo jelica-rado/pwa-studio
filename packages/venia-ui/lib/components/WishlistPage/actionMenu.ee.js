@@ -1,7 +1,7 @@
 import React from 'react';
 import Icon from '../Icon';
 import { MoreHorizontal } from 'react-feather';
-import { useActionMenu } from '@magento/peregrine/lib/talons/WishlistPage/useActionMenu';
+import { useActionMenu } from '@jelica-rado/peregrine/lib/talons/WishlistPage/useActionMenu';
 import WishlistListActionsDialog from './wishlistListActionsDialog';
 import WishlistEditFavoritesListDialog from './wishlistEditFavoritesListDialog';
 

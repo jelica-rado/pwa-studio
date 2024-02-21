@@ -1,37 +1,37 @@
 import { createHttpLink } from '@apollo/client';
 import getLinks, {
     customFetchToShrinkQuery
-} from '@magento/peregrine/lib/Apollo/links';
+} from '@jelica-rado/peregrine/lib/Apollo/links';
 
 jest.mock('@apollo/client', () => ({
     __esModule: true,
     createHttpLink: jest.fn(() => 'http')
 }));
-jest.mock('@magento/peregrine/lib/Apollo/links/authLink', () => ({
+jest.mock('@jelica-rado/peregrine/lib/Apollo/links/authLink', () => ({
     __esModule: true,
     default: jest.fn(() => 'auth')
 }));
-jest.mock('@magento/peregrine/lib/Apollo/links/errorLink', () => ({
+jest.mock('@jelica-rado/peregrine/lib/Apollo/links/errorLink', () => ({
     __esModule: true,
     default: jest.fn(() => 'error')
 }));
-jest.mock('@magento/peregrine/lib/Apollo/links/gqlCacheLink', () => ({
+jest.mock('@jelica-rado/peregrine/lib/Apollo/links/gqlCacheLink', () => ({
     __esModule: true,
     default: jest.fn(() => 'gqlCache')
 }));
-jest.mock('@magento/peregrine/lib/Apollo/links/mutationQueueLink', () => ({
+jest.mock('@jelica-rado/peregrine/lib/Apollo/links/mutationQueueLink', () => ({
     __esModule: true,
     default: jest.fn(() => 'mutationQueue')
 }));
-jest.mock('@magento/peregrine/lib/Apollo/links/retryLink', () => ({
+jest.mock('@jelica-rado/peregrine/lib/Apollo/links/retryLink', () => ({
     __esModule: true,
     default: jest.fn(() => 'retry')
 }));
-jest.mock('@magento/peregrine/lib/Apollo/links/storeLink', () => ({
+jest.mock('@jelica-rado/peregrine/lib/Apollo/links/storeLink', () => ({
     __esModule: true,
     default: jest.fn(() => 'store')
 }));
-jest.mock('@magento/peregrine/lib/util/shrinkQuery', () => ({
+jest.mock('@jelica-rado/peregrine/lib/util/shrinkQuery', () => ({
     __esModule: true,
     default: jest.fn(() => 'bar')
 }));

@@ -1,17 +1,17 @@
 import React from 'react';
-import { createTestInstance, useToasts } from '@magento/peregrine';
-import { useCreditCard } from '@magento/peregrine/lib/talons/SavedPaymentsPage/useCreditCard';
+import { createTestInstance, useToasts } from '@jelica-rado/peregrine';
+import { useCreditCard } from '@jelica-rado/peregrine/lib/talons/SavedPaymentsPage/useCreditCard';
 
 import CreditCard from '../creditCard';
 
-jest.mock('@magento/peregrine/lib/talons/SavedPaymentsPage/useCreditCard');
-jest.mock('@magento/venia-ui/lib/classify');
+jest.mock('@jelica-rado/peregrine/lib/talons/SavedPaymentsPage/useCreditCard');
+jest.mock('@jelica-rado/venia-ui/lib/classify');
 
-jest.mock('@magento/peregrine', () => {
+jest.mock('@jelica-rado/peregrine', () => {
     const useToasts = jest.fn(() => [{}, {}]);
 
     return {
-        ...jest.requireActual('@magento/peregrine'),
+        ...jest.requireActual('@jelica-rado/peregrine'),
         useToasts
     };
 });

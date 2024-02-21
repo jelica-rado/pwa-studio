@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { storiesOf } from '@storybook/react';
 import ToastContainer from '../toastContainer';
-import { ToastContextProvider, useToasts } from '@magento/peregrine';
+import { ToastContextProvider, useToasts } from '@jelica-rado/peregrine';
 import Icon from '../../Icon';
 
 import { Smile as SmileIcon } from 'react-feather';

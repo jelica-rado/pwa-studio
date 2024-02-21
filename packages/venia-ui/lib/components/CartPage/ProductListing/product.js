@@ -3,9 +3,9 @@ import { FormattedMessage, useIntl } from 'react-intl';
 import { Heart } from 'react-feather';
 import { gql } from '@apollo/client';
 import { Link } from 'react-router-dom';
-import { useProduct } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useProduct';
-import resourceUrl from '@magento/peregrine/lib/util/makeUrl';
-import Price from '@magento/venia-ui/lib/components/Price';
+import { useProduct } from '@jelica-rado/peregrine/lib/talons/CartPage/ProductListing/useProduct';
+import resourceUrl from '@jelica-rado/peregrine/lib/util/makeUrl';
+import Price from '@jelica-rado/venia-ui/lib/components/Price';
 
 import { useStyle } from '../../../classify';
 import Icon from '../../Icon';
@@ -18,8 +18,8 @@ import Quantity from './quantity';
 
 import defaultClasses from './product.module.css';
 
-import { CartPageFragment } from '@magento/peregrine/lib/talons/CartPage/cartPageFragments.gql.js';
-import { AvailableShippingMethodsCartFragment } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/shippingMethodsFragments.gql.js';
+import { CartPageFragment } from '@jelica-rado/peregrine/lib/talons/CartPage/cartPageFragments.gql.js';
+import { AvailableShippingMethodsCartFragment } from '@jelica-rado/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/shippingMethodsFragments.gql.js';
 
 const IMAGE_SIZE = 100;
 

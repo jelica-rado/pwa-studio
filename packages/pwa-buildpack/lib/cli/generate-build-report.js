@@ -43,13 +43,13 @@ const cwd = process.cwd();
 function inspectDependencies(pkg) {
     prettyLogger.info('Inspecting Dependencies');
 
-    // Inspect all '@magento/...' '@adobe/...' dependencies.
+    // Inspect all '@jelica-rado/...' '@adobe/...' dependencies.
     const dependenciesToScan = [
         ...Object.keys(pkg.dependencies),
         ...Object.keys(pkg.devDependencies)
     ].filter(
         dependency =>
-            dependency.startsWith('@magento/') ||
+            dependency.startsWith('@jelica-rado/') ||
             dependency.startsWith('@adobe/')
     );
 

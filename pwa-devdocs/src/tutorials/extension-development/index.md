@@ -99,7 +99,7 @@ The following example defines the `myListContent` target API from the previous e
 //src/targets/my-intercept.js
 
 // Get the Targetables manager
-const { Targetables } = require("@magento/pwa-buildpack");
+const { Targetables } = require("@jelica-rado/pwa-buildpack");
 
 module.exports = (targets) => {
   // Create a Targetables factory bound to the TargetProvider (targets)
@@ -167,7 +167,7 @@ The following shows how a storefront or third part extension can access and use 
 ```js
 // intercept.js
 
-const { Targetables } = require('@magento/pwa-buildpack');
+const { Targetables } = require('@jelica-rado/pwa-buildpack');
 
 function localIntercept(targets) {
     const targetables = Targetables.using(targets);

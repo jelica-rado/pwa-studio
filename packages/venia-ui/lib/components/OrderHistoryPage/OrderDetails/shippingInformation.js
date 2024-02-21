@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { arrayOf, shape, string } from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 
-import { useStyle } from '@magento/venia-ui/lib/classify';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
 
 import defaultClasses from './shippingInformation.module.css';
 

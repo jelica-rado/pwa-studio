@@ -6,8 +6,8 @@ const {
         getAvailableStoresConfigData
     },
     Utilities: { loadEnvironment }
-} = require('@magento/pwa-buildpack');
-const baseWebpackConfig = require('@magento/venia-concept/webpack.config');
+} = require('@jelica-rado/pwa-buildpack');
+const baseWebpackConfig = require('@jelica-rado/venia-concept/webpack.config');
 const { DefinePlugin, EnvironmentPlugin } = require('webpack');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 

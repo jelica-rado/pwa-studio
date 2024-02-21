@@ -28,7 +28,7 @@ const BuildBusPlugin = require('../WebpackTools/plugins/BuildBusPlugin');
  * const { useApp } = buildModuleWith('../lib/talons/App/useApp', {
  *  context: __dirname, // where to resolve modules from
  *  dependencies: [
- *   '@magento/peregrine',
+ *   '@jelica-rado/peregrine',
  *   {
  *     name: 'my-extension',
  *     declare: require('../declare'),
@@ -65,7 +65,7 @@ async function buildModuleWith(
 
     const transforms = new ModuleTransformConfig(resolver);
     await bus
-        .getTargetsOf('@magento/pwa-buildpack')
+        .getTargetsOf('@jelica-rado/pwa-buildpack')
         .transformModules.promise(x => transforms.add(x));
 
     const transformRequests = await transforms.toLoaderOptions();
@@ -106,7 +106,7 @@ async function buildModuleWith(
                 // the targets to work!
                 .getMockDependencyNames()
                 // A string would require an exact match:
-                // '@magento/peregrine' would not allow '@magento/peregrine/lib'
+                // '@jelica-rado/peregrine' would not allow '@jelica-rado/peregrine/lib'
                 // so we make a regex that tests for the start of the string
                 // instead
                 .map(name => new RegExp(`^${name}`))

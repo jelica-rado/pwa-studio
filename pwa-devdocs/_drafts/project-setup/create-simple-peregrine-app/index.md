@@ -35,7 +35,7 @@ In this topic, you will create a simple app that follows the [Peregrine] pattern
 Inside `src` create an `index.js` file with the following content:
 
 ``` javascript
-import Peregrine from '@magento/peregrine';
+import Peregrine from '@jelica-rado/peregrine';
 import App from './components/app';
 
 const app = new Peregrine();

@@ -1,7 +1,7 @@
 import { useCallback, useMemo, useState } from 'react';
 import { useMutation } from '@apollo/client';
 
-import { useCartContext } from '@magento/peregrine/lib/context/cart';
+import { useCartContext } from '@jelica-rado/peregrine/lib/context/cart';
 import mergeOperations from '../../util/shallowMerge';
 import defaultOperations from './wishlistItem.gql';
 import { useEventingContext } from '../../context/eventing';

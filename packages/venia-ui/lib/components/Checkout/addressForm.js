@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form } from 'informed';
 import { array, bool, func, shape, string } from 'prop-types';
-import { useAddressForm } from '@magento/peregrine/lib/talons/Checkout/useAddressForm';
+import { useAddressForm } from '@jelica-rado/peregrine/lib/talons/Checkout/useAddressForm';
 
 import { useStyle } from '../../classify';
 import combine from '../../util/combineValidators';

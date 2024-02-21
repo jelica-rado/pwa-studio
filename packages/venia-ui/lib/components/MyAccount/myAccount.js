@@ -1,7 +1,7 @@
 import React from 'react';
 import { func, shape, string } from 'prop-types';
 
-import { useMyAccount } from '@magento/peregrine/lib/talons/MyAccount/useMyAccount';
+import { useMyAccount } from '@jelica-rado/peregrine/lib/talons/MyAccount/useMyAccount';
 
 import { useStyle } from '../../classify';
 import AccountMenuItems from '../AccountMenu/accountMenuItems';

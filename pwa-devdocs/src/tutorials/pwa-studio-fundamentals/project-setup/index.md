@@ -37,11 +37,11 @@ If entering these commands does not show you a version number, install Node.js, 
 In your terminal, navigate to the directory where you want to install your storefront project and run the scaffolding tool:
 
 ```bash
-yarn create @magento/pwa
+yarn create @jelica-rado/pwa
 ```
 
 {: .bs-callout .bs-callout-info}
-Both `npx @magento/create-pwa` and `npm init @magento/pwa` are alternatives commands for running the scaffolding tool.
+Both `npx @jelica-rado/create-pwa` and `npm init @jelica-rado/pwa` are alternatives commands for running the scaffolding tool.
 
 Answer the questions from the interactive questionnaire in the terminal:
 

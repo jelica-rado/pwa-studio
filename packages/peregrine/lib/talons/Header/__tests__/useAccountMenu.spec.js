@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { useUserContext } from '@magento/peregrine/lib/context/user';
+import { useUserContext } from '@jelica-rado/peregrine/lib/context/user';
 
 import { useAccountMenu } from '../useAccountMenu';
 import createTestInstance from '../../../util/createTestInstance';
 import { act } from 'react-test-renderer';
-import { useEventingContext } from '@magento/peregrine/lib/context/eventing';
+import { useEventingContext } from '@jelica-rado/peregrine/lib/context/eventing';
 
 jest.mock('react-router-dom', () => ({
     useHistory: jest.fn().mockReturnValue({
@@ -30,7 +30,7 @@ jest.mock('@apollo/client', () => {
     };
 });
 
-jest.mock('@magento/peregrine/lib/context/user', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/user', () => ({
     useUserContext: jest.fn().mockReturnValue([
         {
             isSignedIn: true,
@@ -46,7 +46,7 @@ jest.mock('@magento/peregrine/lib/context/user', () => ({
     ])
 }));
 
-jest.mock('@magento/peregrine/lib/hooks/useDropdown', () => ({
+jest.mock('@jelica-rado/peregrine/lib/hooks/useDropdown', () => ({
     useDropdown: jest.fn().mockReturnValue({
         elementRef: 'elementRef',
         expanded: false,
@@ -55,7 +55,7 @@ jest.mock('@magento/peregrine/lib/hooks/useDropdown', () => ({
     })
 }));
 
-jest.mock('@magento/peregrine/lib/context/eventing', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/eventing', () => ({
     useEventingContext: jest.fn().mockReturnValue([{}, { dispatch: jest.fn() }])
 }));
 

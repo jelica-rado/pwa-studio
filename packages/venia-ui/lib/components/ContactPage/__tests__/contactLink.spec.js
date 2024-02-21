@@ -1,9 +1,9 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useContactLink } from '@magento/peregrine/lib/talons/ContactPage';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useContactLink } from '@jelica-rado/peregrine/lib/talons/ContactPage';
 import ContactLink from '../contactLink';
 
-jest.mock('@magento/peregrine/lib/talons/ContactPage');
+jest.mock('@jelica-rado/peregrine/lib/talons/ContactPage');
 jest.mock('../../Shimmer', () => 'Shimmer');
 
 test('it renders children', () => {

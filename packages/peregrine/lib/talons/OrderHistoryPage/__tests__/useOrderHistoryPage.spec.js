@@ -2,8 +2,8 @@ import React from 'react';
 import { act } from 'react-test-renderer';
 import { useQuery } from '@apollo/client';
 
-import { createTestInstance } from '@magento/peregrine';
-import { useAppContext } from '@magento/peregrine/lib/context/app';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useAppContext } from '@jelica-rado/peregrine/lib/context/app';
 import { useOrderHistoryPage } from '../useOrderHistoryPage';
 
 jest.mock('@apollo/client', () => {
@@ -15,7 +15,7 @@ jest.mock('@apollo/client', () => {
     };
 });
 
-jest.mock('@magento/peregrine/lib/context/app', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/app', () => {
     const state = {};
     const api = { actions: { setPageLoading: jest.fn() } };
     const useAppContext = jest.fn(() => [state, api]);
@@ -23,7 +23,7 @@ jest.mock('@magento/peregrine/lib/context/app', () => {
     return { useAppContext };
 });
 
-jest.mock('@magento/peregrine/lib/util/deriveErrorMessage', () => ({
+jest.mock('@jelica-rado/peregrine/lib/util/deriveErrorMessage', () => ({
     deriveErrorMessage: jest.fn().mockReturnValue(null)
 }));
 

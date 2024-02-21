@@ -3,8 +3,8 @@ import { func, shape, string } from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 import { Link } from 'react-router-dom';
 
-import { useStyle } from '@magento/venia-ui/lib/classify';
-import { useAccountMenuItems } from '@magento/peregrine/lib/talons/AccountMenu/useAccountMenuItems';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
+import { useAccountMenuItems } from '@jelica-rado/peregrine/lib/talons/AccountMenu/useAccountMenuItems';
 
 import defaultClasses from './accountMenuItems.module.css';
 

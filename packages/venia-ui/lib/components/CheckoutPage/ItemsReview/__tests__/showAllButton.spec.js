@@ -1,6 +1,6 @@
 import React from 'react';
 
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
 
 import ShowAllButton from '../showAllButton';
 

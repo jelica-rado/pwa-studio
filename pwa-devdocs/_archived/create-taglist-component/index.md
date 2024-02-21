@@ -252,7 +252,7 @@ Open `tag.js` and update the component to use existing Venia components:
 ```diff
  import React from 'react';
 +import Button from '../Button';
-+import { Link } from '@magento/venia-drivers';
++import { Link } from '@jelica-rado/venia-drivers';
 
  // Use the prop-types module for type checking
 -import { string } from 'prop-types';
@@ -414,7 +414,7 @@ Open the `tag.js` file and make the following changes to the component.
  import Button from '../Button';
 +import { useStyle } from '../../classify';
 +import defaultClasses from './tag.css';
- import { Link } from '@magento/venia-drivers';
+ import { Link } from '@jelica-rado/venia-drivers';
 ```
 
 **Change 2:** Use the `useStyle()` hook to merge custom classes passed into the component and create a new `buttonClasses` object:

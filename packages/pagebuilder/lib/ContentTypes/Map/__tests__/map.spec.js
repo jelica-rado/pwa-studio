@@ -1,5 +1,5 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import GoogleMap from '../map';
 import loadGoogleMapsApi from 'load-google-maps-api';
 import stub, { mocks } from '../__mocks__/loadGoogleMapsApi';

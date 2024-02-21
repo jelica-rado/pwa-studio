@@ -2,7 +2,7 @@ import { gql } from '@apollo/client';
 
 import { GiftCardFragment } from './GiftCards/giftCardFragments.gql';
 import { ProductListingFragment } from './ProductListing/productListingFragments.gql';
-import { PriceSummaryFragment } from '@magento/peregrine/lib/talons/CartPage/PriceSummary/priceSummaryFragments.gql';
+import { PriceSummaryFragment } from '@jelica-rado/peregrine/lib/talons/CartPage/PriceSummary/priceSummaryFragments.gql';
 import { AppliedCouponsFragment } from './PriceAdjustments/CouponCode/couponCodeFragments.gql';
 
 export const CartPageFragment = gql`

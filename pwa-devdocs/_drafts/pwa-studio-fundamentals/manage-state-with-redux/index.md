@@ -9,7 +9,7 @@ If you're not familiar with Redux you should see the [Learn More][] section and
 do some of your own research online so you have basic understanding of it.  
 
 In this tutorial we will demonstrate how you can work with Redux and PWA Studio together, 
-and combine Redux Reducers from the @magento/perigrine library with your own.
+and combine Redux Reducers from the @jelica-rado/perigrine library with your own.
 
 _Note: Recent versions of PWA Studio now also use React Hooks to manage state._
 
@@ -23,13 +23,13 @@ Next explore the following files & directories in your project.
 
 1.  _src/store.js_  
     This file is responsible for creating a Redux store. It also combines Redux reducers and middlewares.
-1.  _node_modules/@magento/peregrine/lib/store/reducers_  
+1.  _node_modules/@jelica-rado/peregrine/lib/store/reducers_  
     Each file in this directory contains a reducer that manages a specific part of the application state.
     A reducer updates the application state given the current state and an action object.
-1.  _node_modules/@magento/peregrine/lib/store/actions_  
+1.  _node_modules/@jelica-rado/peregrine/lib/store/actions_  
     This directory contains all Redux action creator definitions. 
     The files in this directory group the action creators together based on the application feature they affect.
-1.  _node_modules/@magento/peregrine/lib/store/middleware_  
+1.  _node_modules/@jelica-rado/peregrine/lib/store/middleware_  
     This directory contains a Redux middleware for development that logs dispatched actions and updated state to the browser console. 
     This functionality adheres to the [Redux middleware pattern][].
 
@@ -42,7 +42,7 @@ _src/reducers/foo.js_
 ```javascript
 import { handleActions } from 'redux-actions';
 
-import actions from '@magento/peregrine/lib/store/actions/app'; // we'll use these actions for now, and create our own one later
+import actions from '@jelica-rado/peregrine/lib/store/actions/app'; // we'll use these actions for now, and create our own one later
 
 export const name = 'foo';
 
@@ -63,7 +63,7 @@ export default handleActions(reducerMap, initialState);
 ```
 
 Pay note of [handleActions][] which replaces the traditional [switch statement][] often used in Reducers.
-Also, we are not using a custom `action` yet, for now we are using the `APP` from the _@magento/peregrine_ library.
+Also, we are not using a custom `action` yet, for now we are using the `APP` from the _@jelica-rado/peregrine_ library.
 
 Next Create the following file...
 
@@ -79,11 +79,11 @@ const reducers = {
 export default reducers;
 ```
 
-Next in your applications _src/store.js_ file update the `import` statements to include your local _reducers_ and combine them with the _reducers_ from @magento/peregrine:
+Next in your applications _src/store.js_ file update the `import` statements to include your local _reducers_ and combine them with the _reducers_ from @jelica-rado/peregrine:
 
 ```javascript
 import { combineReducers, createStore } from 'redux';
-import { enhancer, reducers } from '@magento/peregrine';
+import { enhancer, reducers } from '@jelica-rado/peregrine';
 import myReducers from './reducers';
 
 const rootReducer = combineReducers({ ...reducers, ...myReducers });

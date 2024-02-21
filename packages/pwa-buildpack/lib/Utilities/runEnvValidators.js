@@ -34,7 +34,7 @@ async function validateEnv(context, env) {
 
     try {
         await bus
-            .getTargetsOf('@magento/pwa-buildpack')
+            .getTargetsOf('@jelica-rado/pwa-buildpack')
             .validateEnv.promise(validationContext);
     } catch {
         /**

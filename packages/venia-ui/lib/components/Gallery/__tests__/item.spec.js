@@ -1,13 +1,13 @@
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import Item from '../item';
 
-jest.mock('@magento/peregrine/lib/context/eventing', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/eventing', () => ({
     useEventingContext: jest.fn().mockReturnValue([{}, { dispatch: jest.fn() }])
 }));
-jest.mock('@magento/peregrine/lib/talons/Image/useImage', () => {
+jest.mock('@jelica-rado/peregrine/lib/talons/Image/useImage', () => {
     return {
         useImage: () => ({
             handleError: jest.fn(),

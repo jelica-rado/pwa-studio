@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import { act } from 'react-test-renderer';
 
-import { createTestInstance } from '@magento/peregrine';
-import { useAppContext } from '@magento/peregrine/lib/context/app';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useAppContext } from '@jelica-rado/peregrine/lib/context/app';
 
 import { useNavigation } from '../useNavigation';
 
 /*
  * Mocks.
  */
-jest.mock('@magento/peregrine/lib/context/app', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/app', () => {
     const closeDrawer = jest.fn();
     const useAppContext = jest.fn(() => [
         { drawer: 'nav' },
@@ -22,7 +22,7 @@ jest.mock('@magento/peregrine/lib/context/app', () => {
     return { useAppContext };
 });
 
-jest.mock('@magento/peregrine/lib/context/catalog', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/catalog', () => {
     const updateCategories = jest.fn();
     const useCatalogContext = jest.fn(() => [
         {
@@ -39,14 +39,14 @@ jest.mock('@magento/peregrine/lib/context/catalog', () => {
     return { useCatalogContext };
 });
 
-jest.mock('@magento/peregrine/lib/context/user', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/user', () => {
     const getUserDetails = jest.fn();
     const useUserContext = jest.fn(() => [{}, { getUserDetails }]);
 
     return { useUserContext };
 });
 
-jest.mock('@magento/peregrine/lib/hooks/useAwaitQuery', () => {
+jest.mock('@jelica-rado/peregrine/lib/hooks/useAwaitQuery', () => {
     const useAwaitQuery = jest
         .fn()
         .mockResolvedValue({ data: { customer: {} } });

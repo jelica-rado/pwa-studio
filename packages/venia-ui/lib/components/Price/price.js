@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { number, string, shape } from 'prop-types';
 import { useIntl } from 'react-intl';
-import patches from '@magento/peregrine/lib/util/intlPatches';
+import patches from '@jelica-rado/peregrine/lib/util/intlPatches';
 
 /**
  * The **Price** component is used anywhere a price needs to be displayed.

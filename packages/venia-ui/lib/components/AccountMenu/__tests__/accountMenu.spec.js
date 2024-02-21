@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { createTestInstance } from '@magento/peregrine';
-import { useAccountMenu } from '@magento/peregrine/lib/talons/Header/useAccountMenu';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useAccountMenu } from '@jelica-rado/peregrine/lib/talons/Header/useAccountMenu';
 
 import AccountMenu from '../accountMenu';
 
@@ -17,7 +17,7 @@ jest.mock('../../CreateAccount', () => props => (
     <mock-CreateAccount {...props} />
 ));
 
-jest.mock('@magento/peregrine/lib/talons/Header/useAccountMenu', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/Header/useAccountMenu', () => ({
     useAccountMenu: jest.fn().mockReturnValue({
         view: 'ACCOUNT',
         username: 'gooseton',

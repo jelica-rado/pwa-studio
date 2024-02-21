@@ -66,14 +66,14 @@ test('locates builtin package', async () => {
     await expect(
         createProjectCliBuilder.handler({
             name: 'goo',
-            template: '@magento/venia-concept',
+            template: '@jelica-rado/venia-concept',
             directory: '/project'
         })
     ).resolves.not.toThrow();
     expect(createProject).toHaveBeenCalledWith(
         expect.objectContaining({
             name: 'goo',
-            template: expect.stringMatching('@magento/venia-concept')
+            template: expect.stringMatching('@jelica-rado/venia-concept')
         })
     );
 });

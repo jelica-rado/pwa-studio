@@ -1,13 +1,13 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import ButtonItem from '../buttonItem';
-import Button from '@magento/venia-ui/lib/components/Button/button';
+import Button from '@jelica-rado/venia-ui/lib/components/Button/button';
 const history = {
     push: jest.fn()
 };
-jest.mock('@magento/venia-ui/lib/classify');
-jest.mock('@magento/peregrine/lib/util/makeUrl');
+jest.mock('@jelica-rado/venia-ui/lib/classify');
+jest.mock('@jelica-rado/peregrine/lib/util/makeUrl');
 jest.mock('react-router-dom', () => ({
     Link: jest.fn(() => null),
     useHistory: jest.fn()

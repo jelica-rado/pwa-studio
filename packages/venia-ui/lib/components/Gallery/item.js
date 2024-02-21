@@ -3,10 +3,10 @@ import { FormattedMessage } from 'react-intl';
 import { Info } from 'react-feather';
 import { string, number, shape } from 'prop-types';
 import { Link } from 'react-router-dom';
-import Price from '@magento/venia-ui/lib/components/Price';
-import { UNCONSTRAINED_SIZE_KEY } from '@magento/peregrine/lib/talons/Image/useImage';
-import { useGalleryItem } from '@magento/peregrine/lib/talons/Gallery/useGalleryItem';
-import resourceUrl from '@magento/peregrine/lib/util/makeUrl';
+import Price from '@jelica-rado/venia-ui/lib/components/Price';
+import { UNCONSTRAINED_SIZE_KEY } from '@jelica-rado/peregrine/lib/talons/Image/useImage';
+import { useGalleryItem } from '@jelica-rado/peregrine/lib/talons/Gallery/useGalleryItem';
+import resourceUrl from '@jelica-rado/peregrine/lib/util/makeUrl';
 
 import { useStyle } from '../../classify';
 import Image from '../Image';

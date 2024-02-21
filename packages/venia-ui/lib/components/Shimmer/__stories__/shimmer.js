@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import Shimmer from '../shimmer';
 import Image from '../../Image';
-import { transparentPlaceholder } from '@magento/peregrine/lib/util/images';
+import { transparentPlaceholder } from '@jelica-rado/peregrine/lib/util/images';
 
 const stories = storiesOf('Components/Shimmer', module);
 

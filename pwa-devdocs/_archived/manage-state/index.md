@@ -32,7 +32,7 @@ Under `src/components/MyComponent`, create a `myComponent.js` file with the foll
 ```jsx
 import React, { useState, useCallback } from 'react';
 
-import Button from "@magento/venia-ui/lib/components/Button";
+import Button from "@jelica-rado/venia-ui/lib/components/Button";
 
 const MyComponent = () => {
     const [booleanStatus, setBooleanStatus] = useState(false);
@@ -70,16 +70,16 @@ Add this button to your application's Header component using steps similar to th
 Use Peregrine state context hooks to access and modify the global application state.
 Peregrine provides access to the global application state in slices through its various [context hooks][].
 
-For this tutorial, use the `useAppContext()` hook imported from `@magento/peregrine/lib/context/app`.
+For this tutorial, use the `useAppContext()` hook imported from `@jelica-rado/peregrine/lib/context/app`.
 
 When you call this hook, it returns an object containing application-specifc data and an API object containing functions for updating the data specific to this global state slice.
 
 ```diff
 - import React, { useState, useCallback } from 'react';
 + import React, { useCallback } from 'react';
-+ import {useAppContext} from '@magento/peregrine/lib/context/app'
++ import {useAppContext} from '@jelica-rado/peregrine/lib/context/app'
   
-  import Button from "@magento/venia-ui/lib/components/Button";
+  import Button from "@jelica-rado/venia-ui/lib/components/Button";
   
   const MyComponent = () => {
 -     const [booleanStatus, setBooleanStatus] = useState(false);

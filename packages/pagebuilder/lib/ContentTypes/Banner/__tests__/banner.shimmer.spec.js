@@ -1,9 +1,9 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import BannerShimmer from '../banner.shimmer';
 import Banner from '../banner';
 
-jest.mock('@magento/venia-ui/lib/classify');
+jest.mock('@jelica-rado/venia-ui/lib/classify');
 
 test('renders an empty BannerShimmer component', () => {
     const component = createTestInstance(<BannerShimmer />);

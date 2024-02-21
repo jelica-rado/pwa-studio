@@ -5,7 +5,7 @@ import Image from '../../Image';
 import {
     WindowSizeContextProvider,
     createTestInstance
-} from '@magento/peregrine';
+} from '@jelica-rado/peregrine';
 
 jest.mock('../../../classify');
 

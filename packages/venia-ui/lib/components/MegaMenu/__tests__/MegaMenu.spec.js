@@ -1,14 +1,14 @@
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
 
-import { createTestInstance } from '@magento/peregrine';
-import { useIsInViewport } from '@magento/peregrine/lib/hooks/useIsInViewport';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useIsInViewport } from '@jelica-rado/peregrine/lib/hooks/useIsInViewport';
 
 import MegaMenu from '../megaMenu';
 
-jest.mock('@magento/venia-ui/lib/classify');
-jest.mock('@magento/peregrine/lib/hooks/useIsInViewport');
-jest.mock('@magento/peregrine/lib/talons/MegaMenu/useMegaMenu', () => ({
+jest.mock('@jelica-rado/venia-ui/lib/classify');
+jest.mock('@jelica-rado/peregrine/lib/hooks/useIsInViewport');
+jest.mock('@jelica-rado/peregrine/lib/talons/MegaMenu/useMegaMenu', () => ({
     useMegaMenu: jest.fn().mockReturnValue({
         megaMenuData: {
             id: 1,

@@ -1,11 +1,11 @@
 import React from 'react';
 import { act } from 'react-test-renderer';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import LegacyMiniCart from '../miniCart';
 import Body from '../body';
 import Footer from '../footer';
-import { useCartContext } from '@magento/peregrine/lib/context/cart';
+import { useCartContext } from '@jelica-rado/peregrine/lib/context/cart';
 
 jest.mock('../body', () => 'Body');
 jest.mock('../footer', () => 'Footer');
@@ -19,7 +19,7 @@ jest.mock('@apollo/client', () => ({
     ])
 }));
 
-jest.mock('@magento/peregrine/lib/context/app', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/app', () => {
     const state = {};
     const api = { closeDrawer: jest.fn() };
     const useAppContext = jest.fn(() => [state, api]);
@@ -27,7 +27,7 @@ jest.mock('@magento/peregrine/lib/context/app', () => {
     return { useAppContext };
 });
 
-jest.mock('@magento/peregrine/lib/context/cart', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/cart', () => {
     const state = {
         derivedDetails: {
             currencyCode: 'USD',
@@ -42,7 +42,7 @@ jest.mock('@magento/peregrine/lib/context/cart', () => {
     return { useCartContext };
 });
 
-jest.mock('@magento/peregrine/lib/context/checkout', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/checkout', () => {
     const state = {};
     const api = { cancelCheckout: jest.fn() };
     const useCheckoutContext = jest.fn(() => [state, api]);

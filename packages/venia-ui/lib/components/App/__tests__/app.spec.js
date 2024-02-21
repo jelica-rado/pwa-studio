@@ -1,8 +1,8 @@
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
 import { useHistory } from 'react-router-dom';
-import { createTestInstance } from '@magento/peregrine';
-import { useAppContext } from '@magento/peregrine/lib/context/app';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useAppContext } from '@jelica-rado/peregrine/lib/context/app';
 
 import Main from '../../Main';
 import Mask from '../../Mask';
@@ -18,26 +18,26 @@ jest.mock('../../Main', () => 'Main');
 jest.mock('../../Navigation', () => 'Navigation');
 jest.mock('../../Routes', () => 'Routes');
 jest.mock('../../ToastContainer', () => 'ToastContainer');
-jest.mock('@magento/peregrine/lib/hooks/useDelayedTransition', () => {
+jest.mock('@jelica-rado/peregrine/lib/hooks/useDelayedTransition', () => {
     return {
         useDelayedTransition: jest.fn()
     };
 });
 
 const mockAddToast = jest.fn();
-jest.mock('@magento/peregrine', () => {
+jest.mock('@jelica-rado/peregrine', () => {
     const useToasts = jest.fn(() => [
         { toasts: new Map() },
         { addToast: mockAddToast }
     ]);
 
     return {
-        ...jest.requireActual('@magento/peregrine'),
+        ...jest.requireActual('@jelica-rado/peregrine'),
         useToasts
     };
 });
 
-jest.mock('@magento/peregrine/lib/context/app', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/app', () => {
     const state = {
         hasBeenOffline: false,
         isOnline: true,
@@ -52,7 +52,7 @@ jest.mock('@magento/peregrine/lib/context/app', () => {
     return { useAppContext };
 });
 
-jest.mock('@magento/peregrine/lib/context/checkout', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/checkout', () => {
     const state = {};
     const api = {
         actions: {
@@ -64,7 +64,7 @@ jest.mock('@magento/peregrine/lib/context/checkout', () => {
     return { useCheckoutContext };
 });
 
-jest.mock('@magento/peregrine/lib/context/cart', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/cart', () => {
     const state = {
         cartId: null
     };
@@ -79,7 +79,7 @@ jest.mock('@magento/peregrine/lib/context/cart', () => {
     return { useCartContext };
 });
 
-jest.mock('@magento/peregrine/lib/util/createErrorRecord', () => ({
+jest.mock('@jelica-rado/peregrine/lib/util/createErrorRecord', () => ({
     __esModule: true,
     default: jest.fn().mockReturnValue({
         error: { message: 'A render error', stack: 'errorStack' },

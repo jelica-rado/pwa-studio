@@ -1,11 +1,11 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useAddressBook } from '@magento/peregrine/lib/talons/CheckoutPage/AddressBook/useAddressBook';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useAddressBook } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/AddressBook/useAddressBook';
 
 import AddressBook from '../addressBook';
 
 jest.mock(
-    '@magento/peregrine/lib/talons/CheckoutPage/AddressBook/useAddressBook'
+    '@jelica-rado/peregrine/lib/talons/CheckoutPage/AddressBook/useAddressBook'
 );
 jest.mock('../../../../classify');
 jest.mock('../../ShippingInformation/editModal', () => () => 'EditModal');
@@ -13,11 +13,11 @@ jest.mock('../addressCard', () => 'AddressCard');
 
 const mockAddToast = jest.fn();
 
-jest.mock('@magento/peregrine', () => {
+jest.mock('@jelica-rado/peregrine', () => {
     const useToasts = jest.fn(() => [{}, { addToast: mockAddToast }]);
 
     return {
-        ...jest.requireActual('@magento/peregrine'),
+        ...jest.requireActual('@jelica-rado/peregrine'),
         useToasts
     };
 });

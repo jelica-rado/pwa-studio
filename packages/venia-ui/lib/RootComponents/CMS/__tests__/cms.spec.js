@@ -1,12 +1,12 @@
 import React from 'react';
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
 import { useQuery } from '@apollo/client';
 import RichContent from '../../../components/RichContent';
 import { StoreTitle } from '../../../components/Head';
 import CMSPage from '../cms';
-import { useAppContext } from '@magento/peregrine/lib/context/app';
+import { useAppContext } from '@jelica-rado/peregrine/lib/context/app';
 
-jest.mock('@magento/peregrine/lib/context/eventing', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/eventing', () => ({
     useEventingContext: jest.fn().mockReturnValue([{}, { dispatch: jest.fn() }])
 }));
 
@@ -20,7 +20,7 @@ jest.mock('../../../components/Head', () => ({
 
 jest.mock('../../../components/RichContent', () => 'RichContent');
 
-jest.mock('@magento/peregrine/lib/context/app', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/app', () => {
     const state = {
         isPageLoading: false
     };

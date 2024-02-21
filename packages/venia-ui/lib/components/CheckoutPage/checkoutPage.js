@@ -4,11 +4,11 @@ import { FormattedMessage, useIntl } from 'react-intl';
 import { AlertCircle as AlertCircleIcon } from 'react-feather';
 import { Link } from 'react-router-dom';
 
-import { useWindowSize, useToasts } from '@magento/peregrine';
+import { useWindowSize, useToasts } from '@jelica-rado/peregrine';
 import {
     CHECKOUT_STEP,
     useCheckoutPage
-} from '@magento/peregrine/lib/talons/CheckoutPage/useCheckoutPage';
+} from '@jelica-rado/peregrine/lib/talons/CheckoutPage/useCheckoutPage';
 
 import { useStyle } from '../../classify';
 import Button from '../Button';

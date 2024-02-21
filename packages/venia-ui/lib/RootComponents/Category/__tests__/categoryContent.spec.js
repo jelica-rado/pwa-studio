@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { createTestInstance } from '@magento/peregrine';
-import { useIsInViewport } from '@magento/peregrine/lib/hooks/useIsInViewport';
-import { useCategoryContent } from '@magento/peregrine/lib/talons/RootComponents/Category';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useIsInViewport } from '@jelica-rado/peregrine/lib/hooks/useIsInViewport';
+import { useCategoryContent } from '@jelica-rado/peregrine/lib/talons/RootComponents/Category';
 
 import CategoryContent from '../categoryContent';
 
-jest.mock('@magento/venia-ui/lib/classify');
-jest.mock('@magento/peregrine/lib/context/app', () => {
+jest.mock('@jelica-rado/venia-ui/lib/classify');
+jest.mock('@jelica-rado/peregrine/lib/context/app', () => {
     const state = {};
     const api = {
         toggleDrawer: jest.fn()
@@ -15,14 +15,14 @@ jest.mock('@magento/peregrine/lib/context/app', () => {
     const useAppContext = jest.fn(() => [state, api]);
     return { useAppContext };
 });
-jest.mock('@magento/peregrine/lib/hooks/useIsInViewport');
+jest.mock('@jelica-rado/peregrine/lib/hooks/useIsInViewport');
 
 jest.mock('../../../components/Head', () => ({
     HeadProvider: ({ children }) => <div>{children}</div>,
     StoreTitle: () => 'Title'
 }));
 
-jest.mock('@magento/peregrine/lib/talons/RootComponents/Category', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/RootComponents/Category', () => ({
     useCategoryContent: jest.fn()
 }));
 

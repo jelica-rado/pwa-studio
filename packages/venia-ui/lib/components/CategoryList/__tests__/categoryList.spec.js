@@ -1,25 +1,25 @@
 /* Deprecated in PWA-12.1.0*/
 
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import LoadingIndicator from '../../LoadingIndicator';
 import CategoryTile from '../categoryTile';
 import CategoryList from '../categoryList';
-import { useCategoryList } from '@magento/peregrine/lib/talons/CategoryList/useCategoryList';
-import { useCategoryTile } from '@magento/peregrine/lib/talons/CategoryList/useCategoryTile';
+import { useCategoryList } from '@jelica-rado/peregrine/lib/talons/CategoryList/useCategoryList';
+import { useCategoryTile } from '@jelica-rado/peregrine/lib/talons/CategoryList/useCategoryTile';
 
 jest.mock('react-router-dom', () => ({
     Link: props => <mock-Link {...props} />
 }));
 jest.mock('../../../classify');
-jest.mock('@magento/peregrine/lib/talons/CategoryList/useCategoryTile', () => {
+jest.mock('@jelica-rado/peregrine/lib/talons/CategoryList/useCategoryTile', () => {
     return {
         useCategoryTile: jest.fn()
     };
 });
 
-jest.mock('@magento/peregrine/lib/talons/CategoryList/useCategoryList', () => {
+jest.mock('@jelica-rado/peregrine/lib/talons/CategoryList/useCategoryList', () => {
     return {
         useCategoryList: jest.fn()
     };

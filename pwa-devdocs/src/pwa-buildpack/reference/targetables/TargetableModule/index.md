@@ -19,14 +19,14 @@ Code examples for using the `TargetableModule` class.
 The `TargetableModule` class contains functions that let you insert custom code into different areas in the source code.
 
 ```js
-const { Targetables } = require('@magento/pwa-buildpack')
+const { Targetables } = require('@jelica-rado/pwa-buildpack')
 
 module.exports = targets => {
     const targetableFactory = Targetables.using(targets);
 
     // Create a TargetableModule instance that points to the main.js source
     const MainComponent = targetableFactory.module(
-        '@magento/venia-ui/lib/components/Main/main.js'
+        '@jelica-rado/venia-ui/lib/components/Main/main.js'
     );
 
     // Insert a console log message in the source

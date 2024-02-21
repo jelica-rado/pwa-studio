@@ -1,12 +1,12 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useIntl } from 'react-intl';
 import { useMutation, useQuery } from '@apollo/client';
-import { useCartContext } from '@magento/peregrine/lib/context/cart';
-import configuredVariant from '@magento/peregrine/lib/util/configuredVariant';
+import { useCartContext } from '@jelica-rado/peregrine/lib/context/cart';
+import configuredVariant from '@jelica-rado/peregrine/lib/util/configuredVariant';
 import { deriveErrorMessage } from '../../../util/deriveErrorMessage';
 import DEFAULT_OPERATIONS from './product.gql';
 import { useEventingContext } from '../../../context/eventing';
-import mergeOperations from '@magento/peregrine/lib/util/shallowMerge';
+import mergeOperations from '@jelica-rado/peregrine/lib/util/shallowMerge';
 
 /**
  * This talon contains logic for a product component used in a product listing component.
@@ -27,7 +27,7 @@ import mergeOperations from '@magento/peregrine/lib/util/shallowMerge';
  * @return {ProductTalonProps}
  *
  * @example <caption>Importing into your project</caption>
- * import { useProduct } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useProduct';
+ * import { useProduct } from '@jelica-rado/peregrine/lib/talons/CartPage/ProductListing/useProduct';
  */
 
 export const useProduct = props => {

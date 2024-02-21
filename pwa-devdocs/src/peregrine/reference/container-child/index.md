@@ -16,7 +16,7 @@ This component is responsible for rendering content.
 ## Example
 
 ``` jsx
-import { ContainerChild } from '@magento/peregrine';
+import { ContainerChild } from '@jelica-rado/peregrine';
 
 <div data-mid="some.container.identifier">
     <ContainerChild

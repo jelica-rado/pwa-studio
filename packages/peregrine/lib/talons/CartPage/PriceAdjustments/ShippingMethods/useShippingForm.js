@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo } from 'react';
 import { useApolloClient, useMutation } from '@apollo/client';
 
 import { useCartContext } from '../../../../context/cart';
-import mergeOperations from '@magento/peregrine/lib/util/shallowMerge';
+import mergeOperations from '@jelica-rado/peregrine/lib/util/shallowMerge';
 import DEFAULT_OPERATIONS from './shippingMethods.gql';
 
 /**
@@ -42,7 +42,7 @@ export const MOCKED_ADDRESS = {
  * @returns {ShippingFormTalonProps}
  *
  * @example <caption>Importing into your project</caption>
- * import { useShippingForm } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/useShippingForm';
+ * import { useShippingForm } from '@jelica-rado/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/useShippingForm';
  */
 export const useShippingForm = props => {
     const operations = mergeOperations(DEFAULT_OPERATIONS, props.operations);

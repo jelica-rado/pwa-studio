@@ -14,7 +14,7 @@ class RichContentRendererList {
         const registry = this;
         this._renderers = venia.esModuleArray({
             module:
-                '@magento/venia-ui/lib/components/RichContent/richContentRenderers.js',
+                '@jelica-rado/venia-ui/lib/components/RichContent/richContentRenderers.js',
             publish(targets) {
                 targets.richContentRenderers.call(registry);
             }

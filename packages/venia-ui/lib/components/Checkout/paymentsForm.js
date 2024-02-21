@@ -5,7 +5,7 @@ import { array, bool, shape, string } from 'prop-types';
 import { useStyle } from '../../classify';
 import defaultClasses from './paymentsForm.module.css';
 import PaymentsFormItems from './paymentsFormItems';
-import { usePaymentsForm } from '@magento/peregrine/lib/talons/Checkout/usePaymentsForm';
+import { usePaymentsForm } from '@jelica-rado/peregrine/lib/talons/Checkout/usePaymentsForm';
 
 /**
  * A wrapper around the payment form. This component's purpose is to maintain

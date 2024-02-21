@@ -3,7 +3,7 @@ import { bool, func, number, oneOfType, shape, string } from 'prop-types';
 import { useIntl } from 'react-intl';
 import { useStyle } from '../../classify';
 import defaultClasses from './tile.module.css';
-import { useTile } from '@magento/peregrine/lib/talons/ProductOptions/useTile';
+import { useTile } from '@jelica-rado/peregrine/lib/talons/ProductOptions/useTile';
 
 const getClassName = (
     name,

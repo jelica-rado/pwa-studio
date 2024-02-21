@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { transparentPlaceholder } from '@magento/peregrine/lib/util/images';
+import { transparentPlaceholder } from '@jelica-rado/peregrine/lib/util/images';
 import { useStyle } from '../../classify';
 import Image from '../Image';
 import defaultClasses from './carousel.module.css';

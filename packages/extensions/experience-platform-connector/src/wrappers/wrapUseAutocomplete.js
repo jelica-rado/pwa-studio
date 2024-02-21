@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useEventingContext } from '@magento/peregrine/lib/context/eventing';
+import { useEventingContext } from '@jelica-rado/peregrine/lib/context/eventing';
 
 // Wrapper for the useAutocomplete() talon
 const wrapUseAutocomplete = useAutocomplete => {

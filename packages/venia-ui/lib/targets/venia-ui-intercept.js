@@ -1,7 +1,7 @@
 /**
  * @module VeniaUI/Targets
  */
-const { Targetables } = require('@magento/pwa-buildpack');
+const { Targetables } = require('@jelica-rado/pwa-buildpack');
 const CategoryListProductAttributes = require('./CategoryListProductAttributes');
 const RichContentRendererList = require('./RichContentRendererList');
 const makeRoutesTarget = require('./makeRoutesTarget');
@@ -36,28 +36,28 @@ module.exports = veniaTargets => {
     checkoutPagePaymentsList.add({
         paymentCode: 'braintree',
         importPath:
-            '@magento/venia-ui/lib/components/CheckoutPage/PaymentInformation/creditCard'
+            '@jelica-rado/venia-ui/lib/components/CheckoutPage/PaymentInformation/creditCard'
     });
 
     const savedPaymentTypes = new SavedPaymentTypes(venia);
     savedPaymentTypes.add({
         paymentCode: 'braintree',
         importPath:
-            '@magento/venia-ui/lib/components/SavedPaymentsPage/creditCard'
+            '@jelica-rado/venia-ui/lib/components/SavedPaymentsPage/creditCard'
     });
 
     const editablePayments = new EditablePaymentTypes(venia);
     editablePayments.add({
         paymentCode: 'braintree',
         importPath:
-            '@magento/venia-ui/lib/components/CheckoutPage/PaymentInformation/editCard'
+            '@jelica-rado/venia-ui/lib/components/CheckoutPage/PaymentInformation/editCard'
     });
 
     const summaryPagePaymentTypes = new SummaryPaymentTypes(venia);
     summaryPagePaymentTypes.add({
         paymentCode: 'braintree',
         importPath:
-            '@magento/venia-ui/lib/components/CheckoutPage/PaymentInformation/braintreeSummary'
+            '@jelica-rado/venia-ui/lib/components/CheckoutPage/PaymentInformation/braintreeSummary'
     });
 
     new CategoryListProductAttributes(venia);
@@ -66,6 +66,6 @@ module.exports = veniaTargets => {
     rootShimmerTypes.add({
         shimmerType: 'CATEGORY_SHIMMER',
         importPath:
-            '@magento/venia-ui/lib/RootComponents/Category/categoryContent.shimmer'
+            '@jelica-rado/venia-ui/lib/RootComponents/Category/categoryContent.shimmer'
     });
 };

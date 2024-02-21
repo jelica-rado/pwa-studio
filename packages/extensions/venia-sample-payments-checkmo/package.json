@@ -1,5 +1,5 @@
 {
-  "name": "@magento/venia-sample-payments-checkmo",
+  "name": "@jelica-rado/venia-sample-payments-checkmo",
   "version": "0.0.13",
   "publishConfig": {
     "access": "public"
@@ -12,9 +12,9 @@
   "repository": "github:magento/pwa-studio",
   "license": "(OSL-3.0 OR AFL-3.0)",
   "peerDependencies": {
-    "@magento/peregrine": "~13.2.1",
-    "@magento/pwa-buildpack": "~11.4.3",
-    "@magento/venia-ui": "~10.3.0",
+    "@jelica-rado/peregrine": "~13.2.1",
+    "@jelica-rado/pwa-buildpack": "~11.4.3",
+    "@jelica-rado/venia-ui": "~10.3.0",
     "react": "^18.2.0",
     "react-intl": "^6.6.2",
     "react-router-dom": "~5.2.0"

@@ -4,12 +4,12 @@ adobeio: /api/peregrine/targets/
 ---
 
 This page lists the Targets declared in the Peregrine package.
-Access these in your intercept files by calling `targets.of('@magento/peregrine')` on the TargetProvider object.
+Access these in your intercept files by calling `targets.of('@jelica-rado/peregrine')` on the TargetProvider object.
 
 ```js
 /* my-custom-interceptors.js */
 module.exports = targets => {
-    const peregrineTargets = targets.of('@magento/peregrine')
+    const peregrineTargets = targets.of('@jelica-rado/peregrine')
 }
 ```
 

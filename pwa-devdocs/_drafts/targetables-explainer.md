@@ -88,7 +88,7 @@ Cathy might implement this more limited API like this:
 
 **@example/pwa-nav/intercept.js**
 ```js
-const { Targetables } = require('@magento/pwa-buildpack');
+const { Targetables } = require('@jelica-rado/pwa-buildpack');
 module.exports = function intercept(targets) {
   const targetables = Targetables.using(targets);
 
@@ -182,7 +182,7 @@ Marco makes a local intercept file in his project root directory. He makes sure 
 
 **local-customizations.js**
 ```js
-const { Targetables } = require('@magento/pwa-buildpack');
+const { Targetables } = require('@jelica-rado/pwa-buildpack');
 
 module.exports = function intercept(targets) {
   const targetables = Targetables.using(targets);
@@ -221,7 +221,7 @@ Extensions with special files, like ES Modules, CSS Modules, GraphQL queries, an
 
 Example:
 ```js
-targets.of('@magento/pwa-buildpack').specialFeatures.tap(features => {
+targets.of('@jelica-rado/pwa-buildpack').specialFeatures.tap(features => {
   features[targets.name] = {
     esModules: true,
     graphqlQueries: true,
@@ -244,7 +244,7 @@ Extensions may have their own environment configuration settings to add to the p
 
 Example:
 ```js
-targets.of('@magento/pwa-buildpack').envVarDefinitions.tap(defs => {
+targets.of('@jelica-rado/pwa-buildpack').envVarDefinitions.tap(defs => {
   defs.sections.push({
     name: 'Support Chat',
     variables: [
@@ -281,7 +281,7 @@ const handlers = new Targetables.ESModule('src/lib/handlers.js');
 handlers.wrapWithFile('handleLoad', 'src/overrides/doSomethingOnLoad.js');
 
 // Send it all to the build.
-targets.of('@magento/pwa-buildpack').transformModules.tap(addTransform => {
+targets.of('@jelica-rado/pwa-buildpack').transformModules.tap(addTransform => {
   handlers.flush().forEach(request => addTransform(request));
 });
 ```
@@ -317,16 +317,16 @@ Copy and paste this code into `venia-concept/local-intercept.js`, replacing any 
 
 ```jsx
 function localIntercept(targets) {
-    const { Targetables } = require('@magento/pwa-buildpack');
+    const { Targetables } = require('@jelica-rado/pwa-buildpack');
 
     const targetables = Targetables.using(targets);
 
     const MainComponent = targetables.reactComponent(
-        '@magento/venia-ui/lib/components/Main/main.js'
+        '@jelica-rado/venia-ui/lib/components/Main/main.js'
     );
 
     const Button = MainComponent.addImport(
-        "Button from '@magento/venia-ui/lib/components/Button'"
+        "Button from '@jelica-rado/venia-ui/lib/components/Button'"
     );
     MainComponent.appendJSX(
         'div className={pageClass}',

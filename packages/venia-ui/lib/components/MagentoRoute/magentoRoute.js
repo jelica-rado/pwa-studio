@@ -1,7 +1,7 @@
 import React from 'react';
 import { useIntl } from 'react-intl';
-import { useMagentoRoute } from '@magento/peregrine/lib/talons/MagentoRoute';
-import ErrorView from '@magento/venia-ui/lib/components/ErrorView';
+import { useMagentoRoute } from '@jelica-rado/peregrine/lib/talons/MagentoRoute';
+import ErrorView from '@jelica-rado/venia-ui/lib/components/ErrorView';
 import RootShimmerComponent from '../../RootComponents/Shimmer';
 
 const MESSAGES = new Map()

@@ -1,7 +1,7 @@
 const debug = require('../../util/debug').makeFileLogger(__filename);
 const walk = require('../../util/klaw-bound-fs');
 const InjectPlugin = require('webpack-inject-plugin').default;
-const directiveParser = require('@magento/directive-parser');
+const directiveParser = require('@jelica-rado/directive-parser');
 const { isAbsolute, join, relative } = require('path');
 const micromatch = require('micromatch');
 

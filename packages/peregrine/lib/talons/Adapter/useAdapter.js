@@ -4,13 +4,13 @@ import { ApolloClient } from '@apollo/client/core';
 import { CachePersistor } from 'apollo-cache-persist';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
-import attachClient from '@magento/peregrine/lib/Apollo/attachClientToStore';
-import { clearCartDataFromCache } from '@magento/peregrine/lib/Apollo/clearCartDataFromCache';
-import { clearCustomerDataFromCache } from '@magento/peregrine/lib/Apollo/clearCustomerDataFromCache';
-import { CACHE_PERSIST_PREFIX } from '@magento/peregrine/lib/Apollo/constants';
-import getLinks from '@magento/peregrine/lib/Apollo/links';
-import typePolicies from '@magento/peregrine/lib/Apollo/policies';
-import { BrowserPersistence } from '@magento/peregrine/lib/util';
+import attachClient from '@jelica-rado/peregrine/lib/Apollo/attachClientToStore';
+import { clearCartDataFromCache } from '@jelica-rado/peregrine/lib/Apollo/clearCartDataFromCache';
+import { clearCustomerDataFromCache } from '@jelica-rado/peregrine/lib/Apollo/clearCustomerDataFromCache';
+import { CACHE_PERSIST_PREFIX } from '@jelica-rado/peregrine/lib/Apollo/constants';
+import getLinks from '@jelica-rado/peregrine/lib/Apollo/links';
+import typePolicies from '@jelica-rado/peregrine/lib/Apollo/policies';
+import { BrowserPersistence } from '@jelica-rado/peregrine/lib/util';
 
 const isServer = !globalThis.document;
 const storage = new BrowserPersistence();

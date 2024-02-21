@@ -1,6 +1,6 @@
 import React from 'react';
 import { func, number, shape, string } from 'prop-types';
-import { useCategoryBranch } from '@magento/peregrine/lib/talons/CategoryTree';
+import { useCategoryBranch } from '@jelica-rado/peregrine/lib/talons/CategoryTree';
 
 import { useStyle } from '../../classify';
 import defaultClasses from './categoryBranch.module.css';

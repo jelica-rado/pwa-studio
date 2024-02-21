@@ -2,7 +2,7 @@ import React from 'react';
 import { act } from 'react-test-renderer';
 import { Form } from 'informed';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import FilterBlock from '../filterBlock';
 
@@ -15,7 +15,7 @@ jest.mock('informed', () => ({
 
 jest.mock('../FilterList', () => props => <mock-FilterList {...props} />);
 
-jest.mock('@magento/peregrine/lib/talons/FilterModal', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/FilterModal', () => ({
     useFilterBlock: jest.fn(() => {
         return {
             handleClick: mockHandleClick,

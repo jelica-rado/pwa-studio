@@ -1,9 +1,9 @@
 import React, { useMemo } from 'react';
 import { bool, func, number, shape, string } from 'prop-types';
 
-import { transparentPlaceholder } from '@magento/peregrine/lib/util/images';
-import { useWindowSize } from '@magento/peregrine';
-import { useThumbnail } from '@magento/peregrine/lib/talons/ProductImageCarousel/useThumbnail';
+import { transparentPlaceholder } from '@jelica-rado/peregrine/lib/util/images';
+import { useWindowSize } from '@jelica-rado/peregrine';
+import { useThumbnail } from '@jelica-rado/peregrine/lib/talons/ProductImageCarousel/useThumbnail';
 
 import { useStyle } from '../../classify';
 import defaultClasses from './thumbnail.module.css';

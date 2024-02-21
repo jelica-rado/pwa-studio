@@ -16,7 +16,7 @@ To update this section, update the doc blocks in the source code
 
 ```jsx
 import React from 'react'
-import { usePriceSummary } from '@magento/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary';
+import { usePriceSummary } from '@jelica-rado/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary';
 
 import { GET_PRICE_SUMMARY } from './myPriceSummary.gql';
 

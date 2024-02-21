@@ -1,6 +1,6 @@
 import React from 'react';
 import { useQuery, useMutation } from '@apollo/client';
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
 
 import { useCheckmo } from '../useCheckmo';
 
@@ -49,7 +49,7 @@ beforeAll(() => {
     });
 });
 
-jest.mock('@magento/peregrine/lib/context/cart', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/cart', () => ({
     useCartContext: jest.fn().mockReturnValue([{ cartId: '123' }])
 }));
 

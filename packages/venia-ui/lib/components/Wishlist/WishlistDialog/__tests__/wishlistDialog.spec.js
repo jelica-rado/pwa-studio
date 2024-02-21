@@ -1,15 +1,15 @@
 import React from 'react';
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
 import WishlistDialog from '../wishlistDialog';
-import { useWishlistDialog } from '@magento/peregrine/lib/talons/Wishlist/WishlistDialog/useWishlistDialog';
+import { useWishlistDialog } from '@jelica-rado/peregrine/lib/talons/Wishlist/WishlistDialog/useWishlistDialog';
 
-jest.mock('@magento/venia-ui/lib/classify');
-jest.mock('@magento/venia-ui/lib/components/Dialog', () => props => (
+jest.mock('@jelica-rado/venia-ui/lib/classify');
+jest.mock('@jelica-rado/venia-ui/lib/components/Dialog', () => props => (
     <mock-Dialog {...props}>{props.children}</mock-Dialog>
 ));
 
 jest.mock(
-    '@magento/peregrine/lib/talons/Wishlist/WishlistDialog/useWishlistDialog',
+    '@jelica-rado/peregrine/lib/talons/Wishlist/WishlistDialog/useWishlistDialog',
     () => ({
         useWishlistDialog: jest.fn().mockReturnValue({
             canCreateWishlist: false,

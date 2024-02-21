@@ -8,7 +8,7 @@ Import the CategoryList to the Foo component:
 
 ```javascript
 /* Deprecated in PWA-12.1.0*/
-import CategoryList from '@magento/venia-ui/lib/components/CategoryList';
+import CategoryList from '@jelica-rado/venia-ui/lib/components/CategoryList';
 ```
 
 Next add the following JSX.

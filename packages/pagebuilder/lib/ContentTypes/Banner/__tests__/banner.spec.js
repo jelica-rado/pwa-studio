@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import Banner from '../banner';
 import { act } from 'react-test-renderer';
 
@@ -10,9 +10,9 @@ jest.mock('react-router-dom', () => ({
     useHistory: jest.fn()
 }));
 
-jest.mock('@magento/peregrine/lib/util/makeUrl');
+jest.mock('@jelica-rado/peregrine/lib/util/makeUrl');
 
-jest.mock('@magento/venia-ui/lib/classify');
+jest.mock('@jelica-rado/venia-ui/lib/classify');
 jest.mock('jarallax', () => {
     return {
         jarallax: jest.fn(),

@@ -1,12 +1,12 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useToasts } from '@magento/peregrine/lib/Toasts';
-import { useOrderHistoryPage } from '@magento/peregrine/lib/talons/OrderHistoryPage/useOrderHistoryPage';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useToasts } from '@jelica-rado/peregrine/lib/Toasts';
+import { useOrderHistoryPage } from '@jelica-rado/peregrine/lib/talons/OrderHistoryPage/useOrderHistoryPage';
 
 import OrderHistoryPage from '../orderHistoryPage';
 
 jest.mock(
-    '@magento/peregrine/lib/talons/OrderHistoryPage/useOrderHistoryPage',
+    '@jelica-rado/peregrine/lib/talons/OrderHistoryPage/useOrderHistoryPage',
     () => ({
         useOrderHistoryPage: jest
             .fn()
@@ -26,7 +26,7 @@ jest.mock(
 );
 
 jest.mock(
-    '@magento/peregrine/lib/talons/OrderHistoryPage/orderHistoryContext',
+    '@jelica-rado/peregrine/lib/talons/OrderHistoryPage/orderHistoryContext',
     () => ({
         __esModule: true,
         default: props => (
@@ -37,7 +37,7 @@ jest.mock(
     })
 );
 
-jest.mock('@magento/peregrine/lib/Toasts', () => ({
+jest.mock('@jelica-rado/peregrine/lib/Toasts', () => ({
     useToasts: jest
         .fn()
         .mockName('useToasts')

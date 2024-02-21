@@ -1,18 +1,18 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import {
     displayStates,
     useShippingMethod
-} from '@magento/peregrine/lib/talons/CheckoutPage/ShippingMethod/useShippingMethod';
+} from '@jelica-rado/peregrine/lib/talons/CheckoutPage/ShippingMethod/useShippingMethod';
 
 import ShippingMethod from '../shippingMethod';
 
 jest.mock('../../../../classify');
 jest.mock(
-    '@magento/peregrine/lib/talons/CheckoutPage/ShippingMethod/useShippingMethod',
+    '@jelica-rado/peregrine/lib/talons/CheckoutPage/ShippingMethod/useShippingMethod',
     () => {
         const useShippingMethodTalon = jest.requireActual(
-            '@magento/peregrine/lib/talons/CheckoutPage/ShippingMethod/useShippingMethod'
+            '@jelica-rado/peregrine/lib/talons/CheckoutPage/ShippingMethod/useShippingMethod'
         );
         const spy = jest.spyOn(useShippingMethodTalon, 'useShippingMethod');
 

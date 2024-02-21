@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { func, shape, string } from 'prop-types';
 
-import { useForgotPassword } from '@magento/peregrine/lib/talons/ForgotPassword/useForgotPassword';
+import { useForgotPassword } from '@jelica-rado/peregrine/lib/talons/ForgotPassword/useForgotPassword';
 
 import FormErrors from '../FormError';
 import { useStyle } from '../../classify';

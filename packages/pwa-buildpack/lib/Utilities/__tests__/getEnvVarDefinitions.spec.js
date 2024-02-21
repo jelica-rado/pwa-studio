@@ -25,7 +25,7 @@ test('runs targets to get env var defs', () => {
 
 test('uses base defs if targets fail or are unavailable', () => {
     BuildBus.for.mockImplementationOnce(() => {
-        throw new Error('@magento/pwa-buildpack has not been declaredA;');
+        throw new Error('@jelica-rado/pwa-buildpack has not been declaredA;');
     });
     expect(getEnvVarDefinitions('./other-project-dir')).toMatchObject(
         baseEnvVarDefs

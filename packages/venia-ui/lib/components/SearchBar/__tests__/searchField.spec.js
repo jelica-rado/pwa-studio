@@ -1,11 +1,11 @@
 import React from 'react';
 import { Form } from 'informed';
 import { act } from 'react-test-renderer';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import Trigger from '../../Trigger';
 import SearchField from '../searchField';
 
-jest.mock('@magento/peregrine/lib/context/app', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/app', () => {
     const state = {};
     const api = {};
     return {

@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { shape, string } from 'prop-types';
 import { FormattedMessage } from 'react-intl';
-import { useAddToCartDialog } from '@magento/peregrine/lib/talons/AddToCartDialog/useAddToCartDialog';
+import { useAddToCartDialog } from '@jelica-rado/peregrine/lib/talons/AddToCartDialog/useAddToCartDialog';
 
 import { useStyle } from '../../classify';
 import Button from '../Button';

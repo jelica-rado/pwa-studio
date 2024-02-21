@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
-import { createTestInstance } from '@magento/peregrine';
-import { CACHE_PERSIST_PREFIX } from '@magento/peregrine/lib/Apollo/constants';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { CACHE_PERSIST_PREFIX } from '@jelica-rado/peregrine/lib/Apollo/constants';
 import { useAdapter } from '../useAdapter';
 
 const log = jest.fn();

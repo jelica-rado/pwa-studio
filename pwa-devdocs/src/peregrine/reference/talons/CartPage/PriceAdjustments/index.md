@@ -19,7 +19,7 @@ To update this section, update the doc blocks in the source code
 ```jsx
 import React from 'react'
 
-import { useCouponCode } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/CouponCode/useCouponCode';
+import { useCouponCode } from '@jelica-rado/peregrine/lib/talons/CartPage/PriceAdjustments/CouponCode/useCouponCode';
 
 import {
     GET_APPLIED_COUPONS,
@@ -70,9 +70,9 @@ export default MyCouponCode
 
 ```jsx
 import React from 'react';
-import { useShippingMethods } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/useShippingMethods';
-import { useShippingForm } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/useShippingForm';
-import { useShippingRadios } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/useShippingRadios';
+import { useShippingMethods } from '@jelica-rado/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/useShippingMethods';
+import { useShippingForm } from '@jelica-rado/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/useShippingForm';
+import { useShippingRadios } from '@jelica-rado/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/useShippingRadios';
 
 import { GET_SHIPPING_METHODS, SET_SHIPPING_ADDRESS_MUTATION, SET_SHIPPING_METHOD_MUTATION } from './myShippingMethods.gql';
 

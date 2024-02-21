@@ -1,5 +1,5 @@
-const myName = '@magento/pagebuilder';
-const { Targetables } = require('@magento/pwa-buildpack');
+const myName = '@jelica-rado/pagebuilder';
+const { Targetables } = require('@jelica-rado/pwa-buildpack');
 const CustomContentTypeList = require('./ContentTypes/CustomContentTypeList');
 module.exports = targets => {
     const pagebuilder = Targetables.using(targets);
@@ -15,7 +15,7 @@ module.exports = targets => {
     ]);
 
     targets
-        .of('@magento/venia-ui')
+        .of('@jelica-rado/venia-ui')
         .richContentRenderers.tap(richContentRenderers => {
             richContentRenderers.add({
                 componentName: 'PageBuilder',

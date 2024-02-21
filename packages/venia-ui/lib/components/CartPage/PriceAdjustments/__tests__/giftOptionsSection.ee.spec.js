@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { createTestInstance } from '@magento/peregrine';
-import { useGiftOptionsSection } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/useGiftOptionsSection';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useGiftOptionsSection } from '@jelica-rado/peregrine/lib/talons/CartPage/PriceAdjustments/useGiftOptionsSection';
 
 import GiftOptionsSection from '../giftOptionsSection.ee';
 
 jest.mock(
-    '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/useGiftOptionsSection'
+    '@jelica-rado/peregrine/lib/talons/CartPage/PriceAdjustments/useGiftOptionsSection'
 );
 jest.mock('../../../Accordion', () => ({
     Section: ({ children, ...rest }) => (

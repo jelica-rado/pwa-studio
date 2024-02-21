@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { useQuery } from '@apollo/client';
-import mergeOperations from '@magento/peregrine/lib/util/shallowMerge';
+import mergeOperations from '@jelica-rado/peregrine/lib/util/shallowMerge';
 import DEFAULT_OPERATIONS from './contactUs.gql';
 
 export const useContactLink = (props = {}) => {

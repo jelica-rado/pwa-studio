@@ -19,10 +19,10 @@ This lets you leverage Venia functionality in your own PWA projects.
 
 ## Install package dependency
 
-Use **Yarn** to install the `@magento/venia-concept` package:
+Use **Yarn** to install the `@jelica-rado/venia-concept` package:
 
 ```sh
-yarn add @magento/venia-concept
+yarn add @jelica-rado/venia-concept
 ```
 
 ## Import Venia components
@@ -30,8 +30,8 @@ yarn add @magento/venia-concept
 Individual Venia components are imported from the `src` directory of the Venia package.
 
 ```js
-import VeniaProductDetail from '@magento/venia-concept/src/components/ProductFullDetail';
-import Product from '@magento/venia-concept/src/RootComponents/Product';
+import VeniaProductDetail from '@jelica-rado/venia-concept/src/components/ProductFullDetail';
+import Product from '@jelica-rado/venia-concept/src/RootComponents/Product';
 ```
 
 These components are defined in the project as [ES Modules][] to help with [Webpack optimization][].
@@ -53,7 +53,7 @@ To use complex components in your own project, you have the following options:
 Import and use the [Venia Adapter][] in your project if your storefront already uses [Apollo][] and [React Redux][]
 
 ```jsx
-import VeniaAdapter from '@magento/venia-concept/src/drivers/adapter';
+import VeniaAdapter from '@jelica-rado/venia-concept/src/drivers/adapter';
 
 import { createStore } from 'redux';
 import { ApolloClient } from '@apollo/client/core';
@@ -83,23 +83,23 @@ The Venia Adapter wraps around Venia components to satisfy any implicit external
 ### Venia drivers
 
 The [`src/drivers`][] dependency is a centralized module for Venia components that rely on external dependencies, such as GraphQL clients and Redux stores.
-Instead of importing these dependencies directly, Venia components import them from the virtual dependency `@magento/venia-drivers`.
+Instead of importing these dependencies directly, Venia components import them from the virtual dependency `@jelica-rado/venia-drivers`.
 
 ```js
-import { Link, resourceUrl } from '@magento/venia-drivers';
+import { Link, resourceUrl } from '@jelica-rado/venia-drivers';
 ```
 
-The `@magento/venia-drivers` dependency is not listed in `package.json` or available on the NPM registry.
+The `@jelica-rado/venia-drivers` dependency is not listed in `package.json` or available on the NPM registry.
 Instead, this works because of the following configuration in `venia-ui/package.json`:
 
 ```json
 "browser": {
-  "@magento/venia-drivers": "src/drivers"
+  "@jelica-rado/venia-drivers": "src/drivers"
 }
 ```
 
 Webpack treats this package.json configuration as equivalent to a Webpack alias configuration, as required by [this draft specification](https://github.com/defunctzombie/package-browser-field-spec).
-An app which imports anything from `@magento/venia-ui` will substitute the virtual dependency for the real file at build time.
+An app which imports anything from `@jelica-rado/venia-ui` will substitute the virtual dependency for the real file at build time.
 In your app, you can override the implementation of `src/drivers` and the `"browser"` field which aliases it, by specifying a Webpack alias as described below.
 
 The default implementation, which is used in the Venia storefront, provides modules that work with the components provided by the [Venia Adapter][].
@@ -125,7 +125,7 @@ Use a build tool, such as [Webpack][] or [Rollup][], to override driver module i
 ```js
 module: {
     alias: {
-      "@magento/venia-drivers": "./myReplacementDrivers"
+      "@jelica-rado/venia-drivers": "./myReplacementDrivers"
     }
   }
 ```
@@ -134,7 +134,7 @@ module: {
 
 ```jsx
 import React, { Component } from 'react';
-import { resourceUrl as veniaResourceUrl } from '@magento/venia-concept/src/drivers';
+import { resourceUrl as veniaResourceUrl } from '@jelica-rado/venia-concept/src/drivers';
 
 // A replacement Query that loads forever
 export class Query extends Component {
@@ -174,9 +174,9 @@ export function resourceUrl(...args) {
 // `connect()` HOC
 ```
 
-The examples provided creates an `import` or `require` alias for `@magento/venia-drivers` and have it resolve to `myReplacementDrivers`.
+The examples provided creates an `import` or `require` alias for `@jelica-rado/venia-drivers` and have it resolve to `myReplacementDrivers`.
 
-This means that any module that imports from `src/drivers` will import from `myReplacementDrivers` instead of the default `@magento/venia-drivers`.
+This means that any module that imports from `src/drivers` will import from `myReplacementDrivers` instead of the default `@jelica-rado/venia-drivers`.
 
 #### Example project
 

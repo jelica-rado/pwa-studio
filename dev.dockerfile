@@ -39,4 +39,4 @@ RUN chown -R node:node /usr/src/app
 COPY --chown=node:node --from=build /usr/src/app .
 USER node
 # command to run application
-CMD [ "yarn", "workspace", "@magento/venia-concept", "run", "watch"]
+CMD [ "yarn", "workspace", "@jelica-rado/venia-concept", "run", "watch"]

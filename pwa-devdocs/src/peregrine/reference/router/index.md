@@ -21,7 +21,7 @@ The following example shows the manual usage of the Router component:
 
 ``` jsx
 import ReactDOM from 'react-dom';
-import { Router } from '@magento/peregrine';
+import { Router } from '@jelica-rado/peregrine';
 
 ReactDOM.render(
     <Router apiBase="https://mystore.com" />,

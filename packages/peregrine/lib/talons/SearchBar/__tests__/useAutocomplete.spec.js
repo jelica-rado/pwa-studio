@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Form, Text } from 'informed';
-import useFieldState from '@magento/peregrine/lib/hooks/hook-wrappers/useInformedFieldStateWrapper';
+import useFieldState from '@jelica-rado/peregrine/lib/hooks/hook-wrappers/useInformedFieldStateWrapper';
 
 import { runQuery, useLazyQuery } from '@apollo/client';
 import { useAutocomplete } from '../useAutocomplete';
@@ -12,7 +12,7 @@ jest.mock('informed', () => ({
 }));
 
 jest.mock(
-    '@magento/peregrine/lib/hooks/hook-wrappers/useInformedFieldStateWrapper',
+    '@jelica-rado/peregrine/lib/hooks/hook-wrappers/useInformedFieldStateWrapper',
     () => {
         return jest.fn().mockReturnValue({
             value: ''

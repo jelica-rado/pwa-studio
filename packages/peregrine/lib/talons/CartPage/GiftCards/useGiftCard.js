@@ -12,7 +12,7 @@ import { useCallback } from 'react';
  * @return {GiftCardTalonProps}
  *
  * @example <caption>Importing into your project</caption>
- * import { useGiftCard } from '@magento/peregrine/lib/talons/CartPage/GiftCards/useGiftCard';
+ * import { useGiftCard } from '@jelica-rado/peregrine/lib/talons/CartPage/GiftCards/useGiftCard';
  */
 export const useGiftCard = props => {
     const { code, removeGiftCard } = props;

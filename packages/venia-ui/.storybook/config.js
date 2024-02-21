@@ -1,8 +1,8 @@
 import React from 'react';
 import { configure, addDecorator } from '@storybook/react';
-import Adapter from '@magento/venia-ui/lib/components/Adapter';
-import store from '@magento/venia-concept/src/store';
-import '@magento/venia-ui/lib/index.module.css';
+import Adapter from '@jelica-rado/venia-ui/lib/components/Adapter';
+import store from '@jelica-rado/venia-concept/src/store';
+import '@jelica-rado/venia-ui/lib/index.module.css';
 import 'tailwindcss/tailwind.css';
 
 function loadStories() {

@@ -29,7 +29,7 @@ Paste the result console output into the issue. Thank you!
 
 **Validation errors when running developer mode**{:#validation-errors}
 
-Make sure you ran `npx @magento/pwa-buildpack create-env-file packages/venia-concept` in the root directory.
+Make sure you ran `npx @jelica-rado/pwa-buildpack create-env-file packages/venia-concept` in the root directory.
 The file that command generates will hold variables for your local development environment.
 
 **Venia queries to GraphQL produce validation errors**{:#graphql-validation-errors}

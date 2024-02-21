@@ -1,6 +1,6 @@
 jest.mock('node-fetch');
-jest.mock('@magento/upward-js');
-const upward = require('@magento/upward-js');
+jest.mock('@jelica-rado/upward-js');
+const upward = require('@jelica-rado/upward-js');
 const fetch = require('node-fetch');
 const UpwardDevServerPlugin = require('../UpwardDevServerPlugin');
 

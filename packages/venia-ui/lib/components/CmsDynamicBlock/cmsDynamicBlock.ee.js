@@ -1,8 +1,8 @@
 import React from 'react';
 import { array, oneOf, oneOfType, string } from 'prop-types';
 
-import { useCmsDynamicBlock } from '@magento/peregrine/lib/talons/CmsDynamicBlock/useCmsDynamicBlock';
-import ErrorView from '@magento/venia-ui/lib/components/ErrorView';
+import { useCmsDynamicBlock } from '@jelica-rado/peregrine/lib/talons/CmsDynamicBlock/useCmsDynamicBlock';
+import ErrorView from '@jelica-rado/venia-ui/lib/components/ErrorView';
 
 import {
     DISPLAY_MODE_FIXED_TYPE,

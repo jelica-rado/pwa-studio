@@ -19,7 +19,7 @@ Import the ToastContextProvider and wrap it around components that use Toast dat
 ```jsx
 // MyComponent.js
 
-import {ToastContextProvider} from '@magento/peregrine'
+import {ToastContextProvider} from '@jelica-rado/peregrine'
 import {ToastContainer, AddToastComponent} from './MyToastComponents'
 
 ...

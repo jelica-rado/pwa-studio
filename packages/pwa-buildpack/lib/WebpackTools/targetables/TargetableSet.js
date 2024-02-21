@@ -30,7 +30,7 @@ class TargetableSet {
             );
         }
         this._targetProvider = targetProvider;
-        this._builtins = targetProvider.of('@magento/pwa-buildpack');
+        this._builtins = targetProvider.of('@jelica-rado/pwa-buildpack');
         this._owner = targetProvider.name;
         this._connectedFiles = new Map();
 

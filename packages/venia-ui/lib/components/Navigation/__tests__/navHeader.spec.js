@@ -1,11 +1,11 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import AccountChip from '../../AccountChip/accountChip';
 import NavHeader from '../navHeader';
 
 jest.mock('../../AccountChip/accountChip', () => 'AccountChip');
-jest.mock('@magento/peregrine/lib/context/user', () => {
+jest.mock('@jelica-rado/peregrine/lib/context/user', () => {
     const state = {
         currentUser: null,
         isSignedIn: false

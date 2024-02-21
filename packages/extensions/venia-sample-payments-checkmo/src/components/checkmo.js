@@ -1,7 +1,7 @@
 import React from 'react';
-import { useStyle } from '@magento/venia-ui/lib/classify';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
 import { shape, string, bool, func } from 'prop-types';
-import BillingAddress from '@magento/venia-ui/lib/components/CheckoutPage/BillingAddress';
+import BillingAddress from '@jelica-rado/venia-ui/lib/components/CheckoutPage/BillingAddress';
 
 import { useCheckmo } from '../talons/useCheckmo';
 import defaultClasses from './checkmo.module.css';

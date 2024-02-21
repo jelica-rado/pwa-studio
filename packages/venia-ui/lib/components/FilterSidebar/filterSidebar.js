@@ -1,7 +1,7 @@
 import React, { useMemo, useCallback, useRef } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { array, arrayOf, shape, string, number } from 'prop-types';
-import { useFilterSidebar } from '@magento/peregrine/lib/talons/FilterSidebar';
+import { useFilterSidebar } from '@jelica-rado/peregrine/lib/talons/FilterSidebar';
 
 import { useStyle } from '../../classify';
 import LinkButton from '../LinkButton';

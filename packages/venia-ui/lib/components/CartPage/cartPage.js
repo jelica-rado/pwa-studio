@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { Check } from 'react-feather';
-import { useCartPage } from '@magento/peregrine/lib/talons/CartPage/useCartPage';
-import { useStyle } from '@magento/venia-ui/lib/classify';
-import { useToasts } from '@magento/peregrine';
+import { useCartPage } from '@jelica-rado/peregrine/lib/talons/CartPage/useCartPage';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
+import { useToasts } from '@jelica-rado/peregrine';
 
 import Icon from '../Icon';
 import { StoreTitle } from '../Head';
@@ -31,7 +31,7 @@ const CheckIcon = <Icon size={20} src={Check} />;
  * @returns {React.Element}
  *
  * @example <caption>Importing into your project</caption>
- * import CartPage from "@magento/venia-ui/lib/components/CartPage";
+ * import CartPage from "@jelica-rado/venia-ui/lib/components/CartPage";
  */
 const CartPage = props => {
     const talonProps = useCartPage();

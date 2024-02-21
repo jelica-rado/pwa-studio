@@ -1,17 +1,17 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useAccountTrigger } from '@magento/peregrine/lib/talons/Header/useAccountTrigger';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useAccountTrigger } from '@jelica-rado/peregrine/lib/talons/Header/useAccountTrigger';
 import { IntlProvider } from 'react-intl';
 
 import AccountTrigger from '../accountTrigger';
 
-jest.mock('@magento/peregrine/lib/talons/Header/useAccountTrigger', () => {
+jest.mock('@jelica-rado/peregrine/lib/talons/Header/useAccountTrigger', () => {
     return { useAccountTrigger: jest.fn() };
 });
 
 jest.mock('../../AccountChip', () => 'Account Chip');
 jest.mock('../../AccountMenu', () => 'Account Menu');
-jest.mock('@magento/venia-ui/lib/classify');
+jest.mock('@jelica-rado/venia-ui/lib/classify');
 
 const talonProps = {
     accountMenuIsOpen: false,

@@ -22,7 +22,7 @@ const useTypePolicies = jest.fn(peregrine.useTypePolicies);
 // components
 
 /**
- * the Price component from @magento/peregrine
+ * the Price component from @jelica-rado/peregrine
  * has browser-specific functionality and cannot
  * currently by rendered in the test environment
  */

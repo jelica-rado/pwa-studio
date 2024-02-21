@@ -1,13 +1,13 @@
 import React from 'react';
 import { Form } from 'informed';
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
 import CreateWishlistForm from '../createWishlistForm';
-import { useCreateWishlistForm } from '@magento/peregrine/lib/talons/Wishlist/WishlistDialog/CreateWishlistForm/useCreateWishlistForm';
+import { useCreateWishlistForm } from '@jelica-rado/peregrine/lib/talons/Wishlist/WishlistDialog/CreateWishlistForm/useCreateWishlistForm';
 
-jest.mock('@magento/venia-ui/lib/classify');
+jest.mock('@jelica-rado/venia-ui/lib/classify');
 
 jest.mock(
-    '@magento/peregrine/lib/talons/Wishlist/WishlistDialog/CreateWishlistForm/useCreateWishlistForm',
+    '@jelica-rado/peregrine/lib/talons/Wishlist/WishlistDialog/CreateWishlistForm/useCreateWishlistForm',
     () => ({
         useCreateWishlistForm: jest.fn().mockReturnValue({
             formErrors: [undefined],

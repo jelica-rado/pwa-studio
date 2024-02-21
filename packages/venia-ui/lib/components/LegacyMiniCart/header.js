@@ -7,7 +7,7 @@ import Icon from '../Icon';
 import Trigger from '../Trigger';
 
 import defaultClasses from './header.module.css';
-import { useHeader } from '@magento/peregrine/lib/talons/LegacyMiniCart/useHeader';
+import { useHeader } from '@jelica-rado/peregrine/lib/talons/LegacyMiniCart/useHeader';
 
 const Header = props => {
     const { closeDrawer, isEditingItem } = props;

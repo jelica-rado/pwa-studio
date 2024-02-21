@@ -1,7 +1,7 @@
 import React from 'react';
 import { shape, string } from 'prop-types';
 
-import { useCurrencySwitcher } from '@magento/peregrine/lib/talons/Header/useCurrencySwitcher';
+import { useCurrencySwitcher } from '@jelica-rado/peregrine/lib/talons/Header/useCurrencySwitcher';
 
 import { useStyle } from '../../classify';
 import CurrencySymbol from '../CurrencySymbol';

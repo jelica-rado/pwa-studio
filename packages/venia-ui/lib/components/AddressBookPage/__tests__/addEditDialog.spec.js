@@ -1,10 +1,10 @@
 import React from 'react';
 import { Form } from 'informed';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import AddEditDialog from '../addEditDialog';
 
-jest.mock('@magento/venia-ui/lib/classify');
+jest.mock('@jelica-rado/venia-ui/lib/classify');
 jest.mock('../../Country', () => 'Country');
 jest.mock('../../Dialog', () => 'Dialog');
 jest.mock('../../FormError', () => 'FormError');

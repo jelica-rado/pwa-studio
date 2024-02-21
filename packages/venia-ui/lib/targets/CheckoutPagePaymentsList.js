@@ -14,7 +14,7 @@ class CheckoutPagePaymentsList {
         const registry = this;
         this._methods = venia.esModuleObject({
             module:
-                '@magento/venia-ui/lib/components/CheckoutPage/PaymentInformation/paymentMethodCollection.js',
+                '@jelica-rado/venia-ui/lib/components/CheckoutPage/PaymentInformation/paymentMethodCollection.js',
             publish(targets) {
                 targets.checkoutPagePaymentTypes.call(registry);
             }

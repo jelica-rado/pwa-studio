@@ -1,7 +1,7 @@
 import React from 'react';
 import { act } from 'react-test-renderer';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import ForgotPasswordForm from '../ForgotPasswordForm';
 import ForgotPassword from '../forgotPassword';
@@ -9,7 +9,7 @@ import ForgotPassword from '../forgotPassword';
 let mockHasCompleted = false;
 
 jest.mock(
-    '@magento/peregrine/lib/talons/ForgotPassword/useForgotPassword',
+    '@jelica-rado/peregrine/lib/talons/ForgotPassword/useForgotPassword',
     () => ({
         useForgotPassword: jest
             .fn()

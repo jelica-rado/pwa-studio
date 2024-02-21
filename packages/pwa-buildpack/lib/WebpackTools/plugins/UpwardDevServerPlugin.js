@@ -3,7 +3,7 @@ const fetch = require('node-fetch');
 const path = require('path');
 const https = require('https');
 const url = require('url');
-const upward = require('@magento/upward-js');
+const upward = require('@jelica-rado/upward-js');
 
 // To be used with `node-fetch` in order to allow self-signed certificates.
 const httpsAgent = new https.Agent({ rejectUnauthorized: false });

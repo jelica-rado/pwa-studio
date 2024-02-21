@@ -1,7 +1,7 @@
 /* Deprecated in PWA-12.1.0*/
 
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import { useCategoryTile } from '../useCategoryTile';
 

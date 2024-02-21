@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import ForgotPasswordPage from '../forgotPasswordPage';
 
 jest.mock(
-    '@magento/peregrine/lib/talons/ForgotPasswordPage/useForgotPasswordPage',
+    '@jelica-rado/peregrine/lib/talons/ForgotPasswordPage/useForgotPasswordPage',
     () => ({
         useForgotPasswordPage: jest.fn(() => ({
             forgotPasswordProps: {}
@@ -13,11 +13,11 @@ jest.mock(
     })
 );
 
-jest.mock('@magento/venia-ui/lib/components/ForgotPassword', () => props => (
+jest.mock('@jelica-rado/venia-ui/lib/components/ForgotPassword', () => props => (
     <mock-ForgotPassword {...props} />
 ));
 
-jest.mock('@magento/venia-ui/lib/components/Head', () => ({
+jest.mock('@jelica-rado/venia-ui/lib/components/Head', () => ({
     StoreTitle: () => 'Title'
 }));
 

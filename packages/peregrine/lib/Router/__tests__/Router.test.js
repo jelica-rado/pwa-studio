@@ -1,6 +1,6 @@
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import { MemoryRouter } from 'react-router-dom';
 
 import MagentoRouter, { Consumer as RouteConsumer } from '../router';

@@ -2,11 +2,11 @@ import React from 'react';
 import { shape, string, bool, func } from 'prop-types';
 import { useIntl } from 'react-intl';
 
-import { usePaymentMethods } from '@magento/peregrine/lib/talons/CheckoutPage/PaymentInformation/usePaymentMethods';
+import { usePaymentMethods } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/PaymentInformation/usePaymentMethods';
 
 import { useStyle } from '../../../classify';
-import RadioGroup from '@magento/venia-ui/lib/components/RadioGroup';
-import Radio from '@magento/venia-ui/lib/components/RadioGroup/radio';
+import RadioGroup from '@jelica-rado/venia-ui/lib/components/RadioGroup';
+import Radio from '@jelica-rado/venia-ui/lib/components/RadioGroup/radio';
 import defaultClasses from './paymentMethods.module.css';
 import payments from './paymentMethodCollection';
 

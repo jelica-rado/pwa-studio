@@ -84,7 +84,7 @@ class TargetableESModule extends TargetableModule {
               };
         return this.addTransform(
             'source',
-            '@magento/pwa-buildpack/lib/WebpackTools/loaders/wrap-esm-loader',
+            '@jelica-rado/pwa-buildpack/lib/WebpackTools/loaders/wrap-esm-loader',
             opts
         );
     }

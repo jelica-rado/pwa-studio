@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useMemo } from 'react';
 import { useHistory } from 'react-router-dom';
 
-import errorRecord from '@magento/peregrine/lib/util/createErrorRecord';
-import { useAppContext } from '@magento/peregrine/lib/context/app';
+import errorRecord from '@jelica-rado/peregrine/lib/util/createErrorRecord';
+import { useAppContext } from '@jelica-rado/peregrine/lib/context/app';
 
 const dismissers = new WeakMap();
 

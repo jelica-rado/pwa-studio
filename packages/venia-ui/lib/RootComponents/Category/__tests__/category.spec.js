@@ -1,9 +1,9 @@
 import React from 'react';
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
-import { useCategory } from '@magento/peregrine/lib/talons/RootComponents/Category';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
+import { useCategory } from '@jelica-rado/peregrine/lib/talons/RootComponents/Category';
 import Category from '../category';
 
-jest.mock('@magento/peregrine/lib/talons/RootComponents/Category', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/RootComponents/Category', () => ({
     useCategory: jest.fn()
 }));
 

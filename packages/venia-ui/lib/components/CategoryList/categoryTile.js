@@ -4,7 +4,7 @@ import React, { useMemo } from 'react';
 import { arrayOf, string, shape } from 'prop-types';
 import { Link } from 'react-router-dom';
 
-import { useCategoryTile } from '@magento/peregrine/lib/talons/CategoryList/useCategoryTile';
+import { useCategoryTile } from '@jelica-rado/peregrine/lib/talons/CategoryList/useCategoryTile';
 
 import { useStyle } from '../../classify';
 import Image from '../Image';

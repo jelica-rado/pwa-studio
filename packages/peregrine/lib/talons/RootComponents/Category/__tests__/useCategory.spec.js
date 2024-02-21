@@ -1,6 +1,6 @@
 import React from 'react';
 import { act } from 'react-test-renderer';
-import createTestInstance from '@magento/peregrine/lib/util/createTestInstance';
+import createTestInstance from '@jelica-rado/peregrine/lib/util/createTestInstance';
 import { useCategory } from '../useCategory';
 import { useQuery, useLazyQuery } from '@apollo/client';
 import { useLocation } from 'react-router-dom';

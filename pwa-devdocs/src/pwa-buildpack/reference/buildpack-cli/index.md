@@ -36,7 +36,7 @@ Invoke buildpack with a subcommand (eg. `buildpack create-env-file`) and the arg
 
 ### As a project dependency
 
-A project with the `@magento/pwa-buildpack` dependency installed can use the `buildpack` command in its NPM scripts:
+A project with the `@jelica-rado/pwa-buildpack` dependency installed can use the `buildpack` command in its NPM scripts:
 
 ```json
 "scripts": {
@@ -51,7 +51,7 @@ With this example, you can run `npm run-script load-env` or `yarn run load-env` 
 Invoke `buildpack` directly using NPM's `npx` tool, which installs packages and runs their CLIs in a single command:
 
 ```sh
-npx @magento/pwa-buildpack <command>
+npx @jelica-rado/pwa-buildpack <command>
 ```
 
 {: .bs-callout .bs-callout-warning}

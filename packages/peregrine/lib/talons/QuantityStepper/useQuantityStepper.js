@@ -1,6 +1,6 @@
 import { useCallback, useMemo, useState, useEffect } from 'react';
 import { useFieldApi } from 'informed';
-import useFieldState from '@magento/peregrine/lib/hooks/hook-wrappers/useInformedFieldStateWrapper';
+import useFieldState from '@jelica-rado/peregrine/lib/hooks/hook-wrappers/useInformedFieldStateWrapper';
 import debounce from 'lodash.debounce';
 
 /**
@@ -22,7 +22,7 @@ import debounce from 'lodash.debounce';
  * @returns {QuantityTalonProps}
  *
  * @example <caption>Importing into your project</caption>
- * import { useQuantityStepper } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useQuantityStepper';
+ * import { useQuantityStepper } from '@jelica-rado/peregrine/lib/talons/CartPage/ProductListing/useQuantityStepper';
  */
 export const useQuantityStepper = props => {
     const { initialValue, min, onChange } = props;

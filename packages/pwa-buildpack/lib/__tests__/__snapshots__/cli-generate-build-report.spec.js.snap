@@ -14,10 +14,10 @@ Array [
   "
 ",
   "Found 4 @magento dependencies in yarn.lock",
-  "@magento/pwa-buildpack @ 7.0.0",
+  "@jelica-rado/pwa-buildpack @ 7.0.0",
   "@adobe/apollo-link-mutation-queue @ 1.0.2",
-  "@magento/peregrine @ 8.0.0",
-  "@magento/venia-ui @ 5.0.0",
+  "@jelica-rado/peregrine @ 8.0.0",
+  "@jelica-rado/venia-ui @ 5.0.0",
   "
 ",
   "Not using sample backend.",
@@ -51,10 +51,10 @@ Array [
   "
 ",
   "Found 4 @magento dependencies in package-lock.json",
-  "@magento/pwa-buildpack @ file:../../pwa-studio/packages/pwa-buildpack/magento-pwa-buildpack-7.0.0.tgz",
+  "@jelica-rado/pwa-buildpack @ file:../../pwa-studio/packages/pwa-buildpack/magento-pwa-buildpack-7.0.0.tgz",
   "@adobe/apollo-link-mutation-queue @ 1.0.2",
-  "@magento/peregrine @ file:../../pwa-studio/packages/peregrine/magento-peregrine-8.0.0.tgz",
-  "@magento/venia-ui @ file:../../pwa-studio/packages/venia-ui/magento-venia-ui-5.0.0.tgz",
+  "@jelica-rado/peregrine @ file:../../pwa-studio/packages/peregrine/magento-peregrine-8.0.0.tgz",
+  "@jelica-rado/venia-ui @ file:../../pwa-studio/packages/venia-ui/magento-venia-ui-5.0.0.tgz",
   "
 ",
   "Not using sample backend.",
@@ -88,10 +88,10 @@ Array [
   "
 ",
   "Found 4 @magento dependencies in yarn.lock",
-  "@magento/pwa-buildpack @ 7.0.0",
+  "@jelica-rado/pwa-buildpack @ 7.0.0",
   "@adobe/apollo-link-mutation-queue @ 1.0.2",
-  "@magento/peregrine @ 8.0.0",
-  "@magento/venia-ui @ 5.0.0",
+  "@jelica-rado/peregrine @ 8.0.0",
+  "@jelica-rado/venia-ui @ 5.0.0",
   "
 ",
   "Not using sample backend.",

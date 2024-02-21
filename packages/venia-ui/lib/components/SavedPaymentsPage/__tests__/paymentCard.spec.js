@@ -1,7 +1,7 @@
 import React from 'react';
 import PaymentCard from '../paymentCard';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 jest.mock('../savedPaymentTypes', () => ({
     braintree: props => <mock-CreditCard {...props} />

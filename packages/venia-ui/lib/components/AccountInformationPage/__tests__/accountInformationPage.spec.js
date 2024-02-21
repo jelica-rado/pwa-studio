@@ -1,12 +1,12 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useAccountInformationPage } from '@magento/peregrine/lib/talons/AccountInformationPage/useAccountInformationPage';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useAccountInformationPage } from '@jelica-rado/peregrine/lib/talons/AccountInformationPage/useAccountInformationPage';
 
 import AccountInformationPage from '../accountInformationPage';
 import LoadingIndicator from '../../LoadingIndicator';
 
 jest.mock(
-    '@magento/peregrine/lib/talons/AccountInformationPage/useAccountInformationPage'
+    '@jelica-rado/peregrine/lib/talons/AccountInformationPage/useAccountInformationPage'
 );
 jest.mock('../../../classify');
 

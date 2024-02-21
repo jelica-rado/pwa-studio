@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { createTestInstance } from '@magento/peregrine';
-import { useAddToCartButton } from '@magento/peregrine/lib/talons/Gallery/useAddToCartButton';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useAddToCartButton } from '@jelica-rado/peregrine/lib/talons/Gallery/useAddToCartButton';
 
 import AddToCartButton from '../addToCartButton';
 
-jest.mock('@magento/peregrine/lib/talons/Gallery/useAddToCartButton', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/Gallery/useAddToCartButton', () => ({
     useAddToCartButton: jest.fn().mockReturnValue({
         handleAddToCart: jest.fn().mockName('handleAddToCart'),
         isDisabled: false,

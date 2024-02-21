@@ -69,11 +69,11 @@ It taps the Target and provides an intercept function that adds a custom rendere
 
 ```js
 targets
-    .of('@magento/venia-ui')
+    .of('@jelica-rado/venia-ui')
     .richContentRenderers.tap(richContentRenderers => {
         richContentRenderers.add({
             componentName: 'PageBuilder',
-            importPath: '@magento/pagebuilder'
+            importPath: '@jelica-rado/pagebuilder'
         });
     });
 ```
@@ -92,14 +92,14 @@ These changes get applied during the build process and do not affect the source 
 If you are working on a storefront project, you can use Targetables in your local intercept file to make code changes in _any file_ in your project dependencies.
 
 ```js
-const { Targetables } = require('@magento/pwa-buildpack')
+const { Targetables } = require('@jelica-rado/pwa-buildpack')
 
 module.exports = targets => {
 
   const targetables = Targetables.using(targets);
 
   const MainComponent = targetables.reactComponent(
-      '@magento/venia-ui/lib/components/Main/main.js'
+      '@jelica-rado/venia-ui/lib/components/Main/main.js'
   );
 
   MainComponent.insertAfterJSX('<Header />', '<span>Hello World!</span>')
@@ -115,7 +115,7 @@ When the application builds and runs in the browser, it shows the `Hello World!`
 If you are working on a PWA Studio extension, you can use Targetables in your intercept file to add specific Targets that are available to other extensions.
 
 ```js
-const { Targetables } = require('@magento/pwa-buildpack')
+const { Targetables } = require('@jelica-rado/pwa-buildpack')
 
 module.exports = targets => {
 
@@ -202,7 +202,7 @@ For more information on how intercept files work, see the tutorial on how to [In
 ```js
 module.exports = targets => {
 
-  const builtins = targets.of("@magento/pwa-buildpack");
+  const builtins = targets.of("@jelica-rado/pwa-buildpack");
   builtins.specialFeatures.tap((featuresByModule) => {
     featuresByModule["my-extension"] = {
       esModules: true,
@@ -212,7 +212,7 @@ module.exports = targets => {
 }
 ```
 
-The example provided defines an intercept file that intercepts the `specialFeatures` target in the `@magento/pwa-buildpack` package.
+The example provided defines an intercept file that intercepts the `specialFeatures` target in the `@jelica-rado/pwa-buildpack` package.
 It adds a webpack configuration for the `my-extension` package that lets the build process know that the package uses ES modules.
 
 ### Intercept functions
@@ -262,10 +262,10 @@ The PWA Studio scaffolding tool also installs extensions on all new storefront p
 These extensions use the framework to add useful features on top of the base application.
 They are also examples of what a PWA Studio storefront extension looks like.
 
-[@magento/upward-security-headers][]
+[@jelica-rado/upward-security-headers][]
 : This extension adds security headers to UPWARD by tapping into the `transformUpward` Target in Buildpack.
 
-[@magento/venia-sample-language-packs][]
+[@jelica-rado/venia-sample-language-packs][]
 : This extension provides sample translations for PWA Studio's internationalization feature.
 
 [`richcontentrenderers` target]: <{% link venia-ui/reference/targets/index.md %}#richContentRenderers>
@@ -286,5 +286,5 @@ They are also examples of what a PWA Studio storefront extension looks like.
 [hook types]: https://github.com/webpack/tapable#hook-types
 [`eventemitter` class]: https://nodejs.org/api/events.html#events_class_eventemitter
 [page builder extension]: https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/intercept.js
-[@magento/upward-security-headers]: https://github.com/magento/pwa-studio/tree/develop/packages/extensions/upward-security-headers
-[@magento/venia-sample-language-packs]: https://github.com/magento/pwa-studio/tree/develop/packages/extensions/venia-sample-language-packs
+[@jelica-rado/upward-security-headers]: https://github.com/magento/pwa-studio/tree/develop/packages/extensions/upward-security-headers
+[@jelica-rado/venia-sample-language-packs]: https://github.com/magento/pwa-studio/tree/develop/packages/extensions/venia-sample-language-packs

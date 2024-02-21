@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 import { useMutation } from '@apollo/client';
 
-import mergeOperations from '@magento/peregrine/lib/util/shallowMerge';
+import mergeOperations from '@jelica-rado/peregrine/lib/util/shallowMerge';
 import defaultOperations from './creditCard.gql';
 
 export const useCreditCard = props => {

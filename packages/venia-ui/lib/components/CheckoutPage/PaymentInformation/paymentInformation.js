@@ -3,8 +3,8 @@ import { FormattedMessage } from 'react-intl';
 import { Form } from 'informed';
 import { shape, func, string, bool, instanceOf } from 'prop-types';
 
-import { usePaymentInformation } from '@magento/peregrine/lib/talons/CheckoutPage/PaymentInformation/usePaymentInformation';
-import CheckoutError from '@magento/peregrine/lib/talons/CheckoutPage/CheckoutError';
+import { usePaymentInformation } from '@jelica-rado/peregrine/lib/talons/CheckoutPage/PaymentInformation/usePaymentInformation';
+import CheckoutError from '@jelica-rado/peregrine/lib/talons/CheckoutPage/CheckoutError';
 
 import { useStyle } from '../../../classify';
 import defaultClasses from './paymentInformation.module.css';

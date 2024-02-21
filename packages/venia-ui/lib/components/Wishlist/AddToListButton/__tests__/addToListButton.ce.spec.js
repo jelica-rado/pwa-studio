@@ -1,11 +1,11 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import AddToListButton from '../addToListButton.ce';
-import { useAddToListButton } from '@magento/peregrine/lib/talons/Wishlist/AddToListButton/useAddToListButton';
+import { useAddToListButton } from '@jelica-rado/peregrine/lib/talons/Wishlist/AddToListButton/useAddToListButton';
 import { useCommonToasts } from '../useCommonToasts';
 
 jest.mock(
-    '@magento/peregrine/lib/talons/Wishlist/AddToListButton/useAddToListButton',
+    '@jelica-rado/peregrine/lib/talons/Wishlist/AddToListButton/useAddToListButton',
     () => ({
         useAddToListButton: jest.fn().mockReturnValue({
             buttonProps: {

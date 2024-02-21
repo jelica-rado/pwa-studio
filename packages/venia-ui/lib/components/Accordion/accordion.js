@@ -1,6 +1,6 @@
 import React, { createContext, useContext } from 'react';
 
-import { useAccordion } from '@magento/peregrine/lib/talons/Accordion/useAccordion';
+import { useAccordion } from '@jelica-rado/peregrine/lib/talons/Accordion/useAccordion';
 
 import { useStyle } from '../../classify';
 import defaultClasses from './accordion.module.css';

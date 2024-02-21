@@ -2,7 +2,7 @@ import React from 'react';
 import { useGalleryItem } from '../useGalleryItem';
 import createTestInstance from '../../../util/createTestInstance';
 
-jest.mock('@magento/peregrine/lib/context/eventing', () => ({
+jest.mock('@jelica-rado/peregrine/lib/context/eventing', () => ({
     useEventingContext: jest.fn().mockReturnValue([{}, { dispatch: jest.fn() }])
 }));
 

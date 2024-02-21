@@ -67,8 +67,8 @@ The `tag.js` and `tag.css` files define a Tag component that renders a single ta
 /* src/TagList/tag.js */
 
 import React from "react";
-import Button from '@magento/venia-ui/lib/components/Button'
-import { Link } from '@magento/venia-ui/lib/drivers';
+import Button from '@jelica-rado/venia-ui/lib/components/Button'
+import { Link } from '@jelica-rado/venia-ui/lib/drivers';
 
 import classes from './tag.css'
 
@@ -170,7 +170,7 @@ This safeguards against including more than one copy of the same dependency in t
 Use the following command to add the TagList component dependencies as peer dependencies:
 
 ```sh
-yarn add --peer react @magento/venia-ui
+yarn add --peer react @jelica-rado/venia-ui
 ```
 
 This command creates a new `peerDependencies` entry in your `package.json` file that lists these dependencies.
@@ -184,7 +184,7 @@ This command creates a new `peerDependencies` entry in your `package.json` file 
 -   "license": "MIT"
 +   "license": "MIT",
 +   "peerDependencies": {
-+     "@magento/venia-ui": "^6.0.1",
++     "@jelica-rado/venia-ui": "^6.0.1",
 +     "react": "^17.0.1"
 +   }
   }
@@ -345,7 +345,7 @@ Edit this file and add the following content:
 
 ```js
 module.exports = (targets) => {
-    const { Targetables } = require('@magento/pwa-buildpack');
+    const { Targetables } = require('@jelica-rado/pwa-buildpack');
 
     const targetables = Targetables.using(targets);
 
@@ -353,10 +353,10 @@ module.exports = (targets) => {
 };
 ```
 
-This script uses `@magento/pwa-buildpack`, so you need to add this library as a dependency.
+This script uses `@jelica-rado/pwa-buildpack`, so you need to add this library as a dependency.
 
 ```sh
-yarn add --peer @magento/pwa-buildpack
+yarn add --peer @jelica-rado/pwa-buildpack
 ```
 
 Next, edit your `package.json` file to point to the location of this extension's intercept file:
@@ -370,8 +370,8 @@ Next, edit your `package.json` file to point to the location of this extension's
     "license": "MIT",
     "peerDependencies": {
       "@apollo/client": "^3.3.11",
-      "@magento/pwa-buildpack": "^8.0.1",
-      "@magento/venia-ui": "^6.0.1",
+      "@jelica-rado/pwa-buildpack": "^8.0.1",
+      "@jelica-rado/venia-ui": "^6.0.1",
       "graphql-tag": "^2.11.0",
       "react": "^17.0.1"
 +   },
@@ -412,7 +412,7 @@ Edit this file so it looks like the following:
 /* local-intercept.js */
 
 // Import the Targetables manager
-const { Targetables } = require('@magento/pwa-buildpack');
+const { Targetables } = require('@jelica-rado/pwa-buildpack');
 
 function localIntercept(targets) {
     // Create a bound Targetable factory
@@ -420,7 +420,7 @@ function localIntercept(targets) {
 
     // Create a React component targetable linked to the productFullDetail.js file
     const ProductDetails = targetables.reactComponent(
-        '@magento/venia-ui/lib/components/ProductFullDetail/productFullDetail.js'
+        '@jelica-rado/venia-ui/lib/components/ProductFullDetail/productFullDetail.js'
     );
 
     // Add an import statement to the productFullDetail.js file and
@@ -436,7 +436,7 @@ function localIntercept(targets) {
 
     // Create an ES Module targetable linked to the useProductFullDetail.js file
     const useProductFullDetails = targetables.esModule(
-        '@magento/peregrine/lib/talons/ProductFullDetail/useProductFullDetail.js'
+        '@jelica-rado/peregrine/lib/talons/ProductFullDetail/useProductFullDetail.js'
     );
 
     // Wrap the useProductFullDetail hook with your extension's wrapper file

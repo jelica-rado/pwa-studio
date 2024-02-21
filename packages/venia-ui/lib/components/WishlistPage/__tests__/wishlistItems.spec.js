@@ -1,10 +1,10 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import WishlistItems from '../wishlistItems';
 
 jest.mock(
-    '@magento/peregrine/lib/talons/WishlistPage/useWishlistItems',
+    '@jelica-rado/peregrine/lib/talons/WishlistPage/useWishlistItems',
     () => ({
         useWishlistItems: jest.fn().mockReturnValue({
             activeAddToCartItem: 'activeAddToCartItem',

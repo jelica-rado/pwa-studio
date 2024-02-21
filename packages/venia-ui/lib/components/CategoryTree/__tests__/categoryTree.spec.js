@@ -1,6 +1,6 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
-import { useCategoryTree } from '@magento/peregrine/lib/talons/CategoryTree';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useCategoryTree } from '@jelica-rado/peregrine/lib/talons/CategoryTree';
 
 import CategoryTree from '../categoryTree';
 
@@ -8,7 +8,7 @@ jest.mock('../../../classify');
 jest.mock('../categoryBranch', () => () => <i />);
 jest.mock('../categoryLeaf', () => () => <i />);
 
-jest.mock('@magento/peregrine/lib/talons/CategoryTree', () => {
+jest.mock('@jelica-rado/peregrine/lib/talons/CategoryTree', () => {
     const childCategories = new Map();
     const useCategoryTree = jest.fn(() => ({ childCategories }));
 

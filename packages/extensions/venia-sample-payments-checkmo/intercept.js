@@ -1,5 +1,5 @@
 module.exports = targets => {
-    const { specialFeatures } = targets.of('@magento/pwa-buildpack');
+    const { specialFeatures } = targets.of('@jelica-rado/pwa-buildpack');
     specialFeatures.tap(flags => {
         /**
          *  Wee need to activate esModules, cssModules and GQL Queries to allow build pack to load our extension
@@ -16,26 +16,26 @@ module.exports = targets => {
         checkoutPagePaymentTypes,
         editablePaymentTypes,
         summaryPagePaymentTypes
-    } = targets.of('@magento/venia-ui');
+    } = targets.of('@jelica-rado/venia-ui');
     checkoutPagePaymentTypes.tap(payments =>
         payments.add({
             paymentCode: 'checkmo',
             importPath:
-                '@magento/venia-sample-payments-checkmo/src/components/checkmo.js'
+                '@jelica-rado/venia-sample-payments-checkmo/src/components/checkmo.js'
         })
     );
     editablePaymentTypes.tap(editablePaymentTypes => {
         editablePaymentTypes.add({
             paymentCode: 'checkmo',
             importPath:
-                '@magento/venia-sample-payments-checkmo/src/components/edit.js'
+                '@jelica-rado/venia-sample-payments-checkmo/src/components/edit.js'
         });
     });
     summaryPagePaymentTypes.tap(paymentSummaries =>
         paymentSummaries.add({
             paymentCode: 'checkmo',
             importPath:
-                '@magento/venia-sample-payments-checkmo/src/components/summary.js'
+                '@jelica-rado/venia-sample-payments-checkmo/src/components/summary.js'
         })
     );
 };

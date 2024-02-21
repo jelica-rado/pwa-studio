@@ -1,5 +1,5 @@
 const buildResponse = require('../buildResponse');
-const { getScenarios } = require('@magento/upward-spec');
+const { getScenarios } = require('@jelica-rado/upward-spec');
 
 let scenarios;
 let mockIO;

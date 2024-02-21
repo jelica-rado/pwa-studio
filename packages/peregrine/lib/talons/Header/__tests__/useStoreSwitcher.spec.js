@@ -12,8 +12,8 @@ jest.mock('react-router-dom', () => ({
     useLocation: jest.fn(() => ({ pathname: '', search: '' }))
 }));
 
-jest.mock('@magento/peregrine', () => ({
-    ...jest.requireActual('@magento/peregrine'),
+jest.mock('@jelica-rado/peregrine', () => ({
+    ...jest.requireActual('@jelica-rado/peregrine'),
     Util: {
         BrowserPersistence: function() {
             return {
@@ -23,7 +23,7 @@ jest.mock('@magento/peregrine', () => ({
     }
 }));
 
-jest.mock('@magento/peregrine/lib/hooks/useDropdown', () => ({
+jest.mock('@jelica-rado/peregrine/lib/hooks/useDropdown', () => ({
     useDropdown: jest.fn().mockReturnValue({
         elementRef: 'elementRef',
         expanded: false,

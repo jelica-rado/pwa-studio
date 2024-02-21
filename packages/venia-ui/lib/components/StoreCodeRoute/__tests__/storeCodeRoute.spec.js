@@ -1,7 +1,7 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 import { useHistory } from 'react-router-dom';
-import { mockSetItem } from '@magento/peregrine/lib/util/simplePersistence';
+import { mockSetItem } from '@jelica-rado/peregrine/lib/util/simplePersistence';
 import StoreCodeRoute from '../storeCodeRoute';
 
 jest.mock('react-router-dom', () => {
@@ -12,7 +12,7 @@ jest.mock('react-router-dom', () => {
         useHistory: jest.fn(() => ({ go, createHref }))
     };
 });
-jest.mock('@magento/peregrine/lib/util/simplePersistence');
+jest.mock('@jelica-rado/peregrine/lib/util/simplePersistence');
 
 beforeEach(() => {
     global.AVAILABLE_STORE_VIEWS = [

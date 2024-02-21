@@ -34,7 +34,7 @@ Extensions which use wrapper modules _must_ also intercept the [Buildpack `speci
 /* @my-extension/log-wrapper/intercept.js */
 
 module.exports = targets => {
-    const peregrineTargets = targets.of('@magento/peregrine');
+    const peregrineTargets = targets.of('@jelica-rado/peregrine');
     const talonsTarget = peregrineTargets.talons;
 
     talonsTarget.tap(talonWrapperConfig => {

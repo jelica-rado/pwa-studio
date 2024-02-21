@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 import { useMutation } from '@apollo/client';
 
-import { useGoogleReCaptcha } from '@magento/peregrine/lib/hooks/useGoogleReCaptcha';
+import { useGoogleReCaptcha } from '@jelica-rado/peregrine/lib/hooks/useGoogleReCaptcha';
 
 /**
  * Returns props necessary to render a ForgotPassword form.
@@ -14,7 +14,7 @@ import { useGoogleReCaptcha } from '@magento/peregrine/lib/hooks/useGoogleReCapt
  * @returns {ForgotPasswordProps}
  *
  * @example <caption>Importing into your project</caption>
- * import { useForgotPassword } from '@magento/peregrine/lib/talons/ForgotPassword/useForgotPassword.js';
+ * import { useForgotPassword } from '@jelica-rado/peregrine/lib/talons/ForgotPassword/useForgotPassword.js';
  */
 export const useForgotPassword = props => {
     const { onCancel, mutations } = props;

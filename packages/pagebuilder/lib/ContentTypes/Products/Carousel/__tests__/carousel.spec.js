@@ -1,5 +1,5 @@
 import React from 'react';
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import Carousel from '../carousel';
 
@@ -9,18 +9,18 @@ jest.mock('react-router-dom', () => ({
     Link: ({ children }) => children
 }));
 
-jest.mock('@magento/venia-drivers', () => ({
+jest.mock('@jelica-rado/venia-drivers', () => ({
     resourceUrl: () => 'a.url'
 }));
 
 jest.mock(
-    '@magento/pagebuilder/lib/ContentTypes/Products/Carousel/useCarousel',
+    '@jelica-rado/pagebuilder/lib/ContentTypes/Products/Carousel/useCarousel',
     () => ({
         useCarousel: () => ({ storeConfig: jest.fn().mockName('storeConfig') })
     })
 );
 
-jest.mock('@magento/venia-ui/lib/components/Gallery/item', () => props => (
+jest.mock('@jelica-rado/venia-ui/lib/components/Gallery/item', () => props => (
     <mock-GalleryItem {...props} />
 ));
 

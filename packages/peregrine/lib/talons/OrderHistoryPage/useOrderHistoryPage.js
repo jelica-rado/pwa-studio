@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useQuery } from '@apollo/client';
 
-import { useAppContext } from '@magento/peregrine/lib/context/app';
-import { deriveErrorMessage } from '@magento/peregrine/lib/util/deriveErrorMessage';
-import mergeOperations from '@magento/peregrine/lib/util/shallowMerge';
+import { useAppContext } from '@jelica-rado/peregrine/lib/context/app';
+import { deriveErrorMessage } from '@jelica-rado/peregrine/lib/util/deriveErrorMessage';
+import mergeOperations from '@jelica-rado/peregrine/lib/util/shallowMerge';
 
 import DEFAULT_OPERATIONS from './orderHistoryPage.gql';
 

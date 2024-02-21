@@ -1,5 +1,5 @@
 import React from 'react';
-import { useContactLink } from '@magento/peregrine/lib/talons/ContactPage';
+import { useContactLink } from '@jelica-rado/peregrine/lib/talons/ContactPage';
 import Shimmer from '../Shimmer';
 
 const ContactLink = props => {

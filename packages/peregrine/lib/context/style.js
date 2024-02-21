@@ -6,7 +6,7 @@ import React, {
     useMemo,
     useState
 } from 'react';
-import mergeClasses from '@magento/peregrine/lib/util/shallowMerge';
+import mergeClasses from '@jelica-rado/peregrine/lib/util/shallowMerge';
 
 const StyleContext = createContext();
 const isServer = !globalThis.document;

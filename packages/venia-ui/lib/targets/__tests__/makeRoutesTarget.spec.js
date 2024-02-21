@@ -1,18 +1,18 @@
 const {
     mockTargetProvider
-} = require('@magento/pwa-buildpack/lib/TestHelpers');
+} = require('@jelica-rado/pwa-buildpack/lib/TestHelpers');
 
 const makeRoutesTarget = require('../makeRoutesTarget');
-const TargetableSet = require('@magento/pwa-buildpack/lib/WebpackTools/targetables/TargetableSet');
+const TargetableSet = require('@jelica-rado/pwa-buildpack/lib/WebpackTools/targetables/TargetableSet');
 
 const FAKE_ADDED_ROUTE = 'ADDED_ROUTE';
 const FAKE_COMPONENT = 'Component';
 
 const targets = mockTargetProvider(
-    '@magento/venia-ui',
+    '@jelica-rado/venia-ui',
     (_, dep) =>
         ({
-            '@magento/pwa-buildpack': {
+            '@jelica-rado/pwa-buildpack': {
                 specialFeatures: {
                     tap: jest.fn()
                 },

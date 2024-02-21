@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react';
 import { useIntl } from 'react-intl';
 
-import { useCreateWishlistForm } from '@magento/peregrine/lib/talons/Wishlist/WishlistDialog/CreateWishlistForm/useCreateWishlistForm';
+import { useCreateWishlistForm } from '@jelica-rado/peregrine/lib/talons/Wishlist/WishlistDialog/CreateWishlistForm/useCreateWishlistForm';
 
-import Button from '@magento/venia-ui/lib/components/Button';
-import { useStyle } from '@magento/venia-ui/lib/classify';
-import Field from '@magento/venia-ui/lib/components/Field';
-import TextInput from '@magento/venia-ui/lib/components/TextInput';
-import { isRequired } from '@magento/venia-ui/lib/util/formValidators';
+import Button from '@jelica-rado/venia-ui/lib/components/Button';
+import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
+import Field from '@jelica-rado/venia-ui/lib/components/Field';
+import TextInput from '@jelica-rado/venia-ui/lib/components/TextInput';
+import { isRequired } from '@jelica-rado/venia-ui/lib/util/formValidators';
 
 import defaultClasses from './createWishlistForm.module.css';
 import FormError from '../../../FormError';

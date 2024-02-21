@@ -1,7 +1,7 @@
 // TODO @TW:
 // Node path should be committed, but it makes preset dev impossible.
 // Local path is the only way to develop "tailwind.preset.js".
-const venia = require('@magento/pwa-theme-venia');
+const venia = require('@jelica-rado/pwa-theme-venia');
 // const venia = require('../pwa-theme-venia');
 
 const config = {
@@ -14,7 +14,7 @@ const config = {
         // Include paths to every file that may refer to Tailwind classnames.
         // Classnames not found in these files will be excluded at build time.
         content: [
-            './node_modules/@magento/venia-ui/lib/**/*.module.css',
+            './node_modules/@jelica-rado/venia-ui/lib/**/*.module.css',
             '../venia-ui/lib/**/*.module.css',
             './src/**/*.module.css',
             './template.html'

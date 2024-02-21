@@ -32,7 +32,7 @@ export const GET_WISHLIST_CONFIG = gql`
 `;
 
 /**
- * @deprecated - replaced by general mutation in @magento/peregrine/lib/talons/productFullDetail.js
+ * @deprecated - replaced by general mutation in @jelica-rado/peregrine/lib/talons/productFullDetail.js
  */
 export const ADD_CONFIGURABLE_MUTATION = gql`
     mutation addConfigurableProductToCart(
@@ -66,7 +66,7 @@ export const ADD_CONFIGURABLE_MUTATION = gql`
 `;
 
 /**
- * @deprecated - replaced by general mutation in @magento/peregrine/lib/talons/productFullDetail.js
+ * @deprecated - replaced by general mutation in @jelica-rado/peregrine/lib/talons/productFullDetail.js
  */
 export const ADD_SIMPLE_MUTATION = gql`
     mutation addSimpleProductToCart(

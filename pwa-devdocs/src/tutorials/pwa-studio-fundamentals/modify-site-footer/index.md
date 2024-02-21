@@ -92,14 +92,14 @@ The App component is the main entry point for the storefront application.
 It imports and renders the Main component, which renders the Footer component.
 
 ```sh
-cp node_modules/@magento/venia-ui/lib/components/App/app.js src/components/App
+cp node_modules/@jelica-rado/venia-ui/lib/components/App/app.js src/components/App
 ```
 
 If you look at the [`index.js` file for Venia's App component][], its default export is not `app.js`.
 The default export for this component is `container.js`, which is a container for the `app.js` module, so copy the `container.js` file into your project.
 
 ```sh
-cp node_modules/@magento/venia-ui/lib/components/App/container.js src/components/App
+cp node_modules/@jelica-rado/venia-ui/lib/components/App/container.js src/components/App
 ```
 
 ### Copy Main component
@@ -108,7 +108,7 @@ The Main component imports and renders the Header, Footer, and route-specific co
 Copy this component from `node_modules` into your project.
 
 ```sh
-cp node_modules/@magento/venia-ui/lib/components/Main/main.js src/components/Main
+cp node_modules/@jelica-rado/venia-ui/lib/components/Main/main.js src/components/Main
 ```
 
 ### Copy Footer component
@@ -117,7 +117,7 @@ The Footer component is the target component you will modify for this tutorial.
 Copy this component from the `node_modules` directory into your project.
 
 ```sh
-cp node_modules/@magento/venia-ui/lib/components/Footer/footer.js src/components/Footer
+cp node_modules/@jelica-rado/venia-ui/lib/components/Footer/footer.js src/components/Footer
 ```
 
 ## Add a link to the Footer
@@ -155,10 +155,10 @@ Update the relative imports in `src/components/Footer/footer.js`.
 - import defaultClasses from './footer.css';
 - import { DEFAULT_LINKS, LOREM_IPSUM } from "./sampleData";
 - import GET_STORE_CONFIG_DATA from '../../queries/getStoreConfigData.graphql';
-+ import { useStyle } from '@magento/venia-ui/lib/classify';
-+ import defaultClasses from '@magento/venia-ui/lib/components/Footer/footer.css';
-+ import { DEFAULT_LINKS, LOREM_IPSUM } from "@magento/venia-ui/lib/components/Footer/sampleData";
-+ import GET_STORE_CONFIG_DATA from '@magento/venia-ui/lib/queries/getStoreConfigData.graphql';
++ import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
++ import defaultClasses from '@jelica-rado/venia-ui/lib/components/Footer/footer.css';
++ import { DEFAULT_LINKS, LOREM_IPSUM } from "@jelica-rado/venia-ui/lib/components/Footer/sampleData";
++ import GET_STORE_CONFIG_DATA from '@jelica-rado/venia-ui/lib/queries/getStoreConfigData.graphql';
 ```
 
 ### Export Footer component
@@ -176,12 +176,12 @@ Skip updating the Footer import statement to use your project's modified Footer 
 
 ```diff
 - import { useStyle } from '../../classify';
-+ import { useStyle } from '@magento/venia-ui/lib/classify';
++ import { useStyle } from '@jelica-rado/venia-ui/lib/classify';
   import Footer from '../Footer';
 - import Header from '../Header';
 - import defaultClasses from './main.css';
-+ import Header from '@magento/venia-ui/lib/components/Header';
-+ import defaultClasses from '@magento/venia-ui/lib/components/Main/main.css';
++ import Header from '@jelica-rado/venia-ui/lib/components/Header';
++ import defaultClasses from '@jelica-rado/venia-ui/lib/components/Main/main.css';
 ```
 
 ### Export Main component
@@ -199,7 +199,7 @@ Skip updating the Main import statement to use your project's copy of the Main c
 
 ```diff
 - import { HeadProvider, StoreTitle } from '../Head';
-+ import { HeadProvider, StoreTitle } from '@magento/venia-ui/lib/components/Head';
++ import { HeadProvider, StoreTitle } from '@jelica-rado/venia-ui/lib/components/Head';
   import Main from '../Main';
 - import Mask from '../Mask';
 - import MiniCart from '../MiniCart';
@@ -207,12 +207,12 @@ Skip updating the Main import statement to use your project's copy of the Main c
 - import Routes from '../Routes';
 - import ToastContainer from '../ToastContainer';
 - import Icon from '../Icon';
-+ import Mask from '@magento/venia-ui/lib/components/Mask';
-+ import MiniCart from '@magento/venia-ui/lib/components/MiniCart';
-+ import Navigation from '@magento/venia-ui/lib/components/Navigation';
-+ import Routes from '@magento/venia-ui/lib/components/Routes';
-+ import ToastContainer from '@magento/venia-ui/lib/components/ToastContainer';
-+ import Icon from '@magento/venia-ui/lib/components/Icon';
++ import Mask from '@jelica-rado/venia-ui/lib/components/Mask';
++ import MiniCart from '@jelica-rado/venia-ui/lib/components/MiniCart';
++ import Navigation from '@jelica-rado/venia-ui/lib/components/Navigation';
++ import Routes from '@jelica-rado/venia-ui/lib/components/Routes';
++ import ToastContainer from '@jelica-rado/venia-ui/lib/components/ToastContainer';
++ import Icon from '@jelica-rado/venia-ui/lib/components/Icon';
 ```
 
 Update the relative import in `src/components/App/container.js`.
@@ -220,7 +220,7 @@ Update the relative import in `src/components/App/container.js`.
 ```diff
   import App from './app';
 - import { useErrorBoundary } from './useErrorBoundary'
-+ import { useErrorBoundary } from '@magento/venia-ui/lib/components/App/useErrorBoundary'
++ import { useErrorBoundary } from '@jelica-rado/venia-ui/lib/components/App/useErrorBoundary'
 ```
 
 ### Export App component
@@ -238,8 +238,8 @@ export { default } from './container'
 Open your project's `src/index.js` file and update the import for the App component to use your custom App component.
 
 ```diff
-- import App, { AppContextProvider } from '@magento/venia-ui/lib/components/App';
-+ import { AppContextProvider } from '@magento/venia-ui/lib/components/App';
+- import App, { AppContextProvider } from '@jelica-rado/venia-ui/lib/components/App';
++ import { AppContextProvider } from '@jelica-rado/venia-ui/lib/components/App';
 + import App from './components/App';
 ```
 
@@ -249,14 +249,14 @@ If true, you need to add the Adapter component to your project's `src/components
 
 ```sh
 mkdir -p src/components/Adapter && \
-cp node_modules/@magento/venia-ui/lib/components/Adapter/adapter.js src/components/Adapter
+cp node_modules/@jelica-rado/venia-ui/lib/components/Adapter/adapter.js src/components/Adapter
 ```
 
 Open the file `adapter.js` in your `src/components` and make the following changes:
 
 ```diff
-- import App, { AppContextProvider } from '@magento/venia-ui/lib/components/App';
-+ import { AppContextProvider } from '@magento/venia-ui/lib/components/App';
+- import App, { AppContextProvider } from '@jelica-rado/venia-ui/lib/components/App';
++ import { AppContextProvider } from '@jelica-rado/venia-ui/lib/components/App';
 + import App from '../App';
 ```
 
@@ -269,7 +269,7 @@ export { default } from './adapter'
 Finally, go back to your file `src/index.js` and change the import of the Adapter component:
 
 ```diff
-- import Adapter from '@magento/venia-ui/lib/components/Adapter';
+- import Adapter from '@jelica-rado/venia-ui/lib/components/Adapter';
 + import Adapter from './components/Adapter';
 ```
 

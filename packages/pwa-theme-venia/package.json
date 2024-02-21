@@ -1,5 +1,5 @@
 {
-  "name": "@magento/pwa-theme-venia",
+  "name": "@jelica-rado/pwa-theme-venia",
   "version": "1.4.0",
   "publishConfig": {
     "access": "public"

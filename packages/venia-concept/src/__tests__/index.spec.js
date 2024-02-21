@@ -18,7 +18,7 @@ jest.mock('@apollo/client', () => {
         gql: jest.fn()
     };
 });
-jest.mock('@magento/venia-ui/lib/components/Adapter', () => {
+jest.mock('@jelica-rado/venia-ui/lib/components/Adapter', () => {
     return jest.fn(() => <i title="Adapter" />);
 });
 jest.mock('../store', () => ({

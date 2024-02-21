@@ -25,7 +25,7 @@ Further webpack optimization techniques, such as [`CommonsChunkPlugin`], can be 
 // webpack.config.js
 
 const path = require('path');
-const { MagentoRootComponentsPlugin } = require('@magento/pwa-buildpack');
+const { MagentoRootComponentsPlugin } = require('@jelica-rado/pwa-buildpack');
 
 module.exports = {
     entry: {

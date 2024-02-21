@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useLazyQuery } from '@apollo/client';
 
-import { useCartContext } from '@magento/peregrine/lib/context/cart';
-import mergeOperations from '@magento/peregrine/lib/util/shallowMerge';
+import { useCartContext } from '@jelica-rado/peregrine/lib/context/cart';
+import mergeOperations from '@jelica-rado/peregrine/lib/util/shallowMerge';
 import DEFAULT_OPERATIONS from './cartPage.gql';
 import { useEventingContext } from '../../context/eventing';
 
@@ -22,7 +22,7 @@ import { useEventingContext } from '../../context/eventing';
  * @returns {CartPageTalonProps}
  *
  * @example <caption>Importing into your project</caption>
- * import { useCartPage } from '@magento/peregrine/lib/talons/CartPage/useCartPage';
+ * import { useCartPage } from '@jelica-rado/peregrine/lib/talons/CartPage/useCartPage';
  */
 export const useCartPage = (props = {}) => {
     const operations = mergeOperations(DEFAULT_OPERATIONS, props.operations);

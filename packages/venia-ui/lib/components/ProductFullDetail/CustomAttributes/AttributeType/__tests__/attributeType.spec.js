@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { createTestInstance } from '@magento/peregrine';
+import { createTestInstance } from '@jelica-rado/peregrine';
 
 import AttributeType from '../attributeType';
 
-// jest.mock('@magento/peregrine/lib/talons/ProductFullDetail/CustomAttributes/AttributeType', () => ({
+// jest.mock('@jelica-rado/peregrine/lib/talons/ProductFullDetail/CustomAttributes/AttributeType', () => ({
 //     useAttributeType: jest.fn(() => {
 //         return {
 //             getAttributeTypeConfig: jest.fn().mockImplementation(() => {

@@ -1,11 +1,11 @@
 import React from 'react';
 import { Form } from 'informed';
-import { createTestInstance } from '@magento/peregrine';
-import { useCountry } from '@magento/peregrine/lib/talons/Country/useCountry';
+import { createTestInstance } from '@jelica-rado/peregrine';
+import { useCountry } from '@jelica-rado/peregrine/lib/talons/Country/useCountry';
 
 import Country from '../country';
 
-jest.mock('@magento/peregrine/lib/talons/Country/useCountry');
+jest.mock('@jelica-rado/peregrine/lib/talons/Country/useCountry');
 jest.mock('../../../classify');
 
 const mockProps = {

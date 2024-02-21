@@ -1,7 +1,7 @@
 import { useCallback, useMemo } from 'react';
 import { useMutation, useQuery } from '@apollo/client';
 import DEFAULT_OPERATIONS from './customerForm.gql';
-import mergeOperations from '@magento/peregrine/lib/util/shallowMerge';
+import mergeOperations from '@jelica-rado/peregrine/lib/util/shallowMerge';
 import { useEventingContext } from '../../../../context/eventing';
 
 export const useCustomerForm = props => {

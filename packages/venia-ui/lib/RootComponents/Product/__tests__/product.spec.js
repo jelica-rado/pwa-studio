@@ -1,22 +1,22 @@
 import React from 'react';
 import { act, create } from 'react-test-renderer';
-import { useProduct } from '@magento/peregrine/lib/talons/RootComponents/Product/useProduct';
+import { useProduct } from '@jelica-rado/peregrine/lib/talons/RootComponents/Product/useProduct';
 import Product from '../product';
 import ProductShimmer from '../product.shimmer';
 import mockData from '../mockData';
 
-jest.mock('@magento/peregrine/lib/talons/RootComponents/Product/useProduct');
-jest.mock('@magento/venia-ui/lib/components/ErrorView', () => 'ErrorView');
-jest.mock('@magento/venia-ui/lib/components/Head', () => ({
+jest.mock('@jelica-rado/peregrine/lib/talons/RootComponents/Product/useProduct');
+jest.mock('@jelica-rado/venia-ui/lib/components/ErrorView', () => 'ErrorView');
+jest.mock('@jelica-rado/venia-ui/lib/components/Head', () => ({
     __esModule: true,
     StoreTitle: jest.fn(() => 'StoreTitle'),
     Meta: jest.fn(() => 'Meta')
 }));
 jest.mock(
-    '@magento/venia-ui/lib/components/ProductFullDetail',
+    '@jelica-rado/venia-ui/lib/components/ProductFullDetail',
     () => 'ProductFullDetail'
 );
-jest.mock('@magento/venia-ui/lib/util/mapProduct');
+jest.mock('@jelica-rado/venia-ui/lib/util/mapProduct');
 jest.mock('react-intl', () => ({
     FormattedMessage: jest.fn(({ defaultMessage }) => defaultMessage)
 }));

@@ -39,13 +39,13 @@ The `addImport()` function can only handle import statements with a single bindi
 For example, the following code is allowed because it only binds `VeniaButton` in the statement:
 
 ```js
-import { Button as VeniaButton } from '@magento/venia/lib/components/Button'
+import { Button as VeniaButton } from '@jelica-rado/venia/lib/components/Button'
 ```
 
 The following would not be allowed, since it adds two bindings (`VeniaButton` and `Carousel`):
 
 ```js
-import { Button as VeniaButton, Carousel } from '@magento/venia'
+import { Button as VeniaButton, Carousel } from '@jelica-rado/venia'
 ```
 
 #### Import conflicts
@@ -61,7 +61,7 @@ Use the `wrapWithFile()` function to wrap an exported module with another module
 ```js
 // Create a TargetableESModule linked to the useProductFullDetail.js file
 const useProductFullDetails = targetables.esModule(
-    '@magento/peregrine/lib/talons/ProductFullDetail/useProductFullDetail.js'
+    '@jelica-rado/peregrine/lib/talons/ProductFullDetail/useProductFullDetail.js'
 );
 
 // Wrap the `useProductFullDetail` named export from the file with

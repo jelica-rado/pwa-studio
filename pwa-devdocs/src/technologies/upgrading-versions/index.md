@@ -25,7 +25,7 @@ This automatically updates the `package.json` file in your project and install t
 Sample command:
 
 ```sh
-yarn add @magento/eslint-config @magento/pagebuilder @magento/peregrine @magento/pwa-buildpack @magento/upward-js @magento/venia-ui
+yarn add @jelica-rado/eslint-config @jelica-rado/pagebuilder @jelica-rado/peregrine @jelica-rado/pwa-buildpack @jelica-rado/upward-js @jelica-rado/venia-ui
 ```
 
 ### Manual updates

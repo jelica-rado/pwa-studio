@@ -25,7 +25,7 @@ test('should run validator targets', async () => {
 
     expect(initFn).toHaveBeenCalled();
     expect(forFn).toHaveBeenCalledWith(context);
-    expect(getTargetsOfFn).toHaveBeenCalledWith('@magento/pwa-buildpack');
+    expect(getTargetsOfFn).toHaveBeenCalledWith('@jelica-rado/pwa-buildpack');
     expect(runValidationTargets).toHaveBeenCalledWith({
         env: expect.any(Object),
         onFail: expect.any(Function),
