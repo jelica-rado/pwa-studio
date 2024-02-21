@@ -1,5 +1,5 @@
 {
-  "name": "@magento/pagebuilder",
+  "name": "@baici/pagebuilder",
   "version": "8.2.1",
   "publishConfig": {
     "access": "public"
