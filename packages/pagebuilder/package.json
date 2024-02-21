@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/magento/pwa-studio/tree/main/packages/pagebuilder#readme",
   "dependencies": {
-    "forked-pagebuilder": "github:jelica-rado/pwa-studio#develop"
+    "@magento/pagebuilder": "git+ssh://git@github.com:jelica-rado/pwa-studio.git#develop"
   },
   "devDependencies": {
     "@magento/peregrine": "~13.2.1",
