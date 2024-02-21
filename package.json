@@ -1,7 +1,7 @@
 {
   "name": "@baici/pwa-studio",
   "version": "13.3.0",
-  "private": false,
+  "private": true,
   "workspaces": [
     "packages/babel-preset-peregrine",
     "packages/create-pwa",
